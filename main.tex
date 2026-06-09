@@ -1,0 +1,47 @@
+% main.tex
+% Master thesis – Double diploma IPB/UTFPR
+
+\documentclass[12pt, a4paper, oneside]{report}
+
+% Load formatting and personal data
+\usepackage{preamble}
+\input{definitions}
+
+\begin{document}
+
+% Roman page numbering for front matter
+\pagenumbering{roman}
+
+% Cover page
+\input{cover}
+\cleardoublepage
+
+% Abstract, acknowledgements (optional)
+\include{sections/abstract}
+\include{sections/resumo}
+% \include{frontmatter/acknowledgements}
+
+% Table of contents
+\tableofcontents
+\cleardoublepage
+
+% Main matter
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% Chapters
+\include{sections/01_introduction}
+\include{sections/02_literature_review}
+\include{sections/03_materials_methods}
+\include{sections/04_results}
+\include{sections/05_discussion}
+\include{sections/06_conclusion}
+
+% Bibliography
+\printbibliography[heading=bibintoc, title={References}]
+
+% Appendices (if any)
+% \appendix
+% \include{sections/appendix_a}
+
+\end{document}

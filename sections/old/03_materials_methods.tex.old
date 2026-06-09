@@ -1,0 +1,56 @@
+\chapter{Materials and Methods}
+\label{ch:materials_methods}
+
+\section{Collection and Preparation of the Food Waste}
+\label{sec:col_prep_FW}
+
+Food waste was collected from the canteen at the Instituto Politécnico de Bragança (IPB), prioritizing residues with high proportions of rice, pasta, and bread to maximize the amount of sugars, and minimize the aount of nitrogen collected. The waste was diluted with approximately 2.5 L of distilled water and homogenized using a blender to achieve a liquid paste consistency, after which it was stored ia a refrigerator at 4 °C to prevent spoilage, and minimize microbial and fungui activity.
+
+\section{Biodissel Glycerol Collection}
+\label{sec:ino_col}
+
+It was given a 6 L bottle, containign biodissel glycerol, from previus experiments on making biodissel.
+
+\section{Inoculum Collection}
+\label{sec:ino_col}
+
+The anaerobic inoculum, consisting of granular sludge, was obtained from a anaerobic digestor at the Águas do Norte, the wastewater treatment plant of Bragança. Ensuring an active population suitable for an anaerobic digestor.
+
+\section{Physical and Chemical Characterization}
+\label{sec:phy_chem_char}
+
+
+The food waste, biodissel glycerol and inoculum had their total solids (TS), volatile solids (VS) and density determined. The food waste and biodissel glycerol had their total organic carbon (TOC) and total nitrogen (TN) determined.
+
+\subsection{TS and VS determination}
+\label{subsec:ts_vs_determination}
+
+The TS and VS were determined using a sequential gravimetric method based on controlled drying and calcination steps, enabling the quantification of moisture, total solids, and fixed solids fractions.
+
+To perform this analysis and determine the TS and VS, the procedure began by placing porcelain crucibles in an oven at 550 °C for 1 h, then to cooldown they were placed inside a oven at 105 °C for 15 minutes, and after transfered to a desiccator until they reached room temperature, and their weights were recorded. Next a sample of each material was placed on three crucibles and had their weights messured. Then they were leaft inside a oven at 105 °C for 2 hours, excluding the glycerol that stayed for about 6 to 8 hours in the oven, to have the sample dried. fter this period, the crucibles were returned to the desiccator until they reached room temperature, and the weights were recorded again to calculate the TS.
+
+The same crucibles were then subjected to calcination in a furnace at 550 °C for 30 min. After this process, the cooling steps was repeated until room temperature was reached, and the weights were recorded to
+calculate the VS.
+
+\subsection{Density determination}
+\label{subsec:d_determiantion}
+
+The density was determined by a gravimetric method using graduated cylinders, allowing the relationship between sample mass and occupied volume to be established under controlled conditions.
+
+Initially dry cylinders where weighed empty, and then filled with distilled water at 20 °C, and weighed again, recording the mass reading on the scale and the corresponding volume. From these measurements, the water density was verified and used to confirm the accuracy of the volumetric readings.
+
+ubsequently, the cylinders were thoroughly dried and filled with a known volume of the sample, then weighed again to record the mass. The density of each material was then calculated by the ratio between the mass of the sample (total mass minus empty cylinder mass) and the measured volume.
+
+\subsection{TOC and TN determination}
+\label{subsec:toc_tn_determination}
+
+The TOC and TN contents were determined using a Shimadzu TOC-5000A analyzer, requiring a 400X dilution of the food waste and 800X dilution of the biodissel glycerol, to ensure that the measurements fell within the operational range of the equipment.
+
+\section{Experiment Configuration}
+\label{sec:experiment_configuration}
+
+The reactor have a useful volume of 1 L and was configured as a continuous stirred-tank reactor (CSTR), using a magnetic stirr bar as agitation, and it has it's overflow exit tube shut with a valve, to keep it in a anaerobic state.
+
+The reactor operates at a 37 °C, to keep the microorganism close to their ideal temperature. The organic loading rate (OLR) was set to be around 4 to 8 Kg VS m\textsuperscript{-3} d\textsuperscript{-1}, with a hydrolic retention time (HRT) of 30 days and with pH around 7.
+
+The pH control was made using CaCO\textsubscript{3}, it was added to the reactor when it had a pH under 7. And adding 10 g L\textsuperscript{-1} of CaCO\textsubscript{3} to the feeding solution.

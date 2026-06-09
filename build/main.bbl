@@ -1,0 +1,1409 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{albizzati2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c607c594e2a847c8c6311535c1745407}{%
+           family={Albizzati},
+           familyi={A\bibinitperiod},
+           given={Paola\bibnamedelima Federica},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1221ec37346a3e297896e6cb49135d94}{%
+           family={Tonini},
+           familyi={T\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3aaadd06ebf62ffb602b16cc568482f}{%
+           family={Astrup},
+           familyi={A\bibinitperiod},
+           given={Thomas\bibnamedelima Fruergaard},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dc3173cd8cd0111ca565934b9e2f423d}
+      \strng{fullhash}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{fullhashraw}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{bibnamehash}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{authorbibnamehash}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{authornamehash}{dc3173cd8cd0111ca565934b9e2f423d}
+      \strng{authorfullhash}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{authorfullhashraw}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In an endeavor to make Europe carbon-neutral, and to foster a circular economy, improving food waste management has been identified by the European Union (EU) as a key factor. In this study, we consider 21 pathways, covering: (i) prevention; (ii) reuse for both human consumption and animal feed; (iii) material recycling as an input into the food and chemical industries; (iv) nutrient recycling; and (v) energy/fuel recovery. To include all types of impact, a sustainability assessment, encompassing environmental, economic, and social pillars, is performed and complemented with societal life cycle costing. The results indicate that after prevention, reuse for human consumption and animal feed is the most preferred option, and, in most cases, nutrient recycling and energy recovery are favored over material recycling for chemical production. While highlighting that the food waste management hierarchy should be supported with quantitative sustainability analyses, the findings also illustrate that biochemical pathways should be improved to be competitive despite the fact that food waste valorization has the potential to satisfy the EU demand for the chemicals investigated. Yet, the results clearly show that the potential benefits of improving emerging technologies would still not eclipse the benefits related to food waste prevention and its redistribution.}
+      \field{journaltitle}{Environmental Science \& Technology}
+      \field{month}{11}
+      \field{number}{23}
+      \field{title}{A Quantitative Sustainability Assessment of Food Waste Management in the {European Union}}
+      \field{volume}{55}
+      \field{year}{2021}
+      \field{pages}{16099\bibrangedash 16110}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1021/acs.est.1c03940
+      \endverb
+    \endentry
+    \entry{anand2012}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2bbb677e91f597ec263987a91e6bc919}{%
+           family={Anand},
+           familyi={A\bibinitperiod},
+           given={Pinki},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c70679aa60ec164881d2f047e976b8b}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={Rajendra\bibnamedelima Kumar},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{fullhash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{fullhashraw}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{bibnamehash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{authorbibnamehash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{authornamehash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{authorfullhash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{authorfullhashraw}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The rapidly growing biodiesel industry has created a scenario, where it is both important and challenging to deal with the enormous amount of crude glycerol generated as an inherent by-product. With every 100 gallons of biodiesel produced, 5--10 gallons of the crude glycerol is left behind containing several impurities which makes its disposal difficult. The objective of the present investigation was to evaluate the impact of biodiesel-derived crude glycerol upon microbial growth and production of 1,3-propanediol by Citrobacter freundii. Five different grades of crude glycerol (obtained from biodiesel preparation using jatropha, soybean, sunflower, rice bran and linseed oils) were used. Crude glycerol caused significant inhibition of microbial growth and subsequently 1,3-propanediol production as compared to pure glycerol. Therefore, a process was developed for the treatment of crude glycerol using solvents before fermentation wherein four different non-polar solvents were examined yielding different grades of pretreated glycerol. Subsequently, the potential toxic effects of pretreated glycerol on the growth and 1,3-propanediol production by C. freundii was evaluated. In case of petroleum ether-treated crude glycerol obtained from jatropha \& linseed and hexane-treated crude glycerol obtained from rice bran, the yields obtained were comparable to the pure glycerol. Similarly, soybean-derived glycerol gave comparable results after treatment with either hexane or petroleum ether.}
+      \field{issn}{1871-6784}
+      \field{journaltitle}{New Biotechnology}
+      \field{note}{Industrial Biotechnology}
+      \field{number}{2}
+      \field{title}{A comparative study of solvent-assisted pretreatment of biodiesel derived crude glycerol on growth and 1,3-propanediol production from {Citrobacter freundii}}
+      \field{volume}{29}
+      \field{year}{2012}
+      \field{pages}{199\bibrangedash 205}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.nbt.2011.05.010
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S187167841100135X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S187167841100135X
+      \endverb
+    \endentry
+    \entry{attarbachi2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cbc1a5d957d98a9749f111ad045a35c7}{%
+           family={Attarbachi},
+           familyi={A\bibinitperiod},
+           given={Taha},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8282abe518e2864079ce6b889b4021c3}{%
+           family={Kingsley},
+           familyi={K\bibinitperiod},
+           given={Martin\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b2b34477c93097182ec07454f2429fd}{%
+           family={Spallina},
+           familyi={S\bibinitperiod},
+           given={Vincenzo},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8673109641c304f9abf7420220b4053f}
+      \strng{fullhash}{0f2b02916070e15605effb3b26704f22}
+      \strng{fullhashraw}{0f2b02916070e15605effb3b26704f22}
+      \strng{bibnamehash}{0f2b02916070e15605effb3b26704f22}
+      \strng{authorbibnamehash}{0f2b02916070e15605effb3b26704f22}
+      \strng{authornamehash}{8673109641c304f9abf7420220b4053f}
+      \strng{authorfullhash}{0f2b02916070e15605effb3b26704f22}
+      \strng{authorfullhashraw}{0f2b02916070e15605effb3b26704f22}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The increasing effort of the global community to reduce dependency on fossil fuels led to an increase in the production of biodiesel and therefore the oversupply of crude glycerol. Different steps are necessary to ensure this oversupply of highly impure, waste-based crude glycerol (approximately 680,000 tonnes by 2024) can be made suitable for applications. This review paper aims to give an overview of the recent developments of the global glycerol market and discusses advanced crude glycerol purification technologies (as compared to physio-chemical treatments). The market overview involves information on the relevance of the global glycerol market and the different grades of glycerol which are produced. Additionally, different application areas for glycerol are detailed; including current industrial solutions, challenges, and outlooks. The second part reports newly proposed crude glycerol purification technologies from industry and recent research since 2014, their advantages and disadvantages, and feasibility in terms of industrial implementation at scale. The results of this review suggest that pressure-, thermally- and electrochemically-driven membrane-based separation technologies could solve the issue of expensive large scale vacuum distillation columns lowering capital and operating expenditures reaching > 99 \% of glycerol purity. However, the increase of lower quality glycerol generated resulting from 2nd generation bio-diesel plants presents challenges due to the increasing ash and matter organic non-glycerol (MONG) impurities (due to the use of waste-based feedstocks in biodiesel production). As result, hybrid solutions may be needed since advanced purification technologies cannot be used as stand-alone solutions but need to be accompanied by a proper pre-treatment.}
+      \field{issn}{0016-2361}
+      \field{journaltitle}{Fuel}
+      \field{title}{New trends on crude glycerol purification: A review}
+      \field{volume}{340}
+      \field{year}{2023}
+      \field{pages}{127485}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.fuel.2023.127485
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0016236123000984
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0016236123000984
+      \endverb
+      \keyw{Crude glycerol,Purification,Glycerol market,Biodiesel,Pre-treatment}
+    \endentry
+    \entry{apha2017}{book}{}{}
+      \name{editor}{4}{}{%
+        {{un=0,uniquepart=base,hash=7bcea4e0c11fe2d68c81bcb2141cc534}{%
+           family={Baird},
+           familyi={B\bibinitperiod},
+           given={Roger\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae1b72ec73a5738c68eab64c8bd947b4}{%
+           family={Eaton},
+           familyi={E\bibinitperiod},
+           given={Andrew\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9480370131f2cf5600fb143e78d5420d}{%
+           family={Rice},
+           familyi={R\bibinitperiod},
+           given={Eugene\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3642d6052c7f19c6e5a7bb59bbb2d4f8}{%
+           family={Bridgewater},
+           familyi={B\bibinitperiod},
+           given={Laura\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Public Health Association, American Water Works Association, Water Environment Federation}%
+      }
+      \strng{namehash}{99091bca4c8228292cb7782c8c4be5d6}
+      \strng{fullhash}{982770b95eff4e628e352df65d4cfc77}
+      \strng{fullhashraw}{982770b95eff4e628e352df65d4cfc77}
+      \strng{bibnamehash}{982770b95eff4e628e352df65d4cfc77}
+      \strng{editorbibnamehash}{982770b95eff4e628e352df65d4cfc77}
+      \strng{editornamehash}{99091bca4c8228292cb7782c8c4be5d6}
+      \strng{editorfullhash}{982770b95eff4e628e352df65d4cfc77}
+      \strng{editorfullhashraw}{982770b95eff4e628e352df65d4cfc77}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{23rd}
+      \field{isbn}{978-0-87553-287-5}
+      \field{issn}{55-1979}
+      \field{title}{Standard Methods for the Examination of Water and Wastewater}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.2105/SMWW.2882.002
+      \endverb
+    \endentry
+    \entry{choorit2007}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=56d9ed0b0b39904fbdd335ea3448f86a}{%
+           family={Choorit},
+           familyi={C\bibinitperiod},
+           given={Wanna},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5dfb9890fa9b886076a067756cb0e805}{%
+           family={Wisarnwan},
+           familyi={W\bibinitperiod},
+           given={Pornpan},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {scielocl}%
+      }
+      \strng{namehash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{fullhash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{fullhashraw}{9882216cb05f2da7303e05c9e492502c}
+      \strng{bibnamehash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{authorbibnamehash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{authornamehash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{authorfullhash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{authorfullhashraw}{9882216cb05f2da7303e05c9e492502c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0717-3458}
+      \field{journaltitle}{Electronic Journal of Biotechnology}
+      \field{month}{07}
+      \field{title}{Effect of temperature on the anaerobic digestion of palm oil mill effluent}
+      \field{volume}{10}
+      \field{year}{2007}
+      \field{pages}{376\bibrangedash 385}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.2225/vol10-issue3-fulltext-7
+      \endverb
+      \verb{urlraw}
+      \verb http://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0717-34582007000300005&nrm=iso
+      \endverb
+      \verb{url}
+      \verb http://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0717-34582007000300005&nrm=iso
+      \endverb
+    \endentry
+    \entry{degueurce2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=f5061fddb4d766ff13fdaafe2b1e62e0}{%
+           family={Degueurce},
+           familyi={D\bibinitperiod},
+           given={Axelle},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f45703000a88bb938ce8ba86dd6b7beb}{%
+           family={Picard},
+           familyi={P\bibinitperiod},
+           given={Sylvie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc9f327bf5c599d9c2be2f89ff23cb97}{%
+           family={Peu},
+           familyi={P\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4ae230622838867c32f51d945174909}{%
+           family={Trémier},
+           familyi={T\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{41e0c0f7176bd5f7a33f4a95e90f9552}
+      \strng{fullhash}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{fullhashraw}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{bibnamehash}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{authorbibnamehash}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{authornamehash}{41e0c0f7176bd5f7a33f4a95e90f9552}
+      \strng{authorfullhash}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{authorfullhashraw}{15e02b2e2e5560a70f260394e61b51a6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Food waste (FW) storage influences its physical--chemical characteristics and anaerobic digestion (AD) performance. In this work we present the results of two weeks long experiment where two types of FW were stored in dedicated cells (10 L and 300 L). Air was evenly flushed on the top surface of the substrates and then analyzed to identify and quantify possible gaseous emissions. Solid and liquid fractions were also periodically sampled and analyzed for total solid, volatile solid, ammonia and VFA contents. Results showed that storage initiated a hydrolysis process that modified the physical structure of FW, leading to the production of gases (CH4, CO2 and ethanol) and a partly liquefied FW. Depending on experimental conditions, a fraction between 61 and 70\% of the initial substrate remained solid at the end of the storage period. In the liquid phase, a large proportion of lactic acid was measured with maximum contents of 5.9 and 14.8 g/kgvs for the small-scale experiments with two different FW types and 3.0 g/kgvs for the large-scale experiment, leading to inhibition of the biomethane potential (BMP) tests. In conclusion, this work showed that when storage of FW is needed before AD, the optimal time recommended to keep a high methane yield is one week.}
+      \field{issn}{1877-265X}
+      \field{journaltitle}{Waste and Biomass Valorization}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{Storage of Food Waste: Variations of Physical--Chemical Characteristics and Consequences on Biomethane Potential}
+      \field{volume}{11}
+      \field{year}{2020}
+      \field{pages}{2441\bibrangedash 2454}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/s12649-018-00570-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s12649-018-00570-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s12649-018-00570-0
+      \endverb
+    \endentry
+    \entry{garlapati2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3ee4a878fa60c67a4ea3addfc7da7f53}{%
+           family={Garlapati},
+           familyi={G\bibinitperiod},
+           given={Vijay\bibnamedelima Kumar},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0a2b29a423994821103f93b57cebf8d}{%
+           family={Shankar},
+           familyi={S\bibinitperiod},
+           given={Uttara},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=732b5b70aabf55959c4b9ba91f3c9646}{%
+           family={Budhiraja},
+           familyi={B\bibinitperiod},
+           given={Amrita},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{febf7b5fea0a9fb4e962dc22d162e852}
+      \strng{fullhash}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{fullhashraw}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{bibnamehash}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{authorbibnamehash}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{authornamehash}{febf7b5fea0a9fb4e962dc22d162e852}
+      \strng{authorfullhash}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{authorfullhashraw}{6fe67c8d30c8efde2962afef930636c0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Crude glycerol that is produced as the by-product from biodiesel, has to be effectively utilized to contribute to the viability of biodiesel. Crude glycerol in large amounts can pose a threat to the environment. Therefore, there is a need to convert this crude glycerol into valued added products using biotechnological processes, which brings new revenue to biodiesel producers. Crude glycerol can serve as a feedstock for biopolymers, poly unsaturated fatty acids, ethanol, hydrogen and n-butanol production and as a raw material for different value added industrial products. Hence, in this review we have presented different bioconversion technologies of glycerol to value added industrial products.}
+      \field{journaltitle}{Biotechnology Reports}
+      \field{month}{3}
+      \field{title}{Bioconversion technologies of crude glycerol to value added industrial products}
+      \field{volume}{9}
+      \field{year}{2016}
+      \field{pages}{9\bibrangedash 14}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.btre.2015.11.002
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.btre.2015.11.002
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.btre.2015.11.002
+      \endverb
+    \endentry
+    \entry{gebreegziabher2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e4fdd7be69f43dc29fc15820fd0ef393}{%
+           family={Gebreegziabher},
+           familyi={G\bibinitperiod},
+           given={Blen\bibnamedelima W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cdaec0d29ec9c402c8cba8597ed7b930}{%
+           family={Dubale},
+           familyi={D\bibinitperiod},
+           given={Amare\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50b8d1264f955ad5a71478c3e94db75c}{%
+           family={Adaramola},
+           familyi={A\bibinitperiod},
+           given={Muyiwa\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=daa2e2fb91b2cc0e7e393b0bfb3ac862}{%
+           family={Morken},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{18620bb60c5a1a2adaad28b5837f9aa4}
+      \strng{fullhash}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{fullhashraw}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{bibnamehash}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{authorbibnamehash}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{authornamehash}{18620bb60c5a1a2adaad28b5837f9aa4}
+      \strng{authorfullhash}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{authorfullhashraw}{c29a49befde383790c94e2ea8dcb33c2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The energy crisis, climate change, and insufficient waste management practices are compelling factors driving research into sustainable waste-to-resource technologies. Anaerobic digestion, aiming to recover energy and nutrients from organic waste, aligns with the circular economy's principles. This paper provides a comprehensive overview of utilizing biodiesel byproducts for biogas production, exploring techniques for enhancing biogas yield and addressing associated challenges. Assessing the potential of biodiesel byproducts highlights their environmental sustainability and economic viability for biogas production. Non-edible seed cake, rich in nutrients, shows promise for significant biogas yield. Additionally, crude glycerol, easily biodegradable, is identified as a promising co-digester, aiding in digesting recalcitrant substrates. Empirical data reveals remarkable methane yield boosts, ranging from 14 to 226\% when co-digesting with crude glycerol. Moreover, the resulting digestate enhances soil fertility, promoting healthier plant growth and productivity. Challenges in anaerobic digestion, such as substrate C/N ratio imbalance and recalcitrance, necessitate strategies like substrate pretreatment and co-digestion with compatible materials to optimize biogas yield. Furthermore, advancements in anaerobic digestion technologies are crucial for effectively converting biodiesel wastes into biogas. Additionally, interdisciplinary investigations, including techno-economic analysis, lifecycle assessment, and sensitivity analysis, are vital to enhance and validate the feasibility of anaerobic digestion for biodiesel byproducts. This review serves as a valuable resource for future utilization of biodiesel byproducts for biogas production.}
+      \field{issn}{1939-1242}
+      \field{journaltitle}{BioEnergy Research}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Advancing Anaerobic Digestion of Biodiesel Byproducts: A Comprehensive Review}
+      \field{volume}{18}
+      \field{year}{2025}
+      \field{pages}{15}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s12155-025-10820-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s12155-025-10820-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s12155-025-10820-4
+      \endverb
+    \endentry
+    \entry{li2011}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=237ae1e416433f055840fec0d2b6bc96}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yebo},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4efca70cb63eb5540297e1f3a1ee1420}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Stephen\bibnamedelima Y.},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e7c06d9972892fab23230c9ef67b3fe}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jiying},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51633434264d24af57ba4c38a71b842b}
+      \strng{fullhash}{4241e3881e19e0d72cc941117c617032}
+      \strng{fullhashraw}{4241e3881e19e0d72cc941117c617032}
+      \strng{bibnamehash}{4241e3881e19e0d72cc941117c617032}
+      \strng{authorbibnamehash}{4241e3881e19e0d72cc941117c617032}
+      \strng{authornamehash}{51633434264d24af57ba4c38a71b842b}
+      \strng{authorfullhash}{4241e3881e19e0d72cc941117c617032}
+      \strng{authorfullhashraw}{4241e3881e19e0d72cc941117c617032}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Solid-state anaerobic digestion (SS-AD) generally occurs at solid concentrations higher than 15\%. In contrast, liquid anaerobic digestion (AD) handles feedstocks with solid concentrations between 0.5\% and 15\%. Animal manure, sewage sludge, and food waste are generally treated by liquid AD, while organic fractions of municipal solid waste (OFMSW) and lignocellulosic biomass such as crop residues and energy crops can be processed through SS-AD. Some advantages of SS-AD include smaller reactor capacity requirements, less energy used for heating, and no processing energy needed for stirring. Due to its lower water content, the digestate of SS-AD is much easier to handle than the effluent of liquid AD. However, SS-AD systems also have disadvantages such as larger amounts of required inocula and much longer retention time. The principles and applications of the SS-AD process are reviewed in this paper. The variation in biogas production yields of different feedstocks is discussed as well as the need for pretreatment of lignocellulosic biomass to enhance biogas production. The effects of major operational parameters, including C/N ratio, solids content, temperature, and inoculation on the performance of SS-AD are summarized. While an increase in operating temperature can improve both the biogas yield and the production efficiency, other practices such as using AD digestate or leachate as an inoculant or decreasing the solid content, may increase the biogas yield but have negative impact on production efficiency. Different reactor configurations used in current commercial scale SS-AD systems and the impact of economics on system selection are also discussed.}
+      \field{issn}{1364-0321}
+      \field{journaltitle}{Renewable and Sustainable Energy Reviews}
+      \field{number}{1}
+      \field{title}{Solid-state anaerobic digestion for methane production from organic waste}
+      \field{volume}{15}
+      \field{year}{2011}
+      \field{pages}{821\bibrangedash 826}
+      \range{pages}{6}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.rser.2010.07.042
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1364032110002224
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1364032110002224
+      \endverb
+      \keyw{Anaerobic digestion,Solid fermentation,Dry digester,Biomass,Biogas}
+    \endentry
+    \entry{posmanik2020}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8da5c7f71a385560a6beeafbb99518b2}{%
+           family={Posmanik},
+           familyi={P\bibinitperiod},
+           given={Roy},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd6865a601a60f7dc7f49c2dc192c443}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Andrew\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=338ba79a89cec8eba2857bd48bef600a}{%
+           family={Labatut},
+           familyi={L\bibinitperiod},
+           given={Rodrigo\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b60ecb0b54a3ea0240d582f4d1bed52a}{%
+           family={Usack},
+           familyi={U\bibinitperiod},
+           given={Joseph\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1cc3f51b6e166810b99ae01744e8b69d}{%
+           family={Angenent},
+           familyi={A\bibinitperiod},
+           given={Largus\bibnamedelima T.},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6e299b1460058640cb6becc2f720d9a0}
+      \strng{fullhash}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{fullhashraw}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{bibnamehash}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{authorbibnamehash}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{authornamehash}{6e299b1460058640cb6becc2f720d9a0}
+      \strng{authorfullhash}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{authorfullhashraw}{c61d5045e1f9af082880c630a4faeca6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The biochemical methane potential (BMP) assay is a standard method for characterizing biomethane potential and anaerobic biodegradability organic waste streams. Therefore, the BMP protocol must be standardized to reliably compare these parameters for various substrates. Here, the effect of inoculum selection on biomethane potential was investigated through BMP tests using two different substrates and inocula obtained from four different anaerobic digesters. It was found that inocula in the form of granular sludge yielded overall higher biomethane potential and generally had faster kinetics than suspended biomass. Furthermore, acclimation of inocula to substrate appeared to have little effect on degradation rates, and co-inoculation (with both suspended and granular biomass) did not perform better than single inoculation (e.g., with suspended sludge alone). These results emphasize the role of granular sludge as an preferable inoculum for BMP assay.}
+      \field{issn}{0960-8524}
+      \field{journaltitle}{Bioresource Technology}
+      \field{title}{Granular sludge is a preferable inoculum for the biochemical methane potential assay for two complex substrates}
+      \field{volume}{309}
+      \field{year}{2020}
+      \field{pages}{123359}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.biortech.2020.123359
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0960852420306313
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0960852420306313
+      \endverb
+      \keyw{Anaerobic digestion,Biochemical methane potential,Dairy manure,Waste activated sludge,Regression model}
+    \endentry
+    \entry{scherhaufer2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=348f2fc275cc491f40ab658872738e50}{%
+           family={Scherhaufer},
+           familyi={S\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=157ab738d391c6e2370844210eb5a660}{%
+           family={Moates},
+           familyi={M\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52a3d3bc07d0a961d84f75a92601d400}{%
+           family={Hartikainen},
+           familyi={H\bibinitperiod},
+           given={Hanna},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6368f717ce7514c9e0b7534d2a969ab7}{%
+           family={Waldron},
+           familyi={W\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5081d77da841f48728cf46e2cc9d15ec}{%
+           family={Obersteiner},
+           familyi={O\bibinitperiod},
+           given={Gudrun},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ad9fa90d02fd603982ed7669da076250}
+      \strng{fullhash}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{fullhashraw}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{bibnamehash}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{authorbibnamehash}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{authornamehash}{ad9fa90d02fd603982ed7669da076250}
+      \strng{authorfullhash}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{authorfullhashraw}{b367c63ae9e2778f304b58e9506cee7a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Approximately 88 Million tonnes (Mt) of food is wasted in the European Union each year and the environmental impacts of these losses throughout the food supply chain are widely recognised. This study illustrates the impacts of food waste in relation to the total food utilised, including the impact from food waste management based on available data at the European level. The impacts are calculated for the Global Warming Potential, the Acidification Potential and the Eutrophication Potential using a bottom-up approach using more than 134 existing LCA studies on nine representative products (apple, tomato, potato, bread, milk, beef, pork, chicken, white fish). Results show that 186 Mt CO2-eq, 1.7 Mt SO2-eq. and 0.7 Mt PO4-eq can be attributed to food waste in Europe. This is 15 to 16\% of the total impact of the entire food supply chain. In general, the study confirmed that most of the environmental impacts are derived from the primary production step of the chain. That is why animal-containing food shows most of the food waste related impacts when it is extrapolated to total food waste even if cereals are higher in mass. Nearly three quarters of all food waste-related impacts for Global Warming originate from greenhouse gas emissions during the production step. Emissions by food processing activities contribute 6\%, retail and distribution 7\%, food consumption, 8\% and food disposal, 6\% to food waste related impacts. Even though the results are subject to certain data and scenario uncertainties, the study serves as a baseline assessment, based on current food waste data, and can be expanded as more knowledge on the type and amount of food waste becomes available. Nevertheless, the importance of food waste prevention is underlined by the results of this study, as most of the impacts originate from the production step. Through food waste prevention, those impacts can be avoided as less food needs to be produced.}
+      \field{issn}{0956-053X}
+      \field{journaltitle}{Waste Management}
+      \field{title}{Environmental impacts of food waste in {Europe}}
+      \field{volume}{77}
+      \field{year}{2018}
+      \field{pages}{98\bibrangedash 113}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.wasman.2018.04.038
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0956053X18302617
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0956053X18302617
+      \endverb
+      \keyw{Food waste,Life cycle assessment,Environmental impacts,Bottom-up approach}
+    \endentry
+    \entry{tomczak2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=070a173a05099d5e78a5bbc6b33edd06}{%
+           family={Tomczak},
+           familyi={T\bibinitperiod},
+           given={Wirginia},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a673277a200caab0e837843eeb1ff5d8}{%
+           family={Żak},
+           familyi={Ż\bibinitperiod},
+           given={Sławomir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22f9886406acc24790948c9f2f59edbb}{%
+           family={Kujawska},
+           familyi={K\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f07e78c72b80cd47fdfd0d6796193b55}{%
+           family={Szwast},
+           familyi={S\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3a356c0f8ee1eaa77d661f404f47ec33}
+      \strng{fullhash}{c62321e4205656652dba21764f89d491}
+      \strng{fullhashraw}{c62321e4205656652dba21764f89d491}
+      \strng{bibnamehash}{c62321e4205656652dba21764f89d491}
+      \strng{authorbibnamehash}{c62321e4205656652dba21764f89d491}
+      \strng{authornamehash}{3a356c0f8ee1eaa77d661f404f47ec33}
+      \strng{authorfullhash}{c62321e4205656652dba21764f89d491}
+      \strng{authorfullhashraw}{c62321e4205656652dba21764f89d491}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{One of the most interesting applications of crude glycerol (CG) is its use for biogas production via the anaerobic co-digestion (AcoD) process. The main aim of the current study was to provide a comprehensive review on the performance of the AcoD of CG mixed with various substrates. For this purpose, analyses were performed for studies available in the literature wherein one-stage experiments were conducted. To the best of the authors’ knowledge, the present study is the first one which demonstrates an analysis of the main parameters of CG and substrates (e.g., animal manure, sewage sludge, cattle manure and food waste) used for AcoD. Moreover, a detailed analysis of the impact of selected parameters on AcoD performance was carried out. It is demonstrated that the values of key parameters characterizing the CG used for AcoD were within wide ranges. This can be explained by the fact that the composition of CG depends on many factors; for instance, these include the source of oil used for biodiesel production, processing technology, the ratio of reactants, the type of catalyst and the procedure applied. Moreover, performing a literature review allowed us to demonstrate that adding CG to feedstock caused the enhancement of process performance compared to results obtained for mono-digestion. Additionally, it was shown that, in general, increasing the concentration of CG in feedstock led to improvement of the biogas yield; however, a potential inhibitory effect should be considered. Analysis of data available in the literature allowed us to indicate that for most of the experiments performed, a methane (CH4) content in biogas higher than 60\% was obtained for CG content in feedstock up to 8\% v/v. In addition, it is demonstrated that in order to evaluate the performance of AcoD performed under thermophilic conditions, more studies are required. Finally, it should be pointed out that the present study provides considerable insight into the management of CG.}
+      \field{issn}{1420-3049}
+      \field{journaltitle}{Molecules}
+      \field{number}{17}
+      \field{title}{The Use of Crude Glycerol as a Co-Substrate for Anaerobic Digestion}
+      \field{volume}{30}
+      \field{year}{2025}
+      \field{pages}{3655}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/molecules30173655
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1420-3049/30/17/3655
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1420-3049/30/17/3655
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{albizzati2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c607c594e2a847c8c6311535c1745407}{%
+           family={Albizzati},
+           familyi={A\bibinitperiod},
+           given={Paola\bibnamedelima Federica},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1221ec37346a3e297896e6cb49135d94}{%
+           family={Tonini},
+           familyi={T\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3aaadd06ebf62ffb602b16cc568482f}{%
+           family={Astrup},
+           familyi={A\bibinitperiod},
+           given={Thomas\bibnamedelima Fruergaard},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dc3173cd8cd0111ca565934b9e2f423d}
+      \strng{fullhash}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{fullhashraw}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{bibnamehash}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{authorbibnamehash}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{authornamehash}{dc3173cd8cd0111ca565934b9e2f423d}
+      \strng{authorfullhash}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \strng{authorfullhashraw}{8ed547d72edc6f8d0a5be6e2eafd1fa4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In an endeavor to make Europe carbon-neutral, and to foster a circular economy, improving food waste management has been identified by the European Union (EU) as a key factor. In this study, we consider 21 pathways, covering: (i) prevention; (ii) reuse for both human consumption and animal feed; (iii) material recycling as an input into the food and chemical industries; (iv) nutrient recycling; and (v) energy/fuel recovery. To include all types of impact, a sustainability assessment, encompassing environmental, economic, and social pillars, is performed and complemented with societal life cycle costing. The results indicate that after prevention, reuse for human consumption and animal feed is the most preferred option, and, in most cases, nutrient recycling and energy recovery are favored over material recycling for chemical production. While highlighting that the food waste management hierarchy should be supported with quantitative sustainability analyses, the findings also illustrate that biochemical pathways should be improved to be competitive despite the fact that food waste valorization has the potential to satisfy the EU demand for the chemicals investigated. Yet, the results clearly show that the potential benefits of improving emerging technologies would still not eclipse the benefits related to food waste prevention and its redistribution.}
+      \field{journaltitle}{Environmental Science \& Technology}
+      \field{month}{11}
+      \field{number}{23}
+      \field{title}{A Quantitative Sustainability Assessment of Food Waste Management in the {European Union}}
+      \field{volume}{55}
+      \field{year}{2021}
+      \field{pages}{16099\bibrangedash 16110}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1021/acs.est.1c03940
+      \endverb
+    \endentry
+    \entry{anand2012}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2bbb677e91f597ec263987a91e6bc919}{%
+           family={Anand},
+           familyi={A\bibinitperiod},
+           given={Pinki},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c70679aa60ec164881d2f047e976b8b}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={Rajendra\bibnamedelima Kumar},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{fullhash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{fullhashraw}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{bibnamehash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{authorbibnamehash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{authornamehash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{authorfullhash}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \strng{authorfullhashraw}{16ae8efc042c8533f3bcb8d3f7b212de}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The rapidly growing biodiesel industry has created a scenario, where it is both important and challenging to deal with the enormous amount of crude glycerol generated as an inherent by-product. With every 100 gallons of biodiesel produced, 5--10 gallons of the crude glycerol is left behind containing several impurities which makes its disposal difficult. The objective of the present investigation was to evaluate the impact of biodiesel-derived crude glycerol upon microbial growth and production of 1,3-propanediol by Citrobacter freundii. Five different grades of crude glycerol (obtained from biodiesel preparation using jatropha, soybean, sunflower, rice bran and linseed oils) were used. Crude glycerol caused significant inhibition of microbial growth and subsequently 1,3-propanediol production as compared to pure glycerol. Therefore, a process was developed for the treatment of crude glycerol using solvents before fermentation wherein four different non-polar solvents were examined yielding different grades of pretreated glycerol. Subsequently, the potential toxic effects of pretreated glycerol on the growth and 1,3-propanediol production by C. freundii was evaluated. In case of petroleum ether-treated crude glycerol obtained from jatropha \& linseed and hexane-treated crude glycerol obtained from rice bran, the yields obtained were comparable to the pure glycerol. Similarly, soybean-derived glycerol gave comparable results after treatment with either hexane or petroleum ether.}
+      \field{issn}{1871-6784}
+      \field{journaltitle}{New Biotechnology}
+      \field{note}{Industrial Biotechnology}
+      \field{number}{2}
+      \field{title}{A comparative study of solvent-assisted pretreatment of biodiesel derived crude glycerol on growth and 1,3-propanediol production from {Citrobacter freundii}}
+      \field{volume}{29}
+      \field{year}{2012}
+      \field{pages}{199\bibrangedash 205}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.nbt.2011.05.010
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S187167841100135X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S187167841100135X
+      \endverb
+    \endentry
+    \entry{attarbachi2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cbc1a5d957d98a9749f111ad045a35c7}{%
+           family={Attarbachi},
+           familyi={A\bibinitperiod},
+           given={Taha},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8282abe518e2864079ce6b889b4021c3}{%
+           family={Kingsley},
+           familyi={K\bibinitperiod},
+           given={Martin\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b2b34477c93097182ec07454f2429fd}{%
+           family={Spallina},
+           familyi={S\bibinitperiod},
+           given={Vincenzo},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8673109641c304f9abf7420220b4053f}
+      \strng{fullhash}{0f2b02916070e15605effb3b26704f22}
+      \strng{fullhashraw}{0f2b02916070e15605effb3b26704f22}
+      \strng{bibnamehash}{0f2b02916070e15605effb3b26704f22}
+      \strng{authorbibnamehash}{0f2b02916070e15605effb3b26704f22}
+      \strng{authornamehash}{8673109641c304f9abf7420220b4053f}
+      \strng{authorfullhash}{0f2b02916070e15605effb3b26704f22}
+      \strng{authorfullhashraw}{0f2b02916070e15605effb3b26704f22}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The increasing effort of the global community to reduce dependency on fossil fuels led to an increase in the production of biodiesel and therefore the oversupply of crude glycerol. Different steps are necessary to ensure this oversupply of highly impure, waste-based crude glycerol (approximately 680,000 tonnes by 2024) can be made suitable for applications. This review paper aims to give an overview of the recent developments of the global glycerol market and discusses advanced crude glycerol purification technologies (as compared to physio-chemical treatments). The market overview involves information on the relevance of the global glycerol market and the different grades of glycerol which are produced. Additionally, different application areas for glycerol are detailed; including current industrial solutions, challenges, and outlooks. The second part reports newly proposed crude glycerol purification technologies from industry and recent research since 2014, their advantages and disadvantages, and feasibility in terms of industrial implementation at scale. The results of this review suggest that pressure-, thermally- and electrochemically-driven membrane-based separation technologies could solve the issue of expensive large scale vacuum distillation columns lowering capital and operating expenditures reaching > 99 \% of glycerol purity. However, the increase of lower quality glycerol generated resulting from 2nd generation bio-diesel plants presents challenges due to the increasing ash and matter organic non-glycerol (MONG) impurities (due to the use of waste-based feedstocks in biodiesel production). As result, hybrid solutions may be needed since advanced purification technologies cannot be used as stand-alone solutions but need to be accompanied by a proper pre-treatment.}
+      \field{issn}{0016-2361}
+      \field{journaltitle}{Fuel}
+      \field{title}{New trends on crude glycerol purification: A review}
+      \field{volume}{340}
+      \field{year}{2023}
+      \field{pages}{127485}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.fuel.2023.127485
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0016236123000984
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0016236123000984
+      \endverb
+      \keyw{Crude glycerol,Purification,Glycerol market,Biodiesel,Pre-treatment}
+    \endentry
+    \entry{apha2017}{book}{}{}
+      \name{editor}{4}{}{%
+        {{un=0,uniquepart=base,hash=7bcea4e0c11fe2d68c81bcb2141cc534}{%
+           family={Baird},
+           familyi={B\bibinitperiod},
+           given={Roger\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae1b72ec73a5738c68eab64c8bd947b4}{%
+           family={Eaton},
+           familyi={E\bibinitperiod},
+           given={Andrew\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9480370131f2cf5600fb143e78d5420d}{%
+           family={Rice},
+           familyi={R\bibinitperiod},
+           given={Eugene\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3642d6052c7f19c6e5a7bb59bbb2d4f8}{%
+           family={Bridgewater},
+           familyi={B\bibinitperiod},
+           given={Laura\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Public Health Association, American Water Works Association, Water Environment Federation}%
+      }
+      \strng{namehash}{99091bca4c8228292cb7782c8c4be5d6}
+      \strng{fullhash}{982770b95eff4e628e352df65d4cfc77}
+      \strng{fullhashraw}{982770b95eff4e628e352df65d4cfc77}
+      \strng{bibnamehash}{982770b95eff4e628e352df65d4cfc77}
+      \strng{editorbibnamehash}{982770b95eff4e628e352df65d4cfc77}
+      \strng{editornamehash}{99091bca4c8228292cb7782c8c4be5d6}
+      \strng{editorfullhash}{982770b95eff4e628e352df65d4cfc77}
+      \strng{editorfullhashraw}{982770b95eff4e628e352df65d4cfc77}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{23rd}
+      \field{isbn}{978-0-87553-287-5}
+      \field{issn}{55-1979}
+      \field{title}{Standard Methods for the Examination of Water and Wastewater}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.2105/SMWW.2882.002
+      \endverb
+    \endentry
+    \entry{choorit2007}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=56d9ed0b0b39904fbdd335ea3448f86a}{%
+           family={Choorit},
+           familyi={C\bibinitperiod},
+           given={Wanna},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5dfb9890fa9b886076a067756cb0e805}{%
+           family={Wisarnwan},
+           familyi={W\bibinitperiod},
+           given={Pornpan},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {scielocl}%
+      }
+      \strng{namehash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{fullhash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{fullhashraw}{9882216cb05f2da7303e05c9e492502c}
+      \strng{bibnamehash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{authorbibnamehash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{authornamehash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{authorfullhash}{9882216cb05f2da7303e05c9e492502c}
+      \strng{authorfullhashraw}{9882216cb05f2da7303e05c9e492502c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0717-3458}
+      \field{journaltitle}{Electronic Journal of Biotechnology}
+      \field{month}{07}
+      \field{title}{Effect of temperature on the anaerobic digestion of palm oil mill effluent}
+      \field{volume}{10}
+      \field{year}{2007}
+      \field{pages}{376\bibrangedash 385}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.2225/vol10-issue3-fulltext-7
+      \endverb
+      \verb{urlraw}
+      \verb http://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0717-34582007000300005&nrm=iso
+      \endverb
+      \verb{url}
+      \verb http://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0717-34582007000300005&nrm=iso
+      \endverb
+    \endentry
+    \entry{degueurce2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=f5061fddb4d766ff13fdaafe2b1e62e0}{%
+           family={Degueurce},
+           familyi={D\bibinitperiod},
+           given={Axelle},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f45703000a88bb938ce8ba86dd6b7beb}{%
+           family={Picard},
+           familyi={P\bibinitperiod},
+           given={Sylvie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc9f327bf5c599d9c2be2f89ff23cb97}{%
+           family={Peu},
+           familyi={P\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4ae230622838867c32f51d945174909}{%
+           family={Trémier},
+           familyi={T\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{41e0c0f7176bd5f7a33f4a95e90f9552}
+      \strng{fullhash}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{fullhashraw}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{bibnamehash}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{authorbibnamehash}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{authornamehash}{41e0c0f7176bd5f7a33f4a95e90f9552}
+      \strng{authorfullhash}{15e02b2e2e5560a70f260394e61b51a6}
+      \strng{authorfullhashraw}{15e02b2e2e5560a70f260394e61b51a6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Food waste (FW) storage influences its physical--chemical characteristics and anaerobic digestion (AD) performance. In this work we present the results of two weeks long experiment where two types of FW were stored in dedicated cells (10 L and 300 L). Air was evenly flushed on the top surface of the substrates and then analyzed to identify and quantify possible gaseous emissions. Solid and liquid fractions were also periodically sampled and analyzed for total solid, volatile solid, ammonia and VFA contents. Results showed that storage initiated a hydrolysis process that modified the physical structure of FW, leading to the production of gases (CH4, CO2 and ethanol) and a partly liquefied FW. Depending on experimental conditions, a fraction between 61 and 70\% of the initial substrate remained solid at the end of the storage period. In the liquid phase, a large proportion of lactic acid was measured with maximum contents of 5.9 and 14.8 g/kgvs for the small-scale experiments with two different FW types and 3.0 g/kgvs for the large-scale experiment, leading to inhibition of the biomethane potential (BMP) tests. In conclusion, this work showed that when storage of FW is needed before AD, the optimal time recommended to keep a high methane yield is one week.}
+      \field{issn}{1877-265X}
+      \field{journaltitle}{Waste and Biomass Valorization}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{Storage of Food Waste: Variations of Physical--Chemical Characteristics and Consequences on Biomethane Potential}
+      \field{volume}{11}
+      \field{year}{2020}
+      \field{pages}{2441\bibrangedash 2454}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/s12649-018-00570-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s12649-018-00570-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s12649-018-00570-0
+      \endverb
+    \endentry
+    \entry{garlapati2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3ee4a878fa60c67a4ea3addfc7da7f53}{%
+           family={Garlapati},
+           familyi={G\bibinitperiod},
+           given={Vijay\bibnamedelima Kumar},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0a2b29a423994821103f93b57cebf8d}{%
+           family={Shankar},
+           familyi={S\bibinitperiod},
+           given={Uttara},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=732b5b70aabf55959c4b9ba91f3c9646}{%
+           family={Budhiraja},
+           familyi={B\bibinitperiod},
+           given={Amrita},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{febf7b5fea0a9fb4e962dc22d162e852}
+      \strng{fullhash}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{fullhashraw}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{bibnamehash}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{authorbibnamehash}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{authornamehash}{febf7b5fea0a9fb4e962dc22d162e852}
+      \strng{authorfullhash}{6fe67c8d30c8efde2962afef930636c0}
+      \strng{authorfullhashraw}{6fe67c8d30c8efde2962afef930636c0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Crude glycerol that is produced as the by-product from biodiesel, has to be effectively utilized to contribute to the viability of biodiesel. Crude glycerol in large amounts can pose a threat to the environment. Therefore, there is a need to convert this crude glycerol into valued added products using biotechnological processes, which brings new revenue to biodiesel producers. Crude glycerol can serve as a feedstock for biopolymers, poly unsaturated fatty acids, ethanol, hydrogen and n-butanol production and as a raw material for different value added industrial products. Hence, in this review we have presented different bioconversion technologies of glycerol to value added industrial products.}
+      \field{journaltitle}{Biotechnology Reports}
+      \field{month}{3}
+      \field{title}{Bioconversion technologies of crude glycerol to value added industrial products}
+      \field{volume}{9}
+      \field{year}{2016}
+      \field{pages}{9\bibrangedash 14}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.btre.2015.11.002
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.btre.2015.11.002
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.btre.2015.11.002
+      \endverb
+    \endentry
+    \entry{gebreegziabher2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e4fdd7be69f43dc29fc15820fd0ef393}{%
+           family={Gebreegziabher},
+           familyi={G\bibinitperiod},
+           given={Blen\bibnamedelima W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cdaec0d29ec9c402c8cba8597ed7b930}{%
+           family={Dubale},
+           familyi={D\bibinitperiod},
+           given={Amare\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50b8d1264f955ad5a71478c3e94db75c}{%
+           family={Adaramola},
+           familyi={A\bibinitperiod},
+           given={Muyiwa\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=daa2e2fb91b2cc0e7e393b0bfb3ac862}{%
+           family={Morken},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{18620bb60c5a1a2adaad28b5837f9aa4}
+      \strng{fullhash}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{fullhashraw}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{bibnamehash}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{authorbibnamehash}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{authornamehash}{18620bb60c5a1a2adaad28b5837f9aa4}
+      \strng{authorfullhash}{c29a49befde383790c94e2ea8dcb33c2}
+      \strng{authorfullhashraw}{c29a49befde383790c94e2ea8dcb33c2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The energy crisis, climate change, and insufficient waste management practices are compelling factors driving research into sustainable waste-to-resource technologies. Anaerobic digestion, aiming to recover energy and nutrients from organic waste, aligns with the circular economy's principles. This paper provides a comprehensive overview of utilizing biodiesel byproducts for biogas production, exploring techniques for enhancing biogas yield and addressing associated challenges. Assessing the potential of biodiesel byproducts highlights their environmental sustainability and economic viability for biogas production. Non-edible seed cake, rich in nutrients, shows promise for significant biogas yield. Additionally, crude glycerol, easily biodegradable, is identified as a promising co-digester, aiding in digesting recalcitrant substrates. Empirical data reveals remarkable methane yield boosts, ranging from 14 to 226\% when co-digesting with crude glycerol. Moreover, the resulting digestate enhances soil fertility, promoting healthier plant growth and productivity. Challenges in anaerobic digestion, such as substrate C/N ratio imbalance and recalcitrance, necessitate strategies like substrate pretreatment and co-digestion with compatible materials to optimize biogas yield. Furthermore, advancements in anaerobic digestion technologies are crucial for effectively converting biodiesel wastes into biogas. Additionally, interdisciplinary investigations, including techno-economic analysis, lifecycle assessment, and sensitivity analysis, are vital to enhance and validate the feasibility of anaerobic digestion for biodiesel byproducts. This review serves as a valuable resource for future utilization of biodiesel byproducts for biogas production.}
+      \field{issn}{1939-1242}
+      \field{journaltitle}{BioEnergy Research}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Advancing Anaerobic Digestion of Biodiesel Byproducts: A Comprehensive Review}
+      \field{volume}{18}
+      \field{year}{2025}
+      \field{pages}{15}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s12155-025-10820-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s12155-025-10820-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s12155-025-10820-4
+      \endverb
+    \endentry
+    \entry{li2011}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=237ae1e416433f055840fec0d2b6bc96}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yebo},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4efca70cb63eb5540297e1f3a1ee1420}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Stephen\bibnamedelima Y.},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e7c06d9972892fab23230c9ef67b3fe}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jiying},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51633434264d24af57ba4c38a71b842b}
+      \strng{fullhash}{4241e3881e19e0d72cc941117c617032}
+      \strng{fullhashraw}{4241e3881e19e0d72cc941117c617032}
+      \strng{bibnamehash}{4241e3881e19e0d72cc941117c617032}
+      \strng{authorbibnamehash}{4241e3881e19e0d72cc941117c617032}
+      \strng{authornamehash}{51633434264d24af57ba4c38a71b842b}
+      \strng{authorfullhash}{4241e3881e19e0d72cc941117c617032}
+      \strng{authorfullhashraw}{4241e3881e19e0d72cc941117c617032}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Solid-state anaerobic digestion (SS-AD) generally occurs at solid concentrations higher than 15\%. In contrast, liquid anaerobic digestion (AD) handles feedstocks with solid concentrations between 0.5\% and 15\%. Animal manure, sewage sludge, and food waste are generally treated by liquid AD, while organic fractions of municipal solid waste (OFMSW) and lignocellulosic biomass such as crop residues and energy crops can be processed through SS-AD. Some advantages of SS-AD include smaller reactor capacity requirements, less energy used for heating, and no processing energy needed for stirring. Due to its lower water content, the digestate of SS-AD is much easier to handle than the effluent of liquid AD. However, SS-AD systems also have disadvantages such as larger amounts of required inocula and much longer retention time. The principles and applications of the SS-AD process are reviewed in this paper. The variation in biogas production yields of different feedstocks is discussed as well as the need for pretreatment of lignocellulosic biomass to enhance biogas production. The effects of major operational parameters, including C/N ratio, solids content, temperature, and inoculation on the performance of SS-AD are summarized. While an increase in operating temperature can improve both the biogas yield and the production efficiency, other practices such as using AD digestate or leachate as an inoculant or decreasing the solid content, may increase the biogas yield but have negative impact on production efficiency. Different reactor configurations used in current commercial scale SS-AD systems and the impact of economics on system selection are also discussed.}
+      \field{issn}{1364-0321}
+      \field{journaltitle}{Renewable and Sustainable Energy Reviews}
+      \field{number}{1}
+      \field{title}{Solid-state anaerobic digestion for methane production from organic waste}
+      \field{volume}{15}
+      \field{year}{2011}
+      \field{pages}{821\bibrangedash 826}
+      \range{pages}{6}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.rser.2010.07.042
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1364032110002224
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1364032110002224
+      \endverb
+      \keyw{Anaerobic digestion,Solid fermentation,Dry digester,Biomass,Biogas}
+    \endentry
+    \entry{posmanik2020}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8da5c7f71a385560a6beeafbb99518b2}{%
+           family={Posmanik},
+           familyi={P\bibinitperiod},
+           given={Roy},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd6865a601a60f7dc7f49c2dc192c443}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Andrew\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=338ba79a89cec8eba2857bd48bef600a}{%
+           family={Labatut},
+           familyi={L\bibinitperiod},
+           given={Rodrigo\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b60ecb0b54a3ea0240d582f4d1bed52a}{%
+           family={Usack},
+           familyi={U\bibinitperiod},
+           given={Joseph\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1cc3f51b6e166810b99ae01744e8b69d}{%
+           family={Angenent},
+           familyi={A\bibinitperiod},
+           given={Largus\bibnamedelima T.},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6e299b1460058640cb6becc2f720d9a0}
+      \strng{fullhash}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{fullhashraw}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{bibnamehash}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{authorbibnamehash}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{authornamehash}{6e299b1460058640cb6becc2f720d9a0}
+      \strng{authorfullhash}{c61d5045e1f9af082880c630a4faeca6}
+      \strng{authorfullhashraw}{c61d5045e1f9af082880c630a4faeca6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The biochemical methane potential (BMP) assay is a standard method for characterizing biomethane potential and anaerobic biodegradability organic waste streams. Therefore, the BMP protocol must be standardized to reliably compare these parameters for various substrates. Here, the effect of inoculum selection on biomethane potential was investigated through BMP tests using two different substrates and inocula obtained from four different anaerobic digesters. It was found that inocula in the form of granular sludge yielded overall higher biomethane potential and generally had faster kinetics than suspended biomass. Furthermore, acclimation of inocula to substrate appeared to have little effect on degradation rates, and co-inoculation (with both suspended and granular biomass) did not perform better than single inoculation (e.g., with suspended sludge alone). These results emphasize the role of granular sludge as an preferable inoculum for BMP assay.}
+      \field{issn}{0960-8524}
+      \field{journaltitle}{Bioresource Technology}
+      \field{title}{Granular sludge is a preferable inoculum for the biochemical methane potential assay for two complex substrates}
+      \field{volume}{309}
+      \field{year}{2020}
+      \field{pages}{123359}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.biortech.2020.123359
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0960852420306313
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0960852420306313
+      \endverb
+      \keyw{Anaerobic digestion,Biochemical methane potential,Dairy manure,Waste activated sludge,Regression model}
+    \endentry
+    \entry{scherhaufer2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=348f2fc275cc491f40ab658872738e50}{%
+           family={Scherhaufer},
+           familyi={S\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=157ab738d391c6e2370844210eb5a660}{%
+           family={Moates},
+           familyi={M\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52a3d3bc07d0a961d84f75a92601d400}{%
+           family={Hartikainen},
+           familyi={H\bibinitperiod},
+           given={Hanna},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6368f717ce7514c9e0b7534d2a969ab7}{%
+           family={Waldron},
+           familyi={W\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5081d77da841f48728cf46e2cc9d15ec}{%
+           family={Obersteiner},
+           familyi={O\bibinitperiod},
+           given={Gudrun},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ad9fa90d02fd603982ed7669da076250}
+      \strng{fullhash}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{fullhashraw}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{bibnamehash}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{authorbibnamehash}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{authornamehash}{ad9fa90d02fd603982ed7669da076250}
+      \strng{authorfullhash}{b367c63ae9e2778f304b58e9506cee7a}
+      \strng{authorfullhashraw}{b367c63ae9e2778f304b58e9506cee7a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Approximately 88 Million tonnes (Mt) of food is wasted in the European Union each year and the environmental impacts of these losses throughout the food supply chain are widely recognised. This study illustrates the impacts of food waste in relation to the total food utilised, including the impact from food waste management based on available data at the European level. The impacts are calculated for the Global Warming Potential, the Acidification Potential and the Eutrophication Potential using a bottom-up approach using more than 134 existing LCA studies on nine representative products (apple, tomato, potato, bread, milk, beef, pork, chicken, white fish). Results show that 186 Mt CO2-eq, 1.7 Mt SO2-eq. and 0.7 Mt PO4-eq can be attributed to food waste in Europe. This is 15 to 16\% of the total impact of the entire food supply chain. In general, the study confirmed that most of the environmental impacts are derived from the primary production step of the chain. That is why animal-containing food shows most of the food waste related impacts when it is extrapolated to total food waste even if cereals are higher in mass. Nearly three quarters of all food waste-related impacts for Global Warming originate from greenhouse gas emissions during the production step. Emissions by food processing activities contribute 6\%, retail and distribution 7\%, food consumption, 8\% and food disposal, 6\% to food waste related impacts. Even though the results are subject to certain data and scenario uncertainties, the study serves as a baseline assessment, based on current food waste data, and can be expanded as more knowledge on the type and amount of food waste becomes available. Nevertheless, the importance of food waste prevention is underlined by the results of this study, as most of the impacts originate from the production step. Through food waste prevention, those impacts can be avoided as less food needs to be produced.}
+      \field{issn}{0956-053X}
+      \field{journaltitle}{Waste Management}
+      \field{title}{Environmental impacts of food waste in {Europe}}
+      \field{volume}{77}
+      \field{year}{2018}
+      \field{pages}{98\bibrangedash 113}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.wasman.2018.04.038
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0956053X18302617
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0956053X18302617
+      \endverb
+      \keyw{Food waste,Life cycle assessment,Environmental impacts,Bottom-up approach}
+    \endentry
+    \entry{tomczak2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=070a173a05099d5e78a5bbc6b33edd06}{%
+           family={Tomczak},
+           familyi={T\bibinitperiod},
+           given={Wirginia},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a673277a200caab0e837843eeb1ff5d8}{%
+           family={Żak},
+           familyi={Ż\bibinitperiod},
+           given={Sławomir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22f9886406acc24790948c9f2f59edbb}{%
+           family={Kujawska},
+           familyi={K\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f07e78c72b80cd47fdfd0d6796193b55}{%
+           family={Szwast},
+           familyi={S\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3a356c0f8ee1eaa77d661f404f47ec33}
+      \strng{fullhash}{c62321e4205656652dba21764f89d491}
+      \strng{fullhashraw}{c62321e4205656652dba21764f89d491}
+      \strng{bibnamehash}{c62321e4205656652dba21764f89d491}
+      \strng{authorbibnamehash}{c62321e4205656652dba21764f89d491}
+      \strng{authornamehash}{3a356c0f8ee1eaa77d661f404f47ec33}
+      \strng{authorfullhash}{c62321e4205656652dba21764f89d491}
+      \strng{authorfullhashraw}{c62321e4205656652dba21764f89d491}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{One of the most interesting applications of crude glycerol (CG) is its use for biogas production via the anaerobic co-digestion (AcoD) process. The main aim of the current study was to provide a comprehensive review on the performance of the AcoD of CG mixed with various substrates. For this purpose, analyses were performed for studies available in the literature wherein one-stage experiments were conducted. To the best of the authors’ knowledge, the present study is the first one which demonstrates an analysis of the main parameters of CG and substrates (e.g., animal manure, sewage sludge, cattle manure and food waste) used for AcoD. Moreover, a detailed analysis of the impact of selected parameters on AcoD performance was carried out. It is demonstrated that the values of key parameters characterizing the CG used for AcoD were within wide ranges. This can be explained by the fact that the composition of CG depends on many factors; for instance, these include the source of oil used for biodiesel production, processing technology, the ratio of reactants, the type of catalyst and the procedure applied. Moreover, performing a literature review allowed us to demonstrate that adding CG to feedstock caused the enhancement of process performance compared to results obtained for mono-digestion. Additionally, it was shown that, in general, increasing the concentration of CG in feedstock led to improvement of the biogas yield; however, a potential inhibitory effect should be considered. Analysis of data available in the literature allowed us to indicate that for most of the experiments performed, a methane (CH4) content in biogas higher than 60\% was obtained for CG content in feedstock up to 8\% v/v. In addition, it is demonstrated that in order to evaluate the performance of AcoD performed under thermophilic conditions, more studies are required. Finally, it should be pointed out that the present study provides considerable insight into the management of CG.}
+      \field{issn}{1420-3049}
+      \field{journaltitle}{Molecules}
+      \field{number}{17}
+      \field{title}{The Use of Crude Glycerol as a Co-Substrate for Anaerobic Digestion}
+      \field{volume}{30}
+      \field{year}{2025}
+      \field{pages}{3655}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/molecules30173655
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1420-3049/30/17/3655
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1420-3049/30/17/3655
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,67 @@
+% preamble.sty
+% Formatting for IPB thesis using LuaLaTeX + Times New Roman
+\ProvidesPackage{preamble}
+
+% ----- Graphics (for logos, figures) -----
+\usepackage{graphicx}
+
+% ----- Font: True Times New Roman (requires LuaLaTeX) -----
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+% ----- Page Layout (3 cm margins) -----
+\usepackage[a4paper,
+            top=2.5cm, bottom=2.5cm,
+            left=3cm, right=3cm,
+            includeheadfoot,
+            headheight=14.5pt,
+            headsep=0pt,        % body text starts ~3.01 cm from top
+            footskip=0.5cm,     % body text ends 3.0 cm from bottom
+            ]{geometry}
+\setlength{\headheight}{14.5pt}
+\setlength{\headsep}{0.8cm}       % ~2.5 cm total header space
+\setlength{\footskip}{0.8cm}      % ~2.5 cm total footer space
+
+% ----- Line Spacing -----
+\usepackage{setspace}
+\onehalfspacing                   % 1.5 line spacing
+
+% ----- Language -----
+\usepackage[english]{babel}
+\usepackage{csquotes}
+
+% ----- Headers & Footers -----
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% ----- Bibliography (APA style, uses biber) -----
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+% ----- Math & Tables -----
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage[labelfont=bf]{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}
+
+% ----- Microtype for better character protrusion (LuaLaTeX compatible) -----
+\usepackage{microtype}
+
+% ----- Hyperlinks (load last) -----
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor  = black,
+    citecolor  = black,
+    urlcolor   = blue,
+}
