@@ -14,6 +14,8 @@
 
 01/06/26 pH 7.65, alcalinidade 8145, AGV 3594, AGV/alc 0.44
 
-05/06/26 pH 7.62, alcalinidade 7050, AGV 4140, AGV/alc 0.58 - mudou de 0.1N para 1N a base e acido usados // feito 250 mL alimentacao com GL-BIO (~=2.89 mL) GL-PURO (~=1.44 mL) RA (~=10.88 g, porem com uma diluicao desconhecida, provavelmente similar a ~=5.44 g), TS% (~=2), COV (0.0256) // nao foi adicionado bicarbonato para deixar o reator acidificar que esta muito basico
+05/06/26 pH 7.62, alcalinidade 7050, AGV 4140, AGV/alc 0.58 - mudou de 0.1N para 1N a base e acido usados // feito 250 mL alimentacao com GL-BIO (~=2.89 mL) GL-PURO (~=1.44 mL) RA (~=10.88 g, porem retirado o sobrenadante sem  misturar, provavelmente similar a ~=5.44 g), TS% (~=2), COV (0.0256) // nao foi adicionado bicarbonato para deixar o reator acidificar que esta muito basico
 
 08/06/26 pH 7.56, alcalinidade 7000, AGV 4740, AGV/alc 0.67 // o reator foi alimentado manualmente mais ~=10 mL (bomba ficou ligada ~= 1:20 min)
+
+12/06/26 pH 7.58, alcalinidade 6700, AGV 5100, AGV/alc 0.76 // alimentacao feita com RA (~= 31.12 g), GL-BIO (~= 44 mL), GL-PURO (~=29 mL) COV (~= 1.4) TS% (~= 10) // bicarbonato nao foi adicionada para permitir a acidificacao do sistema

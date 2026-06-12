@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.5.1)  10 MAY 2026 20:53
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.1)  10 JUN 2026 16:36
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1241,14 +1241,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30794 strings out of 476076
+ 30796 strings out of 476076
  125081,1977958 words of node,token memory allocated
- 746 words of node memory still in use:
+ 758 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 3 glyph, 45 attribute, 66 glue_spec, 23 attribute_list, 1 write, 5 pdf_actio
+rn, 3 glyph, 49 attribute, 66 glue_spec, 25 attribute_list, 1 write, 5 pdf_actio
 n nodes
    avail lists: 2:1089,3:445,4:140,5:170,6:72,7:6937,8:62,9:355,10:16,11:620
- 52555 multiletter control sequences out of 65536+600000
+ 52556 multiletter control sequences out of 65536+600000
  58 fonts using 6864471 bytes
  88i,12n,105p,2055b,5048s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/fonts/TTF/Times.TTF></usr/share/fonts/TTF/Timesi.TTF></usr/share/fon
@@ -1257,10 +1257,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb>
-Output written on main.pdf (17 pages, 253702 bytes).
+Output written on main.pdf (17 pages, 256088 bytes).
 
-PDF statistics: 301 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 1048576)
+PDF statistics: 303 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 1048576)
  153 words of extra memory for PDF output out of 10000 (max. 100000000)
 

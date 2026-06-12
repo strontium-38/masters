@@ -9,17 +9,17 @@ Food waste was collected from the canteen at the Instituto Politécnico de Braga
 \section{Biodiesel Glycerol Collection}
 \label{sec:gly_col}
 
-A 6 L bottle of crude biodiesel glycerol, obtained from previous biodiesel production experiments at IPB, was provided for this study. Crude glycerol from biodiesel typically contains impurities such as methanol, soaps, and catalyst residues \parencite{attarbachi2023}, which may influence its behaviour in anaerobic digestion.
+A 6 L bottle of crude biodiesel glycerol, obtained from previous biodiesel production experiments at IPB, was provided for this study. Crude glycerol from biodiesel typically contains impurities such as catalyst residues \parencite{attarbachi2023}, which may influence its behaviour in anaerobic digestion.
 
 \section{Inoculum Collection}
 \label{sec:ino_col}
 
-The anaerobic inoculum consisted of granular sludge collected from Águas do Norte wastewater treatment plant in Bragança. This ensured the availability of an active microbial population suitable for anaerobic digestion \parencite{posmanik2020}.
+The anaerobic inoculum consisted of sludge collected from Águas do Norte wastewater treatment plant in Bragança. This ensured the availability of a microbial population for the anaerobic digestion \parencite{posmanik2020}.
 
 \section{Physical and Chemical Characterisation}
 \label{sec:phy_chem_char}
 
-The total solids (TS), volatile solids (VS), and density were determined for the food waste, biodiesel glycerol, and inoculum. Total organic carbon (TOC) and total nitrogen (TN) were determined for the food waste and biodiesel glycerol.
+The total solids (TS), volatile solids (VS), fixed solids (FS), and density were determined for the food waste, biodiesel glycerol, and inoculum. Total organic carbon (TOC) and total nitrogen (TN) were determined for the food waste and biodiesel glycerol.
 
 \subsection{TS and VS Determination}
 \label{subsec:ts_vs_determination}
@@ -28,18 +28,22 @@ TS and VS were measured using a sequential gravimetric method based on Standard 
 
 Initially, porcelain crucibles were placed in a muffle furnace at 550 °C for 1 h. For cooling, they were transferred to an oven at 105 °C for 15 min and then moved to a desiccator until they reached room temperature; their empty masses were recorded. For each material, a sample was placed into three crucibles and the wet mass was measured. The crucibles were then dried in an oven at 105 °C for 2 h (biodiesel glycerol required 6–8 h to reach constant mass). After drying, the crucibles were cooled in a desiccator to room temperature and weighed again to determine TS.
 
-The same crucibles were subsequently placed in a muffle furnace at 550 °C for 30 min. Afterwards they were transferred to an oven at 105 °C for 15 min and then moved to a desiccator until they reached room temperature; the final masses were recorded to calculate VS.
+The same crucibles were subsequently placed in a muffle furnace at 550 °C for 50 min. Afterwards they were transferred to an oven at 105 °C for 15 min and then moved to a desiccator until they reached room temperature; the final masses were recorded to calculate VS.
 
-TS and VS were calculated as follows:
+TS, VS and FS were calculated as follows:
 \begin{equation}
-    \text{TS} = \frac{M_{105} - M_{\text{crucible}}}{M_{\text{wet}} - M_{\text{crucible}}}
+    \text{TS} = \frac{M_{105} - M_{\text{crucible}} * 1000}{V_{\text{sample}}}
     \label{eq:TS}
 \end{equation}
 \begin{equation}
-    \text{VS} = \frac{M_{105} - M_{550}}{M_{105} - M_{\text{crucible}}}
+    \text{VS} = \frac{M_{105} - M_{550} * 1000}{V_{\text{sample}}}
     \label{eq:VS}
 \end{equation}
-where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at 105 °C, $M_{550}$ is the mass after ignition at 550 °C, and $M_{\text{crucible}}$ is the mass of the empty crucible.
+\begin{equation}
+    \text{FS} = \frac{M_{550} - M_{\text{crucible}} * 1000}{V_{\text{sample}}}
+    \label{eq:FS}
+\end{equation}
+where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at 105 °C, $M_{550}$ is the mass after ignition at 550 °C, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in $mL$ and the weight is in $mg$.
 
 \subsection{Density Determination}
 \label{subsec:d_determination}
@@ -61,7 +65,7 @@ Total organic carbon (TOC) and total nitrogen (TN) were measured using a Shimadz
 
 The reactor had a useful volume of 1 L and was operated as a continuous stirred-tank reactor (CSTR) under anaerobic conditions. Mixing was provided by a magnetic stir bar, and the overflow exit tube was kept closed with a valve to maintain an anaerobic environment.
 
-The reactor was kept at 37 °C, close to the optimal temperature for mesophilic microorganisms \parencite{choorit2007}.. The organic loading rate (OLR) was set between 4 and 8 kg VS m\textsuperscript{-3} d\textsuperscript{-1}, with a hydraulic retention time (HRT) of 30 days, conditions commonly reported for stable co-digestion of food waste and glycerol \parencite{tomczak2025}. The pH was maintained around 7 by adding CaCO\textsubscript{3} to the reactor whenever the pH dropped below 7, and by incorporating CaCO\textsubscript{3} into the feed solution at a concentration of 10 g L\textsuperscript{-1}.
+The reactor was kept at 35 °C, close to the optimal temperature for mesophilic microorganisms \parencite{choorit2007}. The organic loading rate (OLR) was set with a max of 4 kg VS m\textsuperscript{-3} d\textsuperscript{-1}, with a hydraulic retention time (HRT) of 30 days, conditions for stable co-digestion of food waste and glycerol \parencite{tomczak2025}. The pH was maintained around 7 by adding KHCO\textsubscript{3} to the reactor whenever the pH dropped below 7, and by incorporating KHCO\textsubscript{3} into the feed solution at a concentration of 10 g L\textsuperscript{-1}.
 
 The organic loading rate (OLR) and hydraulic retention time (HRT):
 
@@ -78,4 +82,4 @@ where $S_{\text{in}}$ is the influent VS concentration (kg m\textsuperscript{-3}
 \subsection{Feeding Solution}
 \label{subsec:feeding_solution}
 
-The feed was designed to achieve a carbon-to-nitrogen (C/N) ratio of 25:1, which is optimal for anaerobic digestion \parencite{li2011}. Characterisation of the food waste and biodiesel glycerol showed that both substrates contained nitrogen, making it difficult to balance the C/N ratio using both of them together. Therefore, pure glycerol was used in place of biodiesel glycerol to reduce the nitrogen input and allow precise control of the C/N ratio. Based on the chosen HRT and the daily volumetric flow rate, the reactor was fed once per day to ensure a flow rate high enough to transport the solid food-waste suspension through the feeding tubes.
+The feed was designed to achieve a carbon-to-nitrogen (C/N) ratio of 25:1, which is optimal for anaerobic digestion \parencite{li2011}. Characterisation of the food waste and biodiesel glycerol showed that both substrates contained nitrogen, making it difficult to balance the C/N ratio using both of them together. Therefore, pure glycerol was used as an additive to allow precise control of the C/N ratio. Based on the chosen HRT and the daily volumetric flow rate, the reactor was fed once per day to ensure a flow rate high enough to transport the solid food-waste suspension through the feeding tubes.
