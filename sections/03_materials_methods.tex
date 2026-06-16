@@ -6,10 +6,10 @@
 
 Food waste was collected from the canteen at the Instituto Politécnico de Bragança (IPB), prioritizing residues with high proportions of rice, pasta, and bread to maximize the sugar content and minimize the nitrogen content. The waste was diluted with approximately 2.5 L of distilled water and homogenised using a blender to obtain a liquid paste. It was then stored in a refrigerator at 4 °C to prevent spoilage and suppress microbial and fungal activity \parencite{degueurce2020}.
 
-\section{Biodiesel Glycerol Collection}
+\section{Crude Glycerol Collection}
 \label{sec:gly_col}
 
-A 6 L bottle of crude biodiesel glycerol, obtained from previous biodiesel production experiments at IPB, was provided for this study. Crude glycerol from biodiesel typically contains impurities such as catalyst residues \parencite{attarbachi2023}, which may influence its behaviour in anaerobic digestion.
+A 6 L bottle of crude glycerol, obtained from previous biodiesel production experiments at IPB, was provided for this study. Crude glycerol from biodiesel typically contains impurities such as catalyst residues \parencite{attarbachi2023}, which may influence its behaviour in anaerobic digestion.
 
 \section{Inoculum Collection}
 \label{sec:ino_col}
@@ -19,14 +19,14 @@ The anaerobic inoculum consisted of sludge collected from Águas do Norte wastew
 \section{Physical and Chemical Characterisation}
 \label{sec:phy_chem_char}
 
-The total solids (TS), volatile solids (VS), fixed solids (FS), and density were determined for the food waste, biodiesel glycerol, and inoculum. Total organic carbon (TOC) and total nitrogen (TN) were determined for the food waste and biodiesel glycerol.
+The total solids (TS), volatile solids (VS), fixed solids (FS), and density were determined for the food waste, crude glycerol, and inoculum. Total organic carbon (TOC) and total nitrogen (TN) were determined for the food waste and crude glycerol.
 
 \subsection{TS and VS Determination}
 \label{subsec:ts_vs_determination}
 
 TS and VS were measured using a sequential gravimetric method based on Standard Methods 2540 B and 2540 E \parencite{apha2017}. The method involves controlled drying and calcination steps to quantify total solids and volatile solids fractions.
 
-Initially, porcelain crucibles were placed in a muffle furnace at 550 °C for 1 h. For cooling, they were transferred to an oven at 105 °C for 15 min and then moved to a desiccator until they reached room temperature; their empty masses were recorded. For each material, a sample was placed into three crucibles and the wet mass was measured. The crucibles were then dried in an oven at 105 °C for 2 h (biodiesel glycerol required 6–8 h to reach constant mass). After drying, the crucibles were cooled in a desiccator to room temperature and weighed again to determine TS.
+Initially, porcelain crucibles were placed in a muffle furnace at 550 °C for 1 h. For cooling, they were transferred to an oven at 105 °C for 15 min and then moved to a desiccator until they reached room temperature; their empty masses were recorded. For each material, a sample was placed into three crucibles and the wet mass was measured. The crucibles were then dried in an oven at 105 °C for 2 h (crude glycerol required 6–8 h to reach constant mass). After drying, the crucibles were cooled in a desiccator to room temperature and weighed again to determine TS.
 
 The same crucibles were subsequently placed in a muffle furnace at 550 °C for 50 min. Afterwards they were transferred to an oven at 105 °C for 15 min and then moved to a desiccator until they reached room temperature; the final masses were recorded to calculate VS.
 
@@ -43,7 +43,56 @@ TS, VS and FS were calculated as follows:
     \text{FS} = \frac{M_{550} - M_{\text{crucible}} * 1000}{V_{\text{sample}}}
     \label{eq:FS}
 \end{equation}
-where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at 105 °C, $M_{550}$ is the mass after ignition at 550 °C, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in $mL$ and the weight is in $mg$.
+where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at 105 °C, $M_{550}$ is the mass after ignition at 550 °C, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in $mL$ and the weight is in $mg$. The results are on the table \ref{tab:solids}.
+
+\begin{landscape}
+    \begin{table}
+        \centering
+        \caption{TS, VS and FS results}
+        \label{tab:solids}
+        \setlength{\tabcolsep}{5pt}
+        \begin{threeparttable}
+            \begin{tabular}{c c c c c c c c c c c c c c}
+                \toprule
+                \multicolumn{2}{c}{\thead{Sample}}
+                    & \thead{$M_{\text{crucible}}$}
+                    & \thead{$M_{\text{wet}}$}
+                    & \thead{$M_{\text{sample}}$}
+                    & \thead{$V_{\text{sample}}$}
+                    & \thead{$M_{105}$}
+                    & \thead{TS\\($g/L$)}
+                    & \thead{Average\\TS ($g/L$)}
+                    & \thead{$M_{550}$}
+                    & \thead{VS\\($g/L$)}
+                    & \thead{Average\\VS ($g/L$)}
+                    & \thead{FS\\($g/L$)}
+                    & \thead{Average\\FS ($g/L$)} \\
+                \midrule
+
+                \multirow{3}{*}{\makecell{Food\\Waste}} & 1 & 78.7310 & 105.9875 & 27.2565 & 25.5 & 91.0021 & 481.0194 & \multirow{3}{*}{\makecell{536.3998}} & 79.2024 & 462.5408 & \multirow{3}{*}{\makecell{520.8068}} & 18.4786 & \multirow{3}{*}{\makecell{18.4786}} \\
+                & 2 & 84.3206 & 113.2979 & 28.9773 & 0.0271 & 98.8684 & 536.3998 & & 84.7435 & 520.8068 & & 15.5930 \\
+                & 3 & 77.5887 & 108.8399 & 31.2512 & 0.0292 & 93.4417 & 541.9933 & & 78.1848 & 521.6134 & & 20.3799 \\
+
+                \midrule
+
+                \multirow{3}{*}{\makecell{Glycerol}} & 1 & 84.2193 & 88.6434 & 4.4241 & 0.0050 & 88.4966 & 863.4402 & \multirow{3}{*}{\makecell{867.7240}} & 84.2144 & 864.4293 & \multirow{3}{*}{\makecell{868.6548}} & -0.9891 & \multirow{3}{*}{\makecell{-0.9891}} \\
+                & 2 & 73.4780 & 77.9874 & 4.5094 & 0.0050 & 77.8594 & 867.7240 & & 73.4733 & 868.6548 & & -0.9308 \\
+                & 3 & 86.2012 & 90.6107 & 4.4095 & 0.0049 & 90.5034 & 871.3421 & & 86.1958 & 872.4358 & & -1.0937 \\
+
+                \midrule
+
+                \multirow{3}{*}{\makecell{Inoculum}} & 1 & 78.7310 & 105.9875 & 27.2565 & 0.0255 & 91.0021 & 481.0194 & \multirow{3}{*}{\makecell{536.3998}} & 79.2024 & 462.5408 & \multirow{3}{*}{\makecell{520.8068}} & 18.4786 & \multirow{3}{*}{\makecell{18.4786}} \\
+                & 2 & 84.3206 & 113.2979 & 28.9773 & 0.0271 & 98.8684 & 536.3998 & & 84.7435 & 520.8068 & & 15.5930 \\
+                & 3 & 77.5887 & 108.8399 & 31.2512 & 0.0292 & 93.4417 & 541.9933 & & 78.1848 & 521.6134 & & 20.3799 \\
+
+                \bottomrule
+            \end{tabular}
+            \begin{tablenotes}
+                \item Reference: Author, \the\year
+            \end{tablenotes}
+        \end{threeparttable}
+    \end{table}
+\end{landscape}
 
 \subsection{Density Determination}
 \label{subsec:d_determination}
@@ -53,19 +102,91 @@ Density was determined by a gravimetric–volumetric method using graduated cyli
     \rho = \frac{M_{\text{total}} - M_{\text{cylinder}}}{V_{\text{sample}}}
     \label{eq:density}
 \end{equation}
-where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume.
+where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume, the masses were messured in $g$ and the volume in $L$. The results are on the table \ref{tab:density}.
+
+\begin{table}
+    \centering
+    \caption{Density results}
+    \label{tab:density}
+    \setlength{\tabcolsep}{5pt}
+    \begin{threeparttable}
+        \begin{tabular}{c c c c c c c}
+            \toprule
+            \multicolumn{2}{c}{\thead{Sample}}
+                & \thead{$M_{\text{cylinder}}$}
+                & \thead{$M_{\text{total}}$}
+                & \thead{$V_{\text{sample}}$}
+                & \thead{Density\\($g/L$)}
+                & \thead{Average\\Density ($g/L$)} \\
+            \midrule
+
+            \multirow{2}{*}{\makecell{Food\\Waste}} & 1 & 136.0000 & 242.0000 & 0.0992 & 1068.7905 & \multirow{2}{*}{\makecell{1068.4376}} \\
+            & 2 & 116.0000 & 223.0000 & 0.1002 & 1068.0847 \\
+
+            \midrule
+
+            \multirow{2}{*}{\makecell{Glycerol}} & 1 & 114.2100 & 203.4700 & 0.0999 & 893.2353 & \multirow{2}{*}{\makecell{893.0740}} \\
+            & 2 & 115.7400 & 204.4400 & 0.0993 & 892.9127 \\
+
+            \midrule
+
+            \multirow{2}{*}{\makecell{Inoculum}} & 1 & 235.0000 & 242.0000 & 0.0992 & 1068.7905 & \multirow{2}{*}{\makecell{1068.4376}} \\
+            & 2 & 216.0000 & 223.0000 & 0.1002 & 1068.0847 \\
+
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \item Reference: Author, \the\year
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}
 
 \subsection{TOC and TN Determination}
 \label{subsec:toc_tn_determination}
 
-Total organic carbon (TOC) and total nitrogen (TN) were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the food waste was diluted 400-fold and the biodiesel glycerol was diluted 800-fold to bring the concentrations within the linear range of the instrument.
+Total organic carbon (TOC), total carbon (TC) and total nitrogen (TN) were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the food waste was diluted 400-fold and the crude glycerol was diluted 800-fold to bring the concentrations within the linear range of the instrument. The results are on the table \ref{tab:toc}.
+
+\begin{table}
+    \centering
+    \caption{TS, VS and FS results}
+    \label{tab:toc}
+    \setlength{\tabcolsep}{5pt}
+    \begin{threeparttable}
+        \begin{tabular}{c c c c c c c c c c c c c c}
+            \toprule
+            \multicolumn{2}{c}{\thead{Sample}}
+                & \thead{TOC\\($mg/L$)}
+                & \thead{TC\\($mg/L$)}
+                & \thead{TN\\($mg/L$)}
+                & \thead{Dilution}
+                & \thead{TC\\($mg/L$)}
+                & \thead{Average\\TC ($mg/L$)}
+                & \thead{TN\\($mg/L$)}
+                & \thead{Average\\TN ($mg/L$)} \\
+            \midrule
+
+            \multirow{2}{*}{\makecell{Food\\Waste}} & 1 & 5.03900 & 5.04400 & 0.68910 & \multirow{2}{*}{\makecell{400}} & 2017.6 & \multirow{2}{*}{\makecell{1778.6}} & 275.64 & \multirow{2}{*}{\makecell{281.76}} \\
+            & 2 & 3.92700 & 3.84900 & 0.71970 & & 1539.6 & & 287.88 \\
+
+            \midrule
+
+            \multirow{2}{*}{\makecell{Glycerol}} & 1 & 8.80800 & 8.81200 & 0.58750 & \multirow{2}{*}{\makecell{800}} & 7049.6 & \multirow{2}{*}{\makecell{5523.2}} & 470 & \multirow{2}{*}{\makecell{488.6}} \\
+            & 2 & 4.99200 & 4.99600 & 0.63400 & & 3996.8 & & 507.2 \\
+
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \item Reference: Author, \the\year
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}
 
 \section{Experiment Configuration}
 \label{sec:experiment_configuration}
 
 The reactor had a useful volume of 1 L and was operated as a continuous stirred-tank reactor (CSTR) under anaerobic conditions. Mixing was provided by a magnetic stir bar, and the overflow exit tube was kept closed with a valve to maintain an anaerobic environment.
 
-The reactor was kept at 35 °C, close to the optimal temperature for mesophilic microorganisms \parencite{choorit2007}. The organic loading rate (OLR) was set with a max of 4 kg VS m\textsuperscript{-3} d\textsuperscript{-1}, with a hydraulic retention time (HRT) of 30 days, conditions for stable co-digestion of food waste and glycerol \parencite{tomczak2025}. The pH was maintained around 7 by adding KHCO\textsubscript{3} to the reactor whenever the pH dropped below 7, and by incorporating KHCO\textsubscript{3} into the feed solution at a concentration of 10 g L\textsuperscript{-1}.
+The reactor was kept at 35 °C, close to the optimal temperature for mesophilic microorganisms \parencite{choorit2007}. The organic loading rate (OLR) was set with a max of 4 kg VS m\textsuperscript{-3} d\textsuperscript{-1}, with a hydraulic retention time (HRT) of 30 days, conditions for stable co-digestion of food waste and glycerol \parencite{tomczak2025}. The pH was maintained around 7 by incorporating KHCO\textsubscript{3} into the feed solution at a concentration of 10 g L\textsuperscript{-1}, and adding KHCO\textsubscript{3} to the reactor whenever the pH dropped lower than 6.
 
 The organic loading rate (OLR) and hydraulic retention time (HRT):
 
@@ -82,4 +203,6 @@ where $S_{\text{in}}$ is the influent VS concentration (kg m\textsuperscript{-3}
 \subsection{Feeding Solution}
 \label{subsec:feeding_solution}
 
-The feed was designed to achieve a carbon-to-nitrogen (C/N) ratio of 25:1, which is optimal for anaerobic digestion \parencite{li2011}. Characterisation of the food waste and biodiesel glycerol showed that both substrates contained nitrogen, making it difficult to balance the C/N ratio using both of them together. Therefore, pure glycerol was used as an additive to allow precise control of the C/N ratio. Based on the chosen HRT and the daily volumetric flow rate, the reactor was fed once per day to ensure a flow rate high enough to transport the solid food-waste suspension through the feeding tubes.
+The feed was designed to achieve a carbon-to-nitrogen (C/N) ratio of 25:1, which is optimal for anaerobic digestion \parencite{li2011}. Characterisation of the food waste and crude glycerol showed that both substrates contained nitrogen, making it difficult to balance the C/N ratio using both of them together. Therefore, pure glycerol was used as an additive to allow precise control of the C/N ratio. Based on the chosen HRT and the daily volumetric flow rate, the reactor was fed once per day to ensure a flow rate high enough to transport the solid food-waste suspension through the feeding tubes.
+
+The feed was made with a restriction of needing to have less than 15\% of TS\%. The amount of OLR and if KHCO\textsubscript{3} was added, was decided by the pH and how was the methane production of the reactor. If it was too acidic, it was used a lower OLR with KHCO\textsubscript{3}, if it was at the right amount it was keep the same amount, and if it was too basic it was added a higher OLR without KHCO\textsubscript{3}. The feed storage always had some remainig feed, and the new one was added on top, diluting or concentrating the feed going to the reactor.
