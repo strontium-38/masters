@@ -23,3 +23,5 @@
 15/06/26 pH 7.55, alcalinidade 5850, AGV 4560, AGV/alc 0.77
 
 19/06/26 pH 7.32, alcalinidade 5650, AGV 4680, AGV/alc 0.82 // 250mL alimentacao feita com RA (~= 31.01 g), GL-BIO (~= 44 mL), GL-PURO (~= 28.9 mL), COV (~= 1.4), TS% (~=10) // bicarbonato nao foi adicionada para permitir a acidificacao do sistema
+
+22/06/26 pH 7.35, alcalinidade 5050, AGV 4320, AGV/alc 0.85
