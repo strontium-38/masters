@@ -25,3 +25,5 @@
 19/06/26 pH 7.32, alcalinidade 5650, AGV 4680, AGV/alc 0.82 // 250mL alimentacao feita com RA (~= 31.01 g), GL-BIO (~= 44 mL), GL-PURO (~= 28.9 mL), COV (~= 1.4), TS% (~=10) // bicarbonato nao foi adicionada para permitir a acidificacao do sistema
 
 22/06/26 pH 7.35, alcalinidade 5050, AGV 4320, AGV/alc 0.85
+
+26/06/26 pH 6.98, alcalinidade 5000, AGV 4980, AGV/alc 0.99 // 250 mL alimentacao feita com RA (~= 46.52 g), GL-BIO (~= 66 mL), GL-PURO (~= 43 mL), COV (~= 3.1), TS% (~+ 15), bicarbonato de postassio (~= 2.6 g) // bicarbonato foi adicionado para tentar manter o pH estavel
