@@ -14,6 +14,7 @@
 \contentsline {subsection}{\numberline {4.4.3}TOC and TN Determination}{8}{subsection.4.4.3}%
 \contentsline {section}{\numberline {4.5}Experiment Configuration}{8}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Feeding Solution}{9}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Analysis Methods}{10}{subsection.4.5.2}%
 \contentsline {chapter}{\numberline {5}Results}{11}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Discussion}{12}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Conclusion}{13}{chapter.7}%

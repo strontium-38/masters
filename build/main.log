@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  16 JUN 2026 20:19
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  30 JUN 2026 18:17
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1190,7 +1190,7 @@ Package hyperref Info: Link coloring ON on input line 10.
 
 \openout4 = main.out
  (./cover.tex
-<assets/IPB_logo.png, id=80, 513.92pt x 157.58875pt>
+<assets/IPB_logo.png, id=84, 513.92pt x 157.58875pt>
 File: assets/IPB_logo.png Graphic file (type png)
 <use assets/IPB_logo.png>
 Package luatex.def Info: assets/IPB_logo.png  used on input line 10.
@@ -1221,7 +1221,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-<assets/UTFPR_logo.png, id=81, 2341.74875pt x 877.2775pt>
+<assets/UTFPR_logo.png, id=85, 2341.74875pt x 877.2775pt>
 File: assets/UTFPR_logo.png Graphic file (type png)
 <use assets/UTFPR_logo.png>
 Package luatex.def Info: assets/UTFPR_logo.png  used on input line 15.
@@ -1296,7 +1296,7 @@ Overfull \hbox (33.38333pt too wide) in paragraph at lines 155--182
 [8
 
 
-]) [9] [10]
+] [9]) [10]
 \openout2 = sections/04_results.aux
  (./sections/04_results.tex
 Chapter 5.
@@ -1337,21 +1337,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 182E86F821BCD4D57BD95ED0D7D7AA95;2896.
+(rerunfilecheck)             Checksum: DB6D0B5EC2ED8CF98B2F8DAA288434B5;3041.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 32240 strings out of 476076
+ 32254 strings out of 476076
  125081,1977958 words of node,token memory allocated
- 774 words of node memory still in use:
+ 798 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 3 glyph, 51 attribute, 68 glue_spec, 26 attribute_list, 1 write, 5 pdf_actio
+rn, 3 glyph, 59 attribute, 68 glue_spec, 30 attribute_list, 1 write, 5 pdf_actio
 n nodes
-   avail lists: 2:2354,3:445,4:140,5:173,6:72,7:6937,8:62,9:1076,10:15,11:620
- 53914 multiletter control sequences out of 65536+600000
+   avail lists: 2:2344,3:445,4:149,5:182,6:75,7:6937,8:62,9:1076,10:15,11:620
+ 53924 multiletter control sequences out of 65536+600000
  79 fonts using 8643863 bytes
  88i,23n,128p,2055b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/fonts/TTF/Times.TTF></usr/share/fonts/TTF/Timesi.TTF></usr/share/fon
@@ -1362,10 +1362,10 @@ s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
 fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (19 pages, 283472 bytes).
+Output written on main.pdf (19 pages, 286369 bytes).
 
-PDF statistics: 333 PDF objects out of 1000 (max. 8388607)
- 288 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 1048576)
- 153 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 347 PDF objects out of 1000 (max. 8388607)
+ 301 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 1048576)
+ 161 words of extra memory for PDF output out of 10000 (max. 100000000)
 
