@@ -4,18 +4,18 @@
 \contentsline {section}{\numberline {2.1}General Objectives}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Specific Objectives}{3}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Literature Review}{4}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Materials and Methods}{5}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Collection and Preparation of the Food Waste}{5}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Crude Glycerol Collection}{5}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Inoculum Collection}{5}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Physical and Chemical Characterisation}{6}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}TS and VS Determination}{6}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Density Determination}{8}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}TOC and TN Determination}{8}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Experiment Configuration}{8}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Feeding Solution}{9}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Analysis Methods}{10}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}Results}{11}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Discussion}{12}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{13}{chapter.7}%
-\contentsline {chapter}{References}{14}{chapter*.10}%
+\contentsline {chapter}{\numberline {4}Materials and Methods}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Collection and Preparation of the Food Waste}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Crude Glycerol Collection}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Inoculum Collection}{7}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Physical and Chemical Characterisation}{8}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}TS and VS Determination}{8}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Density Determination}{10}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}TOC and TN Determination}{10}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Experiment Configuration}{10}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Feeding Solution}{11}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Analysis Methods}{12}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Results}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Discussion}{14}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion}{15}{chapter.7}%
+\contentsline {chapter}{References}{16}{chapter*.10}%

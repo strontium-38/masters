@@ -10,7 +10,7 @@
 
 27/05/26 provavelmente comecou a receber glicerol
 
-29/05/26 pH 7.89, alcalinidade 7540, AGV 2586, AGV/alc 0.34 // 250 mL alimentacao feita com RA (~= 12.54 g), GL-BIO (~= 9.02 mL) e 100X GL-PURO (~= 2.6 mL), COV (0.13-0.40), TS% (5-10), ~= 1.57 bicarbonato de postassio
+29/05/26 pH 7.89, alcalinidade 7540, AGV 2586, AGV/alc 0.34 // 250 mL alimentacao feita com RA (~= 12.54 g), GL-BIO (~= 9.02 mL) e 100X GL-PURO (~= 2.6 mL), COV (0.13-0.40), TS% (5-10), ~= 1.57 bicarbonato de potassio
 
 01/06/26 pH 7.65, alcalinidade 8145, AGV 3594, AGV/alc 0.44
 
@@ -26,6 +26,8 @@
 
 22/06/26 pH 7.35, alcalinidade 5050, AGV 4320, AGV/alc 0.85
 
-26/06/26 pH 6.98, alcalinidade 5000, AGV 4980, AGV/alc 0.99 // 250 mL alimentacao feita com RA (~= 46.52 g), GL-BIO (~= 66 mL), GL-PURO (~= 43 mL), COV (~= 3.1), TS% (~+ 15), bicarbonato de postassio (~= 2.6 g) // bicarbonato foi adicionado para tentar manter o pH estavel
+26/06/26 pH 6.98, alcalinidade 5000, AGV 4980, AGV/alc 0.99 // 250 mL alimentacao feita com RA (~= 46.52 g), GL-BIO (~= 66 mL), GL-PURO (~= 43 mL), COV (~= 3.1), TS% (~+ 15), bicarbonato de potassio (~= 2.6 g) // bicarbonato foi adicionado para tentar manter o pH estavel
 
 29/06/26 pH 7.23, alcalinidade 4500, AGV 4500, AGV/alc 1.00
+
+03/07/26 pH 6.65, alcalinidade 4400, AGV 4740, AGV/alc 1.07 // ~=  250 mL alimentacao feita (um pouco vazou quando estava sendo colocado dentro do container) feita com RA (~= 50.07 g), GL-BIO (~= 66 mL), GL-PURO (43 mL), bicarbonato de potassio (~= 2.67 g) // o tubo de retirada de amostra do reator estava entupido com particulado - foi desintupido usando um arame
