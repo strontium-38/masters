@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  2 JUL 2026 17:49
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  7 JUL 2026 15:05
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1274,33 +1274,33 @@ Chapter 3.
 
 
 
-]) [5] [6]
+]) [5]
 \openout2 = sections/03_materials_methods.aux
  (./sections/03_materials_methods.tex
 Chapter 4.
-[7
+[6
 
 
 
 
-] [8]
+] [7]
 Overfull \hbox (9.93379pt too wide) in paragraph at lines 55--94
  [] 
  []
 
-[9]
+[8]
 Overfull \hbox (33.38333pt too wide) in paragraph at lines 155--182
  [] 
  []
 
-[10
+[9
 
 
-] [11]) [12]
+] [10]) [11]
 \openout2 = sections/04_results.aux
  (./sections/04_results.tex
 Chapter 5.
-) [13
+) [12
 
 
 
@@ -1309,7 +1309,7 @@ Chapter 5.
 \openout2 = sections/05_discussion.aux
  (./sections/05_discussion.tex
 Chapter 6.
-) [14
+) [13
 
 
 
@@ -1318,16 +1318,16 @@ Chapter 6.
 \openout2 = sections/06_conclusion.aux
  (./sections/06_conclusion.tex
 Chapter 7.
-) [15
+) [14
 
 
 
 
-] [16
+] [15
 
 
 
-] [17] (./build/main.aux (./build/sections/abstract.aux)
+] [16] (./build/main.aux (./build/sections/abstract.aux)
 (./build/sections/resumo.aux) (./build/sections/01_introduction.aux)
 (./build/sections/02_literature_review.aux)
 (./build/sections/03_materials_methods.aux) (./build/sections/04_results.aux)
@@ -1344,14 +1344,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32256 strings out of 476076
+ 32271 strings out of 476076
  125081,1977958 words of node,token memory allocated
  798 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 3 glyph, 59 attribute, 68 glue_spec, 30 attribute_list, 1 write, 5 pdf_actio
 n nodes
-   avail lists: 2:2344,3:445,4:149,5:182,6:75,7:7684,8:62,9:1076,10:23,11:725
- 53924 multiletter control sequences out of 65536+600000
+   avail lists: 2:2344,3:445,4:163,5:184,6:79,7:6937,8:62,9:1076,10:15,11:620
+ 53940 multiletter control sequences out of 65536+600000
  79 fonts using 8643863 bytes
  88i,23n,128p,2055b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/fonts/TTF/Times.TTF></usr/share/fonts/TTF/Timesi.TTF></usr/share/fon
@@ -1362,10 +1362,10 @@ s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
 fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (21 pages, 293182 bytes).
+Output written on main.pdf (20 pages, 292705 bytes).
 
-PDF statistics: 356 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 1048576)
+PDF statistics: 369 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 1048576)
  161 words of extra memory for PDF output out of 10000 (max. 100000000)
 
