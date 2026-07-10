@@ -33,3 +33,5 @@
 03/07/26 pH 6.65, alcalinidade 4400, AGV 4740, AGV/alc 1.07 // ~=  250 mL alimentacao feita (um pouco vazou quando estava sendo colocado dentro do container) feita com RA (~= 50.07 g), GL-BIO (~= 66 mL), GL-PURO (43 mL), bicarbonato de potassio (~= 2.67 g) // o tubo de retirada de amostra do reator estava entupido com particulado - foi desintupido usando um arame
 
 06/07/26 pH 6.53, alcalinidade 4600, AGV 5040, AGV/alc 1.09
+
+10/07/26 pH 6.28, alcalinidade 4400, AGV 5160, AGV/alc 1.17 // trocado a alimentacao // 500 mL alimentacao feita com GL-BIO (~= 55 mL), GL-PURO (~= 11.5 mL), COV (0.42), TS% (~= 10), bicarbonato de potassio (~= 5.38 g) // o tubo da alimentacao estava entupido (aparentemente entupio durante esta semana), durante o processo de desintupir o tubo, foi colocado mais alimentacao no reator, um pouco de aqua destilada, e teve bastente troca de gas podendo ter removido parcialmente o ambiente anaerobico do reator
