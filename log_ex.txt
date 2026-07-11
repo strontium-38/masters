@@ -34,4 +34,4 @@
 
 06/07/26 pH 6.53, alcalinidade 4600, AGV 5040, AGV/alc 1.09
 
-10/07/26 pH 6.28, alcalinidade 4400, AGV 5160, AGV/alc 1.17 // trocado a alimentacao // 500 mL alimentacao feita com GL-BIO (~= 55 mL), GL-PURO (~= 11.5 mL), COV (0.42), TS% (~= 10), bicarbonato de potassio (~= 5.38 g) // o tubo da alimentacao estava entupido (aparentemente entupio durante esta semana), durante o processo de desintupir o tubo, foi colocado mais alimentacao no reator, um pouco de aqua destilada, e teve bastente troca de gas podendo ter removido parcialmente o ambiente anaerobico do reator
+10/07/26 pH 6.28, alcalinidade 4400, AGV 5160, AGV/alc 1.17 // trocado a alimentacao // 500 mL alimentacao feita com GL-BIO (~= 55 mL), GL-PURO (~= 11.5 mL), COV (0.42), TS% (~= 10), bicarbonato de potassio (~= 5.38 g) // o tubo da alimentacao estava entupido (aparentemente entupio durante esta semana), durante o processo de desintupir o tubo, foi colocado mais alimentacao no reator, um pouco de aqua destilada, e teve bastente troca de gas podendo ter removido parcialmente o ambiente anaerobico do reator, um pouco do alimento anterior foi misturado no alimento novo
