@@ -39,3 +39,5 @@
 13/07/26 pH 6.16, alcalinidade 4150, AGV 4860, AGV/alc 1.17 // o encaixe do tubo de alimentacao estrava desacoplando do reator, foi adicionada uma enforcadeira, e a alimentacao nao tava preenchendo o tubo inteiro, para ajustar isso, o reator recebeu uma dose de alimento
 
 17/07/26 pH 6.5, alcalinidade 4150, AGV 4860, AGV/alc 1.17 // 500 mL alimentacao feita com GL=BIO (~=55 mL), GL-PURO (~= 12 mL), COV (0.42), TS% (~= 10), bicarbonato de potassio (~= 5.18 g) // uma das conexcoes (T) do tubo de alimentacao estava vazando, foi feito um reparo sem desmontar o tubo (colocado mais parafilme), por causa disso o tanque de alimento estava vaziu e teve que re-preenxer o tubo de alimentacao
+
+20/07/26 pH 6.48, alcalinidade 4250, AGV 4800, AGV/alc 1.12 // o reparo do tupo parece ter arrumado o vazamento
