@@ -47,3 +47,6 @@
 27/07/26 pH 6.88, alcalinidade 3950, AGV 4140, AGV/alc 1.04
 
 31/07/26 pH 7.31, alcalinidade 3450, AGV 3300, AGV/alc 0.95 // ~= 250 mL alimentacao feita (um pouco vazour quando estava sendo colocado dentro do container) com GL-BIO (~= 60 mL), GL-PURO (~= 12.5 mL), COV (~= 1.37), TS% (~= 15), bicarbonato de potassio (~= 2.57 g)
+
+
+03/08/26 pH 7.21, alcalinidade 3950, AGV 3840, AGV/alc 0.97
