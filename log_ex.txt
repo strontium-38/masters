@@ -48,5 +48,6 @@
 
 31/07/26 pH 7.31, alcalinidade 3450, AGV 3300, AGV/alc 0.95 // ~= 250 mL alimentacao feita (um pouco vazour quando estava sendo colocado dentro do container) com GL-BIO (~= 60 mL), GL-PURO (~= 12.5 mL), COV (~= 1.37), TS% (~= 15), bicarbonato de potassio (~= 2.57 g)
 
-
 03/08/26 pH 7.21, alcalinidade 3950, AGV 3840, AGV/alc 0.97
+
+07/08/26 pH 7.2, alcalinidade 4050, AGV 3480, AGV/alc 0.85 // ~= 16:50 desligado a capa do reator - o reator sera limpo outro dia
