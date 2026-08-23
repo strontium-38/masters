@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  11 JUL 2026 14:55
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  23 AUG 2026 17:33
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1546,7 +1546,7 @@ Package hyperref Info: Link coloring ON on input line 10.
 
 \openout5 = main.out
  (./cover.tex
-<assets/IPB_logo.png, id=87, 513.92pt x 157.58875pt>
+<assets/IPB_logo.png, id=91, 513.92pt x 157.58875pt>
 File: assets/IPB_logo.png Graphic file (type png)
 <use assets/IPB_logo.png>
 Package luatex.def Info: assets/IPB_logo.png  used on input line 10.
@@ -1577,7 +1577,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-<assets/UTFPR_logo.png, id=88, 2341.74875pt x 877.2775pt>
+<assets/UTFPR_logo.png, id=92, 2341.74875pt x 877.2775pt>
 File: assets/UTFPR_logo.png Graphic file (type png)
 <use assets/UTFPR_logo.png>
 Package luatex.def Info: assets/UTFPR_logo.png  used on input line 15.
@@ -1625,13 +1625,13 @@ Chapter 2.
 \openout2 = sections/02_literature_review.aux
  (./sections/02_literature_review.tex
 Chapter 3.
-<assets/garlapati2016-flow-gl.png, id=188, 631.35875pt x 389.455pt>
+<assets/garlapati2016-flow-gl.png, id=192, 631.35875pt x 389.455pt>
 File: assets/garlapati2016-flow-gl.png Graphic file (type png)
 <use assets/garlapati2016-flow-gl.png>
 Package luatex.def Info: assets/garlapati2016-flow-gl.png  used on input line 8
 .
 (luatex.def)             Requested size: 256.07741pt x 157.96016pt.
-<assets/attarbachi2023-flow-gl.png, id=191, 395.4775pt x 193.72375pt>
+<assets/attarbachi2023-flow-gl.png, id=195, 395.4775pt x 193.72375pt>
 File: assets/attarbachi2023-flow-gl.png Graphic file (type png)
 <use assets/attarbachi2023-flow-gl.png>
 Package luatex.def Info: assets/attarbachi2023-flow-gl.png  used on input line 
@@ -1643,13 +1643,13 @@ Package luatex.def Info: assets/attarbachi2023-flow-gl.png  used on input line
 
 
 <./assets/garlapati2016-flow-gl.png>]
-<assets/li2011-flow-ferm.png, id=211, 372.39125pt x 364.36125pt>
+<assets/li2011-flow-ferm.png, id=215, 372.39125pt x 364.36125pt>
 File: assets/li2011-flow-ferm.png Graphic file (type png)
 <use assets/li2011-flow-ferm.png>
 Package luatex.def Info: assets/li2011-flow-ferm.png  used on input line 24.
 (luatex.def)             Requested size: 256.07741pt x 250.56445pt.
  [5<./assets/attarbachi2023-flow-gl.png><./assets/li2011-flow-ferm.png>]
-<assets/gebreegziabher2025-flow-ferm.png, id=227, 609.27625pt x 497.86pt>
+<assets/gebreegziabher2025-flow-ferm.png, id=231, 609.27625pt x 497.86pt>
 File: assets/gebreegziabher2025-flow-ferm.png Graphic file (type png)
 <use assets/gebreegziabher2025-flow-ferm.png>
 Package luatex.def Info: assets/gebreegziabher2025-flow-ferm.png  used on input
@@ -1719,22 +1719,22 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D8268176E24EB3640664B1F67B586503;3041.
+(rerunfilecheck)             Checksum: B714452579F74F72BB29FE0650BFCB16;3211.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 52993 strings out of 476076
+ 52995 strings out of 476076
  125081,2373549 words of node,token memory allocated
  807 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 3 glyph, 61 attribute, 68 glue_spec, 31 attribute_list, 2 write, 5 pdf_actio
 n nodes
-   avail lists: 1:1,2:2356,3:444,4:163,5:194,6:85,7:6939,8:62,9:1078,10:15,11:62
+   avail lists: 1:1,2:2356,3:444,4:171,5:202,6:88,7:6939,8:62,9:1078,10:15,11:62
 0
- 74070 multiletter control sequences out of 65536+600000
+ 74072 multiletter control sequences out of 65536+600000
  79 fonts using 8643863 bytes
  99i,23n,128p,2055b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/fonts/TTF/Times.TTF></usr/share/fonts/TTF/Timesi.TTF></usr/share/fon
@@ -1745,10 +1745,10 @@ s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
 fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (22 pages, 499017 bytes).
+Output written on main.pdf (22 pages, 500725 bytes).
 
-PDF statistics: 409 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
+PDF statistics: 413 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
  80 named destinations out of 1000 (max. 1048576)
- 176 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 184 words of extra memory for PDF output out of 10000 (max. 100000000)
 

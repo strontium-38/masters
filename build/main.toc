@@ -14,7 +14,8 @@
 \contentsline {subsection}{\numberline {4.4.3}TOC and TN Determination}{11}{subsection.4.4.3}%
 \contentsline {section}{\numberline {4.5}Experiment Configuration}{11}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Feeding Solution}{12}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Analysis Methods}{13}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}Biogas Quantification}{13}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Analysis Methods}{13}{subsection.4.5.3}%
 \contentsline {chapter}{\numberline {5}Results}{14}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Discussion}{15}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Conclusion}{16}{chapter.7}%
