@@ -410,6 +410,8 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
+INPUT ./assets/ampts.jpg
+INPUT ./assets/ampts.jpg
 OUTPUT build/sections/04_results.aux
 INPUT ./sections/04_results.tex
 OUTPUT build/sections/05_discussion.aux

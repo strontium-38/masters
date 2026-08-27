@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  23 AUG 2026 17:33
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  27 AUG 2026 18:32
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1678,11 +1678,17 @@ Overfull \hbox (33.38333pt too wide) in paragraph at lines 155--182
 [11
 
 
-] [12]) [13]
+] [12]
+<assets/ampts.jpg, id=311, 2312.64pt x 4111.36pt>
+File: assets/ampts.jpg Graphic file (type jpg)
+<use assets/ampts.jpg>
+Package luatex.def Info: assets/ampts.jpg  used on input line 217.
+(luatex.def)             Requested size: 256.07741pt x 455.19951pt.
+) [13] [14<./assets/ampts.jpg>]
 \openout2 = sections/04_results.aux
  (./sections/04_results.tex
 Chapter 5.
-) [14
+) [15
 
 
 
@@ -1691,7 +1697,7 @@ Chapter 5.
 \openout2 = sections/05_discussion.aux
  (./sections/05_discussion.tex
 Chapter 6.
-) [15
+) [16
 
 
 
@@ -1700,16 +1706,16 @@ Chapter 6.
 \openout2 = sections/06_conclusion.aux
  (./sections/06_conclusion.tex
 Chapter 7.
-) [16
+) [17
 
 
 
 
-] [17
+] [18
 
 
 
-] [18] (./build/main.aux (./build/sections/abstract.aux)
+] [19] (./build/main.aux (./build/sections/abstract.aux)
 (./build/sections/resumo.aux) (./build/sections/01_introduction.aux)
 (./build/sections/02_literature_review.aux)
 (./build/sections/03_materials_methods.aux) (./build/sections/04_results.aux)
@@ -1719,14 +1725,14 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B714452579F74F72BB29FE0650BFCB16;3211.
+(rerunfilecheck)             Checksum: ECF48A6A6F37B315D77A4C4748A8A449;3211.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 52995 strings out of 476076
+ 53008 strings out of 476076
  125081,2373549 words of node,token memory allocated
  807 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
@@ -1734,7 +1740,7 @@ rn, 3 glyph, 61 attribute, 68 glue_spec, 31 attribute_list, 2 write, 5 pdf_actio
 n nodes
    avail lists: 1:1,2:2356,3:444,4:171,5:202,6:88,7:6939,8:62,9:1078,10:15,11:62
 0
- 74072 multiletter control sequences out of 65536+600000
+ 74080 multiletter control sequences out of 65536+600000
  79 fonts using 8643863 bytes
  99i,23n,128p,2055b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/fonts/TTF/Times.TTF></usr/share/fonts/TTF/Timesi.TTF></usr/share/fon
@@ -1745,10 +1751,10 @@ s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
 fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (22 pages, 500725 bytes).
+Output written on main.pdf (23 pages, 2530358 bytes).
 
-PDF statistics: 413 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 1048576)
+PDF statistics: 420 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 82 named destinations out of 1000 (max. 1048576)
  184 words of extra memory for PDF output out of 10000 (max. 100000000)
 
