@@ -17,6 +17,14 @@
 \contentsline {subsection}{\numberline {4.5.2}Biogas Quantification}{13}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Analysis Methods}{13}{subsection.4.5.3}%
 \contentsline {chapter}{\numberline {5}Results}{15}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Discussion}{16}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{17}{chapter.7}%
-\contentsline {chapter}{References}{18}{chapter*.15}%
+\contentsline {section}{\numberline {5.1}Reactor Condition and Visual Observations}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Biogas Production}{15}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Overall Production}{19}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Adaptation Phase}{19}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Co-digestion of Food Waste and Glycerol}{19}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Glycerol only Feeding Period}{20}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Post-feeding Period}{24}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Alkalinity and Volatile Fatty Acids}{24}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Subestrate used as feed}{25}{subsection.5.2.7}%
+\contentsline {chapter}{\numberline {6}Conclusion}{28}{chapter.6}%
+\contentsline {chapter}{References}{29}{chapter*.16}%

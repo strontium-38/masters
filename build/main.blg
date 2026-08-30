@@ -1,23 +1,23 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'build/main.blg'
-[37] biber:342> INFO - === sáb jul 11, 2026, 14:52:41
-[46] Biber.pm:421> INFO - Reading 'build/main.bcf'
-[92] Biber.pm:1002> INFO - Found 13 citekeys in bib section 0
-[104] Biber.pm:4487> INFO - Processing section 0
-[109] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
-[110] bibtex.pm:1713> INFO - LaTeX decoding ...
-[119] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[226] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[226] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[226] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[226] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[252] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[252] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[252] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[252] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[266] bbl.pm:676> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[277] bbl.pm:779> INFO - Output to build/main.bbl
-[277] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'ribas2007' is not an integer - this will probably not sort properly.
-[277] Biber.pm:132> WARN - legacy month field 'June' in entry 'degueurce2020' is not an integer - this will probably not sort properly.
-[277] Biber.pm:132> WARN - I didn't find a database entry for crossref '10.4067/S0717-34582007000300005' in entry 'choorit2007' - ignoring (section 0)
-[277] Biber.pm:134> INFO - WARNINGS: 3
+[74] biber:342> INFO - === seg ago 31, 2026, 00:07:25
+[90] Biber.pm:421> INFO - Reading 'build/main.bcf'
+[179] Biber.pm:1002> INFO - Found 14 citekeys in bib section 0
+[204] Biber.pm:4487> INFO - Processing section 0
+[217] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[219] bibtex.pm:1713> INFO - LaTeX decoding ...
+[246] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[444] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[445] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[445] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[445] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[495] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[495] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[495] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[495] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[522] bbl.pm:676> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[544] bbl.pm:779> INFO - Output to build/main.bbl
+[545] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'ribas2007' is not an integer - this will probably not sort properly.
+[546] Biber.pm:132> WARN - legacy month field 'June' in entry 'degueurce2020' is not an integer - this will probably not sort properly.
+[546] Biber.pm:132> WARN - I didn't find a database entry for crossref '10.4067/S0717-34582007000300005' in entry 'choorit2007' - ignoring (section 0)
+[546] Biber.pm:134> INFO - WARNINGS: 3

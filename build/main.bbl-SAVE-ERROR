@@ -582,6 +582,64 @@
       \endverb
       \keyw{Anaerobic digestion,Biochemical methane potential,Dairy manure,Waste activated sludge,Regression model}
     \endentry
+    \entry{ribas2007}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d8c78f606fed447ae1e4b4f04abe248c}{%
+           family={Ribas},
+           familyi={R\bibinitperiod},
+           given={Maria\bibnamedelimb Magdalena\bibnamedelima Ferreira},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cec91f5ac63279fa2a38cc5ddb5cee6}{%
+           family={Moraes},
+           familyi={M\bibinitperiod},
+           given={Elizabeth\bibnamedelimb de\bibnamedelima Mattos},
+           giveni={E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46b405c60cc3bd5e97315709910eb872}{%
+           family={Foresti},
+           familyi={F\bibinitperiod},
+           given={Eugenio},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Associação Brasileira de Engenharia Sanitária e Ambiental - ABES}%
+      }
+      \strng{namehash}{4eb35d1a537ef795ce93e9bcfa8548b4}
+      \strng{fullhash}{b08873286908b9e78236076f37a6da81}
+      \strng{fullhashraw}{b08873286908b9e78236076f37a6da81}
+      \strng{bibnamehash}{b08873286908b9e78236076f37a6da81}
+      \strng{authorbibnamehash}{b08873286908b9e78236076f37a6da81}
+      \strng{authornamehash}{4eb35d1a537ef795ce93e9bcfa8548b4}
+      \strng{authorfullhash}{b08873286908b9e78236076f37a6da81}
+      \strng{authorfullhashraw}{b08873286908b9e78236076f37a6da81}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1413-4152}
+      \field{journaltitle}{Engenharia Sanitaria e Ambiental}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{Avaliação da acurácia de diversos métodos para determinação de ácidos graxos voláteis e alcalinidade a bicarbonato para monitoramento de reatores anaeróbios}
+      \field{volume}{12}
+      \field{year}{2007}
+      \field{pages}{240\bibrangedash 246}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1590/S1413-41522007000300002
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1590/S1413-41522007000300002
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1590/S1413-41522007000300002
+      \endverb
+    \endentry
     \entry{scherhaufer2018}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=348f2fc275cc491f40ab658872738e50}{%
@@ -1274,6 +1332,64 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0960852420306313
       \endverb
       \keyw{Anaerobic digestion,Biochemical methane potential,Dairy manure,Waste activated sludge,Regression model}
+    \endentry
+    \entry{ribas2007}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d8c78f606fed447ae1e4b4f04abe248c}{%
+           family={Ribas},
+           familyi={R\bibinitperiod},
+           given={Maria\bibnamedelimb Magdalena\bibnamedelima Ferreira},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cec91f5ac63279fa2a38cc5ddb5cee6}{%
+           family={Moraes},
+           familyi={M\bibinitperiod},
+           given={Elizabeth\bibnamedelimb de\bibnamedelima Mattos},
+           giveni={E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46b405c60cc3bd5e97315709910eb872}{%
+           family={Foresti},
+           familyi={F\bibinitperiod},
+           given={Eugenio},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Associação Brasileira de Engenharia Sanitária e Ambiental - ABES}%
+      }
+      \strng{namehash}{4eb35d1a537ef795ce93e9bcfa8548b4}
+      \strng{fullhash}{b08873286908b9e78236076f37a6da81}
+      \strng{fullhashraw}{b08873286908b9e78236076f37a6da81}
+      \strng{bibnamehash}{b08873286908b9e78236076f37a6da81}
+      \strng{authorbibnamehash}{b08873286908b9e78236076f37a6da81}
+      \strng{authornamehash}{4eb35d1a537ef795ce93e9bcfa8548b4}
+      \strng{authorfullhash}{b08873286908b9e78236076f37a6da81}
+      \strng{authorfullhashraw}{b08873286908b9e78236076f37a6da81}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1413-4152}
+      \field{journaltitle}{Engenharia Sanitaria e Ambiental}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{Avaliação da acurácia de diversos métodos para determinação de ácidos graxos voláteis e alcalinidade a bicarbonato para monitoramento de reatores anaeróbios}
+      \field{volume}{12}
+      \field{year}{2007}
+      \field{pages}{240\bibrangedash 246}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1590/S1413-41522007000300002
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1590/S1413-41522007000300002
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1590/S1413-41522007000300002
+      \endverb
     \endentry
     \entry{scherhaufer2018}{article}{}{}
       \name{author}{5}{}{%

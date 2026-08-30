@@ -68,6 +68,33 @@
       \verb 10.1021/acs.est.1c03940
       \endverb
     \endentry
+    \entry{safaa2025}{masterthesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=08ccec57583e22868a97a915378d74e8}{%
+           family={Alqudah},
+           familyi={A\bibinitperiod},
+           given={Safaa\bibnamedelimb Ahmad\bibnamedelima Mustafa},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{08ccec57583e22868a97a915378d74e8}
+      \strng{fullhash}{08ccec57583e22868a97a915378d74e8}
+      \strng{fullhashraw}{08ccec57583e22868a97a915378d74e8}
+      \strng{bibnamehash}{08ccec57583e22868a97a915378d74e8}
+      \strng{authorbibnamehash}{08ccec57583e22868a97a915378d74e8}
+      \strng{authornamehash}{08ccec57583e22868a97a915378d74e8}
+      \strng{authorfullhash}{08ccec57583e22868a97a915378d74e8}
+      \strng{authorfullhashraw}{08ccec57583e22868a97a915378d74e8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optimizing biogas production via ozone sludge pretreatment}
+      \field{year}{2025}
+    \endentry
     \entry{anand2012}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2bbb677e91f597ec263987a91e6bc919}{%
@@ -818,6 +845,33 @@
       \verb{doi}
       \verb 10.1021/acs.est.1c03940
       \endverb
+    \endentry
+    \entry{safaa2025}{masterthesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=08ccec57583e22868a97a915378d74e8}{%
+           family={Alqudah},
+           familyi={A\bibinitperiod},
+           given={Safaa\bibnamedelimb Ahmad\bibnamedelima Mustafa},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{08ccec57583e22868a97a915378d74e8}
+      \strng{fullhash}{08ccec57583e22868a97a915378d74e8}
+      \strng{fullhashraw}{08ccec57583e22868a97a915378d74e8}
+      \strng{bibnamehash}{08ccec57583e22868a97a915378d74e8}
+      \strng{authorbibnamehash}{08ccec57583e22868a97a915378d74e8}
+      \strng{authornamehash}{08ccec57583e22868a97a915378d74e8}
+      \strng{authorfullhash}{08ccec57583e22868a97a915378d74e8}
+      \strng{authorfullhashraw}{08ccec57583e22868a97a915378d74e8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optimizing biogas production via ozone sludge pretreatment}
+      \field{year}{2025}
     \endentry
     \entry{anand2012}{article}{}{}
       \name{author}{2}{}{%

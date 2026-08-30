@@ -43,7 +43,7 @@ TS, VS and FS were calculated as follows:
     \text{FS} = \frac{M_{550} - M_{\text{crucible}} * 1000}{V_{\text{sample}}}
     \label{eq:FS}
 \end{equation}
-where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at 105 °C, $M_{550}$ is the mass after ignition at 550 °C, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in $mL$ and the weight is in $mg$. The results are on the table \ref{tab:solids}.
+where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at 105 °C, $M_{550}$ is the mass after ignition at 550 °C, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in $mL$ and the weight is in $mg$. The results are on the \cref{tab:solids}.
 
 \begin{landscape}
     \begin{table}
@@ -102,7 +102,7 @@ Density was determined by a gravimetric–volumetric method using graduated cyli
     \rho = \frac{M_{\text{total}} - M_{\text{cylinder}}}{V_{\text{sample}}}
     \label{eq:density}
 \end{equation}
-where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume, the masses were messured in $g$ and the volume in $L$. The results are on the table \ref{tab:density}.
+where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume, the masses were messured in $g$ and the volume in $L$. The results are on the \cref{tab:density}.
 
 \begin{table}
     \centering
@@ -144,7 +144,7 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \subsection{TOC and TN Determination}
 \label{subsec:toc_tn_determination}
 
-Total organic carbon (TOC), total carbon (TC) and total nitrogen (TN) were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the food waste was diluted 400-fold and the crude glycerol was diluted 800-fold to bring the concentrations within the linear range of the instrument. The results are on the table \ref{tab:toc}.
+Total organic carbon (TOC), total carbon (TC) and total nitrogen (TN) were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the food waste was diluted 400-fold and the crude glycerol was diluted 800-fold to bring the concentrations within the linear range of the instrument. The results are on the \cref{tab:toc}.
 
 \begin{table}
     \centering
@@ -203,14 +203,80 @@ where $S_{\text{in}}$ is the influent VS concentration (kg m\textsuperscript{-3}
 \subsection{Feeding Solution}
 \label{subsec:feeding_solution}
 
-The feed was designed to achieve a carbon-to-nitrogen (C/N) ratio of 25:1, which is optimal for anaerobic digestion \parencite{li2011}. Characterisation of the food waste and crude glycerol showed that both substrates contained nitrogen, making it difficult to balance the C/N ratio using both of them together. Therefore, pure glycerol was used as an additive to allow precise control of the C/N ratio. Based on the chosen HRT and the daily volumetric flow rate, the reactor was fed once per day to ensure a flow rate high enough to transport the solid food-waste suspension through the feeding tubes.
+The feed was designed to achieve a carbon-to-nitrogen (C/N) ratio of 25:1, which is optimal for anaerobic digestion \parencite{li2011}. Characterisation of the food waste and crude glycerol showed that both substrates contained nitrogen, making it difficult to balance the C/N ratio using both of them together. Therefore, pure glycerol was used as an additive to allow precise control of the C/N ratio. Based on the chosen HRT and the daily volumetric flow rate, the reactor was fed once per day to ensure a flow rate high enough to transport the solid food-waste suspension through the feeding tube.
 
 The feed was made with a restriction of needing to have less than 15\% of TS\%. The amount of OLR and if KHCO\textsubscript{3} was added, was decided by the pH and how was the methane production of the reactor. If it was too acidic, it was used a lower OLR with KHCO\textsubscript{3}, if it was at the right amount it was keep the same amount, and if it was too basic it was added a higher OLR without KHCO\textsubscript{3}. The feed storage always had some remainig feed, and the new one was added on top, diluting or concentrating the feed going to the reactor.
+
+The feed was also suplemented with nutrients to complement the feed and create a better feed for the microorganisms. \Cref{tab:nutri} shows the nutrients used and there ratios.
+
+\begin{footnotesize}
+    \begin{xltabular}{\linewidth}{@{} C C C C @{}}
+
+        \caption{Nutrients used and there ratios. Adapted from: \textcite{safaa2025}}
+        \label{tab:nutri} \\
+
+        \toprule
+        \thead{Nutrients} &
+        \thead{Mass (mg/350 mL)} &
+        \thead{Mass (mg/L)} &
+        \thead{Mass (g/L)} \\
+        \midrule
+        \endfirsthead
+
+        \multicolumn{4}{l}{\textit{\Cref{tab:nutri} continued}} \\
+        \toprule
+        \thead{Nutrients} &
+        \thead{Mass (mg/350 mL)} &
+        \thead{Mass (mg/L)} &
+        \thead{Mass (g/L)} \\
+        \midrule
+        \endhead
+
+        \bottomrule
+        \endlastfoot
+
+        MgSO4.7H2O &
+        18.9000	&
+        54.0000	&
+        0.0540 \\
+        \addlinespace
+        FeSO4.7H2O &
+        522.8000 &
+        1493.7143 &
+        1.4937 \\
+        \addlinespace
+        CoCl2.6H2O &
+        0.4200 &
+        1.2000 &
+        0.0012 \\
+        \addlinespace
+        ZnCl2 &
+        10.5000 &
+        30.0000 &
+        0.0300 \\
+        \addlinespace
+        NiCl2.6H2O &
+        0.0105 &
+        0.0300 &
+        0.00003 \\
+        \addlinespace
+        EDTA &
+        0.2100 &
+        0.6000 &
+        0.0006 \\
+        \addlinespace
+        CuSO4.5H2O &
+        9.2300 &
+        26.3714 &
+        0.0264 \\
+
+    \end{xltabular}
+\end{footnotesize}
 
 \subsection{Biogas Quantification}
 \label{subsec:biogas_quatification}
 
-It was used the \textit{bioprocess control AMPTS II (Automatic Methane Potential Test System)} system (Figure~\ref{fig:ampts}), to meassure the gas flow that was comming out of the reactor, with a CO\textsubscript{2} fixing unit using a solution of 3 M NaOH.
+It was used the \textit{bioprocess control AMPTS II (Automatic Methane Potential Test System)} system (\cref{fig:ampts}), to meassure the gas flow that was comming out of the reactor, with a CO\textsubscript{2} fixing unit using a solution of 3 M NaOH.
 
 \begin{figure}
     \centering
@@ -233,4 +299,4 @@ It was used the method of DiLallo \& Albertson \parencite{ribas2007}, to measure
     \label{eq:VFA}
 \end{equation}
 
-The volumes were measured in mL, the sample volume was always 50 mL, the normality (N) of the acid and base, at first was 0.1, but then it was changed to 1. The equation \ref{eq:TA} is expressed in mgCaCO\textsubscript{3}/L, and the equation \ref{eq:VFA} is expressed in mgCH\textsubscript{3}COOH/L.
+The volumes were measured in mL, the sample volume was always 50 mL, the normality (N) of the acid and base, at first was 0.1, but then it was changed to 1. The \cref{eq:TA} is expressed in mgCaCO\textsubscript{3}/L, and the \cref{eq:VFA} is expressed in mgCH\textsubscript{3}COOH/L.

@@ -75,3 +75,24 @@
     citecolor  = black,
     urlcolor   = blue,
 }
+
+% references
+\usepackage{cleveref}
+
+\crefname{figure}{figure}{figures}
+\Crefname{figure}{Figure}{Figures}
+
+\usepackage{float}
+
+\newfloat{graph}{htbp}{graph}[chapter]
+\floatname{graph}{Graph}
+\crefname{graph}{graph}{graphs}
+\Crefname{graph}{Graph}{Graphs}
+
+% Tables
+\usepackage{xltabular}
+\usepackage{threeparttablex}
+\usepackage{booktabs}
+\usepackage{makecell}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}

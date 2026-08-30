@@ -1,0 +1,128 @@
+\chapter{Results}
+\label{ch:results}
+
+\section{Reactor Condition and Visual Observations}
+\label{sec:reactor_condition}
+
+At the start the reactor solution was murky (\cref{fig:reactor_murky}), within 3 days, the solution became black (\cref{fig:reactor_black}).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/reator-19-5.jpg}
+    \caption{Source: Author}
+    \label{fig:reactor_murky}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/reator-22-5.jpg}
+    \caption{Source: Author}
+    \label{fig:reactor_black}
+\end{figure}
+
+At the end when the reactor was being cleaned, after it spent about 2 weeks without watch, it had 4 masses that looked like fungi (\cref{fig:masses-dry,fig:masses-wet}). The fungi could have entered the reactor through the food waste or during problems with the food supply when changing to the new one and dealing with a few leaks.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/reator-limp-seco-24-8.jpg}
+    \caption{Source: Author}
+    \label{fig:masses-dry}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/reator-limp-agua-24-8.jpg}
+    \caption{Source: Author}
+    \label{fig:masses-wet}
+\end{figure}
+
+\section{Biogas Production}
+\label{sec:biogas_production}
+
+The \cref{graph:total-accumulation,graph:total-flow} show the total accumulation and results, from the experiment. With the \cref{graph:pre-accumulation,graph:pre-flow} showing the adaptation phase, \cref{graph:ra-accumulation,graph:ra-flow} showing the production when fed with a mixture of food waste and glicerol, \cref{graph:gl-accumulation,graph:gl-flow} showing the produciotn when fed with only glicerol, and \cref{graph:extra-accumulation,graph:extra-flow} showing the 2 weeks without watch, with the first still had some left over feed from the glicerol only feed.
+
+Both \cref{graph:ra-flow-30,graph:gl-flow-30} show spikes in production when the reactor was fed. While being fed with a mixture of food waste and glicerol, there were smaller spikes, then when it was fed with only glicerol. Showing that using a mixture of crude glicerol and pure glicerol, could be a better fed. The lower accumulation with the glicerol only feed, could be given to the low HRT, that didn't allow for the waste and biproducts to be removed from the reactor, creating a worse enviroment and making a lower production, the introduction of the fungi could have affected it as well, or the glicerol was being consumed faster but not producing as much methane.
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/total-accumulation.png}
+    \caption{Source: Author}
+    \label{graph:total-accumulation}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/total-flow.png}
+    \caption{Source: Author}
+    \label{graph:total-flow}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/pre-accumulation.png}
+    \caption{Source: Author}
+    \label{graph:pre-accumulation}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/pre-flow.png}
+    \caption{Source: Author}
+    \label{graph:pre-flow}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/ra-accumulation.png}
+    \caption{Source: Author}
+    \label{graph:ra-accumulation}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/ra-flow.png}
+    \caption{Source: Author}
+    \label{graph:ra-flow}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/ra-flow-30.png}
+    \caption{Source: Author}
+    \label{graph:ra-flow-30}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/gl-accumulation.png}
+    \caption{Source: Author}
+    \label{graph:gl-accumulation}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/gl-flow.png}
+    \caption{Source: Author}
+    \label{graph:gl-flow}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/gl-flow-30.png}
+    \caption{Source: Author}
+    \label{graph:gl-flow-30}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/extra-accumulation.png}
+    \caption{Source: Author}
+    \label{graph:extra-accumulation}
+\end{graph}
+
+\begin{graph}
+    \centering
+    \includegraphics[width=\textwidth]{assets/graphs/extra-flow.png}
+    \caption{Source: Author}
+    \label{graph:extra-flow}
+\end{graph}
