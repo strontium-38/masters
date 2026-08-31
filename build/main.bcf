@@ -3143,9 +3143,7 @@
     <bcf:citekey order="61" intorder="1">li2011</bcf:citekey>
     <bcf:citekey order="62" intorder="1">safaa2025</bcf:citekey>
     <bcf:citekey order="63" intorder="1">safaa2025</bcf:citekey>
-    <bcf:citekey order="64" intorder="1">safaa2025</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">safaa2025</bcf:citekey>
-    <bcf:citekey order="66" intorder="1">ribas2007</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">ribas2007</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

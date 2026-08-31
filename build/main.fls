@@ -325,9 +325,9 @@ INPUT /usr/share/texmf-dist/tex/latex/environ/environ.sty
 INPUT /usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 INPUT ./definitions.tex
 INPUT ./build/main.aux
+INPUT ./build/sections/acknowledgements.aux
 INPUT ./build/sections/abstract.aux
 INPUT ./build/sections/resumo.aux
-INPUT ./build/sections/acknowledgements.aux
 INPUT ./build/sections/01_introduction.aux
 INPUT ./build/sections/02_literature_review.aux
 INPUT ./build/sections/03_materials_methods.aux
@@ -382,12 +382,12 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT ./assets/UTFPR_logo.png
 INPUT ./assets/UTFPR_logo.png
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT build/sections/acknowledgements.aux
+INPUT ./sections/acknowledgements.tex
 OUTPUT build/sections/abstract.aux
 INPUT ./sections/abstract.tex
 OUTPUT build/sections/resumo.aux
 INPUT ./sections/resumo.tex
-OUTPUT build/sections/acknowledgements.aux
-INPUT ./sections/acknowledgements.tex
 INPUT ./build/main.toc
 OUTPUT build/main.toc
 OUTPUT build/sections/01_introduction.aux
@@ -465,9 +465,9 @@ INPUT ./assets/graphs/ph-razao.png
 OUTPUT build/sections/06_conclusion.aux
 INPUT ./sections/06_conclusion.tex
 INPUT ./build/main.aux
+INPUT ./build/sections/acknowledgements.aux
 INPUT ./build/sections/abstract.aux
 INPUT ./build/sections/resumo.aux
-INPUT ./build/sections/acknowledgements.aux
 INPUT ./build/sections/01_introduction.aux
 INPUT ./build/sections/02_literature_review.aux
 INPUT ./build/sections/03_materials_methods.aux

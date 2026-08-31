@@ -88,7 +88,7 @@ where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the
                 \bottomrule
             \end{tabular}
             \begin{tablenotes}
-                \item Reference: Author, \the\year
+                \item Source: Author
             \end{tablenotes}
         \end{threeparttable}
     \end{table}
@@ -136,7 +136,7 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
             \bottomrule
         \end{tabular}
         \begin{tablenotes}
-            \item Reference: Author, \the\year
+            \item Source: Author
         \end{tablenotes}
     \end{threeparttable}
 \end{table}
@@ -176,7 +176,7 @@ Total organic carbon (TOC), total carbon (TC) and total nitrogen (TN) were measu
             \bottomrule
         \end{tabular}
         \begin{tablenotes}
-            \item Reference: Author, \the\year
+            \item Source: Author
         \end{tablenotes}
     \end{threeparttable}
 \end{table}
@@ -210,67 +210,73 @@ The feed was made with a restriction of needing to have less than 15\% of TS\%. 
 The feed was also suplemented with nutrients to complement the feed and create a better feed for the microorganisms. \Cref{tab:nutri} shows the nutrients used and there ratios.
 
 \begin{footnotesize}
-    \begin{xltabular}{\linewidth}{@{} C C C C @{}}
+    \begin{threeparttable}
+        \begin{xltabular}{\linewidth}{@{} C C C C @{}}
 
-        \caption{Nutrients used and there ratios. Adapted from: \textcite{safaa2025}}
-        \label{tab:nutri} \\
+            \caption{Nutrients used and there ratios.}
+            \label{tab:nutri} \\
 
-        \toprule
-        \thead{Nutrients} &
-        \thead{Mass (mg/350 mL)} &
-        \thead{Mass (mg/L)} &
-        \thead{Mass (g/L)} \\
-        \midrule
-        \endfirsthead
+            \toprule
+            \thead{Nutrients} &
+            \thead{Mass (mg/350 mL)} &
+            \thead{Mass (mg/L)} &
+            \thead{Mass (g/L)} \\
+            \midrule
+            \endfirsthead
 
-        \multicolumn{4}{l}{\textit{\Cref{tab:nutri} continued}} \\
-        \toprule
-        \thead{Nutrients} &
-        \thead{Mass (mg/350 mL)} &
-        \thead{Mass (mg/L)} &
-        \thead{Mass (g/L)} \\
-        \midrule
-        \endhead
+            \multicolumn{4}{l}{\textit{\Cref{tab:nutri} continued}} \\
+            \toprule
+            \thead{Nutrients} &
+            \thead{Mass (mg/350 mL)} &
+            \thead{Mass (mg/L)} &
+            \thead{Mass (g/L)} \\
+            \midrule
+            \endhead
 
-        \bottomrule
-        \endlastfoot
+            \bottomrule
+            \endlastfoot
 
-        MgSO4.7H2O &
-        18.9000	&
-        54.0000	&
-        0.0540 \\
-        \addlinespace
-        FeSO4.7H2O &
-        522.8000 &
-        1493.7143 &
-        1.4937 \\
-        \addlinespace
-        CoCl2.6H2O &
-        0.4200 &
-        1.2000 &
-        0.0012 \\
-        \addlinespace
-        ZnCl2 &
-        10.5000 &
-        30.0000 &
-        0.0300 \\
-        \addlinespace
-        NiCl2.6H2O &
-        0.0105 &
-        0.0300 &
-        0.00003 \\
-        \addlinespace
-        EDTA &
-        0.2100 &
-        0.6000 &
-        0.0006 \\
-        \addlinespace
-        CuSO4.5H2O &
-        9.2300 &
-        26.3714 &
-        0.0264 \\
+            MgSO4.7H2O &
+            18.9000	&
+            54.0000	&
+            0.0540 \\
+            \addlinespace
+            FeSO4.7H2O &
+            522.8000 &
+            1493.7143 &
+            1.4937 \\
+            \addlinespace
+            CoCl2.6H2O &
+            0.4200 &
+            1.2000 &
+            0.0012 \\
+            \addlinespace
+            ZnCl2 &
+            10.5000 &
+            30.0000 &
+            0.0300 \\
+            \addlinespace
+            NiCl2.6H2O &
+            0.0105 &
+            0.0300 &
+            0.00003 \\
+            \addlinespace
+            EDTA &
+            0.2100 &
+            0.6000 &
+            0.0006 \\
+            \addlinespace
+            CuSO4.5H2O &
+            9.2300 &
+            26.3714 &
+            0.0264 \\
 
-    \end{xltabular}
+        \end{xltabular}
+
+        \begin{tablenotes}
+            \item Adapted from: \textcite{safaa2025}
+        \end{tablenotes}
+    \end{threeparttable}
 \end{footnotesize}
 
 \subsection{Biogas Quantification}

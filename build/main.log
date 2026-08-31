@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  31 AUG 2026 00:12
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  31 AUG 2026 19:15
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1390,8 +1390,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./build/main.aux (./build/sections/abstract.aux)
-(./build/sections/resumo.aux) (./build/sections/acknowledgements.aux)
+ (./build/main.aux (./build/sections/acknowledgements.aux)
+(./build/sections/abstract.aux) (./build/sections/resumo.aux)
 (./build/sections/01_introduction.aux)
 (./build/sections/02_literature_review.aux)
 (./build/sections/03_materials_methods.aux) (./build/sections/04_results.aux)
@@ -1664,29 +1664,29 @@ Package luatex.def Info: assets/UTFPR_logo.png  used on input line 15.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./assets/IPB_logo.png><./ass
 ets/UTFPR_logo.png>])
-\openout2 = sections/abstract.aux
- (./sections/abstract.tex)
+\openout2 = sections/acknowledgements.aux
+ (./sections/acknowledgements.tex)
 warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
 [1
 
 
 
 ]
+\openout2 = sections/abstract.aux
+ (./sections/abstract.tex) [2
+
+
+
+
+]
 \openout2 = sections/resumo.aux
- (./sections/resumo.tex) [2
+ (./sections/resumo.tex) [3
 
 
 
 
-]
-\openout2 = sections/acknowledgements.aux
- (./sections/acknowledgements.tex) [3
-
-
-
-
-]
-(./build/main.toc [4
+] [4]
+(./build/main.toc [5
 
 
 
@@ -1694,7 +1694,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
 \tf@toc=\write6
 
 \openout6 = main.toc
- [5]
+ [6]
 \openout2 = sections/01_introduction.aux
  (./sections/01_introduction.tex
 Chapter 1.
@@ -1710,7 +1710,7 @@ Chapter 2.
 \openout2 = sections/02_literature_review.aux
  (./sections/02_literature_review.tex
 Chapter 3.
-<assets/garlapati2016-flow-gl.png, id=242, 631.35875pt x 389.455pt>
+<assets/garlapati2016-flow-gl.png, id=246, 631.35875pt x 389.455pt>
 File: assets/garlapati2016-flow-gl.png Graphic file (type png)
 <use assets/garlapati2016-flow-gl.png>
 Package luatex.def Info: assets/garlapati2016-flow-gl.png  used on input line 8
@@ -1718,7 +1718,7 @@ Package luatex.def Info: assets/garlapati2016-flow-gl.png  used on input line 8
 (luatex.def)             Requested size: 256.07741pt x 157.96016pt.
 Package hyperref Info: bookmark level for unknown graph defaults to 0 on input 
 line 9.
-<assets/attarbachi2023-flow-gl.png, id=245, 395.4775pt x 193.72375pt>
+<assets/attarbachi2023-flow-gl.png, id=249, 395.4775pt x 193.72375pt>
 File: assets/attarbachi2023-flow-gl.png Graphic file (type png)
 <use assets/attarbachi2023-flow-gl.png>
 Package luatex.def Info: assets/attarbachi2023-flow-gl.png  used on input line 
@@ -1730,13 +1730,13 @@ Package luatex.def Info: assets/attarbachi2023-flow-gl.png  used on input line
 
 
 <./assets/garlapati2016-flow-gl.png>]
-<assets/li2011-flow-ferm.png, id=265, 372.39125pt x 364.36125pt>
+<assets/li2011-flow-ferm.png, id=270, 372.39125pt x 364.36125pt>
 File: assets/li2011-flow-ferm.png Graphic file (type png)
 <use assets/li2011-flow-ferm.png>
 Package luatex.def Info: assets/li2011-flow-ferm.png  used on input line 24.
 (luatex.def)             Requested size: 256.07741pt x 250.56445pt.
  [5<./assets/attarbachi2023-flow-gl.png><./assets/li2011-flow-ferm.png>]
-<assets/gebreegziabher2025-flow-ferm.png, id=282, 609.27625pt x 497.86pt>
+<assets/gebreegziabher2025-flow-ferm.png, id=286, 609.27625pt x 497.86pt>
 File: assets/gebreegziabher2025-flow-ferm.png Graphic file (type png)
 <use assets/gebreegziabher2025-flow-ferm.png>
 Package luatex.def Info: assets/gebreegziabher2025-flow-ferm.png  used on input
@@ -1766,12 +1766,37 @@ Overfull \hbox (33.38333pt too wide) in paragraph at lines 155--182
 
 
 ] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+[]
+ []
+
+
+Overfull \hbox (3.6792pt too wide) in paragraph at lines 277--278
+\TU/TimesNewRoman(0)/m/n/10 Adapted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+\TU/TimesNewRoman(0)/m/n/10 from:
+ []
+
+
+Overfull \hbox (4.22949pt too wide) in paragraph at lines 277--278
+[]\TU/TimesNewRoman(0)/m/n/10 Alqudah
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--281
+
+ []
+
+
 warning  (file assets/ampts.jpg) (readjpg): Exif resolution 72dpi x 72dpi differ
 s from the input resolution 96dpi x 96dpi
-<assets/ampts.jpg, id=367, 2312.64pt x 2500.34125pt>
+<assets/ampts.jpg, id=370, 2312.64pt x 2500.34125pt>
 File: assets/ampts.jpg Graphic file (type jpg)
 <use assets/ampts.jpg>
-Package luatex.def Info: assets/ampts.jpg  used on input line 283.
+Package luatex.def Info: assets/ampts.jpg  used on input line 289.
 (luatex.def)             Requested size: 256.07741pt x 276.83154pt.
 ) [13] [14<./assets/ampts.jpg
 warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolut
@@ -1783,7 +1808,7 @@ Chapter 5.
 
 warning  (file assets/reator-19-5.jpg) (readjpg): Exif resolution 72dpi x 72dpi 
 differs from the input resolution 96dpi x 96dpi
-<assets/reator-19-5.jpg, id=387, 1689.31125pt x 2664.95625pt>
+<assets/reator-19-5.jpg, id=393, 1689.31125pt x 2664.95625pt>
 File: assets/reator-19-5.jpg Graphic file (type jpg)
 <use assets/reator-19-5.jpg>
 Package luatex.def Info: assets/reator-19-5.jpg  used on input line 11.
@@ -1791,7 +1816,7 @@ Package luatex.def Info: assets/reator-19-5.jpg  used on input line 11.
 
 warning  (file assets/reator-22-5.jpg) (readjpg): Exif resolution 72dpi x 72dpi 
 differs from the input resolution 96dpi x 96dpi
-<assets/reator-22-5.jpg, id=388, 1870.99pt x 3112.62875pt>
+<assets/reator-22-5.jpg, id=394, 1870.99pt x 3112.62875pt>
 File: assets/reator-22-5.jpg Graphic file (type jpg)
 <use assets/reator-22-5.jpg>
 Package luatex.def Info: assets/reator-22-5.jpg  used on input line 18.
@@ -1799,25 +1824,25 @@ Package luatex.def Info: assets/reator-22-5.jpg  used on input line 18.
 
 warning  (file assets/reator-limp-seco-24-8.jpg) (readjpg): Exif resolution 72dp
 i x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/reator-limp-seco-24-8.jpg, id=391, 2312.64pt x 3490.03876pt>
+<assets/reator-limp-seco-24-8.jpg, id=397, 2312.64pt x 3490.03876pt>
 File: assets/reator-limp-seco-24-8.jpg Graphic file (type jpg)
 <use assets/reator-limp-seco-24-8.jpg>
 Package luatex.def Info: assets/reator-limp-seco-24-8.jpg  used on input line 2
 7.
 (luatex.def)             Requested size: 170.71393pt x 257.58783pt.
-<assets/reator-limp-agua-24-8.jpg, id=392, 2312.64pt x 4111.36pt>
+<assets/reator-limp-agua-24-8.jpg, id=398, 2312.64pt x 4111.36pt>
 File: assets/reator-limp-agua-24-8.jpg Graphic file (type jpg)
 <use assets/reator-limp-agua-24-8.jpg>
 Package luatex.def Info: assets/reator-limp-agua-24-8.jpg  used on input line 3
 4.
 (luatex.def)             Requested size: 170.71393pt x 303.44543pt.
-<assets/graphs/total-accumulation.png, id=399, 455.45157pt x 255.95625pt>
+<assets/graphs/total-accumulation.png, id=405, 455.45157pt x 255.95625pt>
 File: assets/graphs/total-accumulation.png Graphic file (type png)
 <use assets/graphs/total-accumulation.png>
 Package luatex.def Info: assets/graphs/total-accumulation.png  used on input li
 ne 46.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-<assets/graphs/total-flow.png, id=400, 455.45157pt x 255.95625pt>
+<assets/graphs/total-flow.png, id=406, 455.45157pt x 255.95625pt>
 File: assets/graphs/total-flow.png Graphic file (type png)
 <use assets/graphs/total-flow.png>
 Package luatex.def Info: assets/graphs/total-flow.png  used on input line 53.
@@ -1838,101 +1863,158 @@ warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolut
 ion 96dpi x 96dpi
 ><./assets/reator-limp-agua-24-8.jpg>] [18<./assets/graphs/total-accumulation.pn
 g><./assets/graphs/total-flow.png>]
-<assets/graphs/pre-accumulation.png, id=432, 455.45157pt x 255.95625pt>
+<assets/graphs/pre-accumulation.png, id=437, 455.45157pt x 255.95625pt>
 File: assets/graphs/pre-accumulation.png Graphic file (type png)
 <use assets/graphs/pre-accumulation.png>
 Package luatex.def Info: assets/graphs/pre-accumulation.png  used on input line
  70.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-<assets/graphs/pre-flow.png, id=433, 455.45157pt x 255.95625pt>
+<assets/graphs/pre-flow.png, id=438, 455.45157pt x 255.95625pt>
 File: assets/graphs/pre-flow.png Graphic file (type png)
 <use assets/graphs/pre-flow.png>
 Package luatex.def Info: assets/graphs/pre-flow.png  used on input line 77.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
  [19<./assets/graphs/pre-accumulation.png>]
-<assets/graphs/ra-accumulation.png, id=447, 455.45157pt x 255.95625pt>
+<assets/graphs/ra-accumulation.png, id=452, 455.45157pt x 255.95625pt>
 File: assets/graphs/ra-accumulation.png Graphic file (type png)
 <use assets/graphs/ra-accumulation.png>
 Package luatex.def Info: assets/graphs/ra-accumulation.png  used on input line 
 89.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-<assets/graphs/ra-flow.png, id=448, 455.45157pt x 255.95625pt>
+<assets/graphs/ra-flow.png, id=453, 455.45157pt x 255.95625pt>
 File: assets/graphs/ra-flow.png Graphic file (type png)
 <use assets/graphs/ra-flow.png>
 Package luatex.def Info: assets/graphs/ra-flow.png  used on input line 96.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-<assets/graphs/ra-flow-30.png, id=449, 455.45157pt x 255.95625pt>
+<assets/graphs/ra-flow-30.png, id=454, 455.45157pt x 255.95625pt>
 File: assets/graphs/ra-flow-30.png Graphic file (type png)
 <use assets/graphs/ra-flow-30.png>
 Package luatex.def Info: assets/graphs/ra-flow-30.png  used on input line 103.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-Missing character: There is no ‑ (U+2011) in font "name:Times New Roman:mode=n
-ode;language=dflt;+tlig;"!
-Missing character: There is no ‑ (U+2011) in font "name:Times New Roman:mode=n
-ode;language=dflt;+tlig;"!
-Missing character: There is no ‑ (U+2011) in font "name:Times New Roman:mode=n
-ode;language=dflt;+tlig;"!
-Missing character: There is no ‑ (U+2011) in font "name:Times New Roman:mode=n
-ode;language=dflt;+tlig;"!
-Missing character: There is no ‑ (U+2011) in font "name:Times New Roman:mode=n
-ode;language=dflt;+tlig;"!
-Missing character: There is no ‑ (U+2011) in font "name:Times New Roman:mode=n
-ode;language=dflt;+tlig;"!
-<assets/graphs/gl-accumulation.png, id=453, 455.45157pt x 255.95625pt>
+<assets/graphs/gl-accumulation.png, id=458, 455.45157pt x 255.95625pt>
 File: assets/graphs/gl-accumulation.png Graphic file (type png)
 <use assets/graphs/gl-accumulation.png>
 Package luatex.def Info: assets/graphs/gl-accumulation.png  used on input line 
 120.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-<assets/graphs/gl-flow.png, id=454, 455.45157pt x 255.95625pt>
+<assets/graphs/gl-flow.png, id=459, 455.45157pt x 255.95625pt>
 File: assets/graphs/gl-flow.png Graphic file (type png)
 <use assets/graphs/gl-flow.png>
 Package luatex.def Info: assets/graphs/gl-flow.png  used on input line 127.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-<assets/graphs/gl-flow-30.png, id=455, 455.45157pt x 255.95625pt>
+<assets/graphs/gl-flow-30.png, id=460, 455.45157pt x 255.95625pt>
 File: assets/graphs/gl-flow-30.png Graphic file (type png)
 <use assets/graphs/gl-flow-30.png>
 Package luatex.def Info: assets/graphs/gl-flow-30.png  used on input line 134.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-[20
-Missing character: There is no ‑ (U+2011) in font "name:Times New Roman:mode=n
-ode;language=dflt;+tlig;"!
-Missing character: There is no ‑ (U+2011) in font "name:Times New Roman:mode=n
-ode;language=dflt;+tlig;"!
-<./assets/graphs/pre-flow.png>] [21<./assets/graphs/ra-accumulation.png><./asset
-s/graphs/ra-flow.png>] [22<./assets/graphs/ra-flow-30.png><./assets/graphs/gl-ac
-cumulation.png>] [23<./assets/graphs/gl-flow.png><./assets/graphs/gl-flow-30.png
->]
-<assets/graphs/extra-accumulation.png, id=486, 455.45157pt x 255.95625pt>
+[20<./assets/graphs/pre-flow.png>] [21<./assets/graphs/ra-accumulation.png><./as
+sets/graphs/ra-flow.png>] [22<./assets/graphs/ra-flow-30.png><./assets/graphs/gl
+-accumulation.png>] [23<./assets/graphs/gl-flow.png><./assets/graphs/gl-flow-30.
+png>]
+<assets/graphs/extra-accumulation.png, id=491, 455.45157pt x 255.95625pt>
 File: assets/graphs/extra-accumulation.png Graphic file (type png)
 <use assets/graphs/extra-accumulation.png>
 Package luatex.def Info: assets/graphs/extra-accumulation.png  used on input li
 ne 146.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-<assets/graphs/extra-flow.png, id=487, 455.45157pt x 255.95625pt>
+<assets/graphs/extra-flow.png, id=492, 455.45157pt x 255.95625pt>
 File: assets/graphs/extra-flow.png Graphic file (type png)
 <use assets/graphs/extra-flow.png>
 Package luatex.def Info: assets/graphs/extra-flow.png  used on input line 153.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
  [24<./assets/graphs/extra-accumulation.png>]
-<assets/graphs/alcalinidade-agv.png, id=498, 455.45157pt x 255.95625pt>
+<assets/graphs/alcalinidade-agv.png, id=504, 455.45157pt x 255.95625pt>
 File: assets/graphs/alcalinidade-agv.png Graphic file (type png)
 <use assets/graphs/alcalinidade-agv.png>
 Package luatex.def Info: assets/graphs/alcalinidade-agv.png  used on input line
  167.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
-<assets/graphs/ph-razao.png, id=499, 455.45157pt x 255.95625pt>
+<assets/graphs/ph-razao.png, id=505, 455.45157pt x 255.95625pt>
 File: assets/graphs/ph-razao.png Graphic file (type png)
 <use assets/graphs/ph-razao.png>
 Package luatex.def Info: assets/graphs/ph-razao.png  used on input line 174.
 (luatex.def)             Requested size: 426.79135pt x 239.85294pt.
 ignored: Infinite glue shrinkage found in box being split [25<./assets/graphs/ex
-tra-flow.png>]) [26] [27<./assets/graphs/alcalinidade-agv.png><./assets/graphs/p
-h-razao.png>]
+tra-flow.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+\TU/TimesNewRoman(0)/m/n/10 started
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+\TU/TimesNewRoman(0)/m/n/10 feed-
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 316--317
+\TU/TimesNewRoman(0)/m/n/10 ing on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+\TU/TimesNewRoman(0)/m/n/10 lu-tion
+ []
+
+
+Overfull \hbox (0.77094pt too wide) in paragraph at lines 317--318
+\TU/TimesNewRoman(0)/m/n/10 glicerol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+\TU/TimesNewRoman(0)/m/n/10 was
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+\TU/TimesNewRoman(0)/m/n/10 di-luted
+ []
+
+[26] [27<./assets/graphs/alcalinidade-agv.png><./assets/graphs/ph-razao.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+[]
+ []
+
+
+Overfull \hbox (0.77574pt too wide) in paragraph at lines 318--319
+\TU/TimesNewRoman(0)/m/n/10 Change
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+[]\TU/TimesNewRoman(0)/m/n/10 There
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+\TU/TimesNewRoman(0)/m/n/10 was a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+\TU/TimesNewRoman(0)/m/n/10 leak
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 319--320
+\TU/TimesNewRoman(0)/m/n/10 on the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+\TU/TimesNewRoman(0)/m/n/10 feed-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+\TU/TimesNewRoman(0)/m/n/10 ing
+ []
+
+) [28]
 \openout2 = sections/06_conclusion.aux
  (./sections/06_conclusion.tex
 Chapter 6.
-) [28
+) [29
 
 
 
@@ -1942,12 +2024,12 @@ Chapter 6.
 Package biblatex Warning: No driver for 'masterthesis'.
 (biblatex)                Using fallback driver on input line 41.
 
-[29
+[30
 
 
 
-] [30] (./build/main.aux (./build/sections/abstract.aux)
-(./build/sections/resumo.aux) (./build/sections/acknowledgements.aux)
+] [31] (./build/main.aux (./build/sections/acknowledgements.aux)
+(./build/sections/abstract.aux) (./build/sections/resumo.aux)
 (./build/sections/01_introduction.aux)
 (./build/sections/02_literature_review.aux)
 (./build/sections/03_materials_methods.aux) (./build/sections/04_results.aux)
@@ -1957,24 +2039,24 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AEA28D4F0D389DA2577B72395BFF1AD1;4910.
+(rerunfilecheck)             Checksum: 099B99FA20AD8A00FACC5660FA190182;4910.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 55447 strings out of 476076
+ 55450 strings out of 476076
  125342,2848258 words of node,token memory allocated
- 839 words of node memory still in use:
+ 834 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 4 glyph, 61 attribute, 73 glue_spec, 31 attribute_list, 2 write, 5 pdf_actio
+rn, 4 glyph, 61 attribute, 72 glue_spec, 31 attribute_list, 2 write, 5 pdf_actio
 n nodes
-   avail lists: 1:2,2:4427,3:840,4:231,5:263,6:296,7:7555,8:62,9:2499,10:15,11:6
+   avail lists: 1:1,2:4427,3:840,4:231,5:265,6:296,7:7555,8:62,9:2499,10:27,11:6
 20
  76372 multiletter control sequences out of 65536+600000
  80 fonts using 8796095 bytes
- 99i,23n,128p,2055b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,23n,128p,2819b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/fonts/TTF/Times.TTF></usr/share/fonts/TTF/Timesi.TTF></usr/share/fon
 ts/TTF/Timesbd.TTF></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
 pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share
@@ -1983,10 +2065,10 @@ s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
 fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (36 pages, 9015448 bytes).
+Output written on main.pdf (38 pages, 9019404 bytes).
 
-PDF statistics: 609 PDF objects out of 1000 (max. 8388607)
- 494 compressed objects within 5 object streams
- 125 named destinations out of 1000 (max. 1048576)
+PDF statistics: 619 PDF objects out of 1000 (max. 8388607)
+ 502 compressed objects within 6 object streams
+ 128 named destinations out of 1000 (max. 1048576)
  248 words of extra memory for PDF output out of 10000 (max. 100000000)
 
