@@ -8,38 +8,53 @@ The reactor was inoculated with anaerobic sludge and initially contained a murky
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.4\textwidth]{assets/reator-19-5.jpg}
-    \caption{Source: Author}
-    \label{fig:reactor_murky}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.4\textwidth]{assets/reator-22-5.jpg}
-    \caption{Source: Author}
-    \label{fig:reactor_black}
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/reator-19-5.jpg}
+        \caption{Murky suspension}
+        \label{fig:reactor_murky}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/reator-22-5.jpg}
+        \caption{Black suspention}
+        \label{fig:reactor_black}
+    \end{subfigure}
+    \caption{Visual changes in the reactor.}
+    \label{fig:reactor_visual}
 \end{figure}
 
 At the end of the experimental period, after approximately two weeks of unattended operation, four discrete masses resembling fungal colonies were observed on the internal surfaces of the reactor during cleaning (\cref{fig:masses-dry,fig:masses-wet}). The origin of these growths is uncertain, but they may have been introduced via the food waste feed or during periods when the feeding tube was opened for repairs (e.g. leaks) and when cahnging the feed that the tube had to be cleaned. The presence of such organisms could have competed with the anaerobic microbial community for substrate, potentially affecting biogas production in the later stages of the experiment.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.4\textwidth]{assets/reator-limp-seco-24-8.jpg}
-    \caption{Source: Author}
-    \label{fig:masses-dry}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.4\textwidth]{assets/reator-limp-agua-24-8.jpg}
-    \caption{Source: Author}
-    \label{fig:masses-wet}
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{assets/reator-limp-seco-24-8.jpg}
+        \caption{Masses inside the dry reactor}
+        \label{fig:masses-dry}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{assets/reator-limp-agua-24-8.jpg}
+        \caption{Masses floating in the reactor}
+        \label{fig:masses-wet}
+    \end{subfigure}
+    \caption{Visual for the masses inside the reactor.}
+    \label{fig:reactor_visual}
 \end{figure}
 
 \section{Biogas Production}
 \label{sec:biogas_production}
 
 Biogas production was monitored continuously using AMPTS II, which recorded both the cumulative volume of methane produced and the instantaneous flow rate. The entire experimental period is summarised in \cref{graph:total-accumulation,graph:total-flow}. To facilitate interpretation, the data have been divided into four distinct phases based on the feeding regime: (i) an adaptation phase~\ref{subsec:adaptation_phase}, (ii) co-digestion of food waste and glycerol~\ref{subsec:codigestion_phase}, (iii) glycerol only feeding~\ref{subsec:glycerol_phase}, and (iv) a post-feeding period~\ref{subsec:post_feeding}.
+
+\subsection{Overall Production}
+\label{subsec:overall_production}
+
+The cumulative methane production over the whole experiment (\cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\cref{graph:total-flow}) exhibits distinct peaks corresponding to daily feeding events, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day 53, that was when the feed was changed from a mixture of food waste and crude glycerol, to only crude glycerol, and due to some complications, there was that anomaly.
 
 \begin{graph}
     \centering
@@ -54,11 +69,6 @@ Biogas production was monitored continuously using AMPTS II, which recorded both
     \caption{Source: Author}
     \label{graph:total-flow}
 \end{graph}
-
-\subsection{Overall Production}
-\label{subsec:overall_production}
-
-The cumulative methane production over the whole experiment (\cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\cref{graph:total-flow}) exhibits distinct peaks corresponding to daily feeding events, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day 53, that was when the feed was changed from a mixture of food waste and crude glycerol, to only crude glycerol, and due to some complications, there was that anomaly.
 
 \subsection{Adaptation Phase}
 \label{subsec:adaptation_phase}
@@ -111,7 +121,7 @@ The reactor was fed with a mixture of food waste and crude glycerol with a highe
 When the feed was changed to crude glycerol alone, biogas production decreased noticeably (\cref{graph:gl-accumulation,graph:gl-flow}). Although spikes in flow were still observed after feeding (\cref{graph:gl-flow-30}), their magnitude was bigger than during the co-digestion phase, and the cumulative methane volume plateaued more quickly. Several factors may explain this lower performance:
 \begin{itemize}
     \item The glycerol could have been transformed to fast or too slow, to maintaing a concentration of intermediate products.
-    \item The hydraulic retention time of 30 days may have been insufficient to wash out inhibitory by-products or to maintain a stable population of glycerol-fermenting bacteria.
+    \item The retention rate of 1/30 days may have been insufficient to wash out inhibitory by-products or to maintain a stable population of glycerol-fermenting bacteria.
     \item The appearance of fungal masses towards the end of this phase could have further stressed the anaerobic community by competing for substrate or introducing toxic metabolites.
 \end{itemize}
 
@@ -185,7 +195,7 @@ VFA concentrations also increased after the start of feeding, reaching values be
     \begin{ThreePartTable}
         \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
 
-        \caption{Source:Author}
+        \caption{Substrates used during the process}
         \label{tab:feeds} \\
 
         \toprule
@@ -317,6 +327,8 @@ VFA concentrations also increased after the start of feeding, reaching values be
             \item[b] The solution of pure glicerol was diluted 100X.
             \item[c] Change of substrate.
             \item[d] There was a leak on the feeding tube.
+            \newline
+            \item Source: Author
         \end{tablenotes}
     \end{ThreePartTable}
 \end{footnotesize}
