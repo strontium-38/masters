@@ -56,64 +56,71 @@ Biogas production was monitored continuously using AMPTS II, which recorded both
 
 The cumulative methane production over the whole experiment (\cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\cref{graph:total-flow}) exhibits distinct peaks corresponding to daily feeding events, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day 53, that was when the feed was changed from a mixture of food waste and crude glycerol, to only crude glycerol, and due to some complications, there was that anomaly.
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/total-accumulation.png}
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{0}{97}{Day}{Volume (NmL)}{}
     \caption{Source: Author}
     \label{graph:total-accumulation}
-\end{graph}
+\end{figure}
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/total-flow.png}
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{0}{97}{Day}{Flow (nML/d)}{}
     \caption{Source: Author}
     \label{graph:total-flow}
-\end{graph}
+\end{figure}
 
 \subsection{Adaptation Phase}
 \label{subsec:adaptation_phase}
 
 During the initial adaptation phase, biogas production was low (\cref{graph:pre-accumulation,graph:pre-flow}). This lag period is normal for anaerobic reactors as the microbial community adjusts to the new substrate and operating conditions. The small but measurable methane flow confirmed that the viability of the inoculum, and the gradual increase in flow suggested the onset of exponential growth of the microorganisms.
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/pre-accumulation.png}
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{0}{24}{Day}{Volume (NmL)}{}
     \caption{Source: Author}
     \label{graph:pre-accumulation}
-\end{graph}
+\end{figure}
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/pre-flow.png}
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{0}{24}{Day}{Flow (nML/d)}{}
     \caption{Source: Author}
     \label{graph:pre-flow}
-\end{graph}
+\end{figure}
 
 \subsection{Co-digestion of Food Waste and Glycerol}
 \label{subsec:codigestion_phase}
 
 The reactor was fed with a mixture of food waste and crude glycerol with a higher concentration, a marked increase in biogas production was observed (\cref{graph:ra-accumulation,graph:ra-flow}). The cumulative methane volume rose steeply, and the flow rate showed pronounced spikes immediately after each feeding event (\cref{graph:ra-flow-30}). These spikes are typical of readily degradable substrates, which are quickly hydrolysed and converted to volatile fatty acids and subsequently to methane. The average flow rate during this phase was higher than in any other phase, indicating that the co-digestion of food waste and glycerol provided a balanced nutrient supply and avoided the inhibition often associated with high glycerol concentrations alone.
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/ra-accumulation.png}
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{25}{52}{Day}{Volume (NmL)}{}
     \caption{Source: Author}
     \label{graph:ra-accumulation}
-\end{graph}
+\end{figure}
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/ra-flow.png}
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{25}{52}{Day}{Flow (nML/d)}{}
     \caption{Source: Author}
     \label{graph:ra-flow}
-\end{graph}
+\end{figure}
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/ra-flow-30.png}
+    \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
+        {experimentos-30min.csv}{600}{1248.75}{Hour}{Flow (nML/d)}{}
     \caption{Source: Author}
     \label{graph:ra-flow-30}
-\end{graph}
+\end{figure}
 
 \subsection{Glycerol only Feeding Period}
 \label{subsec:glycerol_phase}
@@ -125,45 +132,50 @@ When the feed was changed to crude glycerol alone, biogas production decreased n
     \item The appearance of fungal masses towards the end of this phase could have further stressed the anaerobic community by competing for substrate or introducing toxic metabolites.
 \end{itemize}
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/gl-accumulation.png}
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{53}{81}{Day}{Volume (NmL)}{}
     \caption{Source: Author}
     \label{graph:gl-accumulation}
-\end{graph}
+\end{figure}
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/gl-flow.png}
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{53}{81}{Day}{Flow (nML/d)}{}
     \caption{Source: Author}
     \label{graph:gl-flow}
-\end{graph}
+\end{figure}
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/gl-flow-30.png}
+    \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
+        {experimentos-30min.csv}{1272}{1941.5}{Hour}{Flow (nML/d)}{}
     \caption{Source: Author}
     \label{graph:gl-flow-30}
-\end{graph}
+\end{figure}
 
 \subsection{Post-feeding Period}
 \label{subsec:post_feeding}
 
 During the final two weeks, no fresh substrate was added to the reactor, it just had some residual substrate from the glycerol only phase for a week. Nevertheless, a small residual biogas production was recorded (\cref{graph:extra-accumulation,graph:extra-flow}). This production can be attributed to the slow degradation of accumulated organic matter and microbial decay products. The flow rate declined gradually, confirming that the reactor was no longer being actively fed and that the remaining substrate was limited.
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/extra-accumulation.png}
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{82}{97}{Day}{Volume (NmL)}{}
     \caption{Source: Author}
     \label{graph:extra-accumulation}
-\end{graph}
+\end{figure}
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/extra-flow.png}
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {experimentos-day.csv}{82}{97}{Day}{Flow (nML/d)}{}
     \caption{Source: Author}
     \label{graph:extra-flow}
-\end{graph}
+\end{figure}
 
 \subsection{Alkalinity and Volatile Fatty Acids}
 \label{subsec:alkalinity_vfa}

@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\input{graph_functions.tex}
+
+\begin{document}
+
+% Example 1: Day data, full range
+\VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+  {experimentos-day.csv}{0}{97}{Day}{Volume (NmL)}{Cumulative Volume}
+
+\clearpage
+
+% Example 2: Day data, start from day 10 (baseline = volume at day 9)
+\VolumeGraphInt[xtick distance=10]
+  {experimentos-day.csv}{10}{60}{Day}{Volume (NmL)}{Volume since Day 9}
+
+\clearpage
+
+\VolumeGraphAuto[xtick distance=250]  % no minor ticks
+  {experimentos-30min.csv}{0}{2325.5}{Hour}{Volume (NmL)}{Volume (30-min)}
+
+\clearpage
+
+\VolumeGraphAuto[xtick distance=10]  % no minor ticks
+  {experimentos-30min.csv}{50.5}{100.5}{Hour}{Volume (NmL)}{Volume (30-min)}
+
+\clearpage
+
+% Example 3: Flow for day data
+\FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+  {experimentos-day.csv}{0}{97}{Day}{Flow (nML/d)}{Daily Flow}
+
+\clearpage
+
+\FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+  {experimentos-day.csv}{10}{60}{Day}{Flow (nML/d)}{Daily Flow}
+
+\clearpage
+
+% Example 4: Flow for 30-min data (hours)
+\FlowGraph[xtick distance=250]
+  {experimentos-30min.csv}{0}{2325.5}{Hour}{Flow (nML/h)}{Hourly Flow}
+
+\clearpage
+
+\FlowGraph[xtick distance=10]
+  {experimentos-30min.csv}{50.5}{100.5}{Hour}{Flow (nML/h)}{Hourly Flow}
+
+\end{document}

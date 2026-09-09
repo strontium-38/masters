@@ -1,0 +1,125 @@
+\ProvidesPackage{graphs}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{xparse}
+\usepackage{pgffor}   % for \foreach
+\pgfplotsset{compat=1.18}
+
+% ------------------------------------------------------------
+% Helper: find baseline volume for a given start value.
+% It returns the volume of the last row whose x-value is < start.
+% If no such row exists (start <= first x), returns 0.
+% ------------------------------------------------------------
+\newcommand{\findbaseline}[2]{% #1 = table macro, #2 = start value
+  \pgfplotstablegetrowsof{#1}
+  \pgfmathsetmacro{\numrows}{\pgfplotsretval}
+  \def\baseline{0}% default
+  \foreach \i in {0,...,\numrows} {
+    \pgfplotstablegetelem{\i}{[index]0}\of{#1}
+    \let\currentx\pgfplotsretval
+    \pgfmathparse{\currentx < #2 ? 1 : 0}
+    \ifnum\pgfmathresult=1
+      \pgfplotstablegetelem{\i}{[index]1}\of{#1}
+      \let\baseline\pgfplotsretval
+    \else
+      \breakforeach
+    \fi
+  }
+}
+
+% ------------------------------------------------------------
+% Volume bar graph – integer start version (assumes start is row index)
+% ------------------------------------------------------------
+\NewDocumentCommand{\VolumeGraphInt}{ O{} m m m m m m }{%
+  \begingroup
+  \pgfplotstableread[col sep=comma]{#2}{\datatable}%
+  % baseline = volume at row start-1
+  \ifnum#3>0
+    \pgfplotstablegetelem{\the\numexpr#3-1\relax}{[index]1}\of\datatable
+    \edef\baseline{\pgfplotsretval}%
+  \else
+    \def\baseline{0}%
+  \fi
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=15cm, height=10cm,
+      ybar,
+      bar width=0.8,
+      xlabel={#5},
+      ylabel={#6},
+      title={#7},
+      xmin=#3, xmax=#4,
+      ymin=0,
+      %grid=major,
+      restrict x to domain=#3:#4,
+      #1
+    ]
+      \addplot[
+        fill=blue!50,
+        draw=blue,
+      ] table[x index=0, y expr={\thisrowno{1} - \baseline}] {\datatable};
+    \end{axis}
+  \end{tikzpicture}
+  \endgroup
+}
+
+% ------------------------------------------------------------
+% Volume bar graph – automatic baseline (handles any start value)
+% ------------------------------------------------------------
+\NewDocumentCommand{\VolumeGraphAuto}{ O{} m m m m m m }{%
+  \begingroup
+  \pgfplotstableread[col sep=comma]{#2}{\datatable}%
+  % Find baseline = volume of last row with x < start
+  \findbaseline{\datatable}{#3}
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=15cm, height=10cm,
+      ybar,
+      bar width=0.8,
+      xlabel={#5},
+      ylabel={#6},
+      title={#7},
+      xmin=#3, xmax=#4,
+      ymin=0,
+      %grid=major,
+      restrict x to domain=#3:#4,
+      #1
+    ]
+      \addplot[
+        fill=blue!50,
+        draw=blue,
+      ] table[x index=0, y expr={\thisrowno{1} - \baseline}] {\datatable};
+    \end{axis}
+  \end{tikzpicture}
+  \endgroup
+}
+
+% ------------------------------------------------------------
+% Flow line graph (unchanged)
+% ------------------------------------------------------------
+\NewDocumentCommand{\FlowGraph}{ O{} m m m m m m }{%
+  \begingroup
+  \pgfplotstableread[col sep=comma]{#2}{\datatable}%
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=15cm, height=10cm,
+      xlabel={#5},
+      ylabel={#6},
+      title={#7},
+      xmin=#3, xmax=#4,
+      ymin=0,
+      %grid=major,
+      restrict x to domain=#3:#4,
+      #1
+    ]
+      \addplot[
+        color=red,
+        thick,
+        mark=*,
+        mark size=1pt,
+      ] table[x index=0, y index=2] {\datatable};
+    \end{axis}
+  \end{tikzpicture}
+  \endgroup
+}
