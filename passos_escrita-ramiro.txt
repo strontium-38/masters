@@ -1,4 +1,4 @@
-so ha figuras, nao ha graficos entr outras coisas
+so ha figuras, nao ha graficos entr outras coisas *
 
 adaptar os graficos de outras fontes
 
@@ -37,7 +37,7 @@ scispace.com - pesquisa de referencias por tema
 
 grafico 5.13 colacar escalas dos dois lados, uma pra agv e outra para alcalinidade
 
-tabela 5.1 - materiais e metodos - adicionar razao C/N na legenda
+tabela 5.1 - materiais e metodos - adicionar razao C/N na legenda *
 
 adicionar valores na conclusao
 

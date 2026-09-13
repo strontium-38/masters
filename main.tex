@@ -20,7 +20,17 @@
 % Abstract, acknowledgements (optional)
 \include{sections/acknowledgements}
 \include{sections/abstract}
-\include{sections/resumo}
+
+% Resumo — Portuguese number formatting, local to this include
+\begingroup
+  \sisetup{
+      output-decimal-marker={,},
+      group-separator={.},
+      group-minimum-digits=4,
+      range-phrase={ a },
+  }
+  \include{sections/resumo}
+\endgroup
 
 % Table of contents
 \tableofcontents

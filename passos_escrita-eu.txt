@@ -1,0 +1,9 @@
+adicionar tabela de abreviacoes e razoes
+
+mudar as tabelas para csv, para facilitar formatacao e inclusao
+
+modificar formulas quimicas para \ce{} ou \ch{}
+
+modificar numeros para \num{} ou \numrange{}
+
+modificar unidades para \unit{} ou com valor \qty{}

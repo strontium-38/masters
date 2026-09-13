@@ -43,7 +43,7 @@ At the end of the experimental period, after approximately two weeks of unattend
         \label{fig:masses-wet}
     \end{subfigure}
     \caption{Visual for the masses inside the reactor.}
-    \label{fig:reactor_visual}
+    \label{fig:reactor-limp_visual}
 \end{figure}
 
 \section{Biogas Production}
@@ -54,7 +54,7 @@ Biogas production was monitored continuously using AMPTS II, which recorded both
 \subsection{Overall Production}
 \label{subsec:overall_production}
 
-The cumulative methane production over the whole experiment (\cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\cref{graph:total-flow}) exhibits distinct peaks corresponding to daily feeding events, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day 53, that was when the feed was changed from a mixture of food waste and crude glycerol, to only crude glycerol, and due to some complications, there was that anomaly.
+The cumulative methane production over the whole experiment (\cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\cref{graph:total-flow}) exhibits distinct peaks corresponding to daily feeding events, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day $53$, that was when the feed was changed from a mixture of food waste and crude glycerol, to only crude glycerol, and due to some complications, there was that anomaly.
 
 \begin{figure}[H]
     \centering
@@ -128,7 +128,7 @@ The reactor was fed with a mixture of food waste and crude glycerol with a highe
 When the feed was changed to crude glycerol alone, biogas production decreased noticeably (\cref{graph:gl-accumulation,graph:gl-flow}). Although spikes in flow were still observed after feeding (\cref{graph:gl-flow-30}), their magnitude was bigger than during the co-digestion phase, and the cumulative methane volume plateaued more quickly. Several factors may explain this lower performance:
 \begin{itemize}
     \item The glycerol could have been transformed to fast or too slow, to maintaing a concentration of intermediate products.
-    \item The retention rate of 1/30 days may have been insufficient to wash out inhibitory by-products or to maintain a stable population of glycerol-fermenting bacteria.
+    \item The retention rate of $1/30$ days may have been insufficient to wash out inhibitory by-products or to maintain a stable population of glycerol-fermenting bacteria.
     \item The appearance of fungal masses towards the end of this phase could have further stressed the anaerobic community by competing for substrate or introducing toxic metabolites.
 \end{itemize}
 
@@ -180,167 +180,86 @@ During the final two weeks, no fresh substrate was added to the reactor, it just
 \subsection{Alkalinity and Volatile Fatty Acids}
 \label{subsec:alkalinity_vfa}
 
-The total alkalinity and VFA concentrations were monitored throughout the experiment to assess process stability. The results are shown in \cref{graph:alkalinity_vfa}. Initially, both alkalinity and VFA were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of KHCO$_3$, alkalinity increased sharply to values above 7000 mg CaCO$_3$/L and remained relatively high until close to the end. This high alkalinity was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
+The total alkalinity and VFA concentrations were monitored throughout the experiment to assess process stability. The results are shown in \cref{graph:alkalinity_vfa}. Initially, both alkalinity and VFA were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of $KHCO_3$, alkalinity increased sharply to values above $7,000 mg Ca\,CO_3\, L^{-1}$ and remained relatively high until close to the end. This high alkalinity was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
 
-VFA concentrations also increased after the start of feeding, reaching values between 3000 and 5000 mg CH$_3$COOH/L. Such high VFA levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high alkalinity provided a strong buffering capacity, and the pH remained above 6.5 for most of the experiment, with the co-digestion the pH was falling and with glycerol only the pH was increasing. The VFA/alkalinity ratio is a more reliable indicator of instability. In this experiment, the ratio fluctuated between 0.3 and 1.2. While using the co-digestion feed a ration aroun 0.8 to 1.0 had the highest production.
+VFA concentrations also increased after the start of feeding, reaching values between $3,000-5,000 mg CH\,_3\,COOH L^{-1}$. Such high VFA levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high alkalinity provided a strong buffering capacity, and the pH remained above $6.5$ for most of the experiment, with the co-digestion the pH was falling and with glycerol only the pH was increasing. The $VFA/alkalinity$ ratio is a more reliable indicator of instability. In this experiment, the ratio fluctuated between $0.3-1.2$. While using the co-digestion feed a ration aroun $0.8-1.0$ had the highest production.
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/alcalinidade-agv.png}
+    \begingroup
+    \pgfplotstableread[col sep=comma]{alk-vfa.csv}{\datatable}
+    \begin{tikzpicture}
+        % ---------- LEFT axis: Alkalinity ----------
+        \begin{axis}[
+            width=15cm, height=10cm,
+            xlabel={Time (d)},
+            ylabel={Alkalinity (mg CaCO$_3$/L)},
+            title={Title},
+            xmin=0, ymin=0,
+            axis y line*=left,        % only draw left spine + ticks
+            legend pos=south east,
+        ]
+            \addplot[
+                color=blue, thick, mark=*, mark size=1.5pt,
+            ] table[x index=0, y index=1] {\datatable};
+            \addlegendentry{Alkalinity}
+
+            % Manually add the VFA entry to the same legend:
+            \addlegendimage{color=red, thick, mark=square*, mark size=1.5pt}
+            \addlegendentry{VFA}
+        \end{axis}
+
+        % ---------- RIGHT axis: VFA ----------
+        \begin{axis}[
+            width=15cm, height=10cm,
+            xmin=0, ymin=0,
+            axis y line*=right,       % only right spine + ticks
+            axis x line=none,         % hide duplicate x-axis
+            ylabel={VFA (mg CH$_3$COOH/L)},
+            % no legend here — we put it on the left axis
+        ]
+            \addplot[
+                color=red, thick, mark=square*, mark size=1.5pt,
+            ] table[x index=0, y index=2] {\datatable};
+        \end{axis}
+    \end{tikzpicture}
+    \endgroup
     \caption{Source: Author}
     \label{graph:alkalinity_vfa}
-\end{graph}
+\end{figure}
 
-\begin{graph}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{assets/graphs/ph-razao.png}
+    \begingroup
+    \pgfplotstableread[col sep=comma]{ph-ratio.csv}{\datatable}
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=15cm, height=10cm,
+            xlabel={Time (d)},
+            ylabel={},
+            title={Title},
+            xmin=0, ymin=0,
+            legend style={
+                at={(0.98, 0.4)},     % x=98% of axis width, y=50% of axis height
+                anchor=east,          % right edge of the legend box touches that point
+                draw=black,
+                fill=white,
+                fill opacity=0.9,
+            },
+        ]
+            \addplot[
+                color=green, thick, mark=*, mark size=1.5pt,
+            ] table[x index=0, y index=1] {\datatable};
+            \addlegendentry{pH}
+
+            \addplot[
+                color=purple, thick, mark=square*, mark size=1.5pt,
+            ] table[x index=0, y index=2] {\datatable};
+            \addlegendentry{VFA/Alkalinity}
+        \end{axis}
+    \end{tikzpicture}
+    \endgroup
     \caption{Source: Author}
     \label{graph:ph_ratio}
-\end{graph}
+\end{figure}
 
-\subsection{Subestrate used as feed}
-\label{subsec:sub_feed}
-
-\Cref{tab:feeds} shows all substrates used to feed the reactor and when they were made.
-
-\begin{footnotesize}
-    \begin{ThreePartTable}
-        \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
-
-        \caption{Substrates used during the process}
-        \label{tab:feeds} \\
-
-        \toprule
-        \thead{Day} &
-        \thead{Substrate 1} &
-        \thead{Subestrate 2} &
-        \thead{Substrate 3} &
-        \thead{Extra\\ Addition} &
-        \thead{COV\\ \& TS\%} &
-        \thead{Volume\\ Made} \\
-        \midrule
-        \endfirsthead
-
-        \multicolumn{6}{l}{\textit{\Cref{tab:feeds} continued}} \\
-        \toprule
-        \thead{Day} &
-        \thead{Substrate 1} &
-        \thead{Subestrate 2} &
-        \thead{Substrate 3} &
-        \thead{Extra\\ Addition} &
-        \thead{COV\\ \& TS\%} &
-        \thead{Volume\\ Made} \\
-        \midrule
-        \endhead
-
-        \bottomrule
-        \endlastfoot
-
-        0\tnote{a} &
-        Food Waste, 156 g &
-        Glucose, 1.9 g &
-        &
-        Calcium Bicarbonate, 5 g &
-        1.5 \& 15 &
-        500 mL\\
-        \addlinespace
-        4 &
-        Crude Glicerol, \approx 23.2 mL &
-        Pure Glicerol\tnote{b}, \approx 31.5 mL &
-        &
-        Potassium Bicarbonate, \approx 1.9 g &
-        0.8 \& 10 &
-        250 mL\\
-        \addlinespace
-        11 &
-        Food Waste, \approx 12.54 g &
-        Crude Glicerol, \approx 9.02 mL &
-        Pure Glicerol, \approx 2.6 mL &
-        Potassium Bicarbonate, \approx 1.57 g &
-        0.13-0.4 \& 5-10 &
-        250 mL\\
-        \addlinespace
-        18 &
-        Food Waste, \approx 10.88 g &
-        Crude Glicerol, \approx 2.89 mL &
-        Pure Glicerol, \approx 1.44 mL &
-        &
-        0.0256 \& \approx 2 &
-        250 mL\\
-        \addlinespace
-        25 &
-        Food Waste, \approx 31.12 g &
-        Crude Glicerol, \approx 44 mL &
-        Pure Glicerol, \approx 29 mL &
-        &
-        \approx 1.4 \& \approx 10 &
-        250 mL \\
-        \addlinespace
-        32 &
-        Food Waste, \approx 31.01 g &
-        Crude Glicerol, \approx 44 mL &
-        Pure Glicerol, \approx 28.9 mL &
-        &
-        \approx 1.4 \& \approx 10 &
-        250 mL \\
-        \addlinespace
-        39 &
-        Food Waste, \approx 46.52 g &
-        Crude Glicerol, \approx 66 mL &
-        Pure Glicerol, \approx 43 mL &
-        Potassium Bicarbonate, \approx 2.6 g &
-        \approx 3.1 \& \approx 15 &
-        250 mL \\
-        \addlinespace
-        46 &
-        Food Waste, \approx 50.07 g &
-        Crude Glicerol, \approx 66 mL &
-        Pure Glicerol, 43 mL &
-        Potassium Bicarbonate, \approx 2.67 g &
-        \approx 3.16 \& \approx 15 &
-        250 mL \\
-        \addlinespace
-        53\tnote{c} &
-        Crude Glicerol, \approx 55 mL &
-        Pure Glicerol, \approx 11.5 mL &
-        &
-        Potassium Bicarbonate, \approx 5.38 g &
-        0.42 \& \approx 10 &
-        500 mL \\
-        \addlinespace
-        60 &
-        Crude Glicerol, \approx 55 mL &
-        Pure Glicerol, \approx 12 mL &
-        &
-        Potassium Bicarbonate, \approx 5.18 g &
-        0.42 \& \approx 10 &
-        500 mL\tnote{d} \\
-        \addlinespace
-        67 &
-        Crude Glicerol, \approx 41 mL &
-        Pure Glicerol, \approx 9 mL &
-        &
-        Potassium Bicarbonate, \approx 2.56 g &
-        0.95 \& \approx 15 &
-        250 mL \\
-        \addlinespace
-        74 &
-        Crude Glicerol, \approx 60 mL &
-        Pure Glicerol, \approx 12.5 mL &
-        &
-        Potassium Bicarbonate, \approx 2.57 g &
-        \approx 1.37 \& \approx 15 &
-        250 mL \\
-
-        \end{xltabular}
-
-        \begin{tablenotes}
-            \item[a] It only started feeding on day 2.
-            \item[b] The solution of pure glicerol was diluted 100X.
-            \item[c] Change of substrate.
-            \item[d] There was a leak on the feeding tube.
-            \newline
-            \item Source: Author
-        \end{tablenotes}
-    \end{ThreePartTable}
-\end{footnotesize}
