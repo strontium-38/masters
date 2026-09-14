@@ -1,4 +1,4 @@
-adicionar tabela de abreviacoes e razoes
+adicionar tabela de abreviacoes, razoes e unidades
 
 mudar as tabelas para csv, para facilitar formatacao e inclusao
 

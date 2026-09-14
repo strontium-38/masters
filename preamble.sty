@@ -60,11 +60,16 @@
 \usepackage{chemmacros}
 \usepackage[version=4]{mhchem}
 
+\sisetup{per-mode=power}
+
 \usepackage{pdflscape}
 \usepackage{rotating}
 \usepackage{makecell}
 \usepackage{multirow}
 \usepackage{threeparttable}
+\usepackage{xltabular}
+\usepackage{threeparttablex}
+\usepackage{makecell}
 
 % ----- Microtype for better character protrusion (LuaLaTeX compatible) -----
 \usepackage{microtype}
@@ -84,11 +89,17 @@
 % positioning
 \usepackage{float}
 
-
 % Tables
-\usepackage{xltabular}
-\usepackage{threeparttablex}
-\usepackage{booktabs}
-\usepackage{makecell}
-
 \newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% special declarations
+\DeclareSIUnit\normalized{N}
+\DeclareSIUnit\normality{N}
+\DeclareSIUnit\dil{X}
+\DeclareSIUnit\molar{M}
+\DeclareSIUnit\gforce{G}
+\DeclareSIUnit\tonne{t}
+\DeclareSIUnit\yr{yr}
+
+\DeclareSIUnit\VS{VS}
+

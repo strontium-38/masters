@@ -68,7 +68,7 @@
       \verb 10.1021/acs.est.1c03940
       \endverb
     \endentry
-    \entry{safaa2025}{masterthesis}{}{}
+    \entry{safaa2025}{thesis}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=08ccec57583e22868a97a915378d74e8}{%
            family={Alqudah},
@@ -93,6 +93,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Optimizing biogas production via ozone sludge pretreatment}
+      \field{type}{mathesis}
       \field{year}{2025}
     \endentry
     \entry{anand2012}{article}{}{}
@@ -846,7 +847,7 @@
       \verb 10.1021/acs.est.1c03940
       \endverb
     \endentry
-    \entry{safaa2025}{masterthesis}{}{}
+    \entry{safaa2025}{thesis}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=08ccec57583e22868a97a915378d74e8}{%
            family={Alqudah},
@@ -871,6 +872,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Optimizing biogas production via ozone sludge pretreatment}
+      \field{type}{mathesis}
       \field{year}{2025}
     \endentry
     \entry{anand2012}{article}{}{}

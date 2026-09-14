@@ -54,12 +54,12 @@ Biogas production was monitored continuously using AMPTS II, which recorded both
 \subsection{Overall Production}
 \label{subsec:overall_production}
 
-The cumulative methane production over the whole experiment (\cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\cref{graph:total-flow}) exhibits distinct peaks corresponding to daily feeding events, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day $53$, that was when the feed was changed from a mixture of food waste and crude glycerol, to only crude glycerol, and due to some complications, there was that anomaly.
+The cumulative methane production over the whole experiment (\cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\cref{graph:total-flow}) exhibits distinct peaks corresponding to daily feeding events, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day \num{53}, that was when the feed was changed from a mixture of food waste and crude glycerol, to only crude glycerol, and due to some complications, there was that anomaly.
 
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{0}{97}{Day}{Volume (NmL)}{}
+        {experimentos-day.csv}{0}{97}{Day}{Volume (\unit{\normalized\milli\litre})}{}
     \caption{Source: Author}
     \label{graph:total-accumulation}
 \end{figure}
@@ -67,7 +67,7 @@ The cumulative methane production over the whole experiment (\cref{graph:total-a
 \begin{figure}[H]
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{0}{97}{Day}{Flow (nML/d)}{}
+        {experimentos-day.csv}{0}{97}{Day}{Flow (\unit{\normalized\milli\litre\per\day})}{}
     \caption{Source: Author}
     \label{graph:total-flow}
 \end{figure}
@@ -80,7 +80,7 @@ During the initial adaptation phase, biogas production was low (\cref{graph:pre-
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{0}{24}{Day}{Volume (NmL)}{}
+        {experimentos-day.csv}{0}{24}{Day}{Volume (\unit{\normalized\milli\litre})}{}
     \caption{Source: Author}
     \label{graph:pre-accumulation}
 \end{figure}
@@ -88,7 +88,7 @@ During the initial adaptation phase, biogas production was low (\cref{graph:pre-
 \begin{figure}[H]
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{0}{24}{Day}{Flow (nML/d)}{}
+        {experimentos-day.csv}{0}{24}{Day}{Flow (\unit{\normalized\milli\litre\per\day})}{}
     \caption{Source: Author}
     \label{graph:pre-flow}
 \end{figure}
@@ -101,7 +101,7 @@ The reactor was fed with a mixture of food waste and crude glycerol with a highe
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{25}{52}{Day}{Volume (NmL)}{}
+        {experimentos-day.csv}{25}{52}{Day}{Volume (\unit{\normalized\milli\litre})}{}
     \caption{Source: Author}
     \label{graph:ra-accumulation}
 \end{figure}
@@ -109,7 +109,7 @@ The reactor was fed with a mixture of food waste and crude glycerol with a highe
 \begin{figure}[H]
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{25}{52}{Day}{Flow (nML/d)}{}
+        {experimentos-day.csv}{25}{52}{Day}{Flow (\unit{\normalized\milli\litre\per\day})}{}
     \caption{Source: Author}
     \label{graph:ra-flow}
 \end{figure}
@@ -117,7 +117,7 @@ The reactor was fed with a mixture of food waste and crude glycerol with a highe
 \begin{figure}[H]
     \centering
     \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
-        {experimentos-30min.csv}{600}{1248.75}{Hour}{Flow (nML/d)}{}
+        {experimentos-30min.csv}{600}{1248.75}{Hour}{Flow (\unit{\normalized\milli\litre\per\day})}{}
     \caption{Source: Author}
     \label{graph:ra-flow-30}
 \end{figure}
@@ -128,14 +128,14 @@ The reactor was fed with a mixture of food waste and crude glycerol with a highe
 When the feed was changed to crude glycerol alone, biogas production decreased noticeably (\cref{graph:gl-accumulation,graph:gl-flow}). Although spikes in flow were still observed after feeding (\cref{graph:gl-flow-30}), their magnitude was bigger than during the co-digestion phase, and the cumulative methane volume plateaued more quickly. Several factors may explain this lower performance:
 \begin{itemize}
     \item The glycerol could have been transformed to fast or too slow, to maintaing a concentration of intermediate products.
-    \item The retention rate of $1/30$ days may have been insufficient to wash out inhibitory by-products or to maintain a stable population of glycerol-fermenting bacteria.
+    \item The retention rate of $\frac{1}{30}\,\unit{\per\day}$ may have been insufficient to wash out inhibitory by-products or to maintain a stable population of glycerol-fermenting bacteria.
     \item The appearance of fungal masses towards the end of this phase could have further stressed the anaerobic community by competing for substrate or introducing toxic metabolites.
 \end{itemize}
 
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{53}{81}{Day}{Volume (NmL)}{}
+        {experimentos-day.csv}{53}{81}{Day}{Volume (\unit{\normalized\milli\litre})}{}
     \caption{Source: Author}
     \label{graph:gl-accumulation}
 \end{figure}
@@ -143,7 +143,7 @@ When the feed was changed to crude glycerol alone, biogas production decreased n
 \begin{figure}[H]
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{53}{81}{Day}{Flow (nML/d)}{}
+        {experimentos-day.csv}{53}{81}{Day}{Flow (\unit{\normalized\milli\litre\per\day})}{}
     \caption{Source: Author}
     \label{graph:gl-flow}
 \end{figure}
@@ -151,7 +151,7 @@ When the feed was changed to crude glycerol alone, biogas production decreased n
 \begin{figure}[H]
     \centering
     \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
-        {experimentos-30min.csv}{1272}{1941.5}{Hour}{Flow (nML/d)}{}
+        {experimentos-30min.csv}{1272}{1941.5}{Hour}{Flow (\unit{\normalized\milli\litre\per\day})}{}
     \caption{Source: Author}
     \label{graph:gl-flow-30}
 \end{figure}
@@ -164,7 +164,7 @@ During the final two weeks, no fresh substrate was added to the reactor, it just
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{82}{97}{Day}{Volume (NmL)}{}
+        {experimentos-day.csv}{82}{97}{Day}{Volume (\unit{\normalized\milli\litre})}{}
     \caption{Source: Author}
     \label{graph:extra-accumulation}
 \end{figure}
@@ -172,7 +172,7 @@ During the final two weeks, no fresh substrate was added to the reactor, it just
 \begin{figure}[H]
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
-        {experimentos-day.csv}{82}{97}{Day}{Flow (nML/d)}{}
+        {experimentos-day.csv}{82}{97}{Day}{Flow (\unit{\normalized\milli\litre\per\day})}{}
     \caption{Source: Author}
     \label{graph:extra-flow}
 \end{figure}
@@ -180,9 +180,9 @@ During the final two weeks, no fresh substrate was added to the reactor, it just
 \subsection{Alkalinity and Volatile Fatty Acids}
 \label{subsec:alkalinity_vfa}
 
-The total alkalinity and VFA concentrations were monitored throughout the experiment to assess process stability. The results are shown in \cref{graph:alkalinity_vfa}. Initially, both alkalinity and VFA were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of $KHCO_3$, alkalinity increased sharply to values above $7,000 mg Ca\,CO_3\, L^{-1}$ and remained relatively high until close to the end. This high alkalinity was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
+The total alkalinity and VFA concentrations were monitored throughout the experiment to assess process stability. The results are shown in \cref{graph:alkalinity_vfa}. Initially, both alkalinity and VFA were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of \ce{KHCO3}, alkalinity increased sharply to values above \qty{7000}{\milli\gram\ce{CaCO3}\per\litre} and remained relatively high until close to the end. This high alkalinity was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
 
-VFA concentrations also increased after the start of feeding, reaching values between $3,000-5,000 mg CH\,_3\,COOH L^{-1}$. Such high VFA levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high alkalinity provided a strong buffering capacity, and the pH remained above $6.5$ for most of the experiment, with the co-digestion the pH was falling and with glycerol only the pH was increasing. The $VFA/alkalinity$ ratio is a more reliable indicator of instability. In this experiment, the ratio fluctuated between $0.3-1.2$. While using the co-digestion feed a ration aroun $0.8-1.0$ had the highest production.
+VFA concentrations also increased after the start of feeding, reaching values between \numrange{3000}{5000} \unit{\milli\gram\ce{CH3COOH}\per\litre}. Such high VFA levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high alkalinity provided a strong buffering capacity, and the pH remained above \num{6.5} for most of the experiment, with the co-digestion the pH was falling and with glycerol only the pH was increasing. The $VFA/alkalinity$ ratio is a more reliable indicator of instability. In this experiment, the ratio fluctuated between \numrange{0.3}{1.2}. While using the co-digestion feed a ration aroun \numrange{0.8}{1.0} had the highest production.
 
 \begin{figure}[H]
     \centering
@@ -192,8 +192,8 @@ VFA concentrations also increased after the start of feeding, reaching values be
         % ---------- LEFT axis: Alkalinity ----------
         \begin{axis}[
             width=15cm, height=10cm,
-            xlabel={Time (d)},
-            ylabel={Alkalinity (mg CaCO$_3$/L)},
+            xlabel={Time (\unit{\day})},
+            ylabel={Alkalinity (\unit{\milli\gram\ce{CaCO3}\per\litre})},
             title={Title},
             xmin=0, ymin=0,
             axis y line*=left,        % only draw left spine + ticks
@@ -215,7 +215,7 @@ VFA concentrations also increased after the start of feeding, reaching values be
             xmin=0, ymin=0,
             axis y line*=right,       % only right spine + ticks
             axis x line=none,         % hide duplicate x-axis
-            ylabel={VFA (mg CH$_3$COOH/L)},
+            ylabel={VFA (\unit{\milli\gram\ce{CH3COOH}\per\litre})},
             % no legend here — we put it on the left axis
         ]
             \addplot[
@@ -235,7 +235,7 @@ VFA concentrations also increased after the start of feeding, reaching values be
     \begin{tikzpicture}
         \begin{axis}[
             width=15cm, height=10cm,
-            xlabel={Time (d)},
+            xlabel={Time (\unit{\day})},
             ylabel={},
             title={Title},
             xmin=0, ymin=0,
