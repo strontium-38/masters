@@ -60,7 +60,17 @@
 \usepackage{chemmacros}
 \usepackage[version=4]{mhchem}
 
-\sisetup{per-mode=power}
+\sisetup{
+  per-mode=power
+}
+\newcommand{\tablesetup}{%
+  \sisetup{%
+    exponent-mode          = scientific,
+    round-mode             = places,
+    round-precision        = 3,
+    output-exponent-marker = \text{e},
+  }%
+}
 
 \usepackage{pdflscape}
 \usepackage{rotating}
@@ -70,6 +80,9 @@
 \usepackage{xltabular}
 \usepackage{threeparttablex}
 \usepackage{makecell}
+
+\usepackage{pgfplotstable}
+\usepackage{csvsimple}
 
 % ----- Microtype for better character protrusion (LuaLaTeX compatible) -----
 \usepackage{microtype}
@@ -103,3 +116,7 @@
 
 \DeclareSIUnit\VS{VS}
 
+\DeclareSIUnit\CHCOOH{\ce{CH3COOH}}
+\DeclareSIUnit\CaCO{\ce{CaCO3}}
+\DeclareSIUnit\NaOH{\ce{NaOH}}
+\DeclareSIUnit\CO{\ce{CO2}}

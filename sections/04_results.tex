@@ -180,9 +180,9 @@ During the final two weeks, no fresh substrate was added to the reactor, it just
 \subsection{Alkalinity and Volatile Fatty Acids}
 \label{subsec:alkalinity_vfa}
 
-The total alkalinity and VFA concentrations were monitored throughout the experiment to assess process stability. The results are shown in \cref{graph:alkalinity_vfa}. Initially, both alkalinity and VFA were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of \ce{KHCO3}, alkalinity increased sharply to values above \qty{7000}{\milli\gram\ce{CaCO3}\per\litre} and remained relatively high until close to the end. This high alkalinity was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
+The total alkalinity and VFA concentrations were monitored throughout the experiment to assess process stability. The results are shown in \cref{graph:alkalinity_vfa}. Initially, both alkalinity and VFA were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of \ce{KHCO3}, alkalinity increased sharply to values above \qty{7000}{\milli\gram\CaCO\per\litre} and remained relatively high until close to the end. This high alkalinity was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
 
-VFA concentrations also increased after the start of feeding, reaching values between \numrange{3000}{5000} \unit{\milli\gram\ce{CH3COOH}\per\litre}. Such high VFA levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high alkalinity provided a strong buffering capacity, and the pH remained above \num{6.5} for most of the experiment, with the co-digestion the pH was falling and with glycerol only the pH was increasing. The $VFA/alkalinity$ ratio is a more reliable indicator of instability. In this experiment, the ratio fluctuated between \numrange{0.3}{1.2}. While using the co-digestion feed a ration aroun \numrange{0.8}{1.0} had the highest production.
+VFA concentrations also increased after the start of feeding, reaching values between \numrange{3000}{5000} \unit{\milli\gram\CHCOOH\per\litre}. Such high VFA levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high alkalinity provided a strong buffering capacity, and the pH remained above \num{6.5} for most of the experiment, with the co-digestion the pH was falling and with glycerol only the pH was increasing. The $VFA/alkalinity$ ratio is a more reliable indicator of instability. In this experiment, the ratio fluctuated between \numrange{0.3}{1.2}. While using the co-digestion feed a ration aroun \numrange{0.8}{1.0} had the highest production.
 
 \begin{figure}[H]
     \centering
@@ -193,7 +193,7 @@ VFA concentrations also increased after the start of feeding, reaching values be
         \begin{axis}[
             width=15cm, height=10cm,
             xlabel={Time (\unit{\day})},
-            ylabel={Alkalinity (\unit{\milli\gram\ce{CaCO3}\per\litre})},
+            ylabel={Alkalinity (\unit{\milli\gram\CaCO\per\litre})},
             title={Title},
             xmin=0, ymin=0,
             axis y line*=left,        % only draw left spine + ticks
@@ -215,7 +215,7 @@ VFA concentrations also increased after the start of feeding, reaching values be
             xmin=0, ymin=0,
             axis y line*=right,       % only right spine + ticks
             axis x line=none,         % hide duplicate x-axis
-            ylabel={VFA (\unit{\milli\gram\ce{CH3COOH}\per\litre})},
+            ylabel={VFA (\unit{\milli\gram\CHCOOH\per\litre})},
             % no legend here — we put it on the left axis
         ]
             \addplot[

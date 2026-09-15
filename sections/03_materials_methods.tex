@@ -45,54 +45,60 @@ TS, VS and FS were calculated as follows:
 \end{equation}
 where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at \qty{105}{\celsius}, $M_{550}$ is the mass after ignition at \qty{550}{\celsius}, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in \unit{\milli\litre} and the weight is in \unit{\milli\gram}. The results are on the \cref{tab:solids}.
 
-\begin{landscape} % TODO transformar em uma tabela csv para facilitar o trabalho
-    \begin{table}
-        \centering
+\begingroup
+\tablesetup
+\footnotesize
+\begin{landscape}
+    \begin{ThreePartTable}
+        \begin{xltabular}{\linewidth}{@{} C C C C C C C C C C C C C C @{}}
+
         \caption{TS, VS and FS results}
-        \label{tab:solids}
-        \setlength{\tabcolsep}{5pt}
-        \begin{threeparttable}
-            \begin{tabular}{c c c c c c c c c c c c c c}
-                \toprule
-                \multicolumn{2}{c}{\thead{Sample}}
-                    & \thead{$M_{\text{crucible}}$}
-                    & \thead{$M_{\text{wet}}$}
-                    & \thead{$M_{\text{sample}}$}
-                    & \thead{$V_{\text{sample}}$}
-                    & \thead{$M_{105}$}
-                    & \thead{TS\\($g/L$)}
-                    & \thead{Average\\TS ($g/L$)}
-                    & \thead{$M_{550}$}
-                    & \thead{VS\\($g/L$)}
-                    & \thead{Average\\VS ($g/L$)}
-                    & \thead{FS\\($g/L$)}
-                    & \thead{Average\\FS ($g/L$)} \\
-                \midrule
+        \label{tab:solids} \\
 
-                \multirow{3}{*}{\makecell{Food\\Waste}} & 1 & 78.7310 & 105.9875 & 27.2565 & 25.5 & 91.0021 & 481.0194 & \multirow{3}{*}{\makecell{536.3998}} & 79.2024 & 462.5408 & \multirow{3}{*}{\makecell{520.8068}} & 18.4786 & \multirow{3}{*}{\makecell{18.4786}} \\
-                & 2 & 84.3206 & 113.2979 & 28.9773 & 0.0271 & 98.8684 & 536.3998 & & 84.7435 & 520.8068 & & 15.5930 \\
-                & 3 & 77.5887 & 108.8399 & 31.2512 & 0.0292 & 93.4417 & 541.9933 & & 78.1848 & 521.6134 & & 20.3799 \\
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{$M_{\text{crucible}}$} &
+        \thead{$M_{\text{wet}}$} &
+        \thead{$M_{\text{sample}}$} &
+        \thead{$V_{\text{sample}}$} &
+        \thead{$M_{105}$} &
+        \thead{TS\\(\unit{\gram\per\litre})} &
+        \thead{Average\\TS\\(\unit{\gram\per\litre})} &
+        \thead{$M_{550}$} &
+        \thead{VS\\(\unit{\gram\per\litre})} &
+        \thead{Average\\VS\\(\unit{\gram\per\litre})} &
+        \thead{FS\\(\unit{\gram\per\litre})} &
+        \thead{Average\\FS\\(\unit{\gram\per\litre})} \\
+        \midrule
+        \endfirsthead
 
-                \midrule
+        \multicolumn{14}{l}{\textit{\Cref{tab:solids} continued}} \\
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{$M_{\text{crucible}}$} &
+        \thead{$M_{\text{wet}}$} &
+        \thead{$M_{\text{sample}}$} &
+        \thead{$V_{\text{sample}}$} &
+        \thead{$M_{105}$} &
+        \thead{TS\\(\unit{\gram\per\litre})} &
+        \thead{Average\\TS\\(\unit{\gram\per\litre})} &
+        \thead{$M_{550}$} &
+        \thead{VS\\(\unit{\gram\per\litre})} &
+        \thead{Average\\VS\\(\unit{\gram\per\litre})} &
+        \thead{FS\\(\unit{\gram\per\litre})} &
+        \thead{Average\\FS\\(\unit{\gram\per\litre})} \\
+        \midrule
+        \endhead
 
-                \multirow{3}{*}{\makecell{Glycerol}} & 1 & 84.2193 & 88.6434 & 4.4241 & 0.0050 & 88.4966 & 863.4402 & \multirow{3}{*}{\makecell{867.7240}} & 84.2144 & 864.4293 & \multirow{3}{*}{\makecell{868.6548}} & -0.9891 & \multirow{3}{*}{\makecell{-0.9891}} \\
-                & 2 & 73.4780 & 77.9874 & 4.5094 & 0.0050 & 77.8594 & 867.7240 & & 73.4733 & 868.6548 & & -0.9308 \\
-                & 3 & 86.2012 & 90.6107 & 4.4095 & 0.0049 & 90.5034 & 871.3421 & & 86.1958 & 872.4358 & & -1.0937 \\
+        \bottomrule
+        \endlastfoot
 
-                \midrule
+        \directlua{emit_grouped_table("solids.csv", 14)}
 
-                \multirow{3}{*}{\makecell{Inoculum}} & 1 & 78.7310 & 105.9875 & 27.2565 & 0.0255 & 91.0021 & 481.0194 & \multirow{3}{*}{\makecell{536.3998}} & 79.2024 & 462.5408 & \multirow{3}{*}{\makecell{520.8068}} & 18.4786 & \multirow{3}{*}{\makecell{18.4786}} \\
-                & 2 & 84.3206 & 113.2979 & 28.9773 & 0.0271 & 98.8684 & 536.3998 & & 84.7435 & 520.8068 & & 15.5930 \\
-                & 3 & 77.5887 & 108.8399 & 31.2512 & 0.0292 & 93.4417 & 541.9933 & & 78.1848 & 521.6134 & & 20.3799 \\
-
-                \bottomrule
-            \end{tabular}
-            \begin{tablenotes}
-                \item Source: Author
-            \end{tablenotes}
-        \end{threeparttable}
-    \end{table}
+        \end{xltabular}
+    \end{ThreePartTable}
 \end{landscape}
+\endgroup
 
 \subsection{Density Determination}
 \label{subsec:d_determination}
@@ -104,82 +110,92 @@ Density was determined by a gravimetric–volumetric method using graduated cyli
 \end{equation}
 where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume, the masses were messured in \unit{\gram} and the volume in \unit{\litre}. The results are on the \cref{tab:density}.
 
-\begin{table} % TODO transformar em uma tabela csv para facilitar o trabalho
-    \centering
-    \caption{Density results}
-    \label{tab:density}
-    \setlength{\tabcolsep}{5pt}
-    \begin{threeparttable}
-        \begin{tabular}{c c c c c c c}
-            \toprule
-            \multicolumn{2}{c}{\thead{Sample}}
-                & \thead{$M_{\text{cylinder}}$}
-                & \thead{$M_{\text{total}}$}
-                & \thead{$V_{\text{sample}}$}
-                & \thead{Density\\($g/L$)}
-                & \thead{Average\\Density ($g/L$)} \\
-            \midrule
+\begingroup
+\tablesetup
+\footnotesize
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
+        \caption{Density results}
+        \label{tab:density} \\
 
-            \multirow{2}{*}{\makecell{Food\\Waste}} & 1 & 136.0000 & 242.0000 & 0.0992 & 1068.7905 & \multirow{2}{*}{\makecell{1068.4376}} \\
-            & 2 & 116.0000 & 223.0000 & 0.1002 & 1068.0847 \\
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{$M_{\text{cylinder}}$} &
+        \thead{$M_{\text{total}}$} &
+        \thead{$V_{\text{sample}}$} &
+        \thead{Density\\(\unit{\gram\per\litre})} &
+        \thead{Average\\Density\\(\unit{\gram\per\litre})} \\
+        \midrule
+        \endfirsthead
 
-            \midrule
+        \multicolumn{7}{l}{\textit{\Cref{tab:density} continued}} \\
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{$M_{\text{cylinder}}$} &
+        \thead{$M_{\text{total}}$} &
+        \thead{$V_{\text{sample}}$} &
+        \thead{Density\\(\unit{\gram\per\litre})} &
+        \thead{Average\\Density\\(\unit{\gram\per\litre})} \\
+        \midrule
+        \endhead
 
-            \multirow{2}{*}{\makecell{Glycerol}} & 1 & 114.2100 & 203.4700 & 0.0999 & 893.2353 & \multirow{2}{*}{\makecell{893.0740}} \\
-            & 2 & 115.7400 & 204.4400 & 0.0993 & 892.9127 \\
+        \bottomrule
+        \endlastfoot
 
-            \midrule
+        \directlua{emit_grouped_table("density.csv", 7)}
 
-            \multirow{2}{*}{\makecell{Inoculum}} & 1 & 235.0000 & 242.0000 & 0.0992 & 1068.7905 & \multirow{2}{*}{\makecell{1068.4376}} \\
-            & 2 & 216.0000 & 223.0000 & 0.1002 & 1068.0847 \\
-
-            \bottomrule
-        \end{tabular}
-        \begin{tablenotes}
-            \item Source: Author
-        \end{tablenotes}
-    \end{threeparttable}
-\end{table}
+    \end{xltabular}
+    \begin{tablenotes}
+        \item Source: Author
+    \end{tablenotes}
+\end{ThreePartTable}
+\endgroup
 
 \subsection{TOC and TN Determination}
 \label{subsec:toc_tn_determination}
 
 Total organic carbon (TOC), total carbon (TC) and total nitrogen (TN) were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the food waste was diluted \qty{400}{\dil} and the crude glycerol was diluted \qty{800}{\dil} to bring the concentrations within the linear range of the instrument. The results are on the \cref{tab:toc}.
 
-\begin{table} % TODO transformar em uma tabela csv para facilitar o trabalho
-    \centering
-    \caption{TS, VS and FS results}
-    \label{tab:toc}
-    \setlength{\tabcolsep}{5pt}
-    \begin{threeparttable}
-        \begin{tabular}{c c c c c c c c c c c c c c}
-            \toprule
-            \multicolumn{2}{c}{\thead{Sample}}
-                & \thead{TOC\\($mg/L$)}
-                & \thead{TC\\($mg/L$)}
-                & \thead{TN\\($mg/L$)}
-                & \thead{Dilution}
-                & \thead{TC\\($mg/L$)}
-                & \thead{Average\\TC ($mg/L$)}
-                & \thead{TN\\($mg/L$)}
-                & \thead{Average\\TN ($mg/L$)} \\
-            \midrule
+\begingroup
+\tablesetup
+\footnotesize
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} C C C C C C C C C C C C C C @{}}
 
-            \multirow{2}{*}{\makecell{Food\\Waste}} & 1 & 5.03900 & 5.04400 & 0.68910 & \multirow{2}{*}{\makecell{400}} & 2017.6 & \multirow{2}{*}{\makecell{1778.6}} & 275.64 & \multirow{2}{*}{\makecell{281.76}} \\
-            & 2 & 3.92700 & 3.84900 & 0.71970 & & 1539.6 & & 287.88 \\
+        \caption{TS, VS and FS results}
+        \label{tab:toc} \\
 
-            \midrule
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{TOC\\(\unit{\milli\gram\per\litre})} &
+        \thead{TC\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average\\TC\\(\unit{\milli\gram\per\litre})} &
+        \thead{TN\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average\\TN\\(\unit{\milli\gram\per\litre})} \\
+        \midrule
+        \endfirsthead
 
-            \multirow{2}{*}{\makecell{Glycerol}} & 1 & 8.80800 & 8.81200 & 0.58750 & \multirow{2}{*}{\makecell{800}} & 7049.6 & \multirow{2}{*}{\makecell{5523.2}} & 470 & \multirow{2}{*}{\makecell{488.6}} \\
-            & 2 & 4.99200 & 4.99600 & 0.63400 & & 3996.8 & & 507.2 \\
+        \multicolumn{7}{l}{\textit{\Cref{tab:toc} continued}} \\
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{TOC\\(\unit{\milli\gram\per\litre})} &
+        \thead{TC\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average\\TC\\(\unit{\milli\gram\per\litre})} &
+        \thead{TN\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average\\TN\\(\unit{\milli\gram\per\litre})} \\
+        \midrule
+        \endhead
 
-            \bottomrule
-        \end{tabular}
-        \begin{tablenotes}
-            \item Source: Author
-        \end{tablenotes}
-    \end{threeparttable}
-\end{table}
+        \bottomrule
+        \endlastfoot
+
+        \directlua{emit_grouped_table("toc.csv", 7)}
+    \end{xltabular}
+    \begin{tablenotes}
+        \item Source: Author
+    \end{tablenotes}
+\end{ThreePartTable}
+\endgroup
 
 \section{Experiment Configuration}
 \label{sec:experiment_configuration}
@@ -209,80 +225,55 @@ The feed was made with a restriction of needing to have less than \qty{15}{\perc
 
 The feed was also suplemented with nutrients to complement the feed and create a better feed for the microorganisms. \Cref{tab:nutri} shows the nutrients used and there ratios.
 
-\begin{footnotesize} % TODO transformar em uma tabela csv para facilitar o trabalho
-    \begin{ThreePartTable}
-        \begin{xltabular}{\linewidth}{@{} C C C C @{}}
+\begingroup
+\newcommand{\masspervol}{%
+  Mass\\(\unit{\milli\gram} (\qty[round-mode=none, exponent-mode=fixed]{350}{\milli\litre})$^{-1}$)%
+}
+\tablesetup
+\footnotesize
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} C C C C @{}}
 
-            \caption{Nutrients used and there ratios, for a 25:1 C/N.}
-            \label{tab:nutri} \\
+        \caption{Nutrients used and there ratios, for a 25:1 C/N.}
+        \label{tab:nutri} \\
 
-            \toprule
-            \thead{Nutrients} &
-            \thead{Mass (mg/350 mL)} &
-            \thead{Mass (mg/L)} &
-            \thead{Mass (g/L)} \\
-            \midrule
-            \endfirsthead
+        \toprule
+        \thead{Nutrients} &
+        \thead{\masspervol} &
+        \thead{Mass (\unit{\milli\gram\per\litre})} &
+        \thead{Mass (\unit{\gram\per\litre})} \\
+        \midrule
+        \endfirsthead
 
-            \multicolumn{4}{l}{\textit{\Cref{tab:nutri} continued}} \\
-            \toprule
-            \thead{Nutrients} &
-            \thead{Mass (mg/350 mL)} &
-            \thead{Mass (mg/L)} &
-            \thead{Mass (g/L)} \\
-            \midrule
-            \endhead
+        \multicolumn{4}{l}{\textit{\Cref{tab:nutri} continued}} \\
+        \toprule
+        \thead{Nutrients} &
+        \thead{\masspervol} &
+        \thead{Mass (\unit{\milli\gram\per\litre})} &
+        \thead{Mass (\unit{\gram\per\litre})} \\
+        \midrule
+        \endhead
 
-            \bottomrule
-            \endlastfoot
+        \bottomrule
+        \endlastfoot
 
-            MgSO4.7H2O &
-            18.9000	&
-            54.0000	&
-            0.0540 \\
-            \addlinespace
-            FeSO4.7H2O &
-            522.8000 &
-            1493.7143 &
-            1.4937 \\
-            \addlinespace
-            CoCl2.6H2O &
-            0.4200 &
-            1.2000 &
-            0.0012 \\
-            \addlinespace
-            ZnCl2 &
-            10.5000 &
-            30.0000 &
-            0.0300 \\
-            \addlinespace
-            NiCl2.6H2O &
-            0.0105 &
-            0.0300 &
-            0.00003 \\
-            \addlinespace
-            EDTA &
-            0.2100 &
-            0.6000 &
-            0.0006 \\
-            \addlinespace
-            CuSO4.5H2O &
-            9.2300 &
-            26.3714 &
-            0.0264 \\
+        \csvreader[
+            late after line=\\\addlinespace
+        ]{nutrients.csv}{}
+        {\csvcoli & \num{\csvcolii} & \num{\csvcoliii} & \num{\csvcoliv}}
 
-        \end{xltabular}
+    \end{xltabular}
 
-        \begin{tablenotes}
-            \item Adapted from: \textcite{safaa2025}
-        \end{tablenotes}
-    \end{ThreePartTable}
-\end{footnotesize}
+    \begin{tablenotes}
+        \item Adapted from: \textcite{safaa2025}
+    \end{tablenotes}
+\end{ThreePartTable}
+\endgroup
 
 \subsection{Biogas Quantification}
 \label{subsec:biogas_quatification}
 
-It was used the \textit{bioprocess control AMPTS II (Automatic Methane Potential Test System)} system (\cref{fig:ampts}), to meassure the gas flow that was comming out of the reactor, with a \ce{CO2} fixing unit using a solution of \qty{3}{\molar\ce{NaOH}}.
+It was used the \textit{bioprocess control AMPTS II (Automatic Methane Potential Test System)} system (\cref{fig:ampts}), to meassure the gas flow that was comming out of the reactor, with a \ce{CO2} fixing unit using a solution of \qty{3}{\molar\NaOH}.
 
 \begin{figure}
     \centering
@@ -305,151 +296,154 @@ It was used the method of DiLallo \& Albertson \parencite{ribas2007}, to measure
     \label{eq:VFA}
 \end{equation}
 
-The volumes were measured in \unit{\milli\litre}, the sample volume was always \qty{50}{\milli\litre}, the normality (\unit{\normality}) of the acid and base, at first was \num{0.1}, but then it was changed to \num{1}. The \cref{eq:TA} is expressed in \unit{\milli\gram\ce{CaCO3}\per\litre}, and the \cref{eq:VFA} is expressed in \unit{\milli\gram\ce{CH3COOH}\per\litre}.
+The volumes were measured in \unit{\milli\litre}, the sample volume was always \qty{50}{\milli\litre}, the normality (\unit{\normality}) of the acid and base, at first was \num{0.1}, but then it was changed to \num{1}. The \cref{eq:TA} is expressed in \unit{\milli\gram\CaCO\per\litre}, and the \cref{eq:VFA} is expressed in \unit{\milli\gram\CHCOOH\per\litre}.
 
 \subsection{Subestrate used as feed}
 \label{subsec:sub_feed}
 
 \Cref{tab:feeds} shows all substrates used to feed the reactor and when they were made.
 
-\begin{footnotesize} % TODO transformar em uma tabela csv para facilitar o trabalho
-    \begin{ThreePartTable}
-        \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
+\begingroup
+\sisetup{}
+\footnotesize
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
 
-        \caption{Substrates used during the process}
-        \label{tab:feeds} \\
+    \caption{Substrates used during the process}
+    \label{tab:feeds} \\
 
-        \toprule
-        \thead{Day} &
-        \thead{Substrate 1} &
-        \thead{Subestrate 2} &
-        \thead{Substrate 3} &
-        \thead{Extra\\ Addition} &
-        \thead{COV\\ \& TS\%} &
-        \thead{Volume\\ Made} \\
-        \midrule
-        \endfirsthead
+    \toprule
+    \thead{Day} &
+    \thead{Substrate 1} &
+    \thead{Subestrate 2} &
+    \thead{Substrate 3} &
+    \thead{Extra\\ Addition} &
+    \thead{COV\\ \& TS\%} &
+    \thead{Volume\\ Made} \\
+    \midrule
+    \endfirsthead
 
-        \multicolumn{6}{l}{\textit{\Cref{tab:feeds} continued}} \\
-        \toprule
-        \thead{Day} &
-        \thead{Substrate 1} &
-        \thead{Subestrate 2} &
-        \thead{Substrate 3} &
-        \thead{Extra\\ Addition} &
-        \thead{COV\\ \& TS\%} &
-        \thead{Volume\\ Made} \\
-        \midrule
-        \endhead
+    \multicolumn{6}{l}{\textit{\Cref{tab:feeds} continued}} \\
+    \toprule
+    \thead{Day} &
+    \thead{Substrate 1} &
+    \thead{Subestrate 2} &
+    \thead{Substrate 3} &
+    \thead{Extra\\ Addition} &
+    \thead{COV\\ \& TS\%} &
+    \thead{Volume\\ Made} \\
+    \midrule
+    \endhead
 
-        \bottomrule
-        \endlastfoot
+    \bottomrule
+    \endlastfoot
 
-        0\tnote{a} &
-        Food Waste, 156 g &
-        Glucose, 1.9 g &
-        &
-        Calcium Bicarbonate, 5 g &
-        1.5 \& 15 &
-        500 mL\\
-        \addlinespace
-        4 &
-        Crude Glicerol, \approx 23.2 mL &
-        Pure Glicerol\tnote{b}, \approx 31.5 mL &
-        &
-        Potassium Bicarbonate, \approx 1.9 g &
-        0.8 \& 10 &
-        250 mL\\
-        \addlinespace
-        11 &
-        Food Waste, \approx 12.54 g &
-        Crude Glicerol, \approx 9.02 mL &
-        Pure Glicerol, \approx 2.6 mL &
-        Potassium Bicarbonate, \approx 1.57 g &
-        0.13-0.4 \& 5-10 &
-        250 mL\\
-        \addlinespace
-        18 &
-        Food Waste, \approx 10.88 g &
-        Crude Glicerol, \approx 2.89 mL &
-        Pure Glicerol, \approx 1.44 mL &
-        &
-        0.0256 \& \approx 2 &
-        250 mL\\
-        \addlinespace
-        25 &
-        Food Waste, \approx 31.12 g &
-        Crude Glicerol, \approx 44 mL &
-        Pure Glicerol, \approx 29 mL &
-        &
-        \approx 1.4 \& \approx 10 &
-        250 mL \\
-        \addlinespace
-        32 &
-        Food Waste, \approx 31.01 g &
-        Crude Glicerol, \approx 44 mL &
-        Pure Glicerol, \approx 28.9 mL &
-        &
-        \approx 1.4 \& \approx 10 &
-        250 mL \\
-        \addlinespace
-        39 &
-        Food Waste, \approx 46.52 g &
-        Crude Glicerol, \approx 66 mL &
-        Pure Glicerol, \approx 43 mL &
-        Potassium Bicarbonate, \approx 2.6 g &
-        \approx 3.1 \& \approx 15 &
-        250 mL \\
-        \addlinespace
-        46 &
-        Food Waste, \approx 50.07 g &
-        Crude Glicerol, \approx 66 mL &
-        Pure Glicerol, 43 mL &
-        Potassium Bicarbonate, \approx 2.67 g &
-        \approx 3.16 \& \approx 15 &
-        250 mL \\
-        \addlinespace
-        53\tnote{c} &
-        Crude Glicerol, \approx 55 mL &
-        Pure Glicerol, \approx 11.5 mL &
-        &
-        Potassium Bicarbonate, \approx 5.38 g &
-        0.42 \& \approx 10 &
-        500 mL \\
-        \addlinespace
-        60 &
-        Crude Glicerol, \approx 55 mL &
-        Pure Glicerol, \approx 12 mL &
-        &
-        Potassium Bicarbonate, \approx 5.18 g &
-        0.42 \& \approx 10 &
-        500 mL\tnote{d} \\
-        \addlinespace
-        67 &
-        Crude Glicerol, \approx 41 mL &
-        Pure Glicerol, \approx 9 mL &
-        &
-        Potassium Bicarbonate, \approx 2.56 g &
-        0.95 \& \approx 15 &
-        250 mL \\
-        \addlinespace
-        74 &
-        Crude Glicerol, \approx 60 mL &
-        Pure Glicerol, \approx 12.5 mL &
-        &
-        Potassium Bicarbonate, \approx 2.57 g &
-        \approx 1.37 \& \approx 15 &
-        250 mL \\
+    \num{0}\tnote{a} &
+    Food Waste, \qty{156}{\gram} &
+    Glucose, \qty{1.9}{\gram} &
+    &
+    Calcium Bicarbonate, \qty{5}{\gram} &
+    \num{1.5} \& \num{15} &
+    \qty{500}{\milli\litre} \\
+    \addlinespace
+    \num{4} &
+    Crude Glicerol, \qty{23.2}{\milli\litre} &
+    Pure Glicerol\tnote{b}, \qty{31.5}{\milli\litre} &
+    &
+    Potassium Bicarbonate, \qty{1.9}{\gram} &
+    \num{0.8} \& \num{10} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{11} &
+    Food Waste, \qty{12.54}{\gram} &
+    Crude Glicerol, \qty{9.02}{\milli\litre} &
+    Pure Glicerol, \qty{2.6}{\milli\litre} &
+    Potassium Bicarbonate, \qty{1.57}{\gram} &
+    \numrange{0.13}{0.4} \& \numrange{5}{10}\tnote{c} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{18} &
+    Food Waste, \qty{10.88}{\gram} &
+    Crude Glicerol, \qty{2.89}{\milli\litre} &
+    Pure Glicerol, \qty{1.44}{\milli\litre} &
+    &
+    \num{0.0256} \& \num{2} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{25} &
+    Food Waste, \qty{31.12}{\gram} &
+    Crude Glicerol, \qty{44}{\milli\litre} &
+    Pure Glicerol, \qty{29}{\milli\litre} &
+    &
+    \num{1.4} \& \num{10} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{32} &
+    Food Waste, \qty{31.01}{\gram} &
+    Crude Glicerol, \qty{44}{\milli\litre} &
+    Pure Glicerol, \qty{28.9}{\milli\litre} &
+    &
+    \num{1.4} \& \num{10} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{39} &
+    Food Waste, \qty{46.52}{\gram} &
+    Crude Glicerol, \qty{66}{\milli\litre} &
+    Pure Glicerol, \qty{43}{\milli\litre} &
+    Potassium Bicarbonate, \qty{2.6}{\gram} &
+    \num{3.1} \& \num{15} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{46} &
+    Food Waste, \qty{50.07}{\gram} &
+    Crude Glicerol, \qty{66}{\milli\litre} &
+    Pure Glicerol, \qty{43}{\milli\litre} &
+    Potassium Bicarbonate, \qty{2.67}{\gram} &
+    \num{3.16} \& \num{15} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{53}\tnote{d} &
+    Crude Glicerol, \qty{55}{\milli\litre} &
+    Pure Glicerol, \qty{11.5}{\milli\litre} &
+    &
+    Potassium Bicarbonate, \qty{5.38}{\gram} &
+    \num{0.42} \& \num{10} &
+    \qty{500}{\milli\litre} \\
+    \addlinespace
+    \num{60} &
+    Crude Glicerol, \qty{55}{\milli\litre} &
+    Pure Glicerol, \qty{12}{\milli\litre} &
+    &
+    Potassium Bicarbonate, \qty{5.18}{\gram} &
+    \num{0.42} \& \num{10} &
+    \qty{500}{\milli\litre}\tnote{e} \\
+    \addlinespace
+    \num{67} &
+    Crude Glicerol, \qty{41}{\milli\litre} &
+    Pure Glicerol, \qty{9}{\milli\litre} &
+    &
+    Potassium Bicarbonate, \qty{2.56}{\gram} &
+    \num{0.95} \& \num{15} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{74} &
+    Crude Glicerol, \qty{60}{\milli\litre} &
+    Pure Glicerol, \qty{12.5}{\milli\litre} &
+    &
+    Potassium Bicarbonate, \qty{2.57}{\gram} &
+    \num{1.37} \& \num{15} &
+    \qty{250}{\milli\litre} \\
 
-        \end{xltabular}
+    \end{xltabular}
 
-        \begin{tablenotes}
-            \item[a] It only started feeding on day 2.
-            \item[b] The solution of pure glicerol was diluted 100X.
-            \item[c] Change of substrate.
-            \item[d] There was a leak on the feeding tube.
-            \newline
-            \item Source: Author
-        \end{tablenotes}
-    \end{ThreePartTable}
-\end{footnotesize}
+    \begin{tablenotes}
+        \item[a] It only started feeding on day \num{2}.
+        \item[b] The solution of pure glicerol was diluted \qty{100}{\dil}.
+        \item[c] The food waste wasn't well mixtured this day.
+        \item[d] Change of substrate.
+        \item[e] There was a leak on the feeding tube.
+        \newline
+        \item Source: Author
+    \end{tablenotes}
+\end{ThreePartTable}
+\endgroup

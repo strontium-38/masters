@@ -1,0 +1,7 @@
+% scripts.sty
+\ProvidesPackage{scripts}
+
+\directlua{
+  local scripts = dofile("scripts.lua")
+  emit_grouped_table = scripts.emit_grouped_table
+}
