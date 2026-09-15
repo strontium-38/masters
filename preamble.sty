@@ -7,6 +7,7 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\setkeys{Gin}{draft=false}
 
 % ----- Font: True Times New Roman (requires LuaLaTeX) -----
 \usepackage{fontspec}
@@ -49,7 +50,16 @@
 
 % ----- Bibliography (APA style, uses biber) -----
 \usepackage[style=apa, backend=biber]{biblatex}
-\addbibresource{references.bib}
+\addbibresource{references/references.bib}
+
+% reference for includegraphics
+\graphicspath{
+  {assets/}
+  {assets/logos/}
+  {assets/figures/}
+  {assets/photos/reactor/}
+  {assets/photos/ampts/}
+}
 
 % ----- Math & Tables -----
 \usepackage{amsmath, amssymb}
@@ -120,3 +130,39 @@
 \DeclareSIUnit\CaCO{\ce{CaCO3}}
 \DeclareSIUnit\NaOH{\ce{NaOH}}
 \DeclareSIUnit\CO{\ce{CO2}}
+
+% ----- Glossaries (abbreviations, symbols, units) -----
+\usepackage[
+  record,            % use bib2gls
+  abbreviations,     % defines 'abbreviations' glossary type
+  symbols,           % defines 'symbols' glossary type
+  nomain,            % we don't need a main glossary
+  toc,               % add lists to TOC
+  nonumberlist,      % no page numbers
+  nopostdot,         % no trailing dot
+  nogroupskip,       % no extra skip between groups
+  style=long,        % abbreviations style (long table)
+]{glossaries-extra}
+
+\newglossary*{units}{Units}
+
+\setabbreviationstyle[abbreviation]{long-short}
+\GlsXtrSetDefaultGlsOpts{noindex}
+
+% Load the three .bib files into their glossary types
+\GlsXtrLoadResources[
+  src={glossaries/abbreviations},
+  type=abbreviations,
+  sort=en,
+]
+\GlsXtrLoadResources[
+  src={glossaries/symbols},
+  type=symbols,
+  sort=use,
+]
+\GlsXtrLoadResources[
+  src={glossaries/units},
+  type=units,
+  sort=use,
+]
+

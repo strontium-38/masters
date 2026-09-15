@@ -1,0 +1,279 @@
+\chapter{Results}
+\label{ch:results}
+
+\section{Reactor Condition and Visual Observations}
+\label{sec:reactor_condition}
+
+The reactor was inoculated with anaerobic sludge and initially contained a murky, light brown suspension (\cref{fig:reactor_murky}). Within three days of operation, the colour changed to black (\cref{fig:reactor_black}), which is characteristic of active anaerobic digestion and is typically caused by the precipitation of metal sulphides, particularly iron sulphide, under reducing conditions. This visual change indicated the establishment of a suitable anaerobic environment and the onset of methanogenic activity.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{reator-19-5.jpg}
+        \caption{Murky suspension}
+        \label{fig:reactor_murky}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{reator-22-5.jpg}
+        \caption{Black suspention}
+        \label{fig:reactor_black}
+    \end{subfigure}
+    \caption{Visual changes in the reactor.}
+    \label{fig:reactor_visual}
+\end{figure}
+
+At the end of the experimental period, after approximately two weeks of unattended operation, four discrete masses resembling fungal colonies were observed on the internal surfaces of the reactor during cleaning (\cref{fig:masses-dry,fig:masses-wet}). The origin of these growths is uncertain, but they may have been introduced via the food waste feed or during periods when the feeding tube was opened for repairs (e.g. leaks) and when cahnging the feed that the tube had to be cleaned. The presence of such organisms could have competed with the anaerobic microbial community for substrate, potentially affecting biogas production in the later stages of the experiment.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{reator-limp-seco-24-8.jpg}
+        \caption{Masses inside the dry reactor}
+        \label{fig:masses-dry}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{reator-limp-agua-24-8.jpg}
+        \caption{Masses floating in the reactor}
+        \label{fig:masses-wet}
+    \end{subfigure}
+    \caption{Visual for the masses inside the reactor.}
+    \label{fig:reactor-limp_visual}
+\end{figure}
+
+\section{Biogas Production}
+\label{sec:biogas_production}
+
+Biogas production was monitored continuously using AMPTS II, which recorded both the cumulative volume of methane produced and the instantaneous flow rate. The entire experimental period is summarised in \cref{graph:total-accumulation,graph:total-flow}. To facilitate interpretation, the data have been divided into four distinct phases based on the feeding regime: (i) an adaptation phase~\ref{subsec:adaptation_phase}, (ii) co-digestion of food waste and glycerol~\ref{subsec:codigestion_phase}, (iii) digestion of crude glycerol~\ref{subsec:glycerol_phase}, and (iv) a post-feeding period~\ref{subsec:post_feeding}.
+
+\subsection{Overall Production}
+\label{subsec:overall_production}
+
+The cumulative methane production over the whole experiment (\cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\cref{graph:total-flow}) exhibits distinct peaks corresponding to daily feeding events, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day \num{53}, that was when the feed was changed from a mixture of food waste and crude glycerol, to only crude glycerol, and due to some complications, there was that anomaly.
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{0}{97}{Time (\unit{\day})}{Volume (\unit{\normalized\milli\litre})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\normalized\milli\litre}}
+    \label{graph:total-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{0}{97}{Time (\unit{\day})}{Flow (\unit{\normalized\milli\litre\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\normalized\milli\litre\per\day}}
+    \label{graph:total-flow}
+\end{figure}
+
+\subsection{Adaptation Phase}
+\label{subsec:adaptation_phase}
+
+During the initial adaptation phase, biogas production was low (\cref{graph:pre-accumulation,graph:pre-flow}). This lag period is normal for anaerobic reactors as the microbial community adjusts to the new substrate and operating conditions. The small but measurable methane flow confirmed that the viability of the inoculum, and the gradual increase in flow suggested the onset of exponential growth of the microorganisms.
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{0}{24}{Time (\unit{\day})}{Volume (\unit{\normalized\milli\litre})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\normalized\milli\litre} (Adaptation Phase)}
+    \label{graph:pre-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{0}{24}{Time (\unit{\day})}{Flow (\unit{\normalized\milli\litre\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\normalized\milli\litre\per\day} (Adaptation Phase)}
+    \label{graph:pre-flow}
+\end{figure}
+
+\subsection{Co-digestion of Food Waste and Crude Glycerol}
+\label{subsec:codigestion_phase}
+
+The reactor was fed with a mixture of food waste and crude glycerol with a higher concentration, a marked increase in biogas production was observed (\cref{graph:ra-accumulation,graph:ra-flow}). The cumulative methane volume rose steeply, and the flow rate showed pronounced spikes immediately after each feeding event (\cref{graph:ra-flow-30}). These spikes are typical of readily degradable substrates, which are quickly hydrolysed and converted to volatile fatty acids and subsequently to methane. The average flow rate during this phase was higher than in any other phase, indicating that the co-digestion of food waste and glycerol provided a balanced nutrient supply and avoided the inhibition often associated with high glycerol concentrations alone.
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{25}{52}{Time (\unit{\day})}{Volume (\unit{\normalized\milli\litre})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\normalized\milli\litre} (co-digestion of food waste and crude glycerol)}
+    \label{graph:ra-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{25}{52}{Time (\unit{\day})}{Flow (\unit{\normalized\milli\litre\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\normalized\milli\litre\per\day} (co-digestion of food waste and crude glycerol)}
+    \label{graph:ra-flow}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-30min.csv}{600}{1248.75}{Time (\unit{\hour})}{Flow (\unit{\normalized\milli\litre\per\hour})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\normalized\milli\litre\per\hour} (co-digestion of food waste and crude glycerol)}
+    \label{graph:ra-flow-30}
+\end{figure}
+
+\subsection{Digestion of Crude Glycerol}
+\label{subsec:glycerol_phase}
+
+When the feed was changed to crude glycerol alone, biogas production decreased noticeably (\cref{graph:gl-accumulation,graph:gl-flow}). Although spikes in flow were still observed after feeding (\cref{graph:gl-flow-30}), their magnitude was bigger than during the co-digestion phase, and the cumulative methane volume plateaued more quickly. Several factors may explain this lower performance:
+\begin{itemize}
+    \item The glycerol could have been transformed to fast or too slow, to maintaing a concentration of intermediate products.
+    \item The retention rate of $\frac{1}{30}\,\unit{\per\day}$ may have been insufficient to wash out inhibitory by-products or to maintain a stable population of glycerol-fermenting bacteria.
+    \item The appearance of fungal masses towards the end of this phase could have further stressed the anaerobic community by competing for substrate or introducing toxic metabolites.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{53}{81}{Time (\unit{\day})}{Volume (\unit{\normalized\milli\litre})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\normalized\milli\litre} (Anaerobic digestion of crude glycerol)}
+    \label{graph:gl-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{53}{81}{Time (\unit{\day})}{Flow (\unit{\normalized\milli\litre\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\normalized\milli\litre\per\day} (Anaerobic digestion of crude glycerol)}
+    \label{graph:gl-flow}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-30min.csv}{1272}{1941.5}{Time (\unit{\hour})}{Flow (\unit{\normalized\milli\litre\per\hour})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\normalized\milli\litre\per\hour} (Anaerobic digestion of crude glycerol)}
+    \label{graph:gl-flow-30}
+\end{figure}
+
+\subsection{Post-feeding Period}
+\label{subsec:post_feeding}
+
+During the final two weeks, no fresh substrate was added to the reactor, it just had some residual substrate from the glycerol only phase for a week. Nevertheless, a small residual biogas production was recorded (\cref{graph:extra-accumulation,graph:extra-flow}). This production can be attributed to the slow degradation of accumulated organic matter and microbial decay products. The flow rate declined gradually, confirming that the reactor was no longer being actively fed and that the remaining substrate was limited.
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{82}{97}{Time (\unit{\day})}{Volume (\unit{\normalized\milli\litre})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\normalized\milli\litre} (Post-feeding period)}
+    \label{graph:extra-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{82}{97}{Time (\unit{\day})}{Flow (\unit{\normalized\milli\litre\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\normalized\milli\litre\per\day} (Post-feeding period)}
+    \label{graph:extra-flow}
+\end{figure}
+
+\subsection{Alkalinity and Volatile Fatty Acids}
+\label{subsec:alkalinity_vfa}
+
+The total alkalinity and VFA concentrations were monitored throughout the experiment to assess process stability. The results are shown in \cref{graph:alkalinity_vfa}. Initially, both alkalinity and VFA were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of \ce{KHCO3}, alkalinity increased sharply to values above \qty{7000}{\milli\gram\CaCO\per\litre} and remained relatively high until close to the end. This high alkalinity was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
+
+VFA concentrations also increased after the start of feeding, reaching values between \numrange{3000}{5000} \unit{\milli\gram\CHCOOH\per\litre}. Such high VFA levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high alkalinity provided a strong buffering capacity, and the pH remained above \num{6.5} for most of the experiment, with the co-digestion the pH was falling and with glycerol only the pH was increasing. The $VFA/alkalinity$ ratio is a more reliable indicator of instability. In this experiment, the ratio fluctuated between \numrange{0.3}{1.2}. While using the co-digestion feed a ration aroun \numrange{0.8}{1.0} had the highest production.
+
+\begin{figure}[H]
+    \centering
+    \begingroup
+    \pgfplotstableread[col sep=comma]{data/processed/analysis.csv}{\datatable}
+    \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}
+        % ---------- LEFT axis: Alkalinity ----------
+        \begin{axis}[
+            width=15cm, height=10cm,
+            xlabel={Time (\unit{\day})},
+            ylabel={Alkalinity (\unit{\milli\gram\CaCO\per\litre})},
+            xmin=0, ymin=0,
+            axis y line*=left,        % only draw left spine + ticks
+            legend pos=south east,
+        ]
+            \addplot[
+                color=blue, thick, mark=*, mark size=1.5pt,
+            ] table[x index=0, y index=2] {\datatable};
+            \addlegendentry{Alkalinity}
+
+            % Manually add the VFA entry to the same legend:
+            \addlegendimage{color=red, thick, mark=square*, mark size=1.5pt}
+            \addlegendentry{VFA}
+        \end{axis}
+
+        % ---------- RIGHT axis: VFA ----------
+        \begin{axis}[
+            width=15cm, height=10cm,
+            xmin=0, ymin=0,
+            axis y line*=right,       % only right spine + ticks
+            axis x line=none,         % hide duplicate x-axis
+            ylabel={VFA (\unit{\milli\gram\CHCOOH\per\litre})},
+            % no legend here — we put it on the left axis
+        ]
+            \addplot[
+                color=red, thick, mark=square*, mark size=1.5pt,
+            ] table[x index=0, y index=3] {\datatable};
+        \end{axis}
+    \end{tikzpicture}}
+    \endgroup
+    \caption{Source: Author}
+    \label{graph:alkalinity_vfa}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begingroup
+    \pgfplotstableread[col sep=comma]{data/processed/analysis.csv}{\datatable}
+    \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}
+        % ---------- LEFT axis: Ph ----------
+        \begin{axis}[
+            width=15cm, height=10cm,
+            xlabel={Time (\unit{\day})},
+            ylabel={pH},
+            xmin=0, ymin=0,
+            legend style={
+                at={(0.98, 0.4)},     % x=98% of axis width, y=50% of axis height
+                anchor=east,          % right edge of the legend box touches that point
+                draw=black,
+                fill=white,
+                fill opacity=0.9,
+            },
+            ]
+            \addplot[
+                color=green, thick, mark=*, mark size=1.5pt,
+            ] table[x index=0, y index=1] {\datatable};
+            \addlegendentry{pH}
+
+            % Manually add the ratio entry to the same legend:
+            \addlegendimage{color=purple, thick, mark=square*, mark size=1.5pt}
+            \addlegendentry{VFA/Alkalinity}
+        \end{axis}
+
+        % ---------- RIGHT axis: Ratio ----------
+        \begin{axis}[
+            width=15cm, height=10cm,
+            xmin=0, ymin=0,
+            axis y line*=right,       % only right spine + ticks
+            axis x line=none,         % hide duplicate x-axis
+            ylabel={VFA/Alkalinity Ratio},
+            % no legend here — we put it on the left axis
+            ]
+            \addplot[
+                color=purple, thick, mark=square*, mark size=1.5pt,
+            ] table[x index=0, y index=4] {\datatable};
+        \end{axis}
+    \end{tikzpicture}}
+    \endgroup
+    \caption{Source: Author}
+    \label{graph:ph_ratio}
+\end{figure}
+

@@ -43,7 +43,7 @@
   \fi
   \begin{tikzpicture}
     \begin{axis}[
-      width=15cm, height=10cm,
+      width=\textwidth, height=0.6\textwidth,
       ybar,
       bar width=0.8,
       xlabel={#5},
@@ -74,7 +74,7 @@
   \findbaseline{\datatable}{#3}
   \begin{tikzpicture}
     \begin{axis}[
-      width=15cm, height=10cm,
+      width=\textwidth, height=0.6\textwidth,
       ybar,
       bar width=0.8,
       xlabel={#5},
@@ -103,7 +103,7 @@
   \pgfplotstableread[col sep=comma]{#2}{\datatable}%
   \begin{tikzpicture}
     \begin{axis}[
-      width=15cm, height=10cm,
+      width=\textwidth, height=0.6\textwidth,
       xlabel={#5},
       ylabel={#6},
       title={#7},

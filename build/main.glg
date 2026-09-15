@@ -1,0 +1,73 @@
+bib2gls 4.7 (2025-11-13)
+Default encoding: UTF-8
+Ignoring 'TEXMFOUTPUT' variable, not such directory: build
+Current working directory: /home/chery/Documents/thesis
+Reading build/main.log
+Encoding: not set
+Detected package fontspec
+Detected package glossaries-extra 2025/11/03
+Detected package glossaries 2025/11/09
+Detected package mfirstuc 2025/04/03
+No sentence case protection required now
+Default setting --no-mfirstuc-protection now applied, use --mfirstuc-protection to revert
+Default setting --no-mfirstuc-math-protection now applied, use --mfirstuc-math-protection to revert
+Reading build/main.aux
+Encoding: UTF-8
+Reading build/sections/frontmatter/acknowledgements.aux
+Encoding: UTF-8
+Reading build/sections/frontmatter/abstract.aux
+Encoding: UTF-8
+Reading build/sections/frontmatter/resumo.aux
+Encoding: UTF-8
+Reading build/sections/chapters/01_introduction.aux
+Encoding: UTF-8
+Reading build/sections/chapters/02_literature_review.aux
+Encoding: UTF-8
+Reading build/sections/chapters/03_materials_methods.aux
+Encoding: UTF-8
+Reading build/sections/chapters/04_results.aux
+Encoding: UTF-8
+Reading build/sections/chapters/06_conclusion.aux
+Encoding: UTF-8
+TeX character encoding: UTF-8
+Initialising resource main.glstex.
+Initialising resource main-1.glstex.
+Initialising resource main-2.glstex.
+Parsing bib files for resource main.glstex.
+Default encoding: not set
+Assuming encoding: UTF-8
+Reading glossaries/abbreviations.bib
+Encoding: UTF-8
+Parsing bib files for resource main-1.glstex.
+Default encoding: not set
+Assuming encoding: UTF-8
+Reading glossaries/symbols.bib
+Encoding: UTF-8
+Parsing bib files for resource main-2.glstex.
+Default encoding: not set
+Assuming encoding: UTF-8
+Reading glossaries/units.bib
+Encoding: UTF-8
+Cross-resource references allowed.
+Processing resource main.glstex.
+Processing resource main-1.glstex.
+Processing resource main-2.glstex.
+Selecting entries for resource main.glstex.
+No sorting required.
+Writing build/./main.glstex
+Encoding: UTF-8
+No entries written to build/./main.glstex.
+Selecting entries for resource main-1.glstex.
+No sorting required.
+Writing build/./main-1.glstex
+Encoding: UTF-8
+No entries written to build/./main-1.glstex.
+Selecting entries for resource main-2.glstex.
+No sorting required.
+Writing build/./main-2.glstex
+Encoding: UTF-8
+No entries written to build/./main-2.glstex.
+Error: No records found in aux file.
+Have you used the glossaries-extra.sty 'record' option?
+Have you indexed your entries using commands like \gls?
+No entries written in total.

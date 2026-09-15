@@ -1,41 +1,50 @@
 # latexmkrc
-# Configuration for compiling main.tex with pdflatex + biber
+# Configuration for compiling main.tex with LuaLaTeX + biber + bib2gls
 
-# Main file
 @default_files = ('main.tex');
 
-# Build directory
-$out_dir = 'build';
-
-# PDF mode (generate PDF directly)
-$pdf_mode = 4;
+$out_dir        = 'build';
+$pdf_mode       = 4;
 $postscript_mode = 0;
-$dvi_mode = 0;
+$dvi_mode       = 0;
 
-# LuaLaTeX command with synctex and nonstopmode
 $lualatex = 'lualatex -interaction=nonstopmode -synctex=1 %O %S';
 
-# Bibliography: use biber (for biblatex)
-$bibtex = 'biber %O %B';
-$biber = 'biber %O %B';
-$bibtex_use = 2;       # 2 = run biber automatically
+# biblatex + biber
+$bibtex       = 'biber %O %B';
+$biber        = 'biber %O %B';
+$bibtex_use   = 2;
 
-# Makeindex (if you use \makeindex)
-$makeindex = 'makeindex %O -o %D %S';
+# makeindex (unused, but harmless)
+$makeindex    = 'makeindex %O -o %D %S';
+$max_repeat   = 5;
 
-# Maximum number of passes
-$max_repeat = 5;
-
-# Clean up auxiliary files
-$clean_ext = 'bbl run.xml out blg lot lof toc aux log fls fdb_latexmk nav snm vrb synctex.gz acn acr alg glg glo gls ist';
+# what -C removes
+$clean_ext = 'bbl run.xml out blg lot lof toc aux log fls fdb_latexmk '
+           . 'nav snm vrb synctex.gz acn acr alg glg glo gls glstex glsdefs '
+           . 'slg sls slo';
 $clean_full_ext = $clean_ext . ' pdf dvi ps';
-
-# Prevent latexmk from deleting the final PDF on clean
 $cleanup_includes_generated = 0;
 $cleanup_includes_cusdep_generated = 0;
-
-# Force a full recompile if source files change
 $hash_calc_ignore_pattern{'pdf'} = '^';
 
-# For large documents, increase memory (optional)
-$pdflatex =~ s/pdflatex/pdflatex --shell-escape/;
+# --- ensure build subdirectories exist for \include aux files ------------
+sub ensure_build_subdirs {
+    system("mkdir -p $out_dir/sections/frontmatter $out_dir/sections/chapters");
+}
+ensure_build_subdirs();              # in case .latexmkrc is sourced after -C
+$init_hooks{'pre_processing'} = sub { ensure_build_subdirs(); };
+
+# --- bib2gls integration -------------------------------------------------
+push @generated_exts, 'glstex', 'glg', 'glsdefs';
+$makeglossaries = '';                # don't call makeglossaries
+
+add_cus_dep('aux', 'glstex', 0, 'run_bib2gls');
+add_cus_dep('bib', 'glstex', 0, 'run_bib2gls');
+
+sub run_bib2gls {
+    my ($base, $path) = @_;
+    $base =~ s/\.(aux|bib)$//;
+    $base =~ s|^\Q$out_dir\E/||;        # <-- strip leading "build/"
+    system("bib2gls --dir=$out_dir $base");
+}

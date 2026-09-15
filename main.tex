@@ -8,6 +8,9 @@
 \usepackage{graphs}
 \usepackage{scripts}
 \input{definitions}
+%\input{glossaries/abbreviations}
+%\input{glossaries/symbols}
+%\input{glossaries/units}
 
 \begin{document}
 
@@ -19,8 +22,8 @@
 \cleardoublepage
 
 % Abstract, acknowledgements (optional)
-\include{sections/acknowledgements}
-\include{sections/abstract}
+\include{sections/frontmatter/acknowledgements}
+\include{sections/frontmatter/abstract}
 
 % Resumo — Portuguese number formatting, local to this include
 \begingroup
@@ -30,7 +33,7 @@
       group-minimum-digits=4,
       range-phrase={ a },
   }
-  \include{sections/resumo}
+  \include{sections/frontmatter/resumo}
 \endgroup
 
 % Table of contents
@@ -42,12 +45,18 @@
 \setcounter{page}{1}
 
 % Chapters
-\include{sections/01_introduction}
-\include{sections/02_literature_review}
-\include{sections/03_materials_methods}
-\include{sections/04_results}
-%\include{sections/05_discussion}
-\include{sections/06_conclusion}
+\include{sections/chapters/01_introduction}
+\include{sections/chapters/02_literature_review}
+\include{sections/chapters/03_materials_methods}
+\include{sections/chapters/04_results}
+%\include{sections/chapters/05_discussion}
+\include{sections/chapters/06_conclusion}
+
+\cleardoublepage
+
+\printunsrtglossary[type=abbreviations, title={Abbreviations}]
+\printunsrtglossary[type=symbols,       title={Symbols}]
+\printunsrtglossary[type=units,         title={Units}]
 
 % Bibliography
 \printbibliography[heading=bibintoc, title={References}]

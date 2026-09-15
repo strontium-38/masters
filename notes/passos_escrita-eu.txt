@@ -1,0 +1,3 @@
+adicionar tabela de abreviacoes, razoes e unidades
+
+modificar formulas quimicas para \ce{} ou \ch{}

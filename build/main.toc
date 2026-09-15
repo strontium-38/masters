@@ -16,15 +16,18 @@
 \contentsline {subsection}{\numberline {4.5.1}Feeding Solution}{12}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Biogas Quantification}{13}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Analysis Methods}{13}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Subestrate used as feed}{14}{subsection.4.5.4}%
-\contentsline {chapter}{\numberline {5}Results}{16}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Reactor Condition and Visual Observations}{16}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Biogas Production}{16}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Overall Production}{18}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Adaptation Phase}{20}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Co-digestion of Food Waste and Glycerol}{21}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Glycerol only Feeding Period}{23}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Post-feeding Period}{25}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {4.5.4}Subestrate used as feed}{15}{subsection.4.5.4}%
+\contentsline {chapter}{\numberline {5}Results}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Reactor Condition and Visual Observations}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Biogas Production}{17}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Overall Production}{19}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Adaptation Phase}{21}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Co-digestion of Food Waste and Crude Glycerol}{22}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Digestion of Crude Glycerol}{24}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Post-feeding Period}{26}{subsection.5.2.5}%
 \contentsline {subsection}{\numberline {5.2.6}Alkalinity and Volatile Fatty Acids}{27}{subsection.5.2.6}%
-\contentsline {chapter}{\numberline {6}Conclusion}{29}{chapter.6}%
-\contentsline {chapter}{References}{30}{chapter*.26}%
+\contentsline {chapter}{\numberline {6}Conclusion}{30}{chapter.6}%
+\contentsline {chapter}{Abbreviations}{31}{section*.26}%
+\contentsline {chapter}{Symbols}{32}{section*.28}%
+\contentsline {chapter}{Units}{33}{section*.30}%
+\contentsline {chapter}{References}{34}{chapter*.32}%
