@@ -146,23 +146,18 @@
 
 \newglossary*{units}{Units}
 
-\setabbreviationstyle[abbreviation]{long-short}
-\GlsXtrSetDefaultGlsOpts{noindex}
-
-% Load the three .bib files into their glossary types
 \GlsXtrLoadResources[
-  src={glossaries/abbreviations},
-  type=abbreviations,
-  sort=en,
+  src = {glossaries/abbreviations},
+  type = abbreviations,
+  selection = {recorded and deps},   % only used (recorded) entries
 ]
 \GlsXtrLoadResources[
-  src={glossaries/symbols},
-  type=symbols,
-  sort=use,
+  src = {glossaries/symbols},
+  type = symbols,
+  selection = {recorded and deps},
 ]
 \GlsXtrLoadResources[
-  src={glossaries/units},
-  type=units,
-  sort=use,
+  src = {glossaries/units},
+  type = units,
+  selection = {recorded and deps},
 ]
-

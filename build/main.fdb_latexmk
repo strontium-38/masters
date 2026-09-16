@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber build/main"] 1789491889.09226 "build/main.bcf" "build/main.bbl" "build/main" 1789492028.90894 0
-  "build/main.bcf" 1789492028.51129 138947 d3789499a8987d3e1d6cb1902779208e "lualatex"
+["biber build/main"] 1789551029.62224 "build/main.bcf" "build/main.bbl" "build/main" 1789551181.72428 0
+  "build/main.bcf" 1789551181.3523 138947 d3789499a8987d3e1d6cb1902779208e "lualatex"
   "references/references.bib" 1789346028.03983 22115 492e0d36dd0911678ffce8ed3e3c3237 ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["cusdep aux glstex build/main"] 1789491888.03074 "build/main.aux" "build/main.glstex" "build/main" 1789492028.90876 0
-  "build/main.aux" 1789492028.48629 27286 83b8ac2b6eb0df6d4ff7348db2f39f99 "lualatex"
+["cusdep aux glstex build/main"] 1789551028.54244 "build/main.aux" "build/main.glstex" "build/main" 1789551181.72407 0
+  "build/main.aux" 1789551181.3293 27445 2167c9ed493c1bff1b94ee0a948bd4bd "lualatex"
   (generated)
   "build/main.glstex"
   (rewritten before read)
-["lualatex"] 1789491959.45601 "main.tex" "build/main.pdf" "main" 1789492028.90937 0
+["lualatex"] 1789551110.70612 "main.tex" "build/main.pdf" "main" 1789551181.72498 0
   "/etc/texmf/tex/generic/config/language.dat" 1777668571.40112 2948 f6bc36d013aca5f906a67ce05633d7fd ""
   "/home/chery/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1778169428.17932 128286 2eada6e204f20e561b89bc6169b38d21 ""
   "/home/chery/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1778169427.76632 127657 842a8e48deccc1ef18d5ed9dce3da0d0 ""
@@ -432,22 +432,22 @@
   "assets/photos/reactor/reator-22-5.jpg" 1788108606.43089 1490204 86e62c3db79830357421fba2ba7cdc62 ""
   "assets/photos/reactor/reator-limp-agua-24-8.jpg" 1787757753.17068 3617307 daabcbe193587dfbd3b73435d2426736 ""
   "assets/photos/reactor/reator-limp-seco-24-8.jpg" 1788108629.39331 1602323 30ac311611692a41c3d36f6a92c484d0 ""
-  "build/main-1.glstex" 1789491889.06894 543 b2c668e002136e0d3aea788877b7fb59 ""
-  "build/main-2.glstex" 1789491889.06977 541 d0de22632b121f62c6239d29f47300f0 ""
-  "build/main.aux" 1789492028.48629 27286 83b8ac2b6eb0df6d4ff7348db2f39f99 "lualatex"
-  "build/main.bbl" 1789491890.22219 94468 fe10d458e5d9499bc513654aaf29faeb "biber build/main"
-  "build/main.glstex" 1789491889.06619 2117 ec07fda4f5a9388d09730f3778c8f0ce "cusdep aux glstex build/main"
-  "build/main.out" 1789492028.50629 5201 e4ab17e4528fc3d30d07d4217cd8280a "lualatex"
-  "build/main.run.xml" 1789492028.51229 2473 d2fcd6d988564cc64c05f94b9d0c671d "lualatex"
-  "build/main.toc" 1789492028.51229 2670 152bcb097db886c5d816c075d0293e2f "lualatex"
-  "build/sections/chapters/01_introduction.aux" 1789491964.48224 5815 b47b489d2df147edffdacd5e79f2f12a "lualatex"
-  "build/sections/chapters/02_literature_review.aux" 1789491965.03524 6535 c3028879efc54d6b8985634f6776515e "lualatex"
-  "build/sections/chapters/03_materials_methods.aux" 1789491968.34524 13948 848ddd294765e37f1ddabb4d5c01ce7b "lualatex"
-  "build/sections/chapters/04_results.aux" 1789492027.78229 15528 70542a08123262790803c0442a695667 "lualatex"
-  "build/sections/chapters/06_conclusion.aux" 1789492027.80529 4948 4d0f4240ec3683fdd1eb110944c6164d "lualatex"
-  "build/sections/frontmatter/abstract.aux" 1789491963.96524 4737 bf07512e122b20ab5a88efe92afddfdf "lualatex"
-  "build/sections/frontmatter/acknowledgements.aux" 1789491963.87424 4767 49e85baa298df84932f8bc5473680a12 "lualatex"
-  "build/sections/frontmatter/resumo.aux" 1789491964.07324 4731 f2d8d161da3fc5415f4fa6512d5d68f9 "lualatex"
+  "build/main-1.glstex" 1789551029.60804 543 b2c668e002136e0d3aea788877b7fb59 ""
+  "build/main-2.glstex" 1789551029.60872 541 d0de22632b121f62c6239d29f47300f0 ""
+  "build/main.aux" 1789551181.3293 27445 2167c9ed493c1bff1b94ee0a948bd4bd "lualatex"
+  "build/main.bbl" 1789551030.75787 94468 fe10d458e5d9499bc513654aaf29faeb "biber build/main"
+  "build/main.glstex" 1789551029.60584 2584 3642d128e3b9e457e19d8b61843f9544 "cusdep aux glstex build/main"
+  "build/main.out" 1789551181.3473 5201 e4ab17e4528fc3d30d07d4217cd8280a "lualatex"
+  "build/main.run.xml" 1789551181.35326 2473 d2fcd6d988564cc64c05f94b9d0c671d "lualatex"
+  "build/main.toc" 1789551181.35326 2670 152bcb097db886c5d816c075d0293e2f "lualatex"
+  "build/sections/chapters/01_introduction.aux" 1789551115.76235 5862 959addfc697fc6e6d0732643fda2d906 "lualatex"
+  "build/sections/chapters/02_literature_review.aux" 1789551116.31437 6535 c3028879efc54d6b8985634f6776515e "lualatex"
+  "build/sections/chapters/03_materials_methods.aux" 1789551119.65847 13948 848ddd294765e37f1ddabb4d5c01ce7b "lualatex"
+  "build/sections/chapters/04_results.aux" 1789551180.59928 15528 70542a08123262790803c0442a695667 "lualatex"
+  "build/sections/chapters/06_conclusion.aux" 1789551180.62328 4948 4d0f4240ec3683fdd1eb110944c6164d "lualatex"
+  "build/sections/frontmatter/abstract.aux" 1789551115.23433 4737 bf07512e122b20ab5a88efe92afddfdf "lualatex"
+  "build/sections/frontmatter/acknowledgements.aux" 1789551115.13733 4767 49e85baa298df84932f8bc5473680a12 "lualatex"
+  "build/sections/frontmatter/resumo.aux" 1789551115.33934 4731 f2d8d161da3fc5415f4fa6512d5d68f9 "lualatex"
   "cover.tex" 1789487906.49728 1346 70b4b27d29fa4e0365693ad80e82c3cc ""
   "data/processed/analysis.csv" 1789482415.58888 625 ce61317d59604edd1d9ee7f0dc58f791 ""
   "data/processed/density.csv" 1789409475.48946 305 c700bd8c98381c0c5c9f524207516e83 ""
@@ -458,8 +458,8 @@
   "data/processed/toc.csv" 1789409678.50562 218 4927def50897396942af085e46c9ba80 ""
   "definitions.tex" 1781634138.37673 550 01c96ee7ea10c24f479ace2f630d5d20 ""
   "graphs.sty" 1789479920.4901 3512 f274c13da92fff36b03475f5e6ce18d7 ""
-  "main.tex" 1789489848.45095 1569 478a88d6ef0ff7593bb7404f9a4510ec ""
-  "preamble.sty" 1789490474.89163 4039 b8aa89123b32a5b4aa9ad99f29f2d60b ""
+  "main.tex" 1789550866.06067 1481 bc8112e2ba438038f46e7518307f7abc ""
+  "preamble.sty" 1789550441.13005 4016 965f3e014bb162a9334fa1de9539a813 ""
   "scripts.sty" 1789487816.477 151 65a05464042b8111ecfb663ecfd9102c ""
   "scripts/table.lua" 1789468877.43543 2617 49b7d7303ad9116d14a414e09a0cb120 ""
   "sections/chapters/01_introduction.tex" 1789489443.34248 6547 dcaea5f7970c0e6c23a3e1d2c9020acb ""

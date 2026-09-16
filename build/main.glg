@@ -53,10 +53,10 @@ Processing resource main.glstex.
 Processing resource main-1.glstex.
 Processing resource main-2.glstex.
 Selecting entries for resource main.glstex.
-No sorting required.
 Writing build/./main.glstex
 Encoding: UTF-8
-No entries written to build/./main.glstex.
+ad
+1 entry written to build/./main.glstex.
 Selecting entries for resource main-1.glstex.
 No sorting required.
 Writing build/./main-1.glstex
@@ -67,7 +67,4 @@ No sorting required.
 Writing build/./main-2.glstex
 Encoding: UTF-8
 No entries written to build/./main-2.glstex.
-Error: No records found in aux file.
-Have you used the glossaries-extra.sty 'record' option?
-Have you indexed your entries using commands like \gls?
-No entries written in total.
+1 entry written in total.

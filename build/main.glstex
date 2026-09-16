@@ -47,3 +47,18 @@
 \providecommand{\bibglsaliassep}{, }
 
 \providecommand*{\bibglsflattenedhomograph}[2]{#1}
+\providecommand{\bibglsnewabbreviation}[4]{%
+  \newabbreviation[#2]{#1}{#3}{#4}%
+}
+
+\bibglsnewabbreviation{ad}%
+{description={A biological process in which microorganisms break down
+                 organic matter in the absence of oxygen, producing biogas.},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}},
+sort={AD|},
+type={abbreviations}}%
+{AD}%
+{anaerobic digestion}
+\glsxtrfieldlistadd{ad}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
+
+
