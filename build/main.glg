@@ -50,21 +50,94 @@ Reading glossaries/units.bib
 Encoding: UTF-8
 Cross-resource references allowed.
 Processing resource main.glstex.
+Warning: Entry 'cgl' has potentially nested link text in field: short
+Consider using \glsps{gl} or \glspt{gl} instead of \gls{gl}
+Added dependent: gl
+Warning: Entry 'pgl' has potentially nested link text in field: short
+Consider using \glsps{gl} or \glspt{gl} instead of \gls{gl}
 Processing resource main-1.glstex.
+Warning: Entry 'vfa_alk' has potentially nested link text in field: name
+Consider using \glsps{vfa} or \glspt{vfa} instead of \gls{vfa}
+Warning: Entry 'vfa_alk' has potentially nested link text in field: name
+Consider using \glsps{alk} or \glspt{alk} instead of \gls{alk}
+Warning: Entry 'vfa_alk' has potentially nested link text in field: symbol
+Consider using \glsps{vfa} or \glspt{vfa} instead of \gls{vfa}
+Warning: Entry 'vfa_alk' has potentially nested link text in field: symbol
+Consider using \glsps{alk} or \glspt{alk} instead of \gls{alk}
+Added dependent: vfa
+Added dependent: alk
+Warning: Entry 'vpv' has potentially nested link text in field: name
+Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
+Warning: Entry 'vpv' has potentially nested link text in field: name
+Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
+Warning: Entry 'vpv' has potentially nested link text in field: symbol
+Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
+Warning: Entry 'vpv' has potentially nested link text in field: symbol
+Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
+Added dependent: volume
 Processing resource main-2.glstex.
 Selecting entries for resource main.glstex.
+Added dependent: gl
+texparserlib: C-\gls{gl} -> C-GL
+texparserlib: P-\gls{gl} -> P-GL
 Writing build/./main.glstex
 Encoding: UTF-8
 ad
-1 entry written to build/./main.glstex.
+alk
+ampts
+cgl
+cstr
+fs
+fw
+gl
+hrt
+ipb
+mong
+olr
+pgl
+tc
+tn
+toc
+ts
+vfa
+vs
+wwtp
+20 entries written to build/./main.glstex.
 Selecting entries for resource main-1.glstex.
-No sorting required.
+Added dependent: volume
+Added dependent: vfa
+Added dependent: alk
 Writing build/./main-1.glstex
 Encoding: UTF-8
-No entries written to build/./main-1.glstex.
+ca_hco3
+ch4
+cn_ratio
+co2
+glucose
+khco3
+o2
+pdo
+vfa_alk
+vpv
+10 entries written to build/./main-1.glstex.
 Selecting entries for resource main-2.glstex.
-No sorting required.
 Writing build/./main-2.glstex
 Encoding: UTF-8
-No entries written to build/./main-2.glstex.
-1 entry written in total.
+day
+degC
+gram
+hour
+kilo
+litre
+mega
+metre
+milli
+minute
+nml
+percent
+tonne
+volume
+dil
+year
+16 entries written to build/./main-2.glstex.
+46 entries written in total.

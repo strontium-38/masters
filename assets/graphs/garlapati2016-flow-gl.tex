@@ -1,0 +1,43 @@
+\documentclass{standalone}
+\usepackage{alone}
+
+\begin{document}
+\begin{tikzpicture}[
+  box/.style = {draw, rounded corners=3pt, minimum width=3cm,
+                minimum height=1cm, align=center, font=\small},
+  arr/.style = {-{Stealth[length=2.2mm]}, semithick},
+]
+
+  % Right column
+  \node[box, align=center] (oil) at (0,0) {Vegetable oil\\and Recycle fat};
+  \node[box, below=of oil] (tr)   {Transesterification};
+  \node[box, below=of tr]  (sep)  {Separation};
+  \node[box, below=of sep] (dist) {Distillation};
+  \node[box, below=of dist](bio)  {Biodiesel};
+
+  \draw[arr] (oil)  -- (tr);
+  \draw[arr] (tr)   -- (sep);
+  \draw[arr] (sep)  -- (dist);
+  \draw[arr] (dist) -- (bio);
+
+  % KOH feeding
+  \node[box, right=of tr] (koh) {KOH};
+  \draw[arr] (koh) -- (tr);
+
+  % Glycerol recovery branch
+  \node[box, right=of sep] (cg) {Crude\\Glycerol};
+  \draw[arr] (sep) -- (cg);
+
+  \node[box, right=of cg] (mr) {Methanol\\Recovery};
+  \draw[arr] (cg) -- (mr);
+
+  %\node[box, above=of mr] (me) {Methanol};
+  %\draw[arr] (mr) -- (me);
+
+  \node[box, below=of cg] (wg) {Waste\\Glycerol};
+  \draw[arr] (mr) -- (wg);
+
+  % Distillation side-draw to methanol recovery
+  \draw[arr] (dist) -- (mr);
+\end{tikzpicture}
+\end{document}

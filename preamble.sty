@@ -61,6 +61,10 @@
   {assets/photos/ampts/}
 }
 
+% ----- Standalone figures -----
+\usepackage{standalone}
+\standaloneconfig{mode=tex}
+
 % ----- Math & Tables -----
 \usepackage{amsmath, amssymb}
 \usepackage{booktabs}
@@ -69,6 +73,8 @@
 \usepackage{siunitx}
 \usepackage{chemmacros}
 \usepackage[version=4]{mhchem}
+
+\chemsetup{formula=mhchem}
 
 \sisetup{
   per-mode=power
@@ -141,7 +147,7 @@
   nonumberlist,      % no page numbers
   nopostdot,         % no trailing dot
   nogroupskip,       % no extra skip between groups
-  style=long,        % abbreviations style (long table)
+  style=super,        % abbreviations style
 ]{glossaries-extra}
 
 \newglossary*{units}{Units}
@@ -159,5 +165,5 @@
 \GlsXtrLoadResources[
   src = {glossaries/units},
   type = units,
-  selection = {recorded and deps},
+  selection = {all},
 ]

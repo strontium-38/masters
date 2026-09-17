@@ -4,22 +4,22 @@
 \contentsline {section}{\numberline {2.1}General Objectives}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Specific Objectives}{3}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Literature Review}{4}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Materials and Methods}{8}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Collection and Preparation of the Food Waste}{8}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Crude Glycerol Collection}{8}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Inoculum Collection}{8}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Physical and Chemical Characterisation}{9}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}TS and VS Determination}{9}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Density Determination}{11}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}TOC and TN Determination}{11}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Experiment Configuration}{12}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Feeding Solution}{12}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Biogas Quantification}{13}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Analysis Methods}{13}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Subestrate used as feed}{15}{subsection.4.5.4}%
-\contentsline {chapter}{\numberline {5}Results}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Reactor Condition and Visual Observations}{17}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Biogas Production}{17}{section.5.2}%
+\contentsline {chapter}{\numberline {4}Materials and Methods}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Collection and Preparation of the Food Waste}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Crude Glycerol Collection}{9}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Inoculum Collection}{9}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Physical and Chemical Characterisation}{10}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}TS and VS Determination}{10}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Density Determination}{12}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}TOC and TN Determination}{12}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Experiment Configuration}{13}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Feeding Solution}{14}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Biogas Quantification}{14}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Analysis Methods}{16}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Subestrate used as feed}{16}{subsection.4.5.4}%
+\contentsline {chapter}{\numberline {5}Results}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Reactor Condition and Visual Observations}{18}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Biogas Production}{19}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Overall Production}{19}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Adaptation Phase}{21}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Co-digestion of Food Waste and Crude Glycerol}{22}{subsection.5.2.3}%
@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {5.2.5}Post-feeding Period}{26}{subsection.5.2.5}%
 \contentsline {subsection}{\numberline {5.2.6}Alkalinity and Volatile Fatty Acids}{27}{subsection.5.2.6}%
 \contentsline {chapter}{\numberline {6}Conclusion}{30}{chapter.6}%
-\contentsline {chapter}{Abbreviations}{31}{section*.26}%
-\contentsline {chapter}{Symbols}{32}{section*.28}%
-\contentsline {chapter}{Units}{33}{section*.30}%
-\contentsline {chapter}{References}{34}{chapter*.32}%
+\contentsline {chapter}{Abbreviations}{31}{section*.27}%
+\contentsline {chapter}{Symbols}{32}{section*.29}%
+\contentsline {chapter}{Units}{33}{section*.31}%
+\contentsline {chapter}{References}{34}{chapter*.33}%
