@@ -1,21 +1,21 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'build/main.blg'
-[81] biber:342> INFO - === qua set 16, 2026, 18:02:30
-[99] Biber.pm:421> INFO - Reading 'build/main.bcf'
-[204] Biber.pm:1002> INFO - Found 14 citekeys in bib section 0
-[228] Biber.pm:4487> INFO - Processing section 0
-[240] Biber.pm:4678> INFO - Looking for bibtex file 'references/references.bib' for section 0
-[242] bibtex.pm:1713> INFO - LaTeX decoding ...
-[264] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
-[513] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[513] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[513] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[513] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[565] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[565] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[565] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[565] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[593] bbl.pm:676> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[616] bbl.pm:779> INFO - Output to build/main.bbl
-[616] Biber.pm:132> WARN - I didn't find a database entry for crossref '10.4067/S0717-34582007000300005' in entry 'choorit2007' - ignoring (section 0)
-[616] Biber.pm:134> INFO - WARNINGS: 1
+[78] biber:342> INFO - === sáb set 19, 2026, 17:28:42
+[94] Biber.pm:421> INFO - Reading 'build/main.bcf'
+[197] Biber.pm:1002> INFO - Found 14 citekeys in bib section 0
+[223] Biber.pm:4487> INFO - Processing section 0
+[234] Biber.pm:4678> INFO - Looking for bibtex file 'references/references.bib' for section 0
+[236] bibtex.pm:1713> INFO - LaTeX decoding ...
+[260] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
+[449] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[450] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[450] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[450] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[493] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[493] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[493] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[493] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[516] bbl.pm:676> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[537] bbl.pm:779> INFO - Output to build/main.bbl
+[539] Biber.pm:132> WARN - I didn't find a database entry for crossref '10.4067/S0717-34582007000300005' in entry 'choorit2007' - ignoring (section 0)
+[539] Biber.pm:134> INFO - WARNINGS: 1

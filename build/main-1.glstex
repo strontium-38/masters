@@ -29,11 +29,12 @@ type={symbols}}%
 
 \bibglsnewsymbol{ch4}%
 {symbol={\ce{CH4}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{4}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{7}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{21}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{4}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{7}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{21}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}},
 sort={CH4|},
 type={symbols}}%
 {\ce{CH4}}%
 {Methane.}
+\glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{4}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}}
@@ -49,11 +50,12 @@ type={symbols}}%
 
 \bibglsnewsymbol{cn_ratio}%
 {symbol={C/N},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}},
 sort={cn\bibglsunderscorechar ratio|},
 type={symbols}}%
 {C/N}%
 {Carbon-to-nitrogen ratio of the feed.}
+\glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}}
 \glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
 \glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}
@@ -119,12 +121,13 @@ type={symbols}}%
 
 \bibglsnewsymbol{vfa_alk}%
 {symbol={\gls{vfa}/\gls{alk}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}},
 sort={VFA|alkalinity|},
 type={symbols}}%
 {\gls{vfa}/\gls{alk}}%
 {Ratio of volatile fatty acids to total alkalinity; a
                  stability indicator for anaerobic digesters.}
+\glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}}
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{28}}
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{29}}

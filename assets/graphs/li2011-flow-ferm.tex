@@ -26,9 +26,13 @@
   \draw[arr] (hyd) -- node[right, font=\scriptsize, align=left] {Sugars, amino\\acids, fatty acids} (fer);
   \draw[arr] (fer) -- (ace);
 
+  \draw[arr] (fer.west) to[bend right=25] (mg1.north);
+  \draw[arr] (fer.east) to[bend left=25] (mg2.north);
   %\draw[arr] (fer.west) to[bend right=25] node[lbl, left=4pt] {Acetic acid} (mg1.north);
   %\draw[arr] (fer.east) to[bend left=25] node[lbl, right=4pt] {\ch{H2}, \ch{CO2}} (mg2.north);
 
+  \draw[arr] (ace.south) to[bend left=25] (mg1.east);
+  \draw[arr] (ace.south) to[bend right=25] (mg2.west);
   %\draw[arr] (ace.south) to[bend left=25] node[lbl, below=4pt] {Acetic acid} (mg1.east);
   %\draw[arr] (ace.south) to[bend right=25] node[lbl, below=4pt] {\ch{H2}, \ch{CO2}} (mg2.west);
 

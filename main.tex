@@ -10,6 +10,14 @@
 \usepackage{alone}
 \input{definitions}
 
+% PDF metadata
+\hypersetup{
+    pdftitle   = {\thesistitle},
+    pdfauthor  = {\studentname},
+    pdfsubject = {\subject},
+    pdfkeywords= {\keywords},
+}
+
 \begin{document}
 
 % Roman page numbering for front matter
@@ -18,6 +26,25 @@
 % Cover page
 \input{cover}
 \cleardoublepage
+
+% Table of contents
+\tableofcontents
+\cleardoublepage
+
+% List of figures
+\listoffigures
+\cleardoublepage
+
+% List of tables
+\listoftables
+\cleardoublepage
+
+% Abbreviations, Symbols, Units
+\glstocfalse
+\printunsrtglossary[type=abbreviations, title={List of Abbreviations}]
+\printunsrtglossary[type=symbols,       title={List of Symbols}]
+\printunsrtglossary[type=units,         title={List of Units}]
+\glstoctrue
 
 % Abstract, acknowledgements (optional)
 \include{sections/frontmatter/acknowledgements}
@@ -34,10 +61,6 @@
   \include{sections/frontmatter/resumo}
 \endgroup
 
-% Table of contents
-\tableofcontents
-\cleardoublepage
-
 % Main matter
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -49,12 +72,6 @@
 \include{sections/chapters/04_results}
 %\include{sections/chapters/05_discussion}
 \include{sections/chapters/06_conclusion}
-
-\cleardoublepage
-
-\printunsrtglossary[type=abbreviations, title={Abbreviations}]
-\printunsrtglossary[type=symbols,       title={Symbols}]
-\printunsrtglossary[type=units,         title={Units}]
 
 % Bibliography
 \printbibliography[heading=bibintoc, title={References}]

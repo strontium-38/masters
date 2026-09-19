@@ -104,9 +104,9 @@ vs
 wwtp
 20 entries written to build/./main.glstex.
 Selecting entries for resource main-1.glstex.
-Added dependent: volume
 Added dependent: vfa
 Added dependent: alk
+Added dependent: volume
 Writing build/./main-1.glstex
 Encoding: UTF-8
 ca_hco3
@@ -123,21 +123,23 @@ vpv
 Selecting entries for resource main-2.glstex.
 Writing build/./main-2.glstex
 Encoding: UTF-8
-day
-degC
-gram
-hour
-kilo
-litre
 mega
-metre
+kilo
 milli
-minute
-nml
-percent
 tonne
-volume
-dil
+gram
+litre
+metre
+percent
+degC
+minute
+hour
+day
 year
-16 entries written to build/./main-2.glstex.
-46 entries written in total.
+dil
+nml
+volume
+molarity
+gforce
+18 entries written to build/./main-2.glstex.
+48 entries written in total.

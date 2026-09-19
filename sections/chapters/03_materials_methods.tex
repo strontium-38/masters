@@ -43,7 +43,7 @@ The same crucibles were subsequently placed in a muffle furnace at \qty{550}{\ce
     \mathrm{FS} = \frac{M_{550} - M_{\text{crucible}}}{V_{\text{sample}}} \quad \left[\unit{\gram\per\litre}\right]
     \label{eq:FS}
 \end{equation}
-where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at \qty{105}{\celsius}, $M_{550}$ is the mass after ignition at \qty{550}{\celsius}, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in \unit{\litre} and the weight is in \unit{\gram}. The results are on the \cref{tab:solids}.
+where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at \qty{105}{\celsius}, $M_{550}$ is the mass after ignition at \qty{550}{\celsius}, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in \unit{\litre} and the weight is in \unit{\gram}. The results are on the \Cref{tab:solids}.
 
 \begingroup
 \tablesetup
@@ -109,7 +109,7 @@ Density was determined by a gravimetric–volumetric method using graduated cyli
     \rho = \frac{M_{\text{total}} - M_{\text{cylinder}}}{V_{\text{sample}}} \quad \left[\unit{\gram\per\litre}\right]
     \label{eq:density}
 \end{equation}
-where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume, the masses were messured in \unit{\gram} and the volume in \unit{\litre}. The results are on the \cref{tab:density}.
+where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume, the masses were messured in \unit{\gram} and the volume in \unit{\litre}. The results are on the \Cref{tab:density}.
 
 \begingroup
 \tablesetup
@@ -153,7 +153,7 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \subsection{TOC and TN Determination}
 \label{subsec:toc_tn_determination}
 
-\Gls{toc}, \gls{tc} and \gls{tn} were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the \gls{fw} was diluted \qty{400}{\dil} and the \gls{cgl} was diluted \qty{800}{\dil} to bring the concentrations within the linear range of the instrument. The results are on the \cref{tab:toc}.
+\Gls{toc}, \gls{tc} and \gls{tn} were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the \gls{fw} was diluted \qty{400}{\dil} and the \gls{cgl} was diluted \qty{800}{\dil} to bring the concentrations within the linear range of the instrument. The results are on the \Cref{tab:toc}.
 
 \begingroup
 \tablesetup
@@ -197,7 +197,7 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \section{Experiment Configuration}
 \label{sec:experiment_configuration}
 
-The reactor had a useful volume of \qty{1}{\litre} and was operated as a \gls{cstr} under anaerobic conditions. Mixing was provided by a magnetic stir bar, and the overflow exit tube was kept closed with a valve to maintain an anaerobic environment. As you can see in this \cref{graph:reactor}:
+The reactor had a useful volume of \qty{1}{\litre} and was operated as a \gls{cstr} under anaerobic conditions. Mixing was provided by a magnetic stir bar, and the overflow exit tube was kept closed with a valve to maintain an anaerobic environment. As you can see in this \Cref{graph:reactor}:
 
 \begin{figure}[H]
     \centering
@@ -239,7 +239,7 @@ The feed was also suplemented with nutrients to complement the feed and create a
 \footnotesize
 \setlength{\tabcolsep}{3pt}
 \begin{ThreePartTable}
-    \begin{xltabular}{\linewidth}{@{} C C C C @{}}
+    \begin{xltabular}{\linewidth}{@{} C C C @{}}
 
         \caption{Nutrients used and there ratios, for a 25:1 \gls{cn_ratio}. (Adapted from: \textcite{safaa2025})}
         \label{tab:nutri} \\
@@ -247,17 +247,15 @@ The feed was also suplemented with nutrients to complement the feed and create a
         \toprule
         \thead{Nutrients} &
         \thead{\masspervol} &
-        \thead{Mass (\unit{\milli\gram\per\litre})} &
-        \thead{Mass (\unit{\gram\per\litre})} \\
+        \thead{Mass (\unit{\milli\gram\per\litre})} \\
         \midrule
         \endfirsthead
 
-        \multicolumn{4}{l}{\textit{\Cref{tab:nutri} continued}} \\
+        \multicolumn{3}{l}{\textit{\Cref{tab:nutri} continued}} \\
         \toprule
         \thead{Nutrients} &
         \thead{\masspervol} &
-        \thead{Mass (\unit{\milli\gram\per\litre})} &
-        \thead{Mass (\unit{\gram\per\litre})} \\
+        \thead{Mass (\unit{\milli\gram\per\litre})} \\
         \midrule
         \endhead
 
@@ -267,7 +265,7 @@ The feed was also suplemented with nutrients to complement the feed and create a
         \csvreader[
             late after line=\\\addlinespace
         ]{data/processed/nutrients.csv}{}
-        {\csvcoli & \num{\csvcolii} & \num{\csvcoliii} & \num{\csvcoliv}}
+        {\expandafter\ce\expandafter{\csvcoli} & \num{\csvcolii} & \num{\csvcoliii}}
 
     \end{xltabular}
 \end{ThreePartTable}
@@ -276,14 +274,14 @@ The feed was also suplemented with nutrients to complement the feed and create a
 \subsection{Biogas Quantification}
 \label{subsec:biogas_quatification}
 
-The \gls{ampts} system (\cref{fig:ampts}), was provided to meassure the gas flow that was comming out of the reactor, with a \gls{co2} fixing unit using a solution of \qty{3}{\molar\NaOH}.
+The \gls{ampts} system (\Cref{fig:ampts}), was provided to meassure the gas flow that was comming out of the reactor, with a \gls{co2} fixing unit using a solution of \qty{3}{\molar\NaOH}.
 
 \begin{figure}
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
         \centering
         \includegraphics[width=\linewidth]{ampts.jpg}
-        \caption{\gls{ampts} gas colector}
+        \caption{\gls{ampts} gas flow messurer}
         \label{fig:ampts-col}
     \end{subfigure}%
     \hfill
@@ -296,7 +294,7 @@ The \gls{ampts} system (\cref{fig:ampts}), was provided to meassure the gas flow
     \newline
     \begin{subfigure}[t]{\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{ampts_sys-2.jpg}
+        \includegraphics[width=\linewidth]{ampts_sys-print.png}
         \caption{\gls{ampts} system}
         \label{fig:ampts-sys}
     \end{subfigure}
@@ -318,7 +316,7 @@ It was used the method of DiLallo \& Albertson \parencite{ribas2007}, to measure
     \label{eq:VFA}
 \end{equation}
 
-The volumes were measured in \unit{\milli\litre}, the sample volume was always \qty{50}{\milli\litre}, the normality (\unit{\normality}) of the acid and base, at first was \num{0.1}, but then it was changed to \num{1}. The \cref{eq:TA} is expressed in \unit{\milli\gram\CaCO\per\litre}, and the \cref{eq:VFA} is expressed in \unit{\milli\gram\CHCOOH\per\litre}.
+The volumes were measured in \unit{\milli\litre}, the sample volume was always \qty{50}{\milli\litre}, the normality (\unit{\normality}) of the acid and base, at first was \num{0.1}, but then it was changed to \num{1}. The \Cref{eq:TA} is expressed in \unit{\milli\gram\CaCO\per\litre}, and the \Cref{eq:VFA} is expressed in \unit{\milli\gram\CHCOOH\per\litre}.
 
 \subsection{Subestrate used as feed}
 \label{subsec:sub_feed}
