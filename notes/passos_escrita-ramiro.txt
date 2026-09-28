@@ -47,35 +47,35 @@ fazer um esquma do reator - colocar nos materiais e metodos *
 
 --------------------------------
 
-remover lista de unidades e simbolos - t vira tonnes
+remover lista de unidades e simbolos - t vira tonnes *
 
-keywords ordem alfabetica
+keywords ordem alfabetica *
 
-inicio de frase/parqagrafo usar por estenso as abreviacoes
+inicio de frase/parqagrafo usar por estenso as abreviacoes ?*
 
-nao usa ifens, usar virgulas
+nao usa ifens (– -), usar virgulas *
 
-fig 5.1 adicionar "withing first week"
+fig 5.1 adicionar "withing first week" *
 
-fig 4.2 dividir em 2, fotos / software print
+fig 4.2 dividir em 2, fotos / software print *
 
-4.3 mudar para "inoculo recolhido de digestor anaerbio da estacao"
+4.3 mudar para "inoculo recolhido de digestor anaerbio da estacao" *
 
 atualizar referencia standart methods para a mais recente edicao 26
 
-remover solidos fixos FS
+remover solidos fixos FS *
 
-densidade -> massa volumica
+densidade -> massa volumica -+*
 
-fig 4.1 mudar para setup experimental/ esquema da instalacao experimental usado nos ensaios, nao usar modelo
+fig 4.1 mudar para setup experimental/ esquema da instalacao experimental usado nos ensaios, nao usar modelo +-*
 
-tabela 4.4 talvez remover coluna 350 mL
+tabela 4.4 talvez remover coluna 350 mL *
 
-tabela 4.5 "descricao da alimentacao utilizada ao longo do periodo experimental"
+tabela 4.5 "descricao da alimentacao utilizada ao longo do periodo experimental" *
 
-arrumar unidade NmL
+arrumar unidade NmL *
 
-diminuir tamnho graficos
+diminuir tamnho graficos ----
 
 colocar mais valores, acumulo, na conclusao, diferenca entre alimentacoes
 

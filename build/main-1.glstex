@@ -19,12 +19,12 @@
 
 \bibglsnewsymbol{ca_hco3}%
 {symbol={\ce{Ca(HCO3)2}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}},
 sort={Ca|HCO3|2|},
 type={symbols}}%
 {\ce{Ca(HCO3)2}}%
 {Calcium bicarbonate; buffering agent added to the feed on day 0.}
-\glsxtrfieldlistadd{ca_hco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
+\glsxtrfieldlistadd{ca_hco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
 
 
 \bibglsnewsymbol{ch4}%
@@ -63,37 +63,35 @@ type={symbols}}%
 
 \bibglsnewsymbol{co2}%
 {symbol={\ce{CO2}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{15}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{15}},
 sort={CO2|},
 type={symbols}}%
 {\ce{CO2}}%
 {Carbon dioxide.}
 \glsxtrfieldlistadd{co2}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
-\glsxtrfieldlistadd{co2}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
 \glsxtrfieldlistadd{co2}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{15}}
 
 
 \bibglsnewsymbol{glucose}%
 {symbol={\ce{C6H12O6}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}},
 sort={glucose|},
 type={symbols}}%
 {\ce{C6H12O6}}%
 {Glucose; simple sugar added to the feed on day 0 as a readily
                  degradable carbon source.}
-\glsxtrfieldlistadd{glucose}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
+\glsxtrfieldlistadd{glucose}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
 
 
 \bibglsnewsymbol{khco3}%
 {symbol={\ce{KHCO3}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}},
 sort={KHCO3|},
 type={symbols}}%
 {\ce{KHCO3}}%
 {Potassium bicarbonate; buffering agent added to the feed.}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
-\glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{28}}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}

@@ -139,12 +139,11 @@ type={units}}%
 
 \bibglsnewsymbol{volume}%
 {symbol={v},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vi}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}},
 sort={16|},
 type={units}}%
 {v}%
 {Volume}
-\glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vi}}
 \glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}}
 
