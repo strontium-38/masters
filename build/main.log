@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  29 SEP 2026 16:16
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  29 SEP 2026 17:32
  system commands enabled.
 **main.tex
 (./main.tex
@@ -1951,8 +1951,14 @@ Package chemmacros Info: Using float defining method `float'.
 (./build/sections/chapters/01_introduction.aux)
 (./build/sections/chapters/02_literature_review.aux)
 (./build/sections/chapters/03_materials_methods.aux)
-(./build/sections/chapters/04_results.aux)
-(./build/sections/chapters/06_conclusion.aux))
+(./build/sections/chapters/04_results.aux
+
+LaTeX Warning: Label `eq:OLR' multiply defined.
+
+
+LaTeX Warning: Label `eq:OLR@cref' multiply defined.
+
+) (./build/sections/chapters/06_conclusion.aux))
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -2190,7 +2196,7 @@ Package hyperref Info: Link coloring ON on input line 21.
 
 (/usr/share/texmf-dist/tex/latex/elements/elements_names_english.def)
 (./cover.tex
-<assets/logos/IPB_logo.png, id=123, 513.92pt x 157.58875pt>
+<assets/logos/IPB_logo.png, id=127, 513.92pt x 157.58875pt>
 File: assets/logos/IPB_logo.png Graphic file (type png)
 <use assets/logos/IPB_logo.png>
 Package luatex.def Info: assets/logos/IPB_logo.png  used on input line 10.
@@ -2221,7 +2227,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-<assets/logos/UTFPR_logo.png, id=124, 2341.74875pt x 877.2775pt>
+<assets/logos/UTFPR_logo.png, id=128, 2341.74875pt x 877.2775pt>
 File: assets/logos/UTFPR_logo.png Graphic file (type png)
 <use assets/logos/UTFPR_logo.png>
 Package luatex.def Info: assets/logos/UTFPR_logo.png  used on input line 15.
@@ -2352,19 +2358,19 @@ Missing character: There is no ; (U+003B) in font nullfont!
 ] [14]
 warning  (file assets/photos/ampts/ampts.jpg) (readjpg): Exif resolution 72dpi x
  72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/ampts/ampts.jpg, id=750, 2312.64pt x 2500.34125pt>
+<assets/photos/ampts/ampts.jpg, id=757, 2312.64pt x 2500.34125pt>
 File: assets/photos/ampts/ampts.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts.jpg  used on input line 274.
 
 (luatex.def)             Requested size: 192.0548pt x 207.62366pt.
-<assets/photos/ampts/ampts_co2.jpg, id=753, 2312.64pt x 4111.36pt>
+<assets/photos/ampts/ampts_co2.jpg, id=760, 2312.64pt x 4111.36pt>
 File: assets/photos/ampts/ampts_co2.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts_co2.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts_co2.jpg  used on input line 
 281.
 (luatex.def)             Requested size: 132.68288pt x 235.88068pt.
-<assets/photos/ampts/ampts_sys-print.png, id=758, 651.18282pt x 627.09282pt>
+<assets/photos/ampts/ampts_sys-print.png, id=765, 651.18282pt x 627.09282pt>
 File: assets/photos/ampts/ampts_sys-print.png Graphic file (type png)
 <use assets/photos/ampts/ampts_sys-print.png>
 Package luatex.def Info: assets/photos/ampts/ampts_sys-print.png  used on input
@@ -2381,7 +2387,7 @@ Chapter 5.
 
 warning  (file assets/photos/reactor/reator-19-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-19-5.jpg, id=892, 1689.31125pt x 2664.95625pt>
+<assets/photos/reactor/reator-19-5.jpg, id=899, 1689.31125pt x 2664.95625pt>
 File: assets/photos/reactor/reator-19-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-19-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-19-5.jpg  used on input l
@@ -2390,7 +2396,7 @@ ine 13.
 
 warning  (file assets/photos/reactor/reator-22-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-22-5.jpg, id=893, 1870.99pt x 3112.62875pt>
+<assets/photos/reactor/reator-22-5.jpg, id=900, 1870.99pt x 3112.62875pt>
 File: assets/photos/reactor/reator-22-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-22-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-22-5.jpg  used on input l
@@ -2410,14 +2416,14 @@ ion 96dpi x 96dpi
 >]
 warning  (file assets/photos/reactor/reator-limp-seco-24-8.jpg) (readjpg): Exif 
 resolution 72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=902, 2312.64pt x 3490.0387
+<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=909, 2312.64pt x 3490.0387
 6pt>
 File: assets/photos/reactor/reator-limp-seco-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-seco-24-8.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-limp-seco-24-8.jpg  used 
 on input line 34.
 (luatex.def)             Requested size: 106.69783pt x 160.98573pt.
-<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=903, 2312.64pt x 4111.36pt
+<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=910, 2312.64pt x 4111.36pt
 >
 File: assets/photos/reactor/reator-limp-agua-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-agua-24-8.jpg>
@@ -2494,20 +2500,40 @@ type 'pgfplothandlerlineto'): LUA does not support x filter (yet).
  [27]
 PGFPlots: reading {data/processed/analysis.csv}
 PGFPlots: reading {data/processed/analysis.csv}
- [28]) [29]
+ [28]
+Overfull \hbox (8.69672pt too wide) in paragraph at lines 334--334
+ [] 
+ []
+
+
+Overfull \hbox (8.23842pt too wide) in paragraph at lines 334--334
+ [] 
+ []
+
+
+Overfull \hbox (8.69672pt too wide) in paragraph at lines 334--334
+ [] 
+ []
+
+
+Overfull \hbox (8.23842pt too wide) in paragraph at lines 334--334
+ [] 
+ []
+
+[29]) [30]
 \openout2 = sections/chapters/06_conclusion.aux
  (./sections/chapters/06_conclusion.tex
 Chapter 6.
-) [30
+) [31
 
 
 
 
-] [31
+] [32
 
 
 
-] [32] (./build/main.aux
+] [33] (./build/main.aux
 (./build/sections/frontmatter/acknowledgements.aux)
 (./build/sections/frontmatter/abstract.aux)
 (./build/sections/frontmatter/resumo.aux)
@@ -2520,25 +2546,29 @@ Chapter 6.
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D9243DC8C4FAF8B38CCF3179F1FD20AD;4938.
+(rerunfilecheck)             Checksum: 92E355C19E108A9786A2071BB288D32A;5033.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 77985 strings out of 476076
+ 78118 strings out of 476076
  476886,5906145 words of node,token memory allocated
- 975 words of node memory still in use:
+ 1148 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 4 glyph, 71 attribute, 87 glue_spec, 36 attribute_list, 2 write, 11 pdf_acti
-on nodes
-   avail lists: 1:21,2:78615,3:49164,4:314,5:263,6:384,7:7634,8:73,9:4091,10:27,
+rn, 3 glyph, 131 attribute, 87 glue_spec, 66 attribute_list, 2 write, 11 pdf_act
+ion nodes
+   avail lists: 1:21,2:78525,3:49164,4:314,5:271,6:384,7:7635,8:73,9:4091,10:27,
 11:601,12:1
- 98417 multiletter control sequences out of 65536+600000
+ 98523 multiletter control sequences out of 65536+600000
  113 fonts using 11441735 bytes
- 110i,21n,128p,5815b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,26n,128p,5815b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/
 texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/fonts/TTF/T
 imes.TTF></usr/share/fonts/TTF/Timesi.TTF></usr/share/fonts/TTF/Timesbd.TTF></us
@@ -2551,10 +2581,10 @@ s/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (42 pages, 11350719 bytes).
+Output written on main.pdf (43 pages, 11363811 bytes).
 
-PDF statistics: 1155 PDF objects out of 1200 (max. 8388607)
- 845 compressed objects within 9 object streams
- 152 named destinations out of 1000 (max. 1048576)
- 248 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1198 PDF objects out of 1200 (max. 8388607)
+ 874 compressed objects within 9 object streams
+ 170 named destinations out of 1000 (max. 1048576)
+ 256 words of extra memory for PDF output out of 10000 (max. 100000000)
 

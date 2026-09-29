@@ -281,3 +281,131 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
     \label{graph:ph_ratio}
 \end{figure}
 
+\subsection{\Glsentrylong{ch4} yield}
+\label{sec:yield}
+
+\begingroup
+\tablesetup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
+
+        \caption{Summary of the performance of the experiment}
+        \label{tab:performance} \\
+
+        \toprule
+        \thead{Phase} &
+        \thead{Days} &
+        \thead{\GLS{olr} range\\(\unit{\gram\VS\per\litre\per\day})} &
+        \thead{\GLS{vs} fed\\(\unit{\gram})} &
+        \thead{\gls{ch4}\\(\unit{\nml})} &
+        \thead{\makecell{Yield\\\unit{\nml\per\gram\VSfed}}} &
+        \thead{\makecell{Rate\\\unit{\litre\per\reactorlitre\per\day}}} \\
+        \midrule
+        \endfirsthead
+
+        \multicolumn{7}{l}{\textit{\Cref{tab:performance} continued}} \\
+        \toprule
+        \thead{Phase} &
+        \thead{Days} &
+        \thead{\GLS{olr} range\\(\unit{\gram\VS\per\litre\per\day})} &
+        \thead{\GLS{vs} fed\\(\unit{\gram})} &
+        \thead{\gls{ch4}\\(\unit{\nml})} &
+        \thead{\makecell{Yield\\(unit{\nml\per\gram\VSfed})}} &
+        \thead{\makecell{Rate\\(unit{\litre\per\reactorlitre\per\day})}} \\
+        \midrule
+        \endhead
+
+        \bottomrule
+        \endlastfoot
+
+        \csvreader[
+            late after line=\\\addlinespace
+        ]{data/processed/yield-avarage.csv}{}
+        {\csvcoli &
+         \numrange{\csvcolii}{\csvcoliii} &
+         \numrange{\csvcoliv}{\csvcolv} &
+         \num{\csvcolxi} &
+         \num{\csvcolviii} &
+         \num{\csvcolxii} &
+         \num{\csvcolxiv}}
+
+    \end{xltabular}
+\end{ThreePartTable}
+\endgroup
+
+\begin{equation}
+    \mathrm{OLR} = \frac{S_{\text{in}} \cdot Q}{V_r} \quad \left[\unit{\kilo\gram\VS\per\cubic\metre\per\day}\right]
+    \label{eq:OLR}
+\end{equation}
+
+\begin{equation}
+    Q = \frac{V_r}{\mathrm{HRT}} \quad \left[\unit{\cubic\metre\per\day}\right]
+    \label{eq:Q}
+\end{equation}
+
+\begin{equation}
+    m_{\mathrm{VS,day}} = \mathrm{OLR} \cdot V_r \quad \left[\unit{\gram\per\day}\right]
+    \label{eq:mVS_day}
+\end{equation}
+
+\begin{equation}
+    M_{\mathrm{VS}}(n) = \sum_{i=0}^{n} m_{\mathrm{VS,day}}(i) \quad \left[\unit{\gram}\right]
+    \label{eq:cumVS}
+\end{equation}
+
+\begin{equation}
+    Y(n) = \frac{V_{\mathrm{CH_4}}(n)}{M_{\mathrm{VS}}(n)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
+    \label{eq:cumYield}
+\end{equation}
+
+\begin{equation}
+    r_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{m_{\mathrm{VS,day}}(n)} \quad \left[\unit{\milli\litre\CH\per\gram\VSfed\per\day}\right]
+    \label{eq:dailyRate}
+\end{equation}
+
+\begin{equation}
+    \dot{n}_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{V_m \cdot V_r} \quad \left[\unit{\mol\CH\per\cubic\metre\per\day}\right]
+    \label{eq:molRate}
+\end{equation}
+
+\begin{equation}
+    \dot{V}_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{1000 \cdot V_r} \quad \left[\unit{\litre\CH\per\reactorlitre\per\day}\right]
+    \label{eq:volRate}
+\end{equation}
+
+\begin{equation}
+    \Delta V_{\mathrm{CH_4}}(a,b) = V_{\mathrm{CH_4}}(b) - V_{\mathrm{CH_4}}(a-1) \quad \left[\unit{\nml}\right]
+    \label{eq:deltaVCH4}
+\end{equation}
+
+\begin{equation}
+    \Delta M_{\mathrm{VS}}(a,b) = M_{\mathrm{VS}}(b) - M_{\mathrm{VS}}(a-1) \quad \left[\unit{\gram}\right]
+    \label{eq:deltaMVS}
+\end{equation}
+
+\begin{equation}
+    Y(a,b) = \frac{\Delta V_{\mathrm{CH_4}}(a,b)}{\Delta M_{\mathrm{VS}}(a,b)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
+    \label{eq:phaseYield}
+\end{equation}
+
+\begin{equation}
+    \overline{\dot{n}_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} \dot{n}_{\mathrm{CH_4}}(n) \quad \left[\unit{\mol\CH\per\cubic\metre\per\day}\right]
+    \label{eq:avgMolRate}
+\end{equation}
+
+\begin{equation}
+    \overline{\dot{V}_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} \dot{V}_{\mathrm{CH_4}}(n) \quad \left[\unit{\litre\CH\per\reactorlitre\per\day}\right]
+    \label{eq:avgVolRate}
+\end{equation}
+
+\begin{equation}
+    \overline{r_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} r_{\mathrm{CH_4}}(n) \quad \left[\unit{\milli\litre\CH4\per\gram\VSfed\per\day}\right]
+    \label{eq:avgDailyRate}
+\end{equation}
+
+\begin{equation}
+    Y_{\text{overall}} = \frac{V_{\mathrm{CH_4}}(N_f)}{M_{\mathrm{VS}}(N_f)} \quad \left[\unit{\nml\CH4\per\gram\VSfed}\right]
+    \label{eq:overallYield}
+\end{equation}
