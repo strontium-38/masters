@@ -1,0 +1,200 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{preamble}
+\usepackage{graphs}
+\usepackage{alone}
+\begin{document}
+\documentclass{standalone}
+\usepackage{alone}
+
+\begin{document}
+\begin{tikzpicture}[
+  font=\small\sffamily,
+  pipe/.style   = {line width=5pt, gray!55},
+  pipein/.style = {line width=2.2pt, white},
+  vessel/.style = {thick, draw=black!75},
+  lbl/.style    = {font=\footnotesize\sffamily, align=center, text=black!80},
+  valve/.style  = {fill=black!65, draw=none},
+]
+
+\newcommand{\pipe}[1]{%
+  \draw[pipe]   #1;
+  \draw[pipein] #1;
+}
+
+% ================= COMPONENTS =================
+
+% Substrate tank
+\node[draw, rectangle, rounded corners=3pt, fill=yellow!20,
+      minimum width=2.5cm, minimum height=2.5cm] (tank) at (0,0) {Substrate tank};
+
+% Pump
+\node[draw, circle, fill=white, minimum size=0.8cm,
+      right=1.5cm of tank] (pump) {};
+\node[lbl, below=0.15cm of pump, align=center] {Feeding\\pump};
+\fill[black!60] ($(pump.center)+(-0.15,0.15)$) -- ($(pump.center)+(-0.15,-0.15)$) -- ($(pump.center)+(0.2,0)$) -- cycle;
+
+% Reactor
+\node[draw, rectangle, rounded corners=5pt,
+      fill=white,
+      minimum width=3cm, minimum height=4cm,
+      right=2cm of pump,
+      path picture={
+        \coordinate (liq) at ($(path picture bounding box.north west)!0.22!(path picture bounding box.south west)$);
+        \fill[gray!20]
+          (path picture bounding box.south west) rectangle
+          (liq -| path picture bounding box.south east);
+        \draw[gray!50!black, thick]
+          (liq -| path picture bounding box.south west) --
+          (liq -| path picture bounding box.south east);
+      }] (reactor) {Reactor};
+
+% ---- Heating jacket / blanket (drawn behind the reactor) ----
+\begin{scope}[on background layer]
+  \fill[cyan!25, rounded corners=8pt]
+    ($(reactor.south west)+(-0.35,-0.30)$) rectangle
+    ($(reactor.north east)+(0.35,-0.15)$);
+  \draw[cyan!60!black, thick, rounded corners=8pt]
+    ($(reactor.south west)+(-0.35,-0.30)$) rectangle
+    ($(reactor.north east)+(0.35,-0.15)$);
+\end{scope}
+
+% ---- Magnetic stirrer base ----
+\fill[black!70, rounded corners=3pt]
+  ($(reactor.south west)+(-0.35,-0.55)$) rectangle
+  ($(reactor.south east)+(0.35,-0.05)$);
+\draw[black!70, rounded corners=3pt, thick]
+  ($(reactor.south west)+(-0.35,-0.55)$) rectangle
+  ($(reactor.south east)+(0.35,-0.05)$);
+\fill[green!70!black] ($(reactor.south)+(0,-0.30)$) circle[radius=0.06];
+
+% ---- Magnetic stir bar ----
+\fill[black!75, rounded corners=2pt]
+  ($(reactor.south)+(-0.55,0.35)$) rectangle
+  ($(reactor.south)+(0.55,0.45)$);
+
+% ---- Water tank with heater (above the substrate tank) ----
+\node[draw, rounded corners=3pt, fill=white,
+      minimum width=2.2cm, minimum height=1.8cm, below=of tank,
+      path picture={
+        \coordinate (liq) at ($(path picture bounding box.north west)!0.1!(path picture bounding box.south west)$);
+        \fill[cyan!20]
+          (path picture bounding box.south west) rectangle
+          (liq -| path picture bounding box.south east);
+        \draw[cyan!50!black, thick]
+          (liq -| path picture bounding box.south west) --
+          (liq -| path picture bounding box.south east);
+      }] (watertank) {Water tank};
+
+% heating element (zigzag) inside the water
+\draw[red!75!black, thick, line cap=round, line join=round]
+  ($(watertank.south)+(-0.75,0.35)$) --
+  ($(watertank.south)+(-0.45,0.55)$) --
+  ($(watertank.south)+(-0.15,0.35)$) --
+  ($(watertank.south)+(0.15,0.55)$) --
+  ($(watertank.south)+(0.45,0.35)$) --
+  ($(watertank.south)+(0.75,0.55)$);
+
+% ---- CO2 filter ----
+\node[draw, rectangle, rounded corners=2pt, fill=white,
+      minimum width=0.9cm, minimum height=1.7cm,
+      right=3cm of reactor,
+      path picture={
+        \coordinate (liq) at ($(path picture bounding box.south west)!0.35!(path picture bounding box.north west)$);
+        \fill[blue!40]
+          (path picture bounding box.south west) rectangle
+          (liq -| path picture bounding box.south east);
+      }, align=center] (co2filter) {\ch{CO2}\\filter};
+\fill[green!55, rounded corners=1pt]
+  ($(co2filter.north)+(-0.35,0)$) rectangle ($(co2filter.north)+(0.35,0.12)$);
+
+% Flow meter (AMPTS II)
+\node[draw, rectangle,
+      right=1.5cm of co2filter, align=center] (flowmeter) {Flow meter\\AMPTS II};
+
+% ================= CONNECTION POINTS =================
+\coordinate (feed_in)      at ($(reactor.north west)!0.4!(reactor.north east) + (0,-0.05)$);
+\coordinate (overflow_out) at ($(reactor.north east)!0.2!(reactor.south east)$);
+\coordinate (sample_out)   at ($(reactor.north east)!0.8!(reactor.south east)$);
+
+% --- Feed tube routing ---
+\coordinate (rail)    at ($(reactor.north) + (0, 0.7)$);
+\coordinate (cornerL) at (pump.north |- rail);
+\coordinate (cornerR) at (feed_in   |- rail);
+\coordinate (y_junction)  at ($(cornerL)!1!(cornerR)$);
+\coordinate (stopper_end) at ($(y_junction) + (0, 0.6)$);
+
+% --- Gas line routing ---
+\coordinate (gas_exit) at ($(reactor.north) + (0.8, -0.2)$);
+\coordinate (vial_in)  at ($(co2filter.north west)!0.3!(co2filter.north east) + (0,-0.05)$);
+\coordinate (vial_out) at ($(co2filter.north west)!0.7!(co2filter.north east) + (0,-0.05)$);
+\coordinate (gas_rail) at ($(co2filter.north) + (0, 2)$);
+
+% --- Jacket & water-tank ports ---
+\coordinate (jacket_hot_in)   at ($(reactor.west)+(-0.35, 1.2)$);
+\coordinate (jacket_cold_out) at ($(reactor.west)+(-0.35, -0.8)$);
+\coordinate (wt_hot_out)      at ($(watertank.south east)!0.80!(watertank.north east)$);
+\coordinate (wt_cold_in)      at ($(watertank.south east)!0.20!(watertank.north east)$);
+
+% --- Hot tube route: water tank -> drop -> across -> drop -> into jacket ---
+\coordinate (hot_A) at ($(wt_hot_out) + (0, -0)$);
+\coordinate (hot_B) at ($(hot_A) + (3, 0)$);
+\coordinate (hot_C) at (hot_B |- jacket_hot_in);
+
+% --- Cold tube route: jacket -> left -> up -> across -> into water tank ---
+\coordinate (cold_A) at ($(jacket_cold_out) + (-0.5, 0)$);
+\coordinate (cold_B) at (cold_A |- wt_cold_in);
+
+% ================= PIPES =================
+
+% Feed: tank -> pump
+\pipe{(tank.east) -- (pump.west)};
+\pipe{(pump.north) -- (cornerL) -- (cornerR) -- (feed_in)};
+
+% Stopper branch of the Y
+\pipe{(y_junction) -- (stopper_end)};
+\fill[valve, rounded corners=2pt]
+  ($(stopper_end)+(-0.3,0)$) rectangle ($(stopper_end)+(0.3,0.35)$);
+
+% Overflow tube
+\coordinate (overflow_end) at ($(overflow_out) + (2,-2)$);
+\pipe{(overflow_out) -- ++(2,0) -- (overflow_end)};
+\fill[valve] ($(overflow_end)+(-0.2,0.15)$) -- ($(overflow_end)+(0.2,0.15)$) -- ($(overflow_end)+(0,-0.15)$) -- cycle;
+\fill[valve] ($(overflow_end)+(-0.2,-0.15)$) -- ($(overflow_end)+(0.2,-0.15)$) -- ($(overflow_end)+(0,0.15)$) -- cycle;
+
+% Sampling tube
+\coordinate (sample_end) at ($(sample_out) + (1.5,-1.5)$);
+\pipe{(sample_out) -- ++(1.5,0) -- (sample_end)};
+\fill[valve] ($(sample_out)+(0.15,-0.2)$) -- ($(sample_out)+(0.15,0.2)$) -- ($(sample_out)+(-0.15,0)$) -- cycle;
+\fill[valve] ($(sample_out)+(-0.15,-0.2)$) -- ($(sample_out)+(-0.15,0.2)$) -- ($(sample_out)+(0.15,0)$) -- cycle;
+
+% Gas inlet & outlet
+\pipe{(gas_exit) -- (gas_exit |- gas_rail) -- (vial_in |- gas_rail) -- (vial_in)};
+\pipe{(vial_out) -- (vial_out |- gas_rail) -- (flowmeter.north |- gas_rail) -- (flowmeter.north)};
+
+% Hot tube (water tank -> jacket)
+\pipe{(wt_hot_out) -- (hot_A) -- (hot_B) -- (hot_C) -- (jacket_hot_in)};
+
+% Cold tube (jacket -> water tank), with circulation pump in the middle
+\pipe{(jacket_cold_out) -- (cold_A) -- (cold_B) -- (wt_cold_in)};
+
+% Circulation pump drawn on top of the cold return line
+\node[draw, circle, fill=white, minimum size=0.7cm]
+      (circpump) at ($(cold_B)!0.5!(wt_cold_in)$) {};
+\fill[black!60]
+  ($(circpump.center)+(-0.10,0.10)$) --
+  ($(circpump.center)+(-0.10,-0.10)$) --
+  ($(circpump.center)+(0.14,0)$) -- cycle;
+\node[lbl, above=0.1cm of circpump, align=center] {Circulation pump};
+
+% ================= LABELS =================
+\node[lbl, above right=0.1cm and 0.5cm of overflow_out] {Overflow tube};
+\node[lbl, below=0.1cm of sample_end] {Sampling tube};
+\node[lbl, anchor=south, yshift=0.15]
+  at ($(gas_exit |- gas_rail)!0.5!(vial_in |- gas_rail)$)
+  {Gas collection tube};
+\node[lbl, above=0.2cm of stopper_end, align=center] {manual\\pH ajust};
+
+\end{tikzpicture}
+\end{document}
+
+\end{document}

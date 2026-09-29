@@ -61,7 +61,7 @@ fig 4.2 dividir em 2, fotos / software print *
 
 4.3 mudar para "inoculo recolhido de digestor anaerbio da estacao" *
 
-atualizar referencia standart methods para a mais recente edicao 26
+atualizar referencia standart methods para a mais recente edicao 26 - 24 e a ultima *
 
 remover solidos fixos FS *
 

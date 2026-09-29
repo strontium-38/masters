@@ -1,0 +1,57 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{preamble}
+\usepackage{graphs}
+\usepackage{alone}
+\begin{document}
+\documentclass{standalone}
+\usepackage{alone}
+
+\begin{document}
+\begin{tikzpicture}[
+  box/.style    = {draw, rounded corners=3pt, minimum width=2.7cm,
+                   minimum height=1.1cm, align=center, font=\small},
+  topbox/.style = {draw, rounded corners=3pt, minimum width=13cm,
+                   minimum height=0.9cm, align=center, font=\small},
+  arr/.style    = {-{Stealth[length=2.2mm]}, semithick},
+  darr/.style   = {-{Stealth[length=2.2mm]}, semithick, dashed},
+  lbl/.style    = {font=\scriptsize, draw, rounded corners=2pt, fill=white, inner sep=2pt, anchor=west, xshift=4pt},
+]
+
+  \node[topbox] (oil) at (0,0) {Triglycerides (oils and fats)};
+
+  \node[box, fill=orange!60] (hyd) at (-5.1,-2.4) {Hydrolysis};
+  \node[box, fill=yellow!60, align=center] (dh)  at (-1.7,-2.4) {Direct\\Hydrogenation};
+  \node[box, fill=blue!15, align=center]   (tr)  at ( 1.7,-2.4) {Transesterification};
+  \node[box, fill=green!50]  (sap) at ( 5.1,-2.4) {Saponification};
+
+  \draw[arr] (oil.south -| hyd) -- (hyd.north);
+  \draw[arr] (oil.south -| dh)  -- (dh.north);
+  \draw[arr] (oil.south -| tr)  -- (tr.north);
+  \draw[arr] (oil.south -| sap) -- (sap.north);
+
+  \node[lbl, draw=orange!60] at ($(oil.south -| hyd)!0.5!(hyd.north)$) {Steam};
+  \node[lbl, draw=yellow!60] at ($(oil.south -| dh)!0.5!(dh.north)$) {Hydrogen};
+  \node[lbl, draw=blue!15] at ($(oil.south -| tr)!0.5!(tr.north)$) {MeOH};
+  \node[lbl, draw=green!50] at ($(oil.south -| sap)!0.5!(sap.north)$) {NaOH};
+
+  \node[box, fill=orange!60, align=center, below=of hyd] (fa) {Fatty Acids\\\ch{RCOOH}};
+  \node[box, fill=yellow!60, align=center, below=of dh] (fal) {Fatty Alcohols\\\ch{RCH2OH}};
+  \node[box, fill=blue!15, align=center, below=of tr]   (fame) {FAME\\\ch{RCOOMe}};
+  \node[box, fill=green!50, align=center, below=of sap]  (soap) {Soaps\\\ch{RCOONa}};
+
+  \draw[arr] (hyd) -- (fa);
+  \draw[arr] (dh)  -- (fal);
+  \draw[arr] (tr)  -- (fame);
+  \draw[arr] (sap) -- (soap);
+
+  \node[box, fill=gray!15, align=center, right=of soap] (gly) {Glycerol\\\ch{C3H8O3}};
+
+  \draw[darr] ($(hyd.south)!0.2!(fa.north)$) -| (gly.north);
+  \draw[darr] ($(dh.south)!0.4!(fal.north)$) -| (gly.north);
+  \draw[darr] ($(tr.south)!0.6!(fame.north)$) -| (gly.north);
+  \draw[darr] ($(sap.south)!0.8!(soap.north)$) -| (gly.north);
+
+\end{tikzpicture}
+\end{document}
+
+\end{document}

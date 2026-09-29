@@ -201,60 +201,6 @@
       \endverb
       \keyw{Crude glycerol,Purification,Glycerol market,Biodiesel,Pre-treatment}
     \endentry
-    \entry{apha2017}{book}{}{}
-      \name{editor}{4}{}{%
-        {{un=0,uniquepart=base,hash=7bcea4e0c11fe2d68c81bcb2141cc534}{%
-           family={Baird},
-           familyi={B\bibinitperiod},
-           given={Roger\bibnamedelima B.},
-           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ae1b72ec73a5738c68eab64c8bd947b4}{%
-           family={Eaton},
-           familyi={E\bibinitperiod},
-           given={Andrew\bibnamedelima D.},
-           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9480370131f2cf5600fb143e78d5420d}{%
-           family={Rice},
-           familyi={R\bibinitperiod},
-           given={Eugene\bibnamedelima W.},
-           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3642d6052c7f19c6e5a7bb59bbb2d4f8}{%
-           family={Bridgewater},
-           familyi={B\bibinitperiod},
-           given={Laura\bibnamedelima L.},
-           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {American Public Health Association, American Water Works Association, Water Environment Federation}%
-      }
-      \strng{namehash}{99091bca4c8228292cb7782c8c4be5d6}
-      \strng{fullhash}{982770b95eff4e628e352df65d4cfc77}
-      \strng{fullhashraw}{982770b95eff4e628e352df65d4cfc77}
-      \strng{bibnamehash}{982770b95eff4e628e352df65d4cfc77}
-      \strng{editorbibnamehash}{982770b95eff4e628e352df65d4cfc77}
-      \strng{editornamehash}{99091bca4c8228292cb7782c8c4be5d6}
-      \strng{editorfullhash}{982770b95eff4e628e352df65d4cfc77}
-      \strng{editorfullhashraw}{982770b95eff4e628e352df65d4cfc77}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{edition}{23rd}
-      \field{isbn}{978-0-87553-287-5}
-      \field{issn}{55-1979}
-      \field{title}{Standard Methods for the Examination of Water and Wastewater}
-      \field{year}{2017}
-      \verb{doi}
-      \verb 10.2105/SMWW.2882.002
-      \endverb
-    \endentry
     \entry{choorit2007}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=56d9ed0b0b39904fbdd335ea3448f86a}{%
@@ -542,6 +488,53 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1364032110002224
       \endverb
       \keyw{Anaerobic digestion,Solid fermentation,Dry digester,Biomass,Biogas}
+    \endentry
+    \entry{apha2023}{book}{}{}
+      \name{editor}{3}{}{%
+        {{un=0,uniquepart=base,hash=01dcb05093e80de67f4a92f0090354ed}{%
+           family={Lipps},
+           familyi={L\bibinitperiod},
+           given={William\bibnamedelima C.},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d3b60acecec414ad9eef18ce0245ea1}{%
+           family={Braun-Howland},
+           familyi={B\bibinithyphendelim H\bibinitperiod},
+           given={Ellen\bibnamedelima B.},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54b940e02a3fe3e8a905d17fa9ea3de0}{%
+           family={Baxter},
+           familyi={B\bibinitperiod},
+           given={Terry\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {American Public Health Association, American Water Works Association,}%
+        {Water Environment Federation}%
+      }
+      \strng{namehash}{2ef030fce94ebdbd89ae15ce05636f7b}
+      \strng{fullhash}{ba2e4cf55751c608733d61770632fef5}
+      \strng{fullhashraw}{ba2e4cf55751c608733d61770632fef5}
+      \strng{bibnamehash}{ba2e4cf55751c608733d61770632fef5}
+      \strng{editorbibnamehash}{ba2e4cf55751c608733d61770632fef5}
+      \strng{editornamehash}{2ef030fce94ebdbd89ae15ce05636f7b}
+      \strng{editorfullhash}{ba2e4cf55751c608733d61770632fef5}
+      \strng{editorfullhashraw}{ba2e4cf55751c608733d61770632fef5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{24th}
+      \field{isbn}{978-0-87553-299-8}
+      \field{title}{Standard Methods for the Examination of Water and Wastewater}
+      \field{year}{2023}
+      \field{pages}{1536}
+      \range{pages}{1}
     \endentry
     \entry{posmanik2020}{article}{}{}
       \name{author}{5}{}{%
@@ -980,60 +973,6 @@
       \endverb
       \keyw{Crude glycerol,Purification,Glycerol market,Biodiesel,Pre-treatment}
     \endentry
-    \entry{apha2017}{book}{}{}
-      \name{editor}{4}{}{%
-        {{un=0,uniquepart=base,hash=7bcea4e0c11fe2d68c81bcb2141cc534}{%
-           family={Baird},
-           familyi={B\bibinitperiod},
-           given={Roger\bibnamedelima B.},
-           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ae1b72ec73a5738c68eab64c8bd947b4}{%
-           family={Eaton},
-           familyi={E\bibinitperiod},
-           given={Andrew\bibnamedelima D.},
-           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9480370131f2cf5600fb143e78d5420d}{%
-           family={Rice},
-           familyi={R\bibinitperiod},
-           given={Eugene\bibnamedelima W.},
-           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3642d6052c7f19c6e5a7bb59bbb2d4f8}{%
-           family={Bridgewater},
-           familyi={B\bibinitperiod},
-           given={Laura\bibnamedelima L.},
-           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {American Public Health Association, American Water Works Association, Water Environment Federation}%
-      }
-      \strng{namehash}{99091bca4c8228292cb7782c8c4be5d6}
-      \strng{fullhash}{982770b95eff4e628e352df65d4cfc77}
-      \strng{fullhashraw}{982770b95eff4e628e352df65d4cfc77}
-      \strng{bibnamehash}{982770b95eff4e628e352df65d4cfc77}
-      \strng{editorbibnamehash}{982770b95eff4e628e352df65d4cfc77}
-      \strng{editornamehash}{99091bca4c8228292cb7782c8c4be5d6}
-      \strng{editorfullhash}{982770b95eff4e628e352df65d4cfc77}
-      \strng{editorfullhashraw}{982770b95eff4e628e352df65d4cfc77}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{edition}{23rd}
-      \field{isbn}{978-0-87553-287-5}
-      \field{issn}{55-1979}
-      \field{title}{Standard Methods for the Examination of Water and Wastewater}
-      \field{year}{2017}
-      \verb{doi}
-      \verb 10.2105/SMWW.2882.002
-      \endverb
-    \endentry
     \entry{choorit2007}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=56d9ed0b0b39904fbdd335ea3448f86a}{%
@@ -1321,6 +1260,53 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1364032110002224
       \endverb
       \keyw{Anaerobic digestion,Solid fermentation,Dry digester,Biomass,Biogas}
+    \endentry
+    \entry{apha2023}{book}{}{}
+      \name{editor}{3}{}{%
+        {{un=0,uniquepart=base,hash=01dcb05093e80de67f4a92f0090354ed}{%
+           family={Lipps},
+           familyi={L\bibinitperiod},
+           given={William\bibnamedelima C.},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d3b60acecec414ad9eef18ce0245ea1}{%
+           family={Braun-Howland},
+           familyi={B\bibinithyphendelim H\bibinitperiod},
+           given={Ellen\bibnamedelima B.},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54b940e02a3fe3e8a905d17fa9ea3de0}{%
+           family={Baxter},
+           familyi={B\bibinitperiod},
+           given={Terry\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {American Public Health Association, American Water Works Association,}%
+        {Water Environment Federation}%
+      }
+      \strng{namehash}{2ef030fce94ebdbd89ae15ce05636f7b}
+      \strng{fullhash}{ba2e4cf55751c608733d61770632fef5}
+      \strng{fullhashraw}{ba2e4cf55751c608733d61770632fef5}
+      \strng{bibnamehash}{ba2e4cf55751c608733d61770632fef5}
+      \strng{editorbibnamehash}{ba2e4cf55751c608733d61770632fef5}
+      \strng{editornamehash}{2ef030fce94ebdbd89ae15ce05636f7b}
+      \strng{editorfullhash}{ba2e4cf55751c608733d61770632fef5}
+      \strng{editorfullhashraw}{ba2e4cf55751c608733d61770632fef5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{24th}
+      \field{isbn}{978-0-87553-299-8}
+      \field{title}{Standard Methods for the Examination of Water and Wastewater}
+      \field{year}{2023}
+      \field{pages}{1536}
+      \range{pages}{1}
     \endentry
     \entry{posmanik2020}{article}{}{}
       \name{author}{5}{}{%
