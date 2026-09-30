@@ -23,6 +23,7 @@ local units = {
   ["\\year"]    = "yr",
   ["\\yr"]      = "yr",
   ["\\celsius"] = "{}^{\\circ}C",
+  ["\\mol"]    = "mol",
   ["\\mole"]    = "mol",
   ["\\newton"]  = "N",
   ["\\joule"]   = "J",
@@ -45,6 +46,7 @@ local units = {
   ["\\CaCO"]         = "CaCO_{3}",
   ["\\NaOH"]         = "NaOH",
   ["\\CO"]           = "CO_{2}",
+  ["\\CH"]           = "CH_{4}",
 }
 
 local function read_macro(s, i)

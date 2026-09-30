@@ -29,12 +29,13 @@ type={symbols}}%
 
 \bibglsnewsymbol{ch4}%
 {symbol={\ce{CH4}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{4}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{7}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{21}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{4}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{7}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{21}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}},
 sort={CH4|},
 type={symbols}}%
 {\ce{CH4}}%
 {Methane.}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}}
+\glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{4}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}}
@@ -46,20 +47,22 @@ type={symbols}}%
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{22}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{24}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{29}}
+\glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{31}}
+\glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
 
 
 \bibglsnewsymbol{cn_ratio}%
 {symbol={C/N},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{v}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}},
 sort={cn\bibglsunderscorechar ratio|},
 type={symbols}}%
 {C/N}%
 {Carbon-to-nitrogen ratio of the feed.}
-\glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}}
+\glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{v}}
 \glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
-\glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{31}}
+\glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
 
 
 \bibglsnewsymbol{co2}%
@@ -86,7 +89,7 @@ type={symbols}}%
 
 \bibglsnewsymbol{khco3}%
 {symbol={\ce{KHCO3}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}},
 sort={KHCO3|},
 type={symbols}}%
 {\ce{KHCO3}}%
@@ -95,7 +98,7 @@ type={symbols}}%
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{28}}
-\glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{31}}
+\glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
 
 
 \bibglsnewsymbol{o2}%
@@ -120,7 +123,7 @@ type={symbols}}%
 
 \bibglsnewsymbol{vfa_alk}%
 {symbol={\gls{vfa}/\gls{alk}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}},
 sort={VFA|alkalinity|},
 type={symbols}}%
 {\gls{vfa}/\gls{alk}}%
@@ -130,7 +133,7 @@ type={symbols}}%
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{28}}
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{29}}
-\glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{31}}
+\glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
 
 
 \bibglsnewsymbol{vpv}%

@@ -18,6 +18,8 @@ import sys
 import csv
 import glob
 import subprocess
+import shutil
+import tempfile
 
 BIB_FILES = [
     'glossaries/abbreviations.bib',
@@ -280,13 +282,14 @@ def pass_units(text):
         ('meter', 'm'), ('metre', 'm'), ('second', 's'),
         ('minute', 'min'), ('hour', 'h'), ('day', 'd'),
         ('year', 'yr'), ('yr', 'yr'),
+        ('mol', 'mol'), ('mole', 'mol'),
         ('celsius', '\u00b0C'), ('percent', '%'),
         ('molar', 'M'), ('gforce', 'G'), ('tonne', 't'),
         ('nml', 'NmL'), ('normality', 'N'), ('dil', 'X'),
         ('VSfed', 'VS_fed'), ('VS', 'VS'),
         ('reactorlitre', 'L_r'),
         ('CHCOOH', 'CH3COOH'), ('CaCO', 'CaCO3'),
-        ('NaOH', 'NaOH'), ('CO', 'CO2'),
+        ('NaOH', 'NaOH'), ('CO', 'CO2'), ('CH', 'CH4')
     ]
     UNIT_MAP = dict(UNIT_SUBS)
 
@@ -437,36 +440,53 @@ def pass_csvreader(text, root):
     return ''.join(out)
 
 def pass_standalone(text, root):
+    """Compile \\includestandalone{rel} to <root>/<rel>.pdf, cached by mtime.
+
+    latexmk names its output after the *source file's* basename, so we
+    compile a throwaway wrapper in a temp directory whose basename matches
+    the target PDF. That way latexmk emits `foo.pdf`, which we then copy
+    next to the original `foo.tex`.
+    """
     def sub(m):
         rel = m.group(1)
         tex = os.path.join(root, rel + '.tex')
         pdf = os.path.join(root, rel + '.pdf')
-        wrapper = os.path.join(root, rel + '.standalone.tex')
-        rc = 0
-        if not os.path.exists(pdf) or \
-           os.path.getmtime(pdf) < os.path.getmtime(tex):
+        out_dir = os.path.dirname(pdf)
+        os.makedirs(out_dir, exist_ok=True)
+
+        # ---- cache hit ------------------------------------------------
+        if (os.path.exists(pdf)
+                and os.path.getmtime(pdf) >= os.path.getmtime(tex)):
+            return r'\includegraphics{%s}' % pdf
+
+        # ---- build in a tempdir --------------------------------------
+        basename = os.path.basename(rel)          # e.g. "garlapati2016-flow-gl"
+        with tempfile.TemporaryDirectory(prefix='tikz-') as tmp:
+            wrapper = os.path.join(tmp, basename + '.tex')
             with open(wrapper, 'w', encoding='utf-8') as w:
-                w.write(
-                    r'\documentclass[tikz,border=2pt]{standalone}' '\n'
-                    r'\usepackage{preamble}' '\n'
-                    r'\usepackage{graphs}' '\n'
-                    r'\usepackage{alone}' '\n'
-                    r'\begin{document}' '\n')
+                w.write(r'\documentclass[tikz,border=2pt]{standalone}' '\n'
+                        r'\usepackage{preamble}' '\n'
+                        r'\usepackage{graphs}' '\n'
+                        r'\usepackage{alone}' '\n'
+                        r'\begin{document}' '\n')
                 with open(tex, encoding='utf-8') as t:
                     w.write(t.read())
                 w.write('\n' r'\end{document}' '\n')
+
             rc = subprocess.run(
-                ['latexmk', '-lualatex',
-                '-interaction=nonstopmode', '-halt-on-error', '-g',
-                '-outdir=' + os.path.dirname(pdf),
-                wrapper],
-                cwd=root, check=False).returncode
-        if os.path.exists(pdf) and rc == 0:
-            if os.path.exists(wrapper):
-                try: os.remove(wrapper)
-                except OSError: pass
-            return r'\includegraphics{%s}' % pdf
+            ['latexmk', '-lualatex',
+            '-interaction=nonstopmode', '-halt-on-error', '-g', '-c',
+            '-outdir=' + out_dir,      # PDF lands next to the .tex
+            tex],
+            cwd=root, check=False,
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+        ).returncode
+
+        built = os.path.join(out_dir, basename + '.pdf')
+        if rc == 0 and os.path.exists(built):
+            return r'\includegraphics{%s}' % built
         return r'% TIKZ-FAILED: ' + rel
+
     return re.sub(
         r'\\includestandalone(?:\[[^\]]*\])?\{([^}]+)\}',
         sub, text)

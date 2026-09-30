@@ -196,7 +196,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
     \begin{tikzpicture}
         % ---------- LEFT axis: Alkalinity ----------
         \begin{axis}[
-            width=15cm, height=10cm,
+            width=\textwidth, height=0.6\textwidth,
             xlabel={Time (\unit{\day})},
             ylabel={\gls{alk} (\unit{\milli\gram\CaCO\per\litre})},
             xmin=0, ymin=0,
@@ -215,7 +215,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
 
         % ---------- RIGHT axis: VFA ----------
         \begin{axis}[
-            width=15cm, height=10cm,
+            width=\textwidth, height=0.6\textwidth,
             xmin=0, ymin=0,
             axis y line*=right,       % only right spine + ticks
             axis x line=none,         % hide duplicate x-axis
@@ -240,10 +240,11 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
     \begin{tikzpicture}
         % ---------- LEFT axis: Ph ----------
         \begin{axis}[
-            width=15cm, height=10cm,
+            width=\textwidth, height=0.6\textwidth,
             xlabel={Time (\unit{\day})},
             ylabel={pH},
             xmin=0, ymin=0,
+            axis y line*=left,
             legend style={
                 at={(0.98, 0.4)},     % x=98% of axis width, y=50% of axis height
                 anchor=east,          % right edge of the legend box touches that point
@@ -264,7 +265,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
 
         % ---------- RIGHT axis: Ratio ----------
         \begin{axis}[
-            width=15cm, height=10cm,
+            width=\textwidth, height=0.6\textwidth,
             xmin=0, ymin=0,
             axis y line*=right,       % only right spine + ticks
             axis x line=none,         % hide duplicate x-axis
@@ -281,7 +282,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
     \label{graph:ph_ratio}
 \end{figure}
 
-\subsection{\Glsentrylong{ch4} yield}
+\subsection{Methane yield}
 \label{sec:yield}
 
 \begingroup
@@ -300,8 +301,8 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
         \thead{\GLS{olr} range\\(\unit{\gram\VS\per\litre\per\day})} &
         \thead{\GLS{vs} fed\\(\unit{\gram})} &
         \thead{\gls{ch4}\\(\unit{\nml})} &
-        \thead{\makecell{Yield\\\unit{\nml\per\gram\VSfed}}} &
-        \thead{\makecell{Rate\\\unit{\litre\per\reactorlitre\per\day}}} \\
+        \thead{\makecell{Yield\\(\unit{\nml\per\gram\VSfed})}} &
+        \thead{\makecell{Rate\\(\unit{\litre\per\reactorlitre\per\day})}} \\
         \midrule
         \endfirsthead
 
@@ -312,8 +313,8 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
         \thead{\GLS{olr} range\\(\unit{\gram\VS\per\litre\per\day})} &
         \thead{\GLS{vs} fed\\(\unit{\gram})} &
         \thead{\gls{ch4}\\(\unit{\nml})} &
-        \thead{\makecell{Yield\\(unit{\nml\per\gram\VSfed})}} &
-        \thead{\makecell{Rate\\(unit{\litre\per\reactorlitre\per\day})}} \\
+        \thead{\makecell{Yield\\(\unit{\nml\per\gram\VSfed})}} &
+        \thead{\makecell{Rate\\(\unit{\litre\per\reactorlitre\per\day})}} \\
         \midrule
         \endhead
 
@@ -335,10 +336,245 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
 \end{ThreePartTable}
 \endgroup
 
-\begin{equation}
-    \mathrm{OLR} = \frac{S_{\text{in}} \cdot Q}{V_r} \quad \left[\unit{\kilo\gram\VS\per\cubic\metre\per\day}\right]
-    \label{eq:OLR}
-\end{equation}
+\begingroup
+
+\definecolor{phaseAdaptation}{HTML}{D6E4F0}
+\definecolor{phaseCodigestion}{HTML}{D5EAD5}
+\definecolor{phaseCGL}{HTML}{FBE5C9}
+\definecolor{phasePost}{HTML}{F8D5D5}
+
+\begin{figure}[H]
+    \centering
+    \pgfplotstableread[col sep=comma]{data/processed/yield.csv}{\phasedata}%
+    \begin{tikzpicture}
+        % ---------- LEFT axis: Ph ----------
+        \begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xlabel={Time (\unit{\day})},
+            ylabel={\unit{\CH\milli\litre\per\gram\VSfed}},
+            axis y line*=left,
+            enlarge x limits=false,
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            legend style={
+                at={(0.98, 0.8)},
+                anchor=east,
+                draw=black,
+                fill=white,
+                fill opacity=0.9,
+            },
+        ]
+            % 1. Data first — this is what lets pgfplots compute the limits
+            \addplot[very thick, mark=*, mark size=1.2pt, color=blue!60!black]
+                table[x index=0, y index=6] {\phasedata};
+            \addlegendentry{\Gls{ch4} yield}
+
+            \addlegendimage{color=red!60!black, very thick, mark=*, mark size=1.2pt}
+            \addlegendentry{OLR}
+
+            % 2. Shading + labels deferred until limits are known
+            \pgfplotsextra{%
+                \pgfonlayer{axis background}
+                    \fill[phaseAdaptation]
+                    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCodigestion]
+                    (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCGL]
+                    (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phasePost]
+                    (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/ymax});
+                \endpgfonlayer
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:12, \pgfkeysvalueof{/pgfplots/ymax}) {Adaptation};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:38, \pgfkeysvalueof{/pgfplots/ymax}) {Co-digestion};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:67, \pgfkeysvalueof{/pgfplots/ymax}) {C-GL only};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:89, \pgfkeysvalueof{/pgfplots/ymax}) {Post-feeding};
+            }
+        \end{axis}
+
+        % ---------- RIGHT axis: Ratio ----------
+        \begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            axis y line*=right,       % only right spine + ticks
+            axis x line=none,         % hide duplicate x-axis
+            axis background/.style={fill=none},
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            ylabel={ORL (\unit{\kilo\gram\VS\per\cubic\metre\per\day})},
+            % no legend here — we put it on the left axis
+            ]
+            \addplot[very thick, mark=*, mark size=1.2pt, color=red!60!black]
+                table[x index=0, y index=3] {\phasedata};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Cumulative specific \gls{ch4} yield}
+    \label{graph:specific-accumulation-ch4-yield}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \pgfplotstableread[col sep=comma]{data/processed/yield.csv}{\phasedata}%
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xlabel={Time (\unit{\day})},
+            ylabel={\unit{\CH\milli\litre\per\gram\VSfed\per\day}},
+            axis y line*=left,
+            enlarge x limits=false,
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            legend style={
+                at={(0.98, 0.8)},
+                anchor=east,
+                draw=black,
+                fill=white,
+                fill opacity=0.9,
+            },
+        ]
+            % 1. Data first — this is what lets pgfplots compute the limits
+            \addplot[very thick, mark=*, mark size=1.2pt, color=blue!60!black]
+                table[x index=0, y index=9] {\phasedata};
+            \addlegendentry{\Gls{ch4} yield}
+
+            \addlegendimage{color=red!60!black, very thick, mark=*, mark size=1.2pt}
+            \addlegendentry{OLR}
+
+
+            % 2. Shading + labels deferred until limits are known
+            \pgfplotsextra{%
+                \pgfonlayer{axis background}
+                    \fill[phaseAdaptation]
+                    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCodigestion]
+                    (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCGL]
+                    (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phasePost]
+                    (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/ymax});
+                \endpgfonlayer
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:12, \pgfkeysvalueof{/pgfplots/ymax}) {Adaptation};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:38, \pgfkeysvalueof{/pgfplots/ymax}) {Co-digestion};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:67, \pgfkeysvalueof{/pgfplots/ymax}) {C-GL only};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:89, \pgfkeysvalueof{/pgfplots/ymax}) {Post-feeding};
+            }
+        \end{axis}
+
+        % ---------- RIGHT axis: Ratio ----------
+        \begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            axis y line*=right,       % only right spine + ticks
+            axis x line=none,         % hide duplicate x-axis
+            axis background/.style={fill=none},
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            ylabel={ORL (\unit{\kilo\gram\VS\per\cubic\metre\per\day})},
+            % no legend here — we put it on the left axis
+            ]
+            \addplot[very thick, mark=*, mark size=1.2pt, color=red!60!black]
+                table[x index=0, y index=3] {\phasedata};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Daily yiled of \gls{ch4}}
+    \label{graph:daily-yiled-ch4}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \pgfplotstableread[col sep=comma]{data/processed/yield.csv}{\phasedata}%
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xlabel={Time (\unit{\day})},
+            ylabel={\unit{\CH\litre\per\litre\per\day}},
+            axis y line*=left,
+            enlarge x limits=false,
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            legend style={
+                at={(0.98, 0.8)},
+                anchor=east,
+                draw=black,
+                fill=white,
+                fill opacity=0.9,
+            },
+        ]
+            % 1. Data first — this is what lets pgfplots compute the limits
+            \addplot[very thick, mark=*, mark size=1.2pt, color=blue!60!black]
+                table[x index=0, y index=8] {\phasedata};
+            \addlegendentry{\Gls{ch4} productivity}
+
+            \addlegendimage{color=red!60!black, very thick, mark=*, mark size=1.2pt}
+            \addlegendentry{OLR}
+
+
+            % 2. Shading + labels deferred until limits are known
+            \pgfplotsextra{%
+                \pgfonlayer{axis background}
+                    \fill[phaseAdaptation]
+                    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCodigestion]
+                    (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCGL]
+                    (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phasePost]
+                    (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/ymax});
+                \endpgfonlayer
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:12, \pgfkeysvalueof{/pgfplots/ymax}) {Adaptation};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:38, \pgfkeysvalueof{/pgfplots/ymax}) {Co-digestion};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:67, \pgfkeysvalueof{/pgfplots/ymax}) {C-GL only};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:89, \pgfkeysvalueof{/pgfplots/ymax}) {Post-feeding};
+            }
+        \end{axis}
+
+        % ---------- RIGHT axis: Ratio ----------
+        \begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            axis y line*=right,       % only right spine + ticks
+            axis x line=none,         % hide duplicate x-axis
+            axis background/.style={fill=none},
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            ylabel={ORL (\unit{\kilo\gram\VS\per\cubic\metre\per\day})},
+            % no legend here — we put it on the left axis
+            ]
+            \addplot[very thick, mark=*, mark size=1.2pt, color=red!60!black]
+                table[x index=0, y index=3] {\phasedata};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Volumetric productivity of \gls{ch4}}
+    \label{graph:volumetric-productivity-ch4}
+\end{figure}
+
+\endgroup
 
 \begin{equation}
     Q = \frac{V_r}{\mathrm{HRT}} \quad \left[\unit{\cubic\metre\per\day}\right]

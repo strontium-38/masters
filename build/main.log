@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  29 SEP 2026 17:32
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.6.16)  30 SEP 2026 17:05
  system commands enabled.
 **main.tex
 (./main.tex
@@ -1951,14 +1951,8 @@ Package chemmacros Info: Using float defining method `float'.
 (./build/sections/chapters/01_introduction.aux)
 (./build/sections/chapters/02_literature_review.aux)
 (./build/sections/chapters/03_materials_methods.aux)
-(./build/sections/chapters/04_results.aux
-
-LaTeX Warning: Label `eq:OLR' multiply defined.
-
-
-LaTeX Warning: Label `eq:OLR@cref' multiply defined.
-
-) (./build/sections/chapters/06_conclusion.aux))
+(./build/sections/chapters/04_results.aux)
+(./build/sections/chapters/06_conclusion.aux))
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -2252,11 +2246,11 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
  [3
 
 
-] (./build/main.lot)
+] [4] (./build/main.lot)
 \tf@lot=\write10
 
 \openout10 = main.lot
- [4
+ [5
 
 
 ]
@@ -2265,19 +2259,19 @@ Underfull \hbox (badness 1742) in paragraph at lines 44--44
  as
  []
 
-[5
+[6
 
 
 
 ]
 \openout2 = sections/frontmatter/acknowledgements.aux
- (./sections/frontmatter/acknowledgements.tex) [6
+ (./sections/frontmatter/acknowledgements.tex) [7
 
 
 ]
 \openout2 = sections/frontmatter/abstract.aux
 
-(./sections/frontmatter/abstract.tex) [7
+(./sections/frontmatter/abstract.tex) [8
 
 
 
@@ -2285,12 +2279,12 @@ Underfull \hbox (badness 1742) in paragraph at lines 44--44
 ]
 \openout2 = sections/frontmatter/resumo.aux
  (./sections/frontmatter/resumo.tex
-[8
+[9
 
 
 
 
-]) [9]
+]) [10]
 \openout2 = sections/chapters/01_introduction.aux
  (./sections/chapters/01_introduction.tex
 Chapter 1.
@@ -2358,19 +2352,19 @@ Missing character: There is no ; (U+003B) in font nullfont!
 ] [14]
 warning  (file assets/photos/ampts/ampts.jpg) (readjpg): Exif resolution 72dpi x
  72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/ampts/ampts.jpg, id=757, 2312.64pt x 2500.34125pt>
+<assets/photos/ampts/ampts.jpg, id=768, 2312.64pt x 2500.34125pt>
 File: assets/photos/ampts/ampts.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts.jpg  used on input line 274.
 
 (luatex.def)             Requested size: 192.0548pt x 207.62366pt.
-<assets/photos/ampts/ampts_co2.jpg, id=760, 2312.64pt x 4111.36pt>
+<assets/photos/ampts/ampts_co2.jpg, id=771, 2312.64pt x 4111.36pt>
 File: assets/photos/ampts/ampts_co2.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts_co2.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts_co2.jpg  used on input line 
 281.
 (luatex.def)             Requested size: 132.68288pt x 235.88068pt.
-<assets/photos/ampts/ampts_sys-print.png, id=765, 651.18282pt x 627.09282pt>
+<assets/photos/ampts/ampts_sys-print.png, id=776, 651.18282pt x 627.09282pt>
 File: assets/photos/ampts/ampts_sys-print.png Graphic file (type png)
 <use assets/photos/ampts/ampts_sys-print.png>
 Package luatex.def Info: assets/photos/ampts/ampts_sys-print.png  used on input
@@ -2387,7 +2381,7 @@ Chapter 5.
 
 warning  (file assets/photos/reactor/reator-19-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-19-5.jpg, id=899, 1689.31125pt x 2664.95625pt>
+<assets/photos/reactor/reator-19-5.jpg, id=910, 1689.31125pt x 2664.95625pt>
 File: assets/photos/reactor/reator-19-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-19-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-19-5.jpg  used on input l
@@ -2396,7 +2390,7 @@ ine 13.
 
 warning  (file assets/photos/reactor/reator-22-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-22-5.jpg, id=900, 1870.99pt x 3112.62875pt>
+<assets/photos/reactor/reator-22-5.jpg, id=911, 1870.99pt x 3112.62875pt>
 File: assets/photos/reactor/reator-22-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-22-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-22-5.jpg  used on input l
@@ -2416,14 +2410,14 @@ ion 96dpi x 96dpi
 >]
 warning  (file assets/photos/reactor/reator-limp-seco-24-8.jpg) (readjpg): Exif 
 resolution 72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=909, 2312.64pt x 3490.0387
+<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=920, 2312.64pt x 3490.0387
 6pt>
 File: assets/photos/reactor/reator-limp-seco-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-seco-24-8.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-limp-seco-24-8.jpg  used 
 on input line 34.
 (luatex.def)             Requested size: 106.69783pt x 160.98573pt.
-<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=910, 2312.64pt x 4111.36pt
+<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=921, 2312.64pt x 4111.36pt
 >
 File: assets/photos/reactor/reator-limp-agua-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-agua-24-8.jpg>
@@ -2501,39 +2495,111 @@ type 'pgfplothandlerlineto'): LUA does not support x filter (yet).
 PGFPlots: reading {data/processed/analysis.csv}
 PGFPlots: reading {data/processed/analysis.csv}
  [28]
-Overfull \hbox (8.69672pt too wide) in paragraph at lines 334--334
+Overfull \hbox (8.69672pt too wide) in paragraph at lines 335--335
  [] 
  []
 
 
-Overfull \hbox (8.23842pt too wide) in paragraph at lines 334--334
+Overfull \hbox (14.89857pt too wide) in paragraph at lines 335--335
  [] 
  []
 
 
-Overfull \hbox (8.69672pt too wide) in paragraph at lines 334--334
+Overfull \hbox (8.69672pt too wide) in paragraph at lines 335--335
  [] 
  []
 
 
-Overfull \hbox (8.23842pt too wide) in paragraph at lines 334--334
+Overfull \hbox (14.89857pt too wide) in paragraph at lines 335--335
  [] 
  []
 
-[29]) [30]
+PGFPlots: reading {data/processed/yield.csv}
+\pgf@layerbox@axis background=\box107
+\pgf@layerboxsaved@axis background=\box108
+\pgf@layerbox@pre main=\box109
+\pgf@layerboxsaved@pre main=\box110
+\pgf@layerbox@axis grid=\box111
+\pgf@layerboxsaved@axis grid=\box112
+\pgf@layerbox@axis ticks=\box113
+\pgf@layerboxsaved@axis ticks=\box114
+\pgf@layerbox@axis lines=\box115
+\pgf@layerboxsaved@axis lines=\box116
+\pgf@layerbox@axis tick labels=\box117
+\pgf@layerboxsaved@axis tick labels=\box118
+\pgf@layerbox@axis descriptions=\box119
+\pgf@layerboxsaved@axis descriptions=\box120
+\pgf@layerbox@axis foreground=\box121
+\pgf@layerboxsaved@axis foreground=\box122
+Package pgfplots info on input line 367: Setting layers 'axis background,pre ma
+in,main,axis grid,axis ticks,axis lines,axis tick labels,axis descriptions,axis
+ foreground'...
+Package pgfplots info on input line 414: Setting layers 'axis background,pre ma
+in,main,axis grid,axis ticks,axis lines,axis tick labels,axis descriptions,axis
+ foreground'...
+
+Overfull \hbox (38.74667pt too wide) in paragraph at lines 418--419
+ [][] 
+ []
+
+[29]
+PGFPlots: reading {data/processed/yield.csv}
+Package pgfplots info on input line 443: Setting layers 'axis background,pre ma
+in,main,axis grid,axis ticks,axis lines,axis tick labels,axis descriptions,axis
+ foreground'...
+
+NOTE: coordinate (--,--,--) [--](was (89,--,--) [--]) has been dropped because o
+f a coordinate filter.
+NOTE: coordinate (--,--,--) [--](was (90,--,--) [--]) has been dropped because o
+f a coordinate filter.
+NOTE: coordinate (--,--,--) [--](was (91,--,--) [--]) has been dropped because o
+f a coordinate filter.
+NOTE: coordinate (--,--,--) [--](was (92,--,--) [--]) has been dropped because o
+f a coordinate filter.
+NOTE: coordinate (--,--,--) [--](was (93,--,--) [--]) has been dropped because o
+f a coordinate filter.
+NOTE: coordinate (--,--,--) [--](was (94,--,--) [--]) has been dropped because o
+f a coordinate filter.
+NOTE: coordinate (--,--,--) [--](was (95,--,--) [--]) has been dropped because o
+f a coordinate filter.
+NOTE: coordinate (--,--,--) [--](was (96,--,--) [--]) has been dropped because o
+f a coordinate filter.
+NOTE: coordinate (--,--,--) [--](was (97,--,--) [--]) has been dropped because o
+f a coordinate filter.
+Package pgfplots info on input line 491: Setting layers 'axis background,pre ma
+in,main,axis grid,axis ticks,axis lines,axis tick labels,axis descriptions,axis
+ foreground'...
+
+Overfull \hbox (53.7604pt too wide) in paragraph at lines 495--496
+ [][] 
+ []
+
+PGFPlots: reading {data/processed/yield.csv}
+Package pgfplots info on input line 520: Setting layers 'axis background,pre ma
+in,main,axis grid,axis ticks,axis lines,axis tick labels,axis descriptions,axis
+ foreground'...
+Package pgfplots info on input line 568: Setting layers 'axis background,pre ma
+in,main,axis grid,axis ticks,axis lines,axis tick labels,axis descriptions,axis
+ foreground'...
+
+Overfull \hbox (63.85962pt too wide) in paragraph at lines 572--573
+ [][] 
+ []
+
+[30] [31]) [32]
 \openout2 = sections/chapters/06_conclusion.aux
  (./sections/chapters/06_conclusion.tex
 Chapter 6.
-) [31
+) [33
 
 
 
 
-] [32
+] [34
 
 
 
-] [33] (./build/main.aux
+] [35] (./build/main.aux
 (./build/sections/frontmatter/acknowledgements.aux)
 (./build/sections/frontmatter/abstract.aux)
 (./build/sections/frontmatter/resumo.aux)
@@ -2546,27 +2612,23 @@ Chapter 6.
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 92E355C19E108A9786A2071BB288D32A;5033.
+(rerunfilecheck)             Checksum: 2DE4DDA33D0563E2C29F62A099EA9E6E;5068.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 78118 strings out of 476076
- 476886,5906145 words of node,token memory allocated
- 1148 words of node memory still in use:
+ 78302 strings out of 476076
+ 476889,5906145 words of node,token memory allocated
+ 1142 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 3 glyph, 131 attribute, 87 glue_spec, 66 attribute_list, 2 write, 11 pdf_act
+rn, 3 glyph, 129 attribute, 87 glue_spec, 65 attribute_list, 2 write, 11 pdf_act
 ion nodes
-   avail lists: 1:21,2:78525,3:49164,4:314,5:271,6:384,7:7635,8:73,9:4091,10:27,
+   avail lists: 1:28,2:78528,3:49164,4:330,5:284,6:384,7:7635,8:73,9:4091,10:27,
 11:601,12:1
- 98523 multiletter control sequences out of 65536+600000
+ 98684 multiletter control sequences out of 65536+600000
  113 fonts using 11441735 bytes
  110i,26n,128p,5815b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/
@@ -2581,10 +2643,10 @@ s/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (43 pages, 11363811 bytes).
+Output written on main.pdf (46 pages, 11416501 bytes).
 
-PDF statistics: 1198 PDF objects out of 1200 (max. 8388607)
- 874 compressed objects within 9 object streams
- 170 named destinations out of 1000 (max. 1048576)
+PDF statistics: 1216 PDF objects out of 1440 (max. 8388607)
+ 889 compressed objects within 9 object streams
+ 175 named destinations out of 1000 (max. 1048576)
  256 words of extra memory for PDF output out of 10000 (max. 100000000)
 

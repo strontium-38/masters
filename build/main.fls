@@ -553,6 +553,9 @@ INPUT ./data/processed/analysis.csv
 INPUT ./data/processed/yield-avarage.csv
 INPUT ./data/processed/yield-avarage.csv
 INPUT ./data/processed/yield-avarage.csv
+INPUT ./data/processed/yield.csv
+INPUT ./data/processed/yield.csv
+INPUT ./data/processed/yield.csv
 OUTPUT build/sections/chapters/06_conclusion.aux
 INPUT ./sections/chapters/06_conclusion.tex
 INPUT ./build/main.aux

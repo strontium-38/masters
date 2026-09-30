@@ -74,6 +74,9 @@ latexpand main.tex > "$FLAT"
 echo "[build-docx] preprocess         -> $PANDOC_TEX"
 python3 scripts/preprocess.py . "$FLAT" "$PANDOC_TEX"
 
+find assets/graphs -maxdepth 1 \( -name '*.aux' -o -name '*.log' \
+    -o -name '*.out' -o -name '*.fls' -o -name '*.fdb_latexmk' \) -delete
+
 # Warn (but don't abort) if some TikZ figure failed to build.
 if grep -q 'TIKZ-FAILED' "$PANDOC_TEX"; then
     echo "[build-docx] WARNING: some TikZ figures failed to compile." >&2
@@ -89,6 +92,8 @@ echo "[build-docx] pandoc             -> $DOCX"
 pandoc "$PANDOC_TEX" \
     -o "$DOCX" \
     --citeproc \
+    --lua-filter=scripts/fix-siunitx.lua \
+    --lua-filter=scripts/fix-bookmarks.lua \
     --bibliography=references/references.bib \
     --csl=https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl \
     --toc --number-sections \
