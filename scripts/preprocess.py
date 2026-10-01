@@ -289,7 +289,8 @@ def pass_units(text):
         ('VSfed', 'VS_fed'), ('VS', 'VS'),
         ('reactorlitre', 'L_r'),
         ('CHCOOH', 'CH3COOH'), ('CaCO', 'CaCO3'),
-        ('NaOH', 'NaOH'), ('CO', 'CO2'), ('CH', 'CH4')
+        ('NaOH', 'NaOH'), ('CO', 'CO2'), ('CH', 'CH4'),
+        ('COD', 'COD'), ('NL', 'NL')
     ]
     UNIT_MAP = dict(UNIT_SUBS)
 

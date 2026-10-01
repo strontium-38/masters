@@ -51,7 +51,7 @@ where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the
 \setlength{\tabcolsep}{3pt}
 \begin{landscape}
     \begin{ThreePartTable}
-        \begin{xltabular}{\linewidth}{@{} C C C C C C C C C C C C @{}}
+        \begin{xltabular}{\linewidth}{@{} C C C C C C C C c C C c @{}}
 
         \caption{\Glsentrylong{ts}, \Glsentrylong{vs} and \Glsentrylong{fs} values}
         \label{tab:solids} \\
@@ -64,10 +64,10 @@ where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the
         \thead{$V_{\text{sample}}$\\(\unit{\litre})} &
         \thead{$M_{105}$\\(\unit{\gram})} &
         \thead{\gls{ts}\\(\unit{\gram\per\litre})} &
-        \thead{Average\\\gls{ts}\\(\unit{\gram\per\litre})} &
+        \thead{Average \gls{ts}\\(\unit{\gram\per\litre})} &
         \thead{$M_{550}$\\(\unit{\gram})} &
         \thead{\gls{vs}\\(\unit{\gram\per\litre})} &
-        \thead{Average\\\gls{vs}\\(\unit{\gram\per\litre})} \\
+        \thead{Average \gls{vs}\\(\unit{\gram\per\litre})} \\
         \midrule
         \endfirsthead
 
@@ -80,10 +80,10 @@ where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the
         \thead{$V_{\text{sample}}$\\(\unit{\litre})} &
         \thead{$M_{105}$\\(\unit{\gram})} &
         \thead{\gls{ts}\\(\unit{\gram\per\litre})} &
-        \thead{Average\\\gls{ts}\\(\unit{\gram\per\litre})} &
+        \thead{Average \gls{ts}\\(\unit{\gram\per\litre})} &
         \thead{$M_{550}$\\(\unit{\gram})} &
         \thead{\gls{vs}\\(\unit{\gram\per\litre})} &
-        \thead{Average\\\gls{vs}\\(\unit{\gram\per\litre})} \\
+        \thead{Average \gls{vs}\\(\unit{\gram\per\litre})} \\
         \midrule
         \endhead
 
@@ -112,7 +112,7 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \footnotesize
 \setlength{\tabcolsep}{3pt}
 \begin{ThreePartTable}
-    \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
+    \begin{xltabular}{\linewidth}{@{} C C C C C C c @{}}
         \caption{Density values}
         \label{tab:density} \\
 
@@ -122,7 +122,7 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
         \thead{$M_{\text{total}}$ (\unit{\gram})} &
         \thead{$V_{\text{sample}}$ (\unit{\litre})} &
         \thead{Density\\(\unit{\gram\per\litre})} &
-        \thead{Average\\Density\\(\unit{\gram\per\litre})} \\
+        \thead{Average Density\\(\unit{\gram\per\litre})} \\
         \midrule
         \endfirsthead
 
@@ -133,7 +133,7 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
         \thead{$M_{\text{total}}$ (\unit{\gram})} &
         \thead{$V_{\text{sample}}$ (\unit{\litre})} &
         \thead{Density\\(\unit{\gram\per\litre})} &
-        \thead{Average\\Density\\(\unit{\gram\per\litre})} \\
+        \thead{Average Density\\(\unit{\gram\per\litre})} \\
         \midrule
         \endhead
 
@@ -156,7 +156,7 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \footnotesize
 \setlength{\tabcolsep}{3pt}
 \begin{ThreePartTable}
-    \begin{xltabular}{\linewidth}{@{} C C C C C C C C C C C C C C @{}}
+    \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
 
         \caption{\Glsentrylong{tc} and \Glsentrylong{tn} values}
         \label{tab:toc} \\
@@ -165,9 +165,9 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
         \multicolumn{2}{c}{\thead{Sample}} &
         \thead{\GLS{toc}\\(\unit{\milli\gram\per\litre})} &
         \thead{\GLS{tc}\\(\unit{\milli\gram\per\litre})} &
-        \thead{Average\\\GLS{tc}\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average \GLS{tc}\\(\unit{\milli\gram\per\litre})} &
         \thead{\GLS{tn}\\(\unit{\milli\gram\per\litre})} &
-        \thead{Average\\\GLS{tn}\\(\unit{\milli\gram\per\litre})} \\
+        \thead{Average \GLS{tn}\\(\unit{\milli\gram\per\litre})} \\
         \midrule
         \endfirsthead
 
@@ -176,9 +176,9 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
         \multicolumn{2}{c}{\thead{Sample}} &
         \thead{\GLS{toc}\\(\unit{\milli\gram\per\litre})} &
         \thead{\GLS{tc}\\(\unit{\milli\gram\per\litre})} &
-        \thead{Average\\\GLS{tc}\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average \GLS{tc}\\(\unit{\milli\gram\per\litre})} &
         \thead{\GLS{tn}\\(\unit{\milli\gram\per\litre})} &
-        \thead{Average\\\GLS{tn}\\(\unit{\milli\gram\per\litre})} \\
+        \thead{Average \GLS{tn}\\(\unit{\milli\gram\per\litre})} \\
         \midrule
         \endhead
 
@@ -286,9 +286,9 @@ The \gls{ampts} system (hardware~\Cref{fig:ampts-hard}, software~\Cref{fig:ampts
     \label{fig:ampts-hard}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{ampts_sys-print.png}
+    \includegraphics[width=0.8\linewidth]{ampts_sys-print.png}
     \caption{\gls{ampts} software used}
     \label{fig:ampts-soft}
 \end{figure}

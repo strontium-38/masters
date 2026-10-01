@@ -1,0 +1,1321 @@
+
+
+\documentclass[12pt, a4paper, oneside]{report}
+
+\usepackage{preamble}
+\usepackage{graphs}
+\usepackage{scripts}
+\usepackage{alone}
+
+
+\newcommand{\thesistitle}{Anaerobic Co-digestion of Food Waste and Glycerol in Single-Stage System}
+\newcommand{\studentname}{Diogenes Theodoros Bussador Matrakas}
+\newcommand{\masterdegree}{Biotechnological Engineering}
+\newcommand{\partnerinstitution}{Universidade Tecnológica Federal do Paraná}
+\newcommand{\supervisor}{Dr. Ramiro José Espinheira Martins}
+\newcommand{\cosupervisor}{Dr. Francisco Menino Destéfanis Vítola}
+\newcommand{\submissionyear}{\the\year}
+\newcommand{\submissionmonth}{\monthname}
+
+\newcommand{\subject}{}
+
+\newcommand{\keywords}{anaerobic digestion, biogas, crude glycerol, food waste, methane}
+\newcommand{\Keywords}{\StrSubstitute[0]{\keywords}{, }{; }}
+
+\newcommand{\palavraschaves}{biogás; digestão anaeróbia; glicerol bruto; metano; resíduos alimentares}
+ 
+\hypersetup{
+    pdftitle   = {\thesistitle},
+    pdfauthor  = {\studentname},
+    pdfsubject = {\subject},
+    pdfkeywords= {\keywords},
+}
+
+\begin{document}
+
+\pagenumbering{roman}
+
+
+
+\begin{titlepage}
+    \centering
+
+\begin{minipage}{0.45\textwidth}
+        \raggedright
+        \includegraphics[height=60pt]{IPB_logo.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \raggedleft
+        \includegraphics[height=60pt]{UTFPR_logo.png}
+    \end{minipage}
+
+    \vspace{2.5cm}
+
+{\LARGE \bfseries \thesistitle \par}
+
+    \vspace{1.5cm}
+
+{\Large \bfseries \studentname \par}
+
+    \vspace{2cm}
+
+\large
+    \textit{Dissertation submitted to Escola Superior Agrária de Bragança to obtain the Degree of Master in \masterdegree{} under the scope of the double diploma with \partnerinstitution.}
+
+    \vspace{1.5cm}
+
+Supervised by\\
+    \textbf{\supervisor}\\
+    \textbf{\cosupervisor}
+
+    \vfill
+
+\normalsize
+    {\fontsize{11}{13.2}\selectfont This dissertation does not include the comments and suggestions mentioned by the Jury.}
+
+    \vspace{1cm}
+
+\large
+    \textbf{Bragança}\\
+    \textbf{\submissionmonth~\submissionyear}
+
+    \vspace{0.5cm}
+\end{titlepage}
+ \cleardoublepage
+
+\tableofcontents
+\cleardoublepage
+
+\listoffigures
+\cleardoublepage
+
+\listoftables
+\cleardoublepage
+
+\glstocfalse
+\printunsrtglossary[type=abbreviations, title={List of Abbreviations}]
+\glstoctrue
+
+\clearpage{}\chapter*{Acknowledgements}
+\label{ch:acknowledgements}
+\clearpage{}
+\clearpage{}\chapter*{Abstract}
+\label{ch:abstract}
+
+The growing generation of food waste and the surplus of crude glycerol from biodiesel production represent two significant organic waste streams requiring sustainable management solutions. This study evaluated the technical feasibility of a single-stage anaerobic co-digestion system treating food waste and glycerol as co-substrates, with the objective of verifing biogas production while providing a valorisation route for crude glycerol. The investigation was conducted in a \qty{1}{\litre} continuous stirred-tank reactor operated under mesophilic conditions (\qty{35}{\celsius}) with a hydraulic retention time of \num{30} days. Food waste was collected from a university canteen, and crude glycerol was obtained from biodiesel production residues; anaerobic sludge from a municipal wastewater treatment plant served as inoculum. The reactor was operated in sequential phases: an initial adaptation period, co-digestion of food waste and glycerol, glycerol only feeding, and a post-eeding period. Biogas production was monitored continuously using an automatic methane potential test system, while process stability was assessed through measurements of pH, total alkalinity, volatile fatty acids, and their ratio. Substrate characterisation included total solids, volatile solids, density, total carbon, and total nitrogen analyses. Results demonstrated that co-digestion of food waste and glycerol yielded the highest methane production rates and cumulative volumes, with flow spikes immediately following feeding events indicating rapid substrate conversion. In contrast, glycerol-only feeding resulted in reduced biogas production despite continued methanogenic activity. Total alkalinity remained elevated following bicarbonate supplementation, maintaining pH around \num{7} throughout most of the experiment; volatile fatty acid concentrations fluctuated between \numrange{3000}{5000} \unit{\milli\gram\CHCOOH\per\litre}, with VFA/alkalinity ratios of \numrange{0.3}{1.2}. These findings confirm the hypothesis that glycerol can be useful for biogas production when co-digested with food waste or alone. The study demonstrates the technical viability of anaerobic co-digestion as a strategy for valorising crude glycerol within a circular bioeconomy framework, though further research is needed to optimise glycerol loading rates and develop robust feeding strategies for industrial application.
+
+\vspace{1em}
+\noindent\textbf{Keywords:} \Keywords.
+\clearpage{}
+
+\begingroup
+  \sisetup{
+      output-decimal-marker={,},
+      group-separator={.},
+      group-minimum-digits=4,
+      range-phrase={ a },
+  }
+  \clearpage{}\chapter*{Resumo}
+\label{ch:resumo}
+
+A crescente geração de resíduos alimentares e o excedente de glicerol bruto proveniente da produção de biodiesel representam duas produções significativas de resíduos orgânicos que requerem soluções sustentáveis. Este estudo avaliou a viabilidade técnica de um sistema de codigestão anaeróbia de uma única etapa, tratando resíduos alimentares e glicerol como co-substratos, com o objetivo de verificar a produção de biogás e, simultaneamente, proporcionar uma via de valorização para o glicerol bruto. A investigação foi conduzida num reator contínuo de tanque agitado de \qty{1}{\litre}, operado em condições mesofílicas (\qty{35}{\celsius}), com um tempo de retenção hidráulica de \num{30} dias. Os resíduos alimentares foram recolhidos numa cantina universitária e o glicerol bruto foi obtido a partir de resíduos da produção de biodiesel; lamas anaeróbias de uma estação de tratamento de águas residuais municipais serviram como inóculo. O reator foi operado em fases sequenciais: um período inicial de adaptação, codigestão de resíduos alimentares e glicerol, alimentação exclusiva com glicerol e um período pós-alimentação. A produção de biogás foi monitorizada continuamente através de um \textit{automatic methane potential test system}, enquanto a estabilidade do processo foi avaliada por medições de pH, alcalinidade total, ácidos graxos voláteis e respectiva razão. A caracterização dos substratos incluiu análises de sólidos totais, sólidos voláteis, massa volúmica, carbono total e nitrogênio total. Os resultados demonstraram que a codigestão de resíduos alimentares e glicerol originou as taxas de produção de metano e os volumes acumulados mais elevados, com picos imediatamente após as alimentações, indicando uma rápida conversão do substrato. Em contraste, a alimentação exclusiva com glicerol resultou numa produção reduzida de biogás, apesar da atividade metanogénica continuada. A alcalinidade total manteve-se elevada após a suplementação com bicarbonato, mantendo o pH em torno de \num{7} durante a maior parte da experiência; as concentrações de ácidos graxos voláteis flutuaram entre \numrange{3000}{5000} \unit{\milli\gram\CHCOOH\per\litre}, com razões AGV/alcalinidade de \numrange{0,3}{1,2}. Estes resultados confirmam a hipótese de que o glicerol pode ser útil para a produção de biogás quando codigerido com resíduos alimentares ou isoladamente. O estudo demonstra a viabilidade técnica da codigestão anaeróbia como estratégia de valorização do glicerol bruto no âmbito de uma bioeconomia circular, embora seja necessária investigação adicional para otimizar as cargas de glicerol e desenvolver estratégias de alimentação robustas para aplicação industrial.
+
+\vspace{1em}
+\noindent\textbf{Palavras-chave:} \palavraschaves.
+\clearpage{}
+\endgroup
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\clearpage{}\chapter{Introduction}
+\label{ch:introduction}
+
+The generation of organic waste has become one of the defining environmental challenges of our time, particularly as urbanization and industrial activity continue to expand. A major contributor is \gls{fw}, a global stream that in the European Union alone is estimated at \qty{88}{\mega\tonne\per\yr}, excluding inedible parts removed from the supply chain \parencite{scherhaufer2018}. When considering only post-processing activities (wholesale, retail, food service and households) approximately \qty{66.3}{\mega\tonne} of \gls{fw} are produced annually in the EU-27+1 \parencite{albizzati2021}. The scale of this loss highlights the urgent need for improved management strategies that move beyond simple disposal.
+
+The environmental burden of \gls{fw} is substantial. It accounts for roughly \qtyrange{15}{16}{\percent} of the total climate impact of the entire food supply chain, translating to about \qty{186}{\mega\tonne\CO}-eq of greenhouse gas emissions, alongside significant contributions to acidification and eutrophication \parencite{scherhaufer2018}. The majority of these impacts arise during primary production, making prevention the single most effective strategy; however, when waste cannot be avoided, its valorisation through anaerobic digestion or composting is favoured over landfill disposal \parencite{albizzati2021, scherhaufer2018}. Despite this, much \gls{fw} continues to be landfilled or incinerated, forfeiting the opportunity to recover its embedded energy and nutrients.
+
+Parallel to the \gls{fw} challenge, the rapid expansion of biodiesel production has generated an excess of another organic by-product: \gls{cgl}. Formed in the transesterification of triglycerides, approximately \qty{10}{\kilo\gram} of \gls{cgl} are produced for every \qty{100}{\kilo\gram} of biodiesel \parencite{garlapati2016}. Global biodiesel output, driven by renewable energy mandates, has caused the \gls{gl} market to swell with \gls{cgl} supply projected to reach about \qty{6.33}{\mega\tonne} by 2025, of which nearly \qty{680}{\kilo\tonne} are expected to be highly impure due to the shift towards waste-based feedstocks \parencite{attarbachi2023}.
+
+\Glsentrylong{cgl} composition varies widely depending on the oil source and catalyst used, but it typically contains methanol, soaps, free fatty acids, salts and other \gls{mong} compounds \parencite{anand2012, attarbachi2023}. These impurities are known to inhibit microbial growth and fermentation, as demonstrated by the severe reduction in \gls{pdo} production when untreated \gls{cgl} from jatropha, soybean or sunflower oils was used \parencite{anand2012}. Purification to technical or pharmaceutical grade is energy-intensive and often uneconomical for small and medium biodiesel plants \parencite{attarbachi2023}, prompting the search for direct, cost-effective valorisation routes. Because of its high organic content and ready biodegradability, \gls{cgl} has attracted attention as an ideal co-substrate for anaerobic digestion, where it can serve as a concentrated carbon source while being simultaneously detoxified by dilution and microbial synergy \parencite{gebreegziabher2025, tomczak2025}.
+
+\Glsentrylong{ad} is a mature biological process in which consortia of microorganisms convert organic matter into biogas, primarily \gls{ch4} (\qtyrange{55}{65}{\percent}) and \gls{co2}, under \gls{o2}-free conditions, passing through the sequential stages of hydrolysis, acidogenesis, acetogenesis and methanogenesis \parencite{gebreegziabher2025}. \Glsentrylong{ad} offers a unique combination of benefits: it produces renewable, storable energy that can replace fossil fuels; generates a nutrient-rich digestate that can be used as organic fertiliser; and reduces the environmental load of organic wastes by avoiding landfilling and its associated \gls{ch4} emissions \parencite{scherhaufer2018, gebreegziabher2025}.
+
+Within this framework, anaerobic co-digestion, the simultaneous treatment of two or more substrates, has emerged as a particularly effective strategy. Co-digesting \gls{cgl} with nitrogen-rich materials such as animal manure, sewage sludge or \gls{fw} balances the \gls{cn_ratio}, dilutes potential inhibitors, provides essential macro and micro nutrients, and fosters synergistic microbial interactions \parencite{tomczak2025, gebreegziabher2025}. The result can be a dramatic improvement in biogas and \gls{ch4} yield: studies report increases ranging from \qtyrange{14}{226}{\percent} when \gls{cgl} is added to a variety of base substrates, with \gls{ch4} contents generally exceeding \qty{60}{\percent} as long as \gls{gl} does not exceed about \qty{8}{\percent} (\gls{vpv}) of the feed \parencite{gebreegziabher2025, tomczak2025}.
+
+However, excessive \gls{gl} loads can lead to \gls{vfa} accumulation, pH drop and methanogen inhibition, underscoring the need for careful optimisation \parencite{gebreegziabher2025, tomczak2025}. Overall, the convergence of abundant \gls{fw} and surplus \gls{cgl} supplies, together with the proven capability of \gls{ad} to convert these streams into renewable \gls{ch4} and fertiliser, represents a tangible route towards a circular, low-carbon bioeconomy.
+
+\chapter{Objectives}
+\label{ch:objectives}
+
+\section{General Objectives}
+\label{sec:general_objectives}
+
+The primary objective of this dissertation project is to evaluate the efficiency of a single-stage anaerobic co-digestion system using organic \gls{fw} and \gls{cgl} as substrates. The investigation will be conducted by determining biogas production, with a focus on industrial feasibility.
+
+The central hypothesis is that the controlled addition of \gls{cgl}, a by-product of the biodiesel industry, helps biogas production due to its high energy content and rapid biodegradability, provided that adequate operational conditions are maintained to avoid \gls{vfa} overload.
+
+\section{Specific Objectives}
+\label{sec:specific_objectives}
+
+\begin{enumerate}
+    \item Characterize the substrates (\gls{fw} and \gls{cgl}), evaluating physicochemical parameters relevant to anaerobic digestion.
+    \item Operate the single-stage anaerobic co-digestion system, assessing process stability.
+    \item Evaluate the techno-economic feasibility of using \gls{cgl} as a co-substrate, considering potential for industrial application.
+\end{enumerate}
+
+\clearpage{}
+\clearpage{}\chapter{Literature Review}
+\label{ch:literature_review}
+
+The rapid expansion of biodiesel production has generated an oversupply of \gls{cgl}, a by-product of the transesterification output, this \Cref{graph:gl-prod} shows the steps to produce biodiesel and when \gls{gl} is producesd \parencite{garlapati2016}. This waste stream, loaded with impurities such as methanol, soaps, and hydroxides, the \Cref{graph:gl-imp} shows the processes and what they contaminate the \gls{gl} with, poses environmental disposal challenges, also with the variation of impurities depending on the source, there's no standard method to use this source of carbon \parencite{anand2012, gebreegziabher2025}. \Glsentrylong{ad} aligns with circular economy principles by converting organic residues into biogas while recycling nutrients, making \gls{cgl} a promising co-substrate \parencite{gebreegziabher2025}.
+
+\begin{figure}[htbp]
+    \centering
+    \resizebox{0.65\textwidth}{!}{\includestandalone[mode=tex]{assets/graphs/garlapati2016-flow-gl}
+    }
+    \caption{\glsentrylong{cgl} from biodisel production (Adapted from: \textcite{garlapati2016})}
+    \label{graph:gl-prod}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \resizebox{\textwidth}{!}{\includestandalone[mode=tex]{assets/graphs/attarbachi2023-flow-gl}
+    }
+    \caption{Contaminations of the \glsentrylong{cgl} (Adapted from: \textcite{attarbachi2023})}
+    \label{graph:gl-imp}
+\end{figure}
+
+\textcite{gebreegziabher2025} reported that co-digestion of \gls{cgl} can boost \gls{ch4} production compared to mono-digestion of the base substrate. \textcite{tomczak2025} reviewed one-stage \gls{ad} experiments and concluded that a \gls{ch4} content above \qty{60}{\percent} could be consistently obtained when the \gls{cgl} fraction did not exceed \qty{8}{\percent} (\gls{vpv}) of the feed, the flow chart by \textcite{li2011} on the \Cref{graph:ch4-prod} it shows that using \gls{ad} there could be up to \qty{70}{\percent} \gls{ch4} production. However, the same review emphasized that increasing the \gls{gl} loading beyond a system specific threshold may provoke inhibitory effects, likely due to the accumulation of \glspl{vfa} and the impurities present in \gls{cgl} \parencite{anand2012, tomczak2025}. The heterogeneous composition of \gls{cgl}, affected by oil feedstock, catalyst, and biodiesel processing, demands careful feedstock characterization and, if necessary, simple pretreatment to avoid process upsets \parencite{attarbachi2023}.
+
+\begin{figure}[htbp]
+    \centering
+    \resizebox{0.65\textwidth}{!}{\includestandalone[mode=tex]{assets/graphs/li2011-flow-ferm}
+    }
+    \caption{\gls{ch4} production from \gls{ad} (Adapted from: \textcite{li2011})}
+    \label{graph:ch4-prod}
+\end{figure}
+
+Liquid \gls{ad}, typically conducted in a \gls{cstr}, operates at total solid concentrations of \qtyrange{0.5}{15}{\percent} and is generally used for treating sewage sludge, manure, and \gls{fw} \parencite{li2011}. The \gls{cstr}’s continuous mixing provides uniform distribution of substrates, microorganisms, and heat, which is essential when feeding a fermentable substrate. Temperature is a critical operational parameter; the activity of methanogenic consortia is strongly temperature dependent, and both mesophilic and thermophilic regimes have been applied to \gls{ad} \parencite{choorit2007}. \textcite{tomczak2025} noted that the majority of \gls{gl} co-digestion studies have been performed under mesophilic conditions, while thermophilic operation, which could offer higher conversion rates, still requires more systematic investigation. The \gls{cstr} platform is well suited to explore such temperature effects because its design allows easy control of heating and hydraulic retention time.
+
+The selection of a robust microbial inoculum is decisive for rapid start-up and stable performance of a \gls{cstr} fed with \gls{gl}. Anaerobic sludge from municipal \glspl{wwtp} is the most common source of inoculum because it harbours a diverse consortium of hydrolytic, acidogenic, and methanogenic microorganisms, the flow cahrd from \textcite{gebreegziabher2025} on the \Cref{graph:ch4-steps} shows each step of the \gls{ad} until the \gls{ch4} production. \textcite{posmanik2020} demonstrated that granular sludge, obtained from up-flow anaerobic sludge blanket reactors treating wastewater, outperforms suspended biomass as an inoculum. Although their work focused on batch tests, the findings strongly suggest that using granular sludge from a \gls{wwtp} as seed for a \gls{cstr} could accelerate acclimation, improve process stability, and reduce the risk of acidification during load increases.
+
+\begin{figure}[htbp]
+    \centering
+    \resizebox{0.65\textwidth}{!}{\includestandalone[mode=tex]{assets/graphs/gebreegziabher2025-flow-ferm}
+    }
+    \caption{Steps to produce \gls{ch4} from \gls{ad} (Adapted from: \textcite{gebreegziabher2025})}
+    \label{graph:ch4-steps}
+\end{figure}
+
+When \gls{gl} starts being degraded it makes the \gls{ad} process susceptible to \gls{vfa} accumulation and pH drop if the organic loading rate is not properly controlled. Therefore, close monitoring of process indicators is essential. \textcite{ribas2007} evaluated several methods for determining these parameters specifically in anaerobic reactors, highlighting the importance of accurate \gls{vfa} and \gls{alk} measurements for timely detection of process imbalance. Using the method from DiLallo \& Albertson \parencite{ribas2007} provide a validated method for measuring \glspl{vfa} and \gls{alk}. Maintaining a favourable \gls{vfa_alk} is particularly critical when co-digesting \gls{gl}, as excess \glspl{vfa} can inhibit methanogenesis \parencite{tomczak2025}.
+
+The available literature confirms that \gls{cgl} is a high-energy substrate that can significantly boost \gls{ch4} production in liquid \gls{ad} systems. A \gls{cstr} provides the mixing and temperature control required to harness this potential. Using granular sludge from a \gls{wwtp} as the inoculum can enhance start-up speed and methanogenic activity, as demonstrated by comparative studies. To unlock the full benefits while avoiding inhibition, the \gls{gl} loading must be kept below documented thresholds, and the reactor state should be continuously tracked through standard measurements of \glspl{vfa} and \gls{alk}. Further research is needed to optimise thermophilic \gls{cstr} operation and to establish long-term performance data for granular-sludge-inoculated reactors treating \gls{cgl}.
+\clearpage{}
+\clearpage{}\chapter{Materials and Methods}
+\label{ch:materials_methods}
+
+\section{Collection and Preparation of the Food Waste}
+\label{sec:col_prep_FW}
+
+\Glsentrylong{fw} was collected from the canteen at the \gls{ipb}, prioritizing residues with high proportions of rice, pasta, and bread to maximize the sugar content and minimize the nitrogen content. The waste was diluted with approximately \qty{2.5}{\litre} of distilled water and homogenised using a blender to obtain a liquid paste. It was then stored in a refrigerator at \qty{4}{\celsius} to prevent spoilage and suppress microbial and fungal activity \parencite{degueurce2020}.
+
+\section{Crude Glycerol Collection}
+\label{sec:gly_col}
+
+A \qty{6}{\litre} bottle of \gls{cgl}, obtained from previous biodiesel production experiments at \gls{ipb}, was provided for this study. \gls{cgl} from biodiesel typically contains impurities such as catalyst residues \parencite{attarbachi2023}, which may influence its behaviour in anaerobic digestion.
+
+\section{Inoculum Collection}
+\label{sec:ino_col}
+
+The inoculum was collected from a anaerobic digestor from Águas do Norte wastewater treatment plant in Bragança. This ensured the availability of a microbial population for the anaerobic digestion \parencite{posmanik2020}.
+
+\section{Physical and Chemical Characterisation}
+\label{sec:phy_chem_char}
+
+The \gls{ts}, \gls{vs}, \gls{fs}, and density were determined for the \gls{fw}, \gls{cgl}, and inoculum. \Glsentrylong{toc} and \gls{tn} were determined for the \gls{fw} and \gls{cgl}.
+
+\subsection{TS and VS Determination}
+\label{subsec:ts_vs_determination}
+
+\Glsentrylong{ts} and \Glsentrylong{vs} were measured using a sequential gravimetric method based on Standard Methods 2540 B and 2540 E \parencite{apha2023}. The method involves controlled drying and calcination steps to quantify \gls{ts} and \gls{vs} fractions.
+
+Initially, porcelain crucibles were placed in a muffle furnace at \qty{550}{\celsius} for \qty{1}{\hour}. For cooling, they were transferred to an oven at \qty{105}{\celsius} for \qty{15}{\minute} and then moved to a desiccator until they reached room temperature; their empty masses were recorded. For each material, a sample was placed into three crucibles and the wet mass was measured. The crucibles were then dried in an oven at \qty{105}{\celsius} for \qty{2}{\hour} (\gls{cgl} required \qtyrange{6}{8}{\hour} to reach constant mass). After drying, the crucibles were cooled in a desiccator to room temperature and weighed again to determine \gls{ts}.
+
+The same crucibles were subsequently placed in a muffle furnace at \qty{550}{\celsius} for \qty{50}{\minute}. Afterwards they were transferred to an oven at \qty{105}{\celsius} for \qty{15}{\minute} and then moved to a desiccator until they reached room temperature; the final masses were recorded to calculate \gls{vs}.
+
+\Glsentrylong{ts}, \Glsentrylong{vs} and \Glsentrylong{fs} were calculated as follows:
+\begin{equation}
+    \mathrm{TS} = \frac{M_{105} - M_{\text{crucible}}}{V_{\text{sample}}} \quad \left[\unit{\gram\per\litre}\right]
+    \label{eq:TS}
+\end{equation}
+\begin{equation}
+    \mathrm{VS} = \frac{M_{105} - M_{550}}{V_{\text{sample}}} \quad \left[\unit{\gram\per\litre}\right]
+    \label{eq:VS}
+\end{equation}
+\begin{equation}
+    \mathrm{FS} = \frac{M_{550} - M_{\text{crucible}}}{V_{\text{sample}}} \quad \left[\unit{\gram\per\litre}\right]
+    \label{eq:FS}
+\end{equation}
+where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at \qty{105}{\celsius}, $M_{550}$ is the mass after ignition at \qty{550}{\celsius}, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in \unit{\litre} and the weight is in \unit{\gram}. The results are on the \Cref{tab:solids}.
+
+\begingroup
+\tablesetup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{landscape}
+    \begin{ThreePartTable}
+        \begin{xltabular}{\linewidth}{@{} C C C C C C C C c C C c @{}}
+
+        \caption{\Glsentrylong{ts}, \Glsentrylong{vs} and \Glsentrylong{fs} values}
+        \label{tab:solids} \\
+
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{$M_{\text{crucible}}$\\(\unit{\gram})} &
+        \thead{$M_{\text{wet}}$\\(\unit{\gram})} &
+        \thead{$M_{\text{sample}}$\\(\unit{\gram})} &
+        \thead{$V_{\text{sample}}$\\(\unit{\litre})} &
+        \thead{$M_{105}$\\(\unit{\gram})} &
+        \thead{\gls{ts}\\(\unit{\gram\per\litre})} &
+        \thead{Average \gls{ts}\\(\unit{\gram\per\litre})} &
+        \thead{$M_{550}$\\(\unit{\gram})} &
+        \thead{\gls{vs}\\(\unit{\gram\per\litre})} &
+        \thead{Average \gls{vs}\\(\unit{\gram\per\litre})} \\
+        \midrule
+        \endfirsthead
+
+        \multicolumn{12}{l}{\textit{\Cref{tab:solids} continued}} \\
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{$M_{\text{crucible}}$\\(\unit{\gram})} &
+        \thead{$M_{\text{wet}}$\\(\unit{\gram})} &
+        \thead{$M_{\text{sample}}$\\(\unit{\gram})} &
+        \thead{$V_{\text{sample}}$\\(\unit{\litre})} &
+        \thead{$M_{105}$\\(\unit{\gram})} &
+        \thead{\gls{ts}\\(\unit{\gram\per\litre})} &
+        \thead{Average \gls{ts}\\(\unit{\gram\per\litre})} &
+        \thead{$M_{550}$\\(\unit{\gram})} &
+        \thead{\gls{vs}\\(\unit{\gram\per\litre})} &
+        \thead{Average \gls{vs}\\(\unit{\gram\per\litre})} \\
+        \midrule
+        \endhead
+
+        \bottomrule
+        \endlastfoot
+
+        \directlua{emit_grouped_table("data/processed/solids.csv", 12)}
+
+        \end{xltabular}
+    \end{ThreePartTable}
+\end{landscape}
+\endgroup
+
+\subsection{Density Determination}
+\label{subsec:d_determination}
+
+Density was determined by a gravimetric volumetric method using graduated cylinders. Dry cylinders were weighed empty, then filled with distilled water at \qty{20}{\celsius} and weighed again to verify the reading accuracy (density of water at $\rho_{20\,°C} = \qty{998.21}{\gram\per\litre}$). After drying, each cylinder was filled with a known volume of sample and weighed. The density of each material was calculated using
+\begin{equation}
+    \rho = \frac{M_{\text{total}} - M_{\text{cylinder}}}{V_{\text{sample}}} \quad \left[\unit{\gram\per\litre}\right]
+    \label{eq:density}
+\end{equation}
+where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume, the masses were messured in \unit{\gram} and the volume in \unit{\litre}. The results are on the \Cref{tab:density}.
+
+\begingroup
+\tablesetup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} C C C C C C c @{}}
+        \caption{Density values}
+        \label{tab:density} \\
+
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{$M_{\text{cylinder}}$ (\unit{\gram})} &
+        \thead{$M_{\text{total}}$ (\unit{\gram})} &
+        \thead{$V_{\text{sample}}$ (\unit{\litre})} &
+        \thead{Density\\(\unit{\gram\per\litre})} &
+        \thead{Average Density\\(\unit{\gram\per\litre})} \\
+        \midrule
+        \endfirsthead
+
+        \multicolumn{7}{l}{\textit{\Cref{tab:density} continued}} \\
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{$M_{\text{cylinder}}$ (\unit{\gram})} &
+        \thead{$M_{\text{total}}$ (\unit{\gram})} &
+        \thead{$V_{\text{sample}}$ (\unit{\litre})} &
+        \thead{Density\\(\unit{\gram\per\litre})} &
+        \thead{Average Density\\(\unit{\gram\per\litre})} \\
+        \midrule
+        \endhead
+
+        \bottomrule
+        \endlastfoot
+
+        \directlua{emit_grouped_table("data/processed/density.csv", 7)}
+
+    \end{xltabular}
+\end{ThreePartTable}
+\endgroup
+
+\subsection{TOC and TN Determination}
+\label{subsec:toc_tn_determination}
+
+\Glsentrylong{toc}, \gls{tc} and \gls{tn} were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the \gls{fw} was diluted \qty{400}{\dil} and the \gls{cgl} was diluted \qty{800}{\dil} to bring the concentrations within the linear range of the instrument. The results are on the \Cref{tab:toc}.
+
+\begingroup
+\tablesetup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
+
+        \caption{\Glsentrylong{tc} and \Glsentrylong{tn} values}
+        \label{tab:toc} \\
+
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{\GLS{toc}\\(\unit{\milli\gram\per\litre})} &
+        \thead{\GLS{tc}\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average \GLS{tc}\\(\unit{\milli\gram\per\litre})} &
+        \thead{\GLS{tn}\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average \GLS{tn}\\(\unit{\milli\gram\per\litre})} \\
+        \midrule
+        \endfirsthead
+
+        \multicolumn{7}{l}{\textit{\Cref{tab:toc} continued}} \\
+        \toprule
+        \multicolumn{2}{c}{\thead{Sample}} &
+        \thead{\GLS{toc}\\(\unit{\milli\gram\per\litre})} &
+        \thead{\GLS{tc}\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average \GLS{tc}\\(\unit{\milli\gram\per\litre})} &
+        \thead{\GLS{tn}\\(\unit{\milli\gram\per\litre})} &
+        \thead{Average \GLS{tn}\\(\unit{\milli\gram\per\litre})} \\
+        \midrule
+        \endhead
+
+        \bottomrule
+        \endlastfoot
+
+        \directlua{emit_grouped_table("data/processed/toc.csv", 7)}
+    \end{xltabular}
+\end{ThreePartTable}
+\endgroup
+
+\section{Experiment Configuration}
+\label{sec:experiment_configuration}
+
+The reactor had a useful volume of \qty{1}{\litre} and was operated as a \gls{cstr} under anaerobic conditions. Mixing was provided by a magnetic stir bar, and the overflow exit tube was kept closed with a valve to maintain an anaerobic environment. As you can see in this \Cref{graph:reactor}:
+
+\begin{figure}[H]
+    \centering
+    \resizebox{\textwidth}{!}{\includestandalone[mode=tex]{assets/graphs/reactor-model}
+    }
+    \caption{Schematic of the experimental setup used}
+    \label{graph:reactor}
+\end{figure}
+
+The reactor was kept at \qty{35}{\celsius}, close to the optimal temperature for mesophilic microorganisms \parencite{choorit2007}. The \gls{olr} was set with a max of \qty{4}{\kilo\gram\VS\per\cubic\metre\per\day}, with a \gls{hrt} of \num{30} days, conditions for stable co-digestion of \gls{fw} and \gls{gl} \parencite{tomczak2025}. The pH was maintained around \num{7} by incorporating \gls{khco3} into the feed solution at a concentration of \qty{10}{\gram\per\litre}, and adding \gls{khco3} to the reactor whenever the pH dropped lower than \num{6}.
+
+The \gls{olr} and \gls{hrt}:
+
+\begin{equation}
+    \mathrm{HRT} = \frac{V}{Q} \quad \left[\unit{\day}\right]
+    \label{eq:HRT}
+\end{equation}
+\begin{equation}
+    \mathrm{OLR} = \frac{S_{\text{in}} \times Q}{V} \quad \left[\unit{\kilo\gram\VS\per\cubic\meter\per\day}\right]
+    \label{eq:OLR}
+\end{equation}
+where $S_{\text{in}}$ is the influent \unit{\VS} concentration (\unit{\kilo\gram\per\cubic\metre}), $Q$ is the volumetric flow rate (\unit{\cubic\metre\per\day}), and $V$ is the reactor working volume (\unit{\cubic\metre}).
+
+\subsection{Feeding Solution}
+\label{subsec:feeding_solution}
+
+The feed was designed to achieve a \gls{cn_ratio} ratio of 25:1, which is optimal for \gls{ad} \parencite{li2011}. Characterisation of the \gls{fw} and \gls{cgl} showed that both substrates contained nitrogen, making it difficult to balance the \gls{cn_ratio} ratio using both of them together. Therefore, \gls{pgl} was used as an additive to allow precise control of the \gls{cn_ratio}. Based on the chosen \gls{hrt} and the daily volumetric flow rate, the reactor was fed once per day to ensure a flow rate high enough to transport the solid \gls{fw} suspension through the feeding tube.
+
+The feed was made with a restriction of needing to have less than \qty{15}{\percent} of TS\unit{\percent}. The amount of \gls{olr} and if \gls{khco3} was added, was decided by the pH and how was the \gls{ch4} production of the reactor. If it was too acidic, it was used a lower \gls{olr} with \gls{khco3}, if it was at the right amount it was keep the same amount, and if it was too basic it was added a higher \gls{olr} without \gls{khco3}. The feed storage always had some remainig feed, and the new one was added on top, diluting or concentrating the feed going to the reactor.
+
+The feed was also suplemented with nutrients to complement the feed and create a better feed for the microorganisms. \Cref{tab:nutri} shows the nutrients used and there ratios.
+
+\begingroup
+\tablesetup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} C C @{}}
+
+        \caption{Nutrients used and there ratios, for a 25:1 \gls{cn_ratio}. (Adapted from: \textcite{safaa2025})}
+        \label{tab:nutri} \\
+
+        \toprule
+        \thead{Nutrients} &
+        \thead{Mass (\unit{\milli\gram\per\litre})} \\
+        \midrule
+        \endfirsthead
+
+        \multicolumn{2}{l}{\textit{\Cref{tab:nutri} continued}} \\
+        \toprule
+        \thead{Nutrients} &
+        \thead{Mass (\unit{\milli\gram\per\litre})} \\
+        \midrule
+        \endhead
+
+        \bottomrule
+        \endlastfoot
+
+        \csvreader[
+            late after line=\\\addlinespace
+        ]{data/processed/nutrients.csv}{}
+        {\expandafter\ce\expandafter{\csvcoli} & \num{\csvcolii}}
+
+    \end{xltabular}
+\end{ThreePartTable}
+\endgroup
+
+\subsection{Biogas Quantification}
+\label{subsec:biogas_quatification}
+
+The \gls{ampts} system (hardware~\Cref{fig:ampts-hard}, software~\Cref{fig:ampts-soft}), was provided to meassure the gas flow that was comming out of the reactor, with a \gls{co2} fixing unit using a solution of \qty{3}{\molar\NaOH}.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{ampts.jpg}
+        \caption{\gls{ampts} gas flow messurer}
+        \label{fig:ampts-col}
+    \end{subfigure}\hspace{1em}
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth, height=0.35\textheight, keepaspectratio]{ampts_co2.jpg}
+        \caption{\gls{ampts} \gls{co2} trap}
+        \label{fig:ampts-co2}
+    \end{subfigure}
+    \caption{\gls{ampts} hardware used}
+    \label{fig:ampts-hard}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{ampts_sys-print.png}
+    \caption{\gls{ampts} software used}
+    \label{fig:ampts-soft}
+\end{figure}
+
+\subsection{Analysis Methods}
+\label{subsec:analysis_methods}
+
+It was used the method of DiLallo \& Albertson \parencite{ribas2007}, to measure the \gls{alk} and \gls{vfa}. The sample collected was first centrifuged, at \qty{2604}{\gforce} for \qty{30}{\minute}, to filter the particulated before doing the measurements.
+
+\begin{equation}
+    \mathrm{TA} = \frac{N_\text{acid} * V_\text{acid} * 50000}{V_\text{sample}} \quad \left[\unit{\milli\gram\CaCO\per\litre}\right]
+    \label{eq:TA}
+\end{equation}
+\begin{equation}
+    \mathrm{VFA} = \frac{N_\text{base} * V_\text{base} * 60000}{V_\text{sample}} \quad \left[\unit{\milli\gram\CHCOOH\per\litre}\right]
+    \label{eq:VFA}
+\end{equation}
+
+The volumes were measured in \unit{\milli\litre}, the sample volume was always \qty{50}{\milli\litre}, the normality (\unit{\normality}) of the acid and base, at first was \num{0.1}, but then it was changed to \num{1}. The \Cref{eq:TA} is expressed in \unit{\milli\gram\CaCO\per\litre}, and the \Cref{eq:VFA} is expressed in \unit{\milli\gram\CHCOOH\per\litre}.
+
+\subsection{Subestrate used as feed}
+\label{subsec:sub_feed}
+
+\Cref{tab:feeds} shows all substrates used to feed the reactor and when they were made.
+
+\begingroup
+\sisetup{}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
+
+    \caption{Description of the feed used throughout the experimental period}
+    \label{tab:feeds} \\
+
+    \toprule
+    \thead{Day} &
+    \thead{Substrate 1} &
+    \thead{Subestrate 2} &
+    \thead{Substrate 3} &
+    \thead{Extra\\ Addition} &
+    \thead{\GLS{olr}\\ \& \GLS{ts}\%} &
+    \thead{Volume\\ Made} \\
+    \midrule
+    \endfirsthead
+
+    \multicolumn{6}{l}{\textit{\Cref{tab:feeds} continued}} \\
+    \toprule
+    \thead{Day} &
+    \thead{Substrate 1} &
+    \thead{Subestrate 2} &
+    \thead{Substrate 3} &
+    \thead{Extra\\ Addition} &
+    \thead{\GLS{olr}\\ \& \GLS{ts}\%} &
+    \thead{Volume\\ Made} \\
+    \midrule
+    \endhead
+
+    \bottomrule
+    \endlastfoot
+
+    \num{0}\tnote{a} &
+    \gls{fw}, \qty{156}{\gram} &
+    \gls{glucose}, \qty{1.9}{\gram} &
+    &
+    \gls{ca_hco3}, \qty{5}{\gram} &
+    \num{1.5} \& \num{15} &
+    \qty{500}{\milli\litre} \\
+    \addlinespace
+    \num{4} &
+    \gls{cgl}, \qty{23.2}{\milli\litre} &
+    \gls{pgl}\tnote{b}, \qty{31.5}{\milli\litre} &
+    &
+    \gls{khco3}, \qty{1.9}{\gram} &
+    \num{0.8} \& \num{10} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{11} &
+    \gls{fw}, \qty{12.54}{\gram} &
+    \gls{cgl}, \qty{9.02}{\milli\litre} &
+    \gls{pgl}, \qty{2.6}{\milli\litre} &
+    \gls{khco3}, \qty{1.57}{\gram} &
+    \numrange{0.13}{0.4} \& \numrange{5}{10}\tnote{c} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{18} &
+    \gls{fw}, \qty{10.88}{\gram} &
+    \gls{cgl}, \qty{2.89}{\milli\litre} &
+    \gls{pgl}, \qty{1.44}{\milli\litre} &
+    &
+    \num{0.0256} \& \num{2} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{25} &
+    \gls{fw}, \qty{31.12}{\gram} &
+    \gls{cgl}, \qty{44}{\milli\litre} &
+    \gls{pgl}, \qty{29}{\milli\litre} &
+    &
+    \num{1.4} \& \num{10} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{32} &
+    \gls{fw}, \qty{31.01}{\gram} &
+    \gls{cgl}, \qty{44}{\milli\litre} &
+    \gls{pgl}, \qty{28.9}{\milli\litre} &
+    &
+    \num{1.4} \& \num{10} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{39} &
+    \gls{fw}, \qty{46.52}{\gram} &
+    \gls{cgl}, \qty{66}{\milli\litre} &
+    \gls{pgl}, \qty{43}{\milli\litre} &
+    \gls{khco3}, \qty{2.6}{\gram} &
+    \num{3.1} \& \num{15} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{46} &
+    \gls{fw}, \qty{50.07}{\gram} &
+    \gls{cgl}, \qty{66}{\milli\litre} &
+    \gls{pgl}, \qty{43}{\milli\litre} &
+    \gls{khco3}, \qty{2.67}{\gram} &
+    \num{3.16} \& \num{15} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{53}\tnote{d} &
+    \gls{cgl}, \qty{55}{\milli\litre} &
+    \gls{pgl}, \qty{11.5}{\milli\litre} &
+    &
+    \gls{khco3}, \qty{5.38}{\gram} &
+    \num{0.42} \& \num{10} &
+    \qty{500}{\milli\litre} \\
+    \addlinespace
+    \num{60} &
+    \gls{cgl}, \qty{55}{\milli\litre} &
+    \gls{pgl}, \qty{12}{\milli\litre} &
+    &
+    \gls{khco3}, \qty{5.18}{\gram} &
+    \num{0.42} \& \num{10} &
+    \qty{500}{\milli\litre}\tnote{e} \\
+    \addlinespace
+    \num{67} &
+    \gls{cgl}, \qty{41}{\milli\litre} &
+    \gls{pgl}, \qty{9}{\milli\litre} &
+    &
+    \gls{khco3}, \qty{2.56}{\gram} &
+    \num{0.95} \& \num{15} &
+    \qty{250}{\milli\litre} \\
+    \addlinespace
+    \num{74} &
+    \gls{cgl}, \qty{60}{\milli\litre} &
+    \gls{pgl}, \qty{12.5}{\milli\litre} &
+    &
+    \gls{khco3}, \qty{2.57}{\gram} &
+    \num{1.37} \& \num{15} &
+    \qty{250}{\milli\litre} \\
+
+    \end{xltabular}
+
+    \begin{tablenotes}
+        \item[a] It only started feeding on day \num{2}.
+        \item[b] The solution of \Gls{pgl} was diluted \qty{100}{\dil}.
+        \item[c] The \gls{fw} wasn't well mixtured this day.
+        \item[d] Change of substrate.
+        \item[e] There was a leak on the feeding tube.
+    \end{tablenotes}
+\end{ThreePartTable}
+\endgroup
+\clearpage{}
+\clearpage{}\chapter{Results}
+\label{ch:results}
+
+\section{Reactor Condition and Visual Observations}
+\label{sec:reactor_condition}
+
+The reactor was inoculated with anaerobic sludge and initially contained a murky, light brown suspension (\Cref{fig:reactor_murky}). Within three days of operation, the colour changed to black (\Cref{fig:reactor_black}), which is characteristic of active anaerobic digestion and is typically caused by the precipitation of metal sulphides, particularly iron sulphide, under reducing conditions. This visual change indicated the establishment of a suitable anaerobic environment and the onset of methanogenic activity.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.25\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{reator-19-5.jpg}
+        \caption{Murky suspension}
+        \label{fig:reactor_murky}
+    \end{subfigure}\hspace{1em}
+    \begin{subfigure}[t]{0.25\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{reator-22-5.jpg}
+        \caption{Black suspention}
+        \label{fig:reactor_black}
+    \end{subfigure}
+    \caption{Visual changes in the reactor, within the first week.}
+    \label{fig:reactor_visual}
+\end{figure}
+
+At the end of the experimental period, after approximately two weeks of unattended operation, four discrete masses resembling fungal colonies were observed on the internal surfaces of the reactor during cleaning (\Cref{fig:masses-dry,fig:masses-wet}). The origin of these growths is uncertain, but they may have been introduced via the \gls{fw} feed or during periods when the feeding tube was opened for repairs (e.g. leaks) and when changing the feed that the tube had to be cleaned. The presence of such organisms could have competed with the anaerobic microbial community for substrate, potentially affecting biogas production in the later stages of the experiment.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.25\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{reator-limp-seco-24-8.jpg}
+        \caption{Masses inside the dry reactor}
+        \label{fig:masses-dry}
+    \end{subfigure}\hspace{1em}
+    \begin{subfigure}[t]{0.25\textwidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{reator-limp-agua-24-8.jpg}
+        \caption{Masses floating in the reactor}
+        \label{fig:masses-wet}
+    \end{subfigure}
+    \caption{Visual for the masses inside the reactor.}
+    \label{fig:reactor-limp_visual}
+\end{figure}
+
+\section{Biogas Production}
+\label{sec:biogas_production}
+
+Biogas production was monitored continuously using \gls{ampts}, which recorded both the cumulative volume of \gls{ch4} produced and the instantaneous flow rate. The entire experimental period is summarised in \Cref{graph:total-accumulation,graph:total-flow}. To facilitate interpretation, the data have been divided into four distinct phases based on the feeding regime: (i) an adaptation phase~\ref{subsec:adaptation_phase}, (ii) co-digestion of food waste and glycerol~\ref{subsec:codigestion_phase}, (iii) digestion of crude glycerol~\ref{subsec:glycerol_phase}, and (iv) a post-feeding period~\ref{subsec:post_feeding}.
+
+\subsection{Overall Production}
+\label{subsec:overall_production}
+
+The cumulative \gls{ch4} production over the whole experiment (\Cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\Cref{graph:total-flow}) exhibits distinct peaks corresponding to daily production of \gls{ch4}, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day \num{53}, that was when the feed was changed from a mixture of \gls{fw} and \gls{cgl}, to only \gls{cgl}, and due to some complications, created an anomaly in the graph.
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{0}{97}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\nml}}
+    \label{graph:total-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{0}{97}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day}}
+    \label{graph:total-flow}
+\end{figure}
+
+\subsection{Adaptation Phase}
+\label{subsec:adaptation_phase}
+
+During the initial adaptation phase, biogas production was low (\Cref{graph:pre-accumulation,graph:pre-flow}). This lag period is normal for anaerobic reactors as the microbial community adjusts to the new substrate and operating conditions. The small but measurable \gls{ch4} flow confirmed that the viability of the inoculum, and the gradual increase in flow suggested the onset of exponential growth of the microorganisms.
+
+The spikes seen on the days \num{8} and \num{10} (\Cref{graph:pre-flow}) probably happended by the first addition of \gls{cgl} to the feed.
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{0}{24}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\nml} (Adaptation Phase)}
+    \label{graph:pre-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{0}{24}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day} (Adaptation Phase)}
+    \label{graph:pre-flow}
+\end{figure}
+
+\subsection{Co-digestion of Food Waste and Crude Glycerol}
+\label{subsec:codigestion_phase}
+
+The reactor was fed with a mixture of \gls{fw} and \gls{cgl}, a marked increase in biogas production was observed (\Cref{graph:ra-accumulation,graph:ra-flow}). The cumulative \gls{ch4} volume rose steeply, and the flow rate showed pronounced spikes immediately after each feeding event (\Cref{graph:ra-flow-30}). These spikes are typical of readily degradable substrates, which are quickly hydrolysed and converted to \gls{vfa} and subsequently to \gls{ch4}. The average flow rate during this phase was higher than in any other phase, indicating that the co-digestion of \gls{fw} and \gls{cgl} provided a balanced nutrient supply and avoided the inhibition often associated with high \gls{gl} concentrations alone.
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{25}{52}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\nml} (co-digestion of \gls{fw} and \gls{cgl})}
+    \label{graph:ra-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{25}{52}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day} (co-digestion of \gls{fw} and \gls{cgl})}
+    \label{graph:ra-flow}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-30min.csv}{600}{1248.75}{Time (\unit{\hour})}{Flow (\unit{\nml\per\hour})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\nml\per\hour} (co-digestion of \gls{fw} and \gls{cgl})}
+    \label{graph:ra-flow-30}
+\end{figure}
+
+\subsection{Digestion of Crude Glycerol}
+\label{subsec:glycerol_phase}
+
+When the feed was changed to \gls{cgl} alone, biogas production decreased (\Cref{graph:gl-accumulation,graph:gl-flow}). Although spikes in the flow were still observed after feeding (\Cref{graph:gl-flow-30}), their magnitude was bigger than during the co-digestion phase, and the cumulative \gls{ch4} volume plateaued more quickly. Several factors may explain this lower performance:
+\begin{itemize}
+    \item The \gls{gl} could have been transformed to fast or too slow, to maintaing a concentration of intermediate products.
+    \item The retention rate of $\frac{1}{30}\,\unit{\per\day}$ may have been insufficient to wash out inhibitory by-products or to maintain a stable population of glycerol fermenting bacteria.
+    \item The appearance of fungal masses towards the end of this phase could have further stressed the anaerobic community by competing for substrate or introducing toxic metabolites. The fungal masses could have helped digest more complex sugars, so without a more thorough investigation of what it was, it can't be said it didn't help the \gls{ad} system.
+\end{itemize}
+
+For those factors, can't be said that this phase is worse than the co-digestion phase. If the experiment was done in reverse, it's likely that we would have seen a reverse on the results, were the phase with only \gls{cgl} would have a bigger production than the co-digestion of \gls{fw} and \gls{cgl}.
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{53}{81}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\nml} (Anaerobic digestion of \gls{cgl})}
+    \label{graph:gl-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{53}{81}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day} (Anaerobic digestion of \gls{cgl})}
+    \label{graph:gl-flow}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-30min.csv}{1272}{1941.5}{Time (\unit{\hour})}{Flow (\unit{\nml\per\hour})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\nml\per\hour} (Anaerobic digestion of \gls{cgl})}
+    \label{graph:gl-flow-30}
+\end{figure}
+
+\subsection{Post-feeding Period}
+\label{subsec:post_feeding}
+
+During the final two weeks, no fresh substrate was added to the reactor, it just had some residual substrate from the \gls{cgl} only phase for a week. Nevertheless, a small residual biogas production was recorded (\Cref{graph:extra-accumulation,graph:extra-flow}). This production can be attributed to the slow degradation of accumulated organic matter and microbial decay products. The flow rate declined gradually, confirming that the reactor was no longer being actively fed and that the remaining substrate was limited.
+
+\begin{figure}[H]
+    \centering
+    \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{82}{97}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
+    \caption{Cumulative volume of \ce{CH4} \unit{\nml} (Post-feeding period)}
+    \label{graph:extra-accumulation}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
+        {data/processed/experimentos-day.csv}{82}{97}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
+    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day} (Post-feeding period)}
+    \label{graph:extra-flow}
+\end{figure}
+
+\subsection{Alkalinity and Volatile Fatty Acids}
+\label{subsec:alkalinity_vfa}
+
+The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the experiment to assess process stability. The results are shown in \Cref{graph:alkalinity_vfa}. Initially, both \gls{alk} and \gls{vfa} were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of \gls{khco3}, \gls{alk} increased sharply to values above \qty{7000}{\milli\gram\CaCO\per\litre} and remained relatively high until close to the end. This high \gls{alk} was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
+
+\Glsentrylong{vfa} concentrations also increased after the start of feeding, reaching values between \numrange{3000}{5000} \unit{\milli\gram\CHCOOH\per\litre}. Such high \gls{vfa} levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high \gls{alk} provided a strong buffering capacity, and the pH remained above \num{6.5} for most of the experiment, with the co-digestion the pH was falling and with \gls{cgl} only the pH was increasing. The \gls{vfa_alk} is a more reliable indicator of instability. In this experiment, the ratio fluctuated between \numrange{0.3}{1.2}. While using the co-digestion feed a ration around \numrange{0.8}{1.0} had the highest production.
+
+\begin{figure}[H]
+    \centering
+    \begingroup
+    \pgfplotstableread[col sep=comma]{data/processed/analysis.csv}{\datatable}
+    \resizebox{\textwidth}{!}{\begin{tikzpicture}
+\begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xlabel={Time (\unit{\day})},
+            ylabel={\gls{alk} (\unit{\milli\gram\CaCO\per\litre})},
+            xmin=0, ymin=0,
+            axis y line*=left,        legend pos=south east,
+        ]
+            \addplot[
+                color=blue, thick, mark=*, mark size=1.5pt,
+            ] table[x index=0, y index=2] {\datatable};
+            \addlegendentry{\gls{alk}}
+
+\addlegendimage{color=red, thick, mark=square*, mark size=1.5pt}
+            \addlegendentry{\gls{vfa}}
+        \end{axis}
+
+\begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xmin=0, ymin=0,
+            axis y line*=right,       axis x line=none,         ylabel={\gls{vfa} (\unit{\milli\gram\CHCOOH\per\litre})},
+]
+            \addplot[
+                color=red, thick, mark=square*, mark size=1.5pt,
+            ] table[x index=0, y index=3] {\datatable};
+        \end{axis}
+    \end{tikzpicture}}
+    \endgroup
+    \caption{\Glsentrylong{alk} \& \glsentrylong{vfa} comparison graph}
+    \label{graph:alkalinity_vfa}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begingroup
+    \pgfplotstableread[col sep=comma]{data/processed/analysis.csv}{\datatable}
+    \resizebox{\textwidth}{!}{\begin{tikzpicture}
+\begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xlabel={Time (\unit{\day})},
+            ylabel={pH},
+            xmin=0, ymin=0,
+            axis y line*=left,
+            legend style={
+                at={(0.98, 0.4)},     anchor=east,          draw=black,
+                fill=white,
+                fill opacity=0.9,
+            },
+            ]
+            \addplot[
+                color=green, thick, mark=*, mark size=1.5pt,
+            ] table[x index=0, y index=1] {\datatable};
+            \addlegendentry{pH}
+
+\addlegendimage{color=purple, thick, mark=square*, mark size=1.5pt}
+            \addlegendentry{\gls{vfa_alk}}
+        \end{axis}
+
+\begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xmin=0, ymin=0,
+            axis y line*=right,       axis x line=none,         ylabel={\gls{vfa_alk}},
+]
+            \addplot[
+                color=purple, thick, mark=square*, mark size=1.5pt,
+            ] table[x index=0, y index=4] {\datatable};
+        \end{axis}
+    \end{tikzpicture}}
+    \endgroup
+    \caption{pH \& \gls{vfa_alk} comparison graph}
+    \label{graph:ph_ratio}
+\end{figure}
+
+\clearpage{}
+\clearpage{}\chapter{Discussion}
+\label{ch:discussion}
+
+The \gls{ch4} yield data obtained throughout the experimental period is summarised in \Cref{tab:performance}, which reports the cumulative \gls{ch4} production, specific yield, and volumetric productivity for each of the four operational phases. The cumulative specific \gls{ch4} yield is calculated using \Cref{eq:cumYield}, while the daily specific \gls{ch4} production rate is obtained from \Cref{eq:dailyRate}. The volumetric productivity is derived from \Cref{eq:volRate}, and the phase averaged values are computed using \Cref{eq:avgMolRate,eq:avgVolRate,eq:avgDailyRate}. The overall yield for the entire experiment is given by \Cref{eq:overallYield}. These parameters are visualised in \Cref{graph:specific-accumulation-ch4-yield,graph:daily-yiled-ch4,graph:volumetric-productivity-ch4}, which show the evolution of \gls{ch4} yield and \gls{olr} across the four phases.
+
+\begingroup
+\tablesetup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{ThreePartTable}
+    \begin{xltabular}{\linewidth}{@{} c C c C C c c @{}}
+
+        \caption{Summary of the performance of the experiment}
+        \label{tab:performance} \\
+
+        \toprule
+        \thead{Phase} &
+        \thead{Days} &
+        \thead{\GLS{olr} range\\(\unit{\gram\VS\per\litre\per\day})} &
+        \thead{\GLS{vs} fed\\(\unit{\gram})} &
+        \thead{\gls{ch4}\\(\unit{\nml})} &
+        \thead{Yield\\(\unit{\nml\per\gram\VSfed})} &
+        \thead{Rate\\(\unit{\litre\per\reactorlitre\per\day})} \\
+        \midrule
+        \endfirsthead
+
+        \multicolumn{7}{l}{\textit{\Cref{tab:performance} continued}} \\
+        \toprule
+        \thead{Phase} &
+        \thead{Days} &
+        \thead{\GLS{olr} range\\(\unit{\gram\VS\per\litre\per\day})} &
+        \thead{\GLS{vs} fed\\(\unit{\gram})} &
+        \thead{\gls{ch4}\\(\unit{\nml})} &
+        \thead{Yield\\(\unit{\nml\per\gram\VSfed})} &
+        \thead{Rate\\(\unit{\litre\per\reactorlitre\per\day})} \\
+        \midrule
+        \endhead
+
+        \bottomrule
+        \endlastfoot
+
+        \csvreader[
+            late after line=\\\addlinespace
+        ]{data/processed/yield-avarage.csv}{}
+        {\csvcoli &
+         \numrange[parse-numbers=false]{\csvcolii}{\csvcoliii} &
+         \numrange{\csvcoliv}{\csvcolv} &
+         \num{\csvcolxi} &
+         \num{\csvcolviii} &
+         \num{\csvcolxii} &
+         \num{\csvcolxiv}}
+
+    \end{xltabular}
+\end{ThreePartTable}
+\endgroup
+
+The overall cumulative \gls{ch4} production reached \qty{3276.1}{\nml}, corresponding to an overall yield of approximately \qty{28.96}{\nml\CH\per\gram\VSfed} (calculated using \Cref{eq:overallYield}). This value is considerably lower than the yields reported in the literature for similar substrates. \textcite{gebreegziabher2025} reviewed the \gls{ad} of biodiesel byproducts and reported \gls{ch4} yield enhancements ranging from \qtyrange{14}{226}{\percent} when \gls{cgl} is co-digested with various substrates. \textcite{tomczak2025} analysed data from multiple studies and concluded that \gls{ch4} content in biogas exceeds \qty{60}{\percent} when the \gls{cgl} fraction in the feedstock is kept below \qty{8}{\percent} (\gls{vpv}). In the present study, the \gls{cgl} fraction varied across phases, but the overall \gls{ch4} yield remained below the values typically reported for \gls{cgl} co-digestion. This discrepancy may be attributed to the single-stage configuration, the specific characteristics of the \gls{fw} and \gls{gl} used, and the process instability observed during the end of the co-digestion phase and the start of the \gls{gl}-only phase.
+
+During the adaptation phase (days \numrange[parse-numbers=false]{0}{24}), the specific \gls{ch4} yield reached \qty{45.64}{\nml\CH\per\gram\VSfed}, the highest among all phases. However, this value must be interpreted with caution, as the cumulative \gls{vs} fed during this period was only \qty{16.628}{\gram}, and \gls{ch4} production was still in the early stages of development. The volumetric productivity was \qty{0.0304}{\litre\per\reactorlitre\per\day}. The daily yield profile in \Cref{graph:daily-yiled-ch4} shows a gradual increase in \gls{ch4} production during this phase, with a notable spike around day \num[parse-numbers=false]{8}, corresponding to the first addition of \gls{cgl} to the feed. This observation is consistent with \textcite{gebreegziabher2025}, who noted that \gls{cgl} is readily biodegradable and can stimulate methanogenic activity when introduced to an acclimated microbial community.
+
+In the co-digestion phase (days \numrange[parse-numbers=false]{25}{52}), the \gls{olr} was increased from \qtyrange{1.4}{3.16}{\gram\VS\per\litre\per\day}, and the cumulative \gls{ch4} production reached \qty{1249.9}{\nml}. The specific yield decreased to \qty{19.71}{\nml\CH\per\gram\VSfed}, while the volumetric productivity increased to \qty{0.0446}{\litre\per\reactorlitre\per\day}, the highest of all phases. This inverse relationship between specific yield and volumetric productivity reflects the higher organic loading rate applied, which promoted greater \gls{ch4} production per reactor volume but reduced the efficiency of substrate conversion to \gls{ch4}. The daily yield profile in \Cref{graph:daily-yiled-ch4} exhibits fluctuations during this phase, this pattern is typical of readily degradable substrates and has been reported by \textcite{tomczak2025} and \textcite{srimachai2025}. \textcite{srimachai2025} investigated the co-digestion of canned seafood wastewater with \gls{gl} waste and reported \gls{ch4} yields of \qty{345}{\mL\CH\per\gram\COD} at a mixing ratio of \qty{96.4}{\percent} (\gls{vpv}). Although the substrate characteristics differ, the general trend of enhanced \gls{ch4} production during co-digestion is consistent with the present findings.
+
+The \gls{cgl} only phase (days \numrange[parse-numbers=false]{53}{81}) exhibited a specific yield of \qty{37.37}{\nml\CH\per\gram\VSfed} and a volumetric productivity of \qty{0.0303}{\litre\per\reactorlitre\per\day}, with a cumulative \gls{ch4} production of \qty{877.9}{\nml}. The \gls{olr} ranged from \qtyrange{0.42}{1.37}{\gram\VS\per\litre\per\day}. Despite the absence of \gls{fw} in the feed, \gls{ch4} production continued, indicating that the microbial community had adapted to \gls{gl} as a sole carbon source. However, the specific yield was lower than during the adaptation phase, suggesting that \gls{gl} alone may not provide an optimal nutrient balance for methanogenesis. \textcite{tomczak2025} emphasised that \gls{cgl} is an ideal co-substrate but can cause inhibition when used alone or at high concentrations due to the accumulation of \glspl{vfa} and the presence of impurities such as methanol, soaps, and heavy metals. The daily yield profile in \Cref{graph:daily-yiled-ch4} shows a declining trend during this phase, with a notable outlier peak at day \num[parse-numbers=false]{53}, corresponding to the transition from co-digestion to \gls{gl}-only feeding. This anomaly, also visible in \Cref{graph:volumetric-productivity-ch4}, was caused by problems during the change.
+
+The post-feeding phase (days \numrange[parse-numbers=false]{82}{97}) produced \qty{389.4}{\nml} of \gls{ch4}, with a specific yield of \qty{40.60}{\nml\CH\per\gram\VSfed} and a volumetric productivity of \qty{0.0245}{\litre\per\reactorlitre\per\day}. The \gls{olr} got to zero during this period, and the \gls{ch4} produced can be attributed to the slow degradation of residual organic matter and microbial decay products. The daily yield profile in \Cref{graph:daily-yiled-ch4} shows a gradual decline, confirming that the reactor was no longer being actively fed and that the remaining substrate was limited.
+
+\begingroup
+
+\definecolor{phaseAdaptation}{HTML}{D6E4F0}
+\definecolor{phaseCodigestion}{HTML}{D5EAD5}
+\definecolor{phaseCGL}{HTML}{FBE5C9}
+\definecolor{phasePost}{HTML}{F8D5D5}
+
+\pgfplotstableread[col sep=comma]{data/processed/yield.csv}{\phasedata}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+\begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xlabel={Time (\unit{\day})},
+            ylabel={\unit{\CH\milli\litre\per\gram\VSfed}},
+            axis y line*=left,
+            enlarge x limits=false,
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            legend style={
+                at={(0.98, 0.8)},
+                anchor=east,
+                draw=black,
+                fill=white,
+                fill opacity=0.9,
+            },
+        ]
+\addplot[very thick, mark=*, mark size=1.2pt, color=blue!60!black]
+                table[x index=0, y index=6] {\phasedata};
+            \addlegendentry{\Gls{ch4}}
+
+            \addlegendimage{color=red!60!black, very thick, mark=*, mark size=1.2pt}
+            \addlegendentry{OLR}
+
+\pgfplotsextra{\pgfonlayer{axis background}
+                    \fill[phaseAdaptation]
+                    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCodigestion]
+                    (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCGL]
+                    (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phasePost]
+                    (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/ymax});
+                \endpgfonlayer
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:12, \pgfkeysvalueof{/pgfplots/ymax}) {Adaptation};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:38, \pgfkeysvalueof{/pgfplots/ymax}) {Co-digestion};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:67, \pgfkeysvalueof{/pgfplots/ymax}) {C-GL only};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:89, \pgfkeysvalueof{/pgfplots/ymax}) {Post-feeding};
+            }
+        \end{axis}
+
+\begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            axis y line*=right,       axis x line=none,         axis background/.style={fill=none},
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            ylabel={ORL (\unit{\kilo\gram\VS\per\cubic\metre\per\day})},
+]
+            \addplot[very thick, mark=*, mark size=1.2pt, color=red!60!black]
+                table[x index=0, y index=3] {\phasedata};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Cumulative specific \gls{ch4} yield}
+    \label{graph:specific-accumulation-ch4-yield}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xlabel={Time (\unit{\day})},
+            ylabel={\unit{\CH\milli\litre\per\gram\VSfed\per\day}},
+            axis y line*=left,
+            enlarge x limits=false,
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            legend style={
+                at={(0.98, 0.8)},
+                anchor=east,
+                draw=black,
+                fill=white,
+                fill opacity=0.9,
+            },
+        ]
+\addplot[very thick, mark=*, mark size=1.2pt, color=blue!60!black]
+                table[x index=0, y index=9] {\phasedata};
+            \addlegendentry{\Gls{ch4}}
+
+            \addlegendimage{color=red!60!black, very thick, mark=*, mark size=1.2pt}
+            \addlegendentry{OLR}
+
+
+\pgfplotsextra{\pgfonlayer{axis background}
+                    \fill[phaseAdaptation]
+                    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCodigestion]
+                    (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCGL]
+                    (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phasePost]
+                    (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/ymax});
+                \endpgfonlayer
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:12, \pgfkeysvalueof{/pgfplots/ymax}) {Adaptation};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:38, \pgfkeysvalueof{/pgfplots/ymax}) {Co-digestion};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:67, \pgfkeysvalueof{/pgfplots/ymax}) {C-GL only};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:89, \pgfkeysvalueof{/pgfplots/ymax}) {Post-feeding};
+            }
+        \end{axis}
+
+\begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            axis y line*=right,       axis x line=none,         axis background/.style={fill=none},
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            ylabel={ORL (\unit{\kilo\gram\VS\per\cubic\metre\per\day})},
+]
+            \addplot[very thick, mark=*, mark size=1.2pt, color=red!60!black]
+                table[x index=0, y index=3] {\phasedata};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Daily yiled of \gls{ch4}}
+    \label{graph:daily-yiled-ch4}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            xlabel={Time (\unit{\day})},
+            ylabel={\unit{\CH\litre\per\litre\per\day}},
+            axis y line*=left,
+            enlarge x limits=false,
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            legend style={
+                at={(0.98, 0.8)},
+                anchor=east,
+                draw=black,
+                fill=white,
+                fill opacity=0.9,
+            },
+        ]
+\addplot[very thick, mark=*, mark size=1.2pt, color=blue!60!black]
+                table[x index=0, y index=8] {\phasedata};
+            \addlegendentry{\Gls{ch4}}
+
+            \addlegendimage{color=red!60!black, very thick, mark=*, mark size=1.2pt}
+            \addlegendentry{OLR}
+
+
+\pgfplotsextra{\pgfonlayer{axis background}
+                    \fill[phaseAdaptation]
+                    (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCodigestion]
+                    (axis cs:24.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phaseCGL]
+                    (axis cs:52.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymax});
+                    \fill[phasePost]
+                    (axis cs:81.5,\pgfkeysvalueof{/pgfplots/ymin})
+                    rectangle (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/ymax});
+                \endpgfonlayer
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:12, \pgfkeysvalueof{/pgfplots/ymax}) {Adaptation};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:38, \pgfkeysvalueof{/pgfplots/ymax}) {Co-digestion};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:67, \pgfkeysvalueof{/pgfplots/ymax}) {C-GL only};
+                \node[font=\scriptsize, text=black!70, anchor=north]
+                    at (axis cs:89, \pgfkeysvalueof{/pgfplots/ymax}) {Post-feeding};
+            }
+        \end{axis}
+
+\begin{axis}[
+            width=\textwidth, height=0.6\textwidth,
+            axis y line*=right,       axis x line=none,         axis background/.style={fill=none},
+            xmin=0, xmax=97,
+            enlarge x limits=false,
+            set layers=axis on top,
+            ylabel={ORL (\unit{\kilo\gram\VS\per\cubic\metre\per\day})},
+]
+            \addplot[very thick, mark=*, mark size=1.2pt, color=red!60!black]
+                table[x index=0, y index=3] {\phasedata};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Volumetric productivity of \gls{ch4}}
+    \label{graph:volumetric-productivity-ch4}
+\end{figure}
+
+\endgroup
+
+\begin{equation}
+    Q = \frac{V_r}{\mathrm{HRT}} \quad \left[\unit{\cubic\metre\per\day}\right]
+    \label{eq:Q}
+\end{equation}
+
+\begin{equation}
+    m_{\mathrm{VS,day}} = \mathrm{OLR} \cdot V_r \quad \left[\unit{\gram\per\day}\right]
+    \label{eq:mVS_day}
+\end{equation}
+
+\begin{equation}
+    M_{\mathrm{VS}}(n) = \sum_{i=0}^{n} m_{\mathrm{VS,day}}(i) \quad \left[\unit{\gram}\right]
+    \label{eq:cumVS}
+\end{equation}
+
+\begin{equation}
+    Y(n) = \frac{V_{\mathrm{CH_4}}(n)}{M_{\mathrm{VS}}(n)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
+    \label{eq:cumYield}
+\end{equation}
+
+\begin{equation}
+    r_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{m_{\mathrm{VS,day}}(n)} \quad \left[\unit{\milli\litre\CH\per\gram\VSfed\per\day}\right]
+    \label{eq:dailyRate}
+\end{equation}
+
+\begin{equation}
+    \dot{n}_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{V_m \cdot V_r} \quad \left[\unit{\mol\CH\per\cubic\metre\per\day}\right]
+    \label{eq:molRate}
+\end{equation}
+
+\begin{equation}
+    \dot{V}_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{1000 \cdot V_r} \quad \left[\unit{\litre\CH\per\reactorlitre\per\day}\right]
+    \label{eq:volRate}
+\end{equation}
+
+\begin{equation}
+    \Delta V_{\mathrm{CH_4}}(a,b) = V_{\mathrm{CH_4}}(b) - V_{\mathrm{CH_4}}(a-1) \quad \left[\unit{\nml}\right]
+    \label{eq:deltaVCH4}
+\end{equation}
+
+\begin{equation}
+    \Delta M_{\mathrm{VS}}(a,b) = M_{\mathrm{VS}}(b) - M_{\mathrm{VS}}(a-1) \quad \left[\unit{\gram}\right]
+    \label{eq:deltaMVS}
+\end{equation}
+
+\begin{equation}
+    Y(a,b) = \frac{\Delta V_{\mathrm{CH_4}}(a,b)}{\Delta M_{\mathrm{VS}}(a,b)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
+    \label{eq:phaseYield}
+\end{equation}
+
+\begin{equation}
+    \overline{\dot{n}_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} \dot{n}_{\mathrm{CH_4}}(n) \quad \left[\unit{\mol\CH\per\cubic\metre\per\day}\right]
+    \label{eq:avgMolRate}
+\end{equation}
+
+\begin{equation}
+    \overline{\dot{V}_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} \dot{V}_{\mathrm{CH_4}}(n) \quad \left[\unit{\litre\CH\per\reactorlitre\per\day}\right]
+    \label{eq:avgVolRate}
+\end{equation}
+
+\begin{equation}
+    \overline{r_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} r_{\mathrm{CH_4}}(n) \quad \left[\unit{\milli\litre\CH\per\gram\VSfed\per\day}\right]
+    \label{eq:avgDailyRate}
+\end{equation}
+
+\begin{equation}
+    Y_{\text{overall}} = \frac{V_{\mathrm{CH_4}}(N_f)}{M_{\mathrm{VS}}(N_f)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
+    \label{eq:overallYield}
+\end{equation}
+
+Comparisons with the literature reveal that the \gls{ch4} yields obtained in this experiment are lower than those reported for similar co-digestion systems. \textcite{aguiar2026} investigated the co-digestion of sugarcane vinasse and cattle manure in a semi-continuous stirred-tank reactor and reported volumetric \gls{ch4} productivities of \qtyrange{3981}{5269}{\nml\CH\per\litre\per\day} for mixing ratios of 5:1 and 1:1 (v/m), respectively, at \glspl{olr} of \qtyrange{1.7}{4.1}{\kg\VS\per\cubic\metre\per\day}. These values are two orders of magnitude higher than the maximum volumetric productivity of \qty{44.6}{\nml\CH\per\litre\per\day} obtained in the present study. The large difference is primarily due to the much higher \gls{olr} applied by \textcite{aguiar2026} and the different substrate characteristics. \textcite{aguiar2026} also reported that the addition of \gls{gl} as a supplementary organic substrate compromised system stability, which is consistent with the \gls{vfa} accumulation and pH fluctuations observed in the present study during the co-digestion phase.
+
+\textcite{longanesi2016} reported \gls{ch4} yields from grape pomace digestion ranging from \qty{20.4}{\NL\CH\per\kg\VS} in batch mode to \qty{160}{\NL\CH\per\kg\VS} in continuous mode at an \gls{olr} of \qty{0.4}{\g\VS\per\litre\per\day}. The continuous-mode yield of \qty{160}{\NL\CH\per\kg\VS} is equivalent to \qty{160}{\nml\CH\per\gram\VS}, which is higher than the overall yield of \qty{28.96}{\nml\CH\per\gram\VSfed} obtained in this experiment. However, it should be noted that \textcite{longanesi2016} used grape pomace as the sole substrate, whereas the present experiment used a mixture of \gls{fw} and \gls{cgl}. \textcite{longanesi2016} also reported that co-digestion of grape pomace with maize silage improved the \gls{ch4} yield by \qty{113.5}{\NL\CH\per\kg\VS}, highlighting the benefits of co-digestion for balancing the \gls{cn_ratio} and diluting inhibitory compounds.
+
+The lower \gls{ch4} yields obtained in this study can be attributed to several factors. First, the single-stage configuration may have limited the hydrolysis and acidogenesis of the \gls{fw}, as the optimal conditions for these processes differ from those for methanogenesis. \textcite{srimachai2025} demonstrated that a two-stage system (CSTR-PFR or CSTR-CSTR) can enhance \gls{ch4} production by separating the hydrogen producing and \gls{ch4}-producing phases. Second, the \gls{cgl} impurities may have inhibited methanogenic activity. \textcite{anand2012} reported that \gls{cgl} from biodiesel production contains impurities such as methanol, soaps, and free fatty acids that can inhibit microbial growth and fermentation. Third, the \gls{vfa_alk} fluctuated from \numrange{0.3}{1.2}, indicating potential process instability. \textcite{ribas2007} emphasised the importance of accurate \gls{vfa} and \gls{alk} measurements for timely detection of process imbalance. Fourth, the fungal contamination observed during the cleaning of the reactor may have competed with methanogens for substrate, potentially reducing \gls{ch4} production. \textcite{degueurce2020} reported that storage of \gls{fw} can lead to the growth of fungi and other microorganisms that consume organic matter and produce inhibitory compounds.
+
+Despite the lower yields, the results demonstrate that \gls{ch4} production was maintained throughout the experimental period, confirming the technical feasibility of co-digesting \gls{fw} and \gls{cgl} in a single-stage system. The specific \gls{ch4} yield during the co-digestion phase (\qty{19.71}{\nml\CH\per\gram\VSfed}) was lower than during the adaptation phase, but the volumetric productivity was higher, indicating that the reactor was able to handle increased \glspl{olr}. These findings are consistent with \textcite{gebreegziabher2025}, who reported that co-digestion of \gls{cgl} with nitrogen-rich substrates such as \gls{fw} can enhance biogas production by balancing the \gls{cn_ratio} and providing essential nutrients. However, the accumulation of \glspl{vfa} and the decrease in pH observed during the co-digestion phase highlight the need for careful monitoring and control of the \gls{olr}. \textcite{tomczak2025} recommended that the \gls{cgl} content in the feedstock should not exceed \qty{8}{\percent} (\gls{vpv}) to avoid inhibition, and that the \gls{olr} should be adjusted based on the buffering capacity of the system.
+\clearpage{}
+\clearpage{}\chapter{Conclusion}
+\label{ch:conclusion}
+
+A direct comparison of the co-digestion and \gls{cgl} only phases reveals that the co-digestion of \gls{fw} and \gls{cgl} resulted in higher biogas yields and more stable operation. The pH was decreasing faster with the co-digestion, where with \gls{cgl} only phase it wasn't decreasing that fast, and was even growing with the \gls{khco3} that was added to maintain the pH. These results support the hypothesis that \gls{cgl}, when co-digested with \gls{fw}, can enhance biogas production by balancing the \gls{cn_ratio} and providing readily available carbon, whereas \gls{cgl} alone may work, but would need a different setup and ajustments.
+
+The \gls{cgl} only phase, can't be said to be strictly worse than the co-digestion of \gls{fw} and \gls{cgl}, since both phases were done in sequence in the same reactor, this could have given the \gls{cgl} pahse disavantages on a contaminated enviroment.
+
+Using \gls{cgl}, with some \gls{pgl} to make the necessary ajustment to balance the \gls{cn_ratio}, could be a viable solution for the \gls{cgl} problem. It's only major problem, is that \gls{cgl} contains a lot of inpurities that can affect the anaerobic digestion, and for a system that can reliably consume it, it will need a better control of it's substrate.
+
+During the whole process, the biggest production of \gls{ch4} was when \gls{vfa_alk} was \approx\num{1} with a pH of \approx\num{6.5}, during the \gls{cgl} only phase, even with not optmal valuos of pH and \gls{vfa_alk}, it was able to maintain a resonable amount of production of \gls{ch4}, showing that it can be a suitable substrate for \gls{ad}.
+
+The \gls{ch4} yield obtained (\qty{28.96}{\nml\CH\per\gram\VSfed}) is lower than values reported in the literature for similar co-digestion systems. The highest volumetric productivity (\qty{0.0446}{\litre\per\reactorlitre\per\day}) was observed during the co-digestion phase, while the highest specific yield (\qty{45.64}{\nml\CH\per\gram\VSfed}) occurred during the adaptation phase. This shows how importance of controlling the \gls{olr}, \gls{vfa_alk} and the amount of \gls{cgl} used to enhance the \gls{ch4} production.
+
+Future studies could involve on how to use better the \gls{cgl} as a feed, to try subside it's downside of it's impurities and need for an extra carbon rich substrate to balance the feed.
+\clearpage{}
+
+\printbibliography[heading=bibintoc, title={References}]
+
+
+
+\end{document}

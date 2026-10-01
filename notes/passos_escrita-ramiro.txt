@@ -77,8 +77,8 @@ arrumar unidade NmL *
 
 diminuir tamnho graficos ----
 
-colocar mais valores, acumulo, na conclusao, diferenca entre alimentacoes
+colocar mais valores, acumulo, na conclusao, diferenca entre alimentacoes ??*
 
-volume acumulado / massa solidos volateis
+volume acumulado / massa solidos volateis **
 
-concentracao solidos volates * caldal (m^3/d) * volume acumulado
+concentracao solidos volates * caldal (m^3/d) * volume acumulado **

@@ -393,6 +393,7 @@ INPUT ./build/sections/chapters/01_introduction.aux
 INPUT ./build/sections/chapters/02_literature_review.aux
 INPUT ./build/sections/chapters/03_materials_methods.aux
 INPUT ./build/sections/chapters/04_results.aux
+INPUT ./build/sections/chapters/05_discussion.aux
 INPUT ./build/sections/chapters/06_conclusion.aux
 OUTPUT build/main.aux
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -550,11 +551,11 @@ INPUT ./data/processed/experimentos-day.csv
 INPUT ./data/processed/experimentos-day.csv
 INPUT ./data/processed/analysis.csv
 INPUT ./data/processed/analysis.csv
+OUTPUT build/sections/chapters/05_discussion.aux
+INPUT ./sections/chapters/05_discussion.tex
 INPUT ./data/processed/yield-avarage.csv
 INPUT ./data/processed/yield-avarage.csv
 INPUT ./data/processed/yield-avarage.csv
-INPUT ./data/processed/yield.csv
-INPUT ./data/processed/yield.csv
 INPUT ./data/processed/yield.csv
 OUTPUT build/sections/chapters/06_conclusion.aux
 INPUT ./sections/chapters/06_conclusion.tex
@@ -566,6 +567,7 @@ INPUT ./build/sections/chapters/01_introduction.aux
 INPUT ./build/sections/chapters/02_literature_review.aux
 INPUT ./build/sections/chapters/03_materials_methods.aux
 INPUT ./build/sections/chapters/04_results.aux
+INPUT ./build/sections/chapters/05_discussion.aux
 INPUT ./build/sections/chapters/06_conclusion.aux
 INPUT ./build/main.run.xml
 OUTPUT build/main.run.xml

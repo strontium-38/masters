@@ -19,6 +19,69 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{aguiar2026}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=727253c29365ae4d303361072fd98dff}{%
+           family={Aguiar},
+           familyi={A\bibinitperiod},
+           given={Ana\bibnamedelima Beatriz},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5045d44937216745ea2fbe0ddde01810}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Renata},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a67920b967572837b5bad044043b9411}{%
+           family={Fuess},
+           familyi={F\bibinitperiod},
+           given={Lucas\bibnamedelima Tadeu},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28e88dd8f7d5e927fe11cf4b385d4277}{%
+           family={Holm-Nielsen},
+           familyi={H\bibinithyphendelim N\bibinitperiod},
+           given={Jens\bibnamedelima Bo},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8a83416d1ffd7ca286d2b4beebf0085}{%
+           family={Moraes},
+           familyi={M\bibinitperiod},
+           given={Bruna},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{88b5f12f9f73bdb7d466c7c00e713947}
+      \strng{fullhash}{1630468c28a8fde445ded64dec516bd8}
+      \strng{fullhashraw}{1630468c28a8fde445ded64dec516bd8}
+      \strng{bibnamehash}{1630468c28a8fde445ded64dec516bd8}
+      \strng{authorbibnamehash}{1630468c28a8fde445ded64dec516bd8}
+      \strng{authornamehash}{88b5f12f9f73bdb7d466c7c00e713947}
+      \strng{authorfullhash}{1630468c28a8fde445ded64dec516bd8}
+      \strng{authorfullhashraw}{1630468c28a8fde445ded64dec516bd8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{SSRN}
+      \field{month}{2}
+      \field{note}{Preprint, posted 27 Feb 2026}
+      \field{title}{Biogas production from the anaerobic co-digestion of agro-industrial wastes: operation of a s-{CSTR} reactor under simulated sugarcane season and off-season conditions}
+      \field{year}{2026}
+      \verb{doi}
+      \verb 10.2139/ssrn.6315202
+      \endverb
+      \verb{urlraw}
+      \verb https://ssrn.com/abstract=6315202
+      \endverb
+      \verb{url}
+      \verb https://ssrn.com/abstract=6315202
+      \endverb
+    \endentry
     \entry{albizzati2021}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=c607c594e2a847c8c6311535c1745407}{%
@@ -536,6 +599,50 @@
       \field{pages}{1536}
       \range{pages}{1}
     \endentry
+    \entry{longanesi2016}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1c4ed9817ce87eb50fe420e559c6c4b3}{%
+           family={Longanesi},
+           familyi={L\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Alma Mater Studiorum Università di Bologna}%
+      }
+      \list{location}{1}{%
+        {Bologna, Italy}%
+      }
+      \strng{namehash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{fullhash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{fullhashraw}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{bibnamehash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{authorbibnamehash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{authornamehash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{authorfullhash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{authorfullhashraw}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Dottorato di ricerca in Scienze biochimiche e biotecnologiche, 28 Ciclo}
+      \field{title}{Bioconversion of Agro-Food Wastes into Biofuels and Biobased Chemicals}
+      \field{type}{PhD thesis}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.6092/unibo/amsdottorato/7388
+      \endverb
+      \verb{urlraw}
+      \verb https://amsdottorato.unibo.it/id/eprint/7388
+      \endverb
+      \verb{url}
+      \verb https://amsdottorato.unibo.it/id/eprint/7388
+      \endverb
+    \endentry
     \entry{posmanik2020}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=8da5c7f71a385560a6beeafbb99518b2}{%
@@ -727,6 +834,70 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0956053X18302617
       \endverb
       \keyw{Food waste,Life cycle assessment,Environmental impacts,Bottom-up approach}
+    \endentry
+    \entry{srimachai2025}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1c9208f62305bab3344d55e67c48193b}{%
+           family={Srimachai},
+           familyi={S\bibinitperiod},
+           given={Tussanee},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03c62f12a7b3509b48cb2ac780856c7d}{%
+           family={Thipmunee},
+           familyi={T\bibinitperiod},
+           given={Mathavee},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91de0151defcee093641a8bc2f528789}{%
+           family={Longsoh},
+           familyi={L\bibinitperiod},
+           given={Yakob},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47a37d7072bf8ee2137f6329b94b8b58}{%
+           family={Manaswin},
+           familyi={M\bibinitperiod},
+           given={Peemanas},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd9f0112c60737f52bebeead1a4ca3df}{%
+           family={Rattanadilok\bibnamedelimb Na\bibnamedelima Phuket},
+           familyi={R\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Kiattisak},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7af0f35c468663511d079a6941844a51}
+      \strng{fullhash}{b10679f0688dc931fcf90677a54b745d}
+      \strng{fullhashraw}{b10679f0688dc931fcf90677a54b745d}
+      \strng{bibnamehash}{b10679f0688dc931fcf90677a54b745d}
+      \strng{authorbibnamehash}{b10679f0688dc931fcf90677a54b745d}
+      \strng{authornamehash}{7af0f35c468663511d079a6941844a51}
+      \strng{authorfullhash}{b10679f0688dc931fcf90677a54b745d}
+      \strng{authorfullhashraw}{b10679f0688dc931fcf90677a54b745d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ASEAN Journal of Science and Technology Reports}
+      \field{month}{10}
+      \field{number}{6}
+      \field{title}{Optimization of Hydrogen and Methane Co-production from Co-digestion of Canned Seafood Wastewater with Glycerol Waste in a Two-stage Continuous System: Comparing {CSTR-PFR} and {CSTR-CSTR} reactors}
+      \field{volume}{28}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.55164/ajstr.v28i6.259743
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.55164/ajstr.v28i6.259743
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.55164/ajstr.v28i6.259743
+      \endverb
     \endentry
     \entry{tomczak2025}{article}{}{}
       \name{author}{4}{}{%
@@ -791,6 +962,69 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
+    \entry{aguiar2026}{misc}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=727253c29365ae4d303361072fd98dff}{%
+           family={Aguiar},
+           familyi={A\bibinitperiod},
+           given={Ana\bibnamedelima Beatriz},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5045d44937216745ea2fbe0ddde01810}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Renata},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a67920b967572837b5bad044043b9411}{%
+           family={Fuess},
+           familyi={F\bibinitperiod},
+           given={Lucas\bibnamedelima Tadeu},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28e88dd8f7d5e927fe11cf4b385d4277}{%
+           family={Holm-Nielsen},
+           familyi={H\bibinithyphendelim N\bibinitperiod},
+           given={Jens\bibnamedelima Bo},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8a83416d1ffd7ca286d2b4beebf0085}{%
+           family={Moraes},
+           familyi={M\bibinitperiod},
+           given={Bruna},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{88b5f12f9f73bdb7d466c7c00e713947}
+      \strng{fullhash}{1630468c28a8fde445ded64dec516bd8}
+      \strng{fullhashraw}{1630468c28a8fde445ded64dec516bd8}
+      \strng{bibnamehash}{1630468c28a8fde445ded64dec516bd8}
+      \strng{authorbibnamehash}{1630468c28a8fde445ded64dec516bd8}
+      \strng{authornamehash}{88b5f12f9f73bdb7d466c7c00e713947}
+      \strng{authorfullhash}{1630468c28a8fde445ded64dec516bd8}
+      \strng{authorfullhashraw}{1630468c28a8fde445ded64dec516bd8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{SSRN}
+      \field{month}{2}
+      \field{note}{Preprint, posted 27 Feb 2026}
+      \field{title}{Biogas production from the anaerobic co-digestion of agro-industrial wastes: operation of a s-{CSTR} reactor under simulated sugarcane season and off-season conditions}
+      \field{year}{2026}
+      \verb{doi}
+      \verb 10.2139/ssrn.6315202
+      \endverb
+      \verb{urlraw}
+      \verb https://ssrn.com/abstract=6315202
+      \endverb
+      \verb{url}
+      \verb https://ssrn.com/abstract=6315202
+      \endverb
+    \endentry
     \entry{albizzati2021}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=c607c594e2a847c8c6311535c1745407}{%
@@ -1308,6 +1542,50 @@
       \field{pages}{1536}
       \range{pages}{1}
     \endentry
+    \entry{longanesi2016}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1c4ed9817ce87eb50fe420e559c6c4b3}{%
+           family={Longanesi},
+           familyi={L\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Alma Mater Studiorum Università di Bologna}%
+      }
+      \list{location}{1}{%
+        {Bologna, Italy}%
+      }
+      \strng{namehash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{fullhash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{fullhashraw}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{bibnamehash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{authorbibnamehash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{authornamehash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{authorfullhash}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \strng{authorfullhashraw}{1c4ed9817ce87eb50fe420e559c6c4b3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Dottorato di ricerca in Scienze biochimiche e biotecnologiche, 28 Ciclo}
+      \field{title}{Bioconversion of Agro-Food Wastes into Biofuels and Biobased Chemicals}
+      \field{type}{PhD thesis}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.6092/unibo/amsdottorato/7388
+      \endverb
+      \verb{urlraw}
+      \verb https://amsdottorato.unibo.it/id/eprint/7388
+      \endverb
+      \verb{url}
+      \verb https://amsdottorato.unibo.it/id/eprint/7388
+      \endverb
+    \endentry
     \entry{posmanik2020}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=8da5c7f71a385560a6beeafbb99518b2}{%
@@ -1499,6 +1777,70 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0956053X18302617
       \endverb
       \keyw{Food waste,Life cycle assessment,Environmental impacts,Bottom-up approach}
+    \endentry
+    \entry{srimachai2025}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1c9208f62305bab3344d55e67c48193b}{%
+           family={Srimachai},
+           familyi={S\bibinitperiod},
+           given={Tussanee},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03c62f12a7b3509b48cb2ac780856c7d}{%
+           family={Thipmunee},
+           familyi={T\bibinitperiod},
+           given={Mathavee},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91de0151defcee093641a8bc2f528789}{%
+           family={Longsoh},
+           familyi={L\bibinitperiod},
+           given={Yakob},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47a37d7072bf8ee2137f6329b94b8b58}{%
+           family={Manaswin},
+           familyi={M\bibinitperiod},
+           given={Peemanas},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd9f0112c60737f52bebeead1a4ca3df}{%
+           family={Rattanadilok\bibnamedelimb Na\bibnamedelima Phuket},
+           familyi={R\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Kiattisak},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7af0f35c468663511d079a6941844a51}
+      \strng{fullhash}{b10679f0688dc931fcf90677a54b745d}
+      \strng{fullhashraw}{b10679f0688dc931fcf90677a54b745d}
+      \strng{bibnamehash}{b10679f0688dc931fcf90677a54b745d}
+      \strng{authorbibnamehash}{b10679f0688dc931fcf90677a54b745d}
+      \strng{authornamehash}{7af0f35c468663511d079a6941844a51}
+      \strng{authorfullhash}{b10679f0688dc931fcf90677a54b745d}
+      \strng{authorfullhashraw}{b10679f0688dc931fcf90677a54b745d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ASEAN Journal of Science and Technology Reports}
+      \field{month}{10}
+      \field{number}{6}
+      \field{title}{Optimization of Hydrogen and Methane Co-production from Co-digestion of Canned Seafood Wastewater with Glycerol Waste in a Two-stage Continuous System: Comparing {CSTR-PFR} and {CSTR-CSTR} reactors}
+      \field{volume}{28}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.55164/ajstr.v28i6.259743
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.55164/ajstr.v28i6.259743
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.55164/ajstr.v28i6.259743
+      \endverb
     \endentry
     \entry{tomczak2025}{article}{}{}
       \name{author}{4}{}{%

@@ -139,13 +139,16 @@ type={units}}%
 
 \bibglsnewsymbol{volume}%
 {symbol={v},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{36}},
 sort={16|},
 type={units}}%
 {v}%
 {Volume}
 \glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}}
+\glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}
+\glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{31}}
+\glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{36}}
 
 
 \bibglsnewsymbol{molarity}%

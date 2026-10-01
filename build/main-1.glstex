@@ -19,17 +19,17 @@
 
 \bibglsnewsymbol{ca_hco3}%
 {symbol={\ce{Ca(HCO3)2}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}},
 sort={Ca|HCO3|2|},
 type={symbols}}%
 {\ce{Ca(HCO3)2}}%
 {Calcium bicarbonate; buffering agent added to the feed on day 0.}
-\glsxtrfieldlistadd{ca_hco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
+\glsxtrfieldlistadd{ca_hco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
 
 
 \bibglsnewsymbol{ch4}%
 {symbol={\ce{CH4}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{4}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{7}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{21}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{4}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{7}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{21}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
 sort={CH4|},
 type={symbols}}%
 {\ce{CH4}}%
@@ -46,15 +46,18 @@ type={symbols}}%
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{21}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{22}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{24}}
-\glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{29}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{31}}
+\glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{32}}
 \glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
+\glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{34}}
+\glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{35}}
+\glsxtrfieldlistadd{ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{37}}
 
 
 \bibglsnewsymbol{cn_ratio}%
 {symbol={C/N},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{v}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{v}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
 sort={cn\bibglsunderscorechar ratio|},
 type={symbols}}%
 {C/N}%
@@ -62,43 +65,46 @@ type={symbols}}%
 \glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{v}}
 \glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
-\glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
+\glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{35}}
+\glsxtrfieldlistadd{cn_ratio}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{37}}
 
 
 \bibglsnewsymbol{co2}%
 {symbol={\ce{CO2}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{15}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{15}},
 sort={CO2|},
 type={symbols}}%
 {\ce{CO2}}%
 {Carbon dioxide.}
 \glsxtrfieldlistadd{co2}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
+\glsxtrfieldlistadd{co2}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
 \glsxtrfieldlistadd{co2}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{15}}
 
 
 \bibglsnewsymbol{glucose}%
 {symbol={\ce{C6H12O6}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}},
 sort={glucose|},
 type={symbols}}%
 {\ce{C6H12O6}}%
 {Glucose; simple sugar added to the feed on day 0 as a readily
                  degradable carbon source.}
-\glsxtrfieldlistadd{glucose}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
+\glsxtrfieldlistadd{glucose}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
 
 
 \bibglsnewsymbol{khco3}%
 {symbol={\ce{KHCO3}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
 sort={KHCO3|},
 type={symbols}}%
 {\ce{KHCO3}}%
 {Potassium bicarbonate; buffering agent added to the feed.}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
+\glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{17}}
 \glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{28}}
-\glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
+\glsxtrfieldlistadd{khco3}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{37}}
 
 
 \bibglsnewsymbol{o2}%
@@ -123,7 +129,7 @@ type={symbols}}%
 
 \bibglsnewsymbol{vfa_alk}%
 {symbol={\gls{vfa}/\gls{alk}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
 sort={VFA|alkalinity|},
 type={symbols}}%
 {\gls{vfa}/\gls{alk}}%
@@ -133,17 +139,21 @@ type={symbols}}%
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{28}}
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{29}}
-\glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
+\glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{35}}
+\glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{37}}
 
 
 \bibglsnewsymbol{vpv}%
 {symbol={\gls{volume}/\gls{volume}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{36}},
 sort={vpv|},
 type={symbols}}%
 {\gls{volume}/\gls{volume}}%
 {Volume per Volume}
 \glsxtrfieldlistadd{vpv}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{vpv}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}}
+\glsxtrfieldlistadd{vpv}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}
+\glsxtrfieldlistadd{vpv}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{31}}
+\glsxtrfieldlistadd{vpv}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{36}}
 
 

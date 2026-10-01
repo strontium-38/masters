@@ -47,6 +47,8 @@ local units = {
   ["\\NaOH"]         = "NaOH",
   ["\\CO"]           = "CO_{2}",
   ["\\CH"]           = "CH_{4}",
+  ["\\COD"]          = "COD",
+  ["\\NL"]           = "NL",
 }
 
 local function read_macro(s, i)
