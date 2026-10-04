@@ -52,18 +52,14 @@
 }
 
 \bibglsnewabbreviation{ad}%
-{description={A biological process in which microorganisms break down
-                 organic matter in the absence of oxygen, producing biogas.},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{7}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
 sort={AD|},
 type={abbreviations}}%
 {AD}%
 {anaerobic digestion}
-\glsxtrfieldlistadd{ad}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}}
 \glsxtrfieldlistadd{ad}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{ad}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}}
 \glsxtrfieldlistadd{ad}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
-\glsxtrfieldlistadd{ad}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{7}}
 \glsxtrfieldlistadd{ad}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
 \glsxtrfieldlistadd{ad}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{24}}
 \glsxtrfieldlistadd{ad}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}
@@ -71,13 +67,12 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{alk}%
-{description={Buffering capacity of the digester, expressed as \unit{\milli\gram\CaCO\per\litre}.},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{8}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{27}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{8}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{27}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
 sort={Alk|},
 type={abbreviations}}%
 {Alk}%
 {alkalinity}
-\glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}}
+\glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
 \glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{8}}
 \glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
@@ -89,24 +84,23 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{ampts}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{15}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}},
 sort={AMPTS|II|},
 type={abbreviations}}%
 {AMPTS II}%
 {Automatic Methane Potential Test System}
-\glsxtrfieldlistadd{ampts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}}
+\glsxtrfieldlistadd{ampts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{ampts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
-\glsxtrfieldlistadd{ampts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{15}}
 \glsxtrfieldlistadd{ampts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
 
 
 \bibglsnewabbreviation{cgl}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{1}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{8}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{12}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{21}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{26}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{1}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{8}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{12}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{21}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{26}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{28}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
 sort={C-GL|},
 type={abbreviations}}%
 {C-GL}%
 {crude glycerol}
-\glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}}
+\glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{1}}
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{3}}
@@ -123,9 +117,7 @@ type={abbreviations}}%
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{21}}
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{22}}
-\glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{23}}
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{24}}
-\glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{25}}
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{26}}
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{28}}
 \glsxtrfieldlistadd{cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}
@@ -136,13 +128,12 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{cstr}%
-{description={A reactor with continuous mixing and feeding, typically
-                 used for liquid anaerobic digestion.},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{8}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{13}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{8}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{13}},
 sort={CSTR|},
 type={abbreviations}}%
 {CSTR}%
 {continuous stirred-tank reactor}
+\glsxtrfieldlistadd{cstr}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{cstr}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}}
 \glsxtrfieldlistadd{cstr}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
 \glsxtrfieldlistadd{cstr}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{8}}
@@ -159,12 +150,12 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{fw}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{1}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{3}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{12}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{1}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{3}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{12}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{19}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{24}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
 sort={FW|},
 type={abbreviations}}%
 {FW}%
 {food waste}
-\glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}}
+\glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{1}}
 \glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{3}}
@@ -178,7 +169,6 @@ type={abbreviations}}%
 \glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
 \glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
 \glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{22}}
-\glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{23}}
 \glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{24}}
 \glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{31}}
 \glsxtrfieldlistadd{fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{35}}
@@ -206,11 +196,12 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{hrt}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{13}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{14}},
 sort={HRT|},
 type={abbreviations}}%
 {HRT}%
 {hydraulic retention time}
+\glsxtrfieldlistadd{hrt}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{hrt}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}}
 \glsxtrfieldlistadd{hrt}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{14}}
 
@@ -265,20 +256,22 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{tc}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{12}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{12}},
 sort={TC|},
 type={abbreviations}}%
 {TC}%
 {total carbon}
+\glsxtrfieldlistadd{tc}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{tc}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{12}}
 
 
 \bibglsnewabbreviation{tn}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{12}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{12}},
 sort={TN|},
 type={abbreviations}}%
 {TN}%
 {total nitrogen}
+\glsxtrfieldlistadd{tn}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{tn}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{10}}
 \glsxtrfieldlistadd{tn}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{12}}
 
@@ -293,11 +286,12 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{ts}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{11}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{11}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{17}},
 sort={TS|},
 type={abbreviations}}%
 {TS}%
 {total solids}
+\glsxtrfieldlistadd{ts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{ts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{10}}
 \glsxtrfieldlistadd{ts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{11}}
 \glsxtrfieldlistadd{ts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
@@ -305,14 +299,12 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{vfa}%
-{description={Intermediate products of anaerobic digestion that can
-                 inhibit methanogenesis at high concentrations.},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{3}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{8}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{27}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{3}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{8}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{16}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{22}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{27}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{29}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{35}\delimR \glsnoidxdisplayloc{}{page}{glsnumberformat}{37}},
 sort={VFA|},
 type={abbreviations}}%
 {VFA}%
 {volatile fatty acid}
-\glsxtrfieldlistadd{vfa}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iii}}
+\glsxtrfieldlistadd{vfa}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{vfa}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
 \glsxtrfieldlistadd{vfa}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{3}}
 \glsxtrfieldlistadd{vfa}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}}
@@ -330,11 +322,12 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{vs}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{11}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{11}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{30}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{31}},
 sort={VS|},
 type={abbreviations}}%
 {VS}%
 {volatile solids}
+\glsxtrfieldlistadd{vs}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{vs}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{10}}
 \glsxtrfieldlistadd{vs}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{11}}
 \glsxtrfieldlistadd{vs}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{30}}
@@ -342,11 +335,12 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{wwtp}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{5}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}},
 sort={WWTP|},
 type={abbreviations}}%
 {WWTP}%
 {wastewater treatment plant}
+\glsxtrfieldlistadd{wwtp}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{viii}}
 \glsxtrfieldlistadd{wwtp}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{5}}
 \glsxtrfieldlistadd{wwtp}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
 

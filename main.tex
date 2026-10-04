@@ -46,11 +46,14 @@
 % \printunsrtglossary[type=units,         title={List of Units}]
 \glstoctrue
 
+\glsresetall
+
 % Abstract, acknowledgements (optional)
 \include{sections/frontmatter/acknowledgements}
 \include{sections/frontmatter/abstract}
 
 % Resumo — Portuguese number formatting, local to this include
+\begin{otherlanguage}{portuguese}
 \begingroup
   \sisetup{
       output-decimal-marker={,},
@@ -60,10 +63,13 @@
   }
   \include{sections/frontmatter/resumo}
 \endgroup
+\end{otherlanguage}
 
 % Main matter
 \pagenumbering{arabic}
 \setcounter{page}{1}
+
+\glsresetall
 
 % Chapters
 \include{sections/chapters/01_introduction}

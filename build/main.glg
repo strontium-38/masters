@@ -33,8 +33,17 @@ Reading build/sections/chapters/06_conclusion.aux
 Encoding: UTF-8
 TeX character encoding: UTF-8
 Initialising resource main.glstex.
+Resource locale: en_GB.
 Initialising resource main-1.glstex.
+Resource locale: en_GB.
 Initialising resource main-2.glstex.
+Resource locale: en_GB.
+Initialising resource main-3.glstex.
+Resource locale: pt_PT.
+Initialising resource main-4.glstex.
+Resource locale: pt_PT.
+Initialising resource main-5.glstex.
+Resource locale: pt_PT.
 Parsing bib files for resource main.glstex.
 Default encoding: not set
 Assuming encoding: UTF-8
@@ -50,6 +59,21 @@ Default encoding: not set
 Assuming encoding: UTF-8
 Reading glossaries/units.bib
 Encoding: UTF-8
+Parsing bib files for resource main-3.glstex.
+Default encoding: not set
+Assuming encoding: UTF-8
+Reading glossaries/abbreviations.bib
+Encoding: UTF-8
+Parsing bib files for resource main-4.glstex.
+Default encoding: not set
+Assuming encoding: UTF-8
+Reading glossaries/symbols.bib
+Encoding: UTF-8
+Parsing bib files for resource main-5.glstex.
+Default encoding: not set
+Assuming encoding: UTF-8
+Reading glossaries/units.bib
+Encoding: UTF-8
 Cross-resource references allowed.
 Processing resource main.glstex.
 Processing resource main-1.glstex.
@@ -57,22 +81,27 @@ Warning: Entry 'vfa_alk' has potentially nested link text in field: name
 Consider using \glsps{vfa} or \glspt{vfa} instead of \gls{vfa}
 Warning: Entry 'vfa_alk' has potentially nested link text in field: name
 Consider using \glsps{alk} or \glspt{alk} instead of \gls{alk}
-Warning: Entry 'vfa_alk' has potentially nested link text in field: symbol
-Consider using \glsps{vfa} or \glspt{vfa} instead of \gls{vfa}
-Warning: Entry 'vfa_alk' has potentially nested link text in field: symbol
-Consider using \glsps{alk} or \glspt{alk} instead of \gls{alk}
 Added dependent: vfa
 Added dependent: alk
 Warning: Entry 'vpv' has potentially nested link text in field: name
 Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
 Warning: Entry 'vpv' has potentially nested link text in field: name
 Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
-Warning: Entry 'vpv' has potentially nested link text in field: symbol
-Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
-Warning: Entry 'vpv' has potentially nested link text in field: symbol
-Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
 Added dependent: volume
 Processing resource main-2.glstex.
+Processing resource main-3.glstex.
+Processing resource main-4.glstex.
+Warning: Entry 'pt.vfa_alk' has potentially nested link text in field: name
+Consider using \glsps{pt.vfa} or \glspt{pt.vfa} instead of \gls{pt.vfa}
+Warning: Entry 'pt.vfa_alk' has potentially nested link text in field: name
+Consider using \glsps{pt.alk} or \glspt{pt.alk} instead of \gls{pt.alk}
+Added dependent: pt.vfa
+Added dependent: pt.alk
+Warning: Entry 'pt.vpv' has potentially nested link text in field: name
+Consider using \glsps{pt.volume} or \glspt{pt.volume} instead of \gls{pt.volume}
+Warning: Entry 'pt.vpv' has potentially nested link text in field: name
+Consider using \glsps{pt.volume} or \glspt{pt.volume} instead of \gls{pt.volume}
+Processing resource main-5.glstex.
 Selecting entries for resource main.glstex.
 Writing build/./main.glstex
 Encoding: UTF-8
@@ -136,4 +165,50 @@ volume
 molarity
 gforce
 18 entries written to build/./main-2.glstex.
-48 entries written in total.
+Selecting entries for resource main-3.glstex.
+Writing build/./main-3.glstex
+Encoding: UTF-8
+pt.vfa
+pt.alk
+pt.ampts
+pt.cstr
+pt.tc
+pt.wwtp
+pt.cgl
+pt.tn
+pt.fw
+pt.ts
+pt.vs
+pt.hrt
+12 entries written to build/./main-3.glstex.
+Selecting entries for resource main-4.glstex.
+Added dependent: pt.vfa
+Added dependent: pt.alk
+Writing build/./main-4.glstex
+Encoding: UTF-8
+pt.ch4
+pt.vfa_alk
+2 entries written to build/./main-4.glstex.
+Selecting entries for resource main-5.glstex.
+Writing build/./main-5.glstex
+Encoding: UTF-8
+pt.mega
+pt.kilo
+pt.milli
+pt.tonne
+pt.gram
+pt.litre
+pt.metre
+pt.percent
+pt.degC
+pt.minute
+pt.hour
+pt.day
+pt.year
+pt.dil
+pt.nml
+pt.volume
+pt.molarity
+pt.gforce
+18 entries written to build/./main-5.glstex.
+80 entries written in total.

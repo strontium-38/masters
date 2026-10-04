@@ -38,7 +38,7 @@ type={units}}%
 sort={03|},
 type={units}}%
 {m}%
-{Milli prefix (10\textsuperscript{-3})}
+{milli prefix (10\textsuperscript{-3})}
 
 
 \bibglsnewsymbol{tonne}%
@@ -46,7 +46,7 @@ type={units}}%
 sort={04|},
 type={units}}%
 {\unit{\tonne}}%
-{metric tonne (10\textsuperscript{3}\,\unit{\kilo\gram})}
+{metric tonne (\qty[exponent-mode = scientific]{1000}{\kilo\gram})}
 
 
 \bibglsnewsymbol{gram}%
@@ -156,7 +156,7 @@ type={units}}%
 sort={17|},
 type={units}}%
 {\unit{\molar}}%
-{molarity (mol of solute per litre of solution)}
+{molarity}
 
 
 \bibglsnewsymbol{gforce}%

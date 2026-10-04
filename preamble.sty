@@ -31,7 +31,10 @@
 \onehalfspacing                   % 1.5 line spacing
 
 % ----- Language -----
-\usepackage[english]{babel}
+\usepackage{babel}
+\babelprovide[import, main]{english}
+\babelprovide[import]{portuguese}
+
 \usepackage{datetime}
 \usepackage{csquotes}
 
@@ -165,21 +168,92 @@
   nohypertypes={symbols,units},
 ]{glossaries-extra}
 
+% English types
+\newglossary*{abbreviations}{Abbreviations}
+\newglossary*{symbols}{Symbols}
 \newglossary*{units}{Units}
 
+% Portuguese types
+\newglossary*{abbreviations-pt}{Abreviaturas}
+\newglossary*{symbols-pt}{Símbolos}
+\newglossary*{units-pt}{Unidades}
+
+% ----- English resource sets -----
 \GlsXtrLoadResources[
   src = {glossaries/abbreviations},
   type = abbreviations,
-  selection = {recorded and deps},   % only used (recorded) entries
+  selection = {recorded and deps},
+  locale = {en-GB},
+  field-aliases = {short-en=short, long-en=long}
 ]
 \GlsXtrLoadResources[
   src = {glossaries/symbols},
   type = symbols,
   selection = {recorded and deps},
+  locale = {en-GB},
+  field-aliases = {name-en=name, symbol-en=symbol, description-en=description}
 ]
 \GlsXtrLoadResources[
   src = {glossaries/units},
   type = units,
   selection = {all},
-  sort      = {def},
+  sort = {def},
+  locale = {en-GB},
+  field-aliases = {name-en=name, symbol-en=symbol, description-en=description}
 ]
+
+% ----- Portuguese resource sets -----
+\GlsXtrLoadResources[
+  src = {glossaries/abbreviations},
+  type = abbreviations-pt,
+  selection = {recorded and deps},
+  locale = {pt-PT},
+  label-prefix = {pt.},
+  field-aliases = {short-pt=short, long-pt=long}
+]
+\GlsXtrLoadResources[
+  src = {glossaries/symbols},
+  type = symbols-pt,
+  selection = {recorded and deps},
+  locale = {pt-PT},
+  label-prefix = {pt.},
+  field-aliases = {name-pt=name, symbol-pt=symbol, description-pt=description}
+]
+\GlsXtrLoadResources[
+  src = {glossaries/units},
+  type = units-pt,
+  selection = {all},
+  sort = {def},
+  locale = {pt-PT},
+  label-prefix = {pt.},
+  field-aliases = {name-pt=name, symbol-pt=symbol, description-pt=description}
+]
+
+% Automatic language-switching glossary commands
+\newcommand{\glsauto}[1]{%
+  \iflanguage{portuguese}{\gls{pt.#1}}{\gls{#1}}%
+}
+\newcommand{\glsplauto}[1]{%
+  \iflanguage{portuguese}{\glspl{pt.#1}}{\glspl{#1}}%
+}
+\newcommand{\Glsauto}[1]{%
+  \iflanguage{portuguese}{\Gls{pt.#1}}{\Gls{#1}}%
+}
+\newcommand{\Glsplauto}[1]{%
+  \iflanguage{portuguese}{\Glspl{pt.#1}}{\Glspl{#1}}%
+}
+\newcommand{\glsentrylongauto}[1]{%
+  \iflanguage{portuguese}{\glsentrylong{pt.#1}}{\glsentrylong{#1}}%
+}
+\newcommand{\glsentryshortauto}[1]{%
+  \iflanguage{portuguese}{\glsentryshort{pt.#1}}{\glsentryshort{#1}}%
+}
+\newcommand{\Glsentrylongauto}[1]{%
+  \iflanguage{portuguese}{\Glsentrylong{pt.#1}}{\Glsentrylong{#1}}%
+}
+\newcommand{\Glsentryshortauto}[1]{%
+  \iflanguage{portuguese}{\Glsentryshort{pt.#1}}{\Glsentryshort{#1}}%
+}
+\newcommand{\glsentrysymbolauto}[1]{%
+  \iflanguage{portuguese}{\glsentrysymbol{pt.#1}}{\glsentrysymbol{#1}}%
+}

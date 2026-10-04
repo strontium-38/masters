@@ -25,7 +25,7 @@ The reactor was inoculated with anaerobic sludge and initially contained a murky
     \label{fig:reactor_visual}
 \end{figure}
 
-At the end of the experimental period, after approximately two weeks of unattended operation, four discrete masses resembling fungal colonies were observed on the internal surfaces of the reactor during cleaning (\Cref{fig:masses-dry,fig:masses-wet}). The origin of these growths is uncertain, but they may have been introduced via the \gls{fw} feed or during periods when the feeding tube was opened for repairs (e.g. leaks) and when changing the feed that the tube had to be cleaned. The presence of such organisms could have competed with the anaerobic microbial community for substrate, potentially affecting biogas production in the later stages of the experiment.
+At the end of the experimental period, after approximately two weeks of unattended operation, four discrete masses resembling fungal colonies were observed on the internal surfaces of the reactor during cleaning (\Cref{fig:masses-dry,fig:masses-wet}). The origin of these growths is uncertain, but they may have been introduced via the \glsauto{fw} feed or during periods when the feeding tube was opened for repairs (e.g. leaks) and when changing the feed that the tube had to be cleaned. The presence of such organisms could have competed with the anaerobic microbial community for substrate, potentially affecting biogas production in the later stages of the experiment.
 
 \begin{figure}[H]
     \centering
@@ -49,18 +49,18 @@ At the end of the experimental period, after approximately two weeks of unattend
 \section{Biogas Production}
 \label{sec:biogas_production}
 
-Biogas production was monitored continuously using \gls{ampts}, which recorded both the cumulative volume of \gls{ch4} produced and the instantaneous flow rate. The entire experimental period is summarised in \Cref{graph:total-accumulation,graph:total-flow}. To facilitate interpretation, the data have been divided into four distinct phases based on the feeding regime: (i) an adaptation phase~\ref{subsec:adaptation_phase}, (ii) co-digestion of food waste and glycerol~\ref{subsec:codigestion_phase}, (iii) digestion of crude glycerol~\ref{subsec:glycerol_phase}, and (iv) a post-feeding period~\ref{subsec:post_feeding}.
+Biogas production was monitored continuously using \glsauto{ampts}, which recorded both the cumulative volume of \glsauto{ch4} produced and the instantaneous flow rate. The entire experimental period is summarised in \Cref{graph:total-accumulation,graph:total-flow}. To facilitate interpretation, the data have been divided into four distinct phases based on the feeding regime: (i) an adaptation phase~\ref{subsec:adaptation_phase}, (ii) co-digestion of food waste and glycerol~\ref{subsec:codigestion_phase}, (iii) digestion of crude glycerol~\ref{subsec:glycerol_phase}, and (iv) a post-feeding period~\ref{subsec:post_feeding}.
 
 \subsection{Overall Production}
 \label{subsec:overall_production}
 
-The cumulative \gls{ch4} production over the whole experiment (\Cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\Cref{graph:total-flow}) exhibits distinct peaks corresponding to daily production of \gls{ch4}, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day \num{53}, that was when the feed was changed from a mixture of \gls{fw} and \gls{cgl}, to only \gls{cgl}, and due to some complications, created an anomaly in the graph.
+The cumulative \glsauto{ch4} production over the whole experiment (\Cref{graph:total-accumulation}) shows a continuous increase, indicating that the reactor maintained methanogenic activity throughout the monitored period. The total flow profile (\Cref{graph:total-flow}) exhibits distinct peaks corresponding to daily production of \glsauto{ch4}, with variations in amplitude reflecting the different substrate compositions and organic loading rates applied during each phase. And a outlier peak at day \num{53}, that was when the feed was changed from a mixture of \glsauto{fw} and \glsauto{cgl}, to only \glsauto{cgl}, and due to some complications, created an anomaly in the graph.
 
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{0}{97}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
-    \caption{Cumulative volume of \ce{CH4} \unit{\nml}}
+    \caption{Cumulative volume of \glsentrysymbolauto{ch4} \unit{\nml}}
     \label{graph:total-accumulation}
 \end{figure}
 
@@ -68,22 +68,22 @@ The cumulative \gls{ch4} production over the whole experiment (\Cref{graph:total
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{0}{97}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
-    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day}}
+    \caption{Volume flow of \glsentrysymbolauto{ch4} \unit{\nml\per\day}}
     \label{graph:total-flow}
 \end{figure}
 
 \subsection{Adaptation Phase}
 \label{subsec:adaptation_phase}
 
-During the initial adaptation phase, biogas production was low (\Cref{graph:pre-accumulation,graph:pre-flow}). This lag period is normal for anaerobic reactors as the microbial community adjusts to the new substrate and operating conditions. The small but measurable \gls{ch4} flow confirmed that the viability of the inoculum, and the gradual increase in flow suggested the onset of exponential growth of the microorganisms.
+During the initial adaptation phase, biogas production was low (\Cref{graph:pre-accumulation,graph:pre-flow}). This lag period is normal for anaerobic reactors as the microbial community adjusts to the new substrate and operating conditions. The small but measurable \glsauto{ch4} flow confirmed that the viability of the inoculum, and the gradual increase in flow suggested the onset of exponential growth of the microorganisms.
 
-The spikes seen on the days \num{8} and \num{10} (\Cref{graph:pre-flow}) probably happended by the first addition of \gls{cgl} to the feed.
+The spikes seen on the days \num{8} and \num{10} (\Cref{graph:pre-flow}) probably happended by the first addition of \glsauto{cgl} to the feed.
 
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{0}{24}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
-    \caption{Cumulative volume of \ce{CH4} \unit{\nml} (Adaptation Phase)}
+    \caption{Cumulative volume of \glsentrysymbolauto{ch4} \unit{\nml} (Adaptation Phase)}
     \label{graph:pre-accumulation}
 \end{figure}
 
@@ -91,20 +91,20 @@ The spikes seen on the days \num{8} and \num{10} (\Cref{graph:pre-flow}) probabl
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{0}{24}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
-    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day} (Adaptation Phase)}
+    \caption{Volume flow of \glsentrysymbolauto{ch4} \unit{\nml\per\day} (Adaptation Phase)}
     \label{graph:pre-flow}
 \end{figure}
 
 \subsection{Co-digestion of Food Waste and Crude Glycerol}
 \label{subsec:codigestion_phase}
 
-The reactor was fed with a mixture of \gls{fw} and \gls{cgl}, a marked increase in biogas production was observed (\Cref{graph:ra-accumulation,graph:ra-flow}). The cumulative \gls{ch4} volume rose steeply, and the flow rate showed pronounced spikes immediately after each feeding event (\Cref{graph:ra-flow-30}). These spikes are typical of readily degradable substrates, which are quickly hydrolysed and converted to \gls{vfa} and subsequently to \gls{ch4}. The average flow rate during this phase was higher than in any other phase, indicating that the co-digestion of \gls{fw} and \gls{cgl} provided a balanced nutrient supply and avoided the inhibition often associated with high \gls{gl} concentrations alone.
+The reactor was fed with a mixture of \glsauto{fw} and \glsauto{cgl}, a marked increase in biogas production was observed (\Cref{graph:ra-accumulation,graph:ra-flow}). The cumulative \glsauto{ch4} volume rose steeply, and the flow rate showed pronounced spikes immediately after each feeding event (\Cref{graph:ra-flow-30}). These spikes are typical of readily degradable substrates, which are quickly hydrolysed and converted to \glsauto{vfa} and subsequently to \glsauto{ch4}. The average flow rate during this phase was higher than in any other phase, indicating that the co-digestion of \glsauto{fw} and \glsauto{cgl} provided a balanced nutrient supply and avoided the inhibition often associated with high \glsauto{gl} concentrations alone.
 
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{25}{52}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
-    \caption{Cumulative volume of \ce{CH4} \unit{\nml} (co-digestion of \gls{fw} and \gls{cgl})}
+    \caption{Cumulative volume of \glsentrysymbolauto{ch4} \unit{\nml} (co-digestion of \glsentrylongauto{fw} and \glsentrylongauto{cgl})}
     \label{graph:ra-accumulation}
 \end{figure}
 
@@ -112,7 +112,7 @@ The reactor was fed with a mixture of \gls{fw} and \gls{cgl}, a marked increase 
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{25}{52}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
-    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day} (co-digestion of \gls{fw} and \gls{cgl})}
+    \caption{Volume flow of \glsentrysymbolauto{ch4} \unit{\nml\per\day} (co-digestion of \glsentrylongauto{fw} and \glsentrylongauto{cgl})}
     \label{graph:ra-flow}
 \end{figure}
 
@@ -120,27 +120,27 @@ The reactor was fed with a mixture of \gls{fw} and \gls{cgl}, a marked increase 
     \centering
     \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
         {data/processed/experimentos-30min.csv}{600}{1248.75}{Time (\unit{\hour})}{Flow (\unit{\nml\per\hour})}{}
-    \caption{Volume flow of \ce{CH4} \unit{\nml\per\hour} (co-digestion of \gls{fw} and \gls{cgl})}
+    \caption{Volume flow of \glsentrysymbolauto{ch4} \unit{\nml\per\hour} (co-digestion of \glsentrylongauto{fw} and \glsentrylongauto{cgl})}
     \label{graph:ra-flow-30}
 \end{figure}
 
 \subsection{Digestion of Crude Glycerol}
 \label{subsec:glycerol_phase}
 
-When the feed was changed to \gls{cgl} alone, biogas production decreased (\Cref{graph:gl-accumulation,graph:gl-flow}). Although spikes in the flow were still observed after feeding (\Cref{graph:gl-flow-30}), their magnitude was bigger than during the co-digestion phase, and the cumulative \gls{ch4} volume plateaued more quickly. Several factors may explain this lower performance:
+When the feed was changed to \glsauto{cgl} alone, biogas production decreased (\Cref{graph:gl-accumulation,graph:gl-flow}). Although spikes in the flow were still observed after feeding (\Cref{graph:gl-flow-30}), their magnitude was bigger than during the co-digestion phase, and the cumulative \glsauto{ch4} volume plateaued more quickly. Several factors may explain this lower performance:
 \begin{itemize}
-    \item The \gls{gl} could have been transformed to fast or too slow, to maintaing a concentration of intermediate products.
+    \item The \glsauto{gl} could have been transformed to fast or too slow, to maintaing a concentration of intermediate products.
     \item The retention rate of $\frac{1}{30}\,\unit{\per\day}$ may have been insufficient to wash out inhibitory by-products or to maintain a stable population of glycerol fermenting bacteria.
-    \item The appearance of fungal masses towards the end of this phase could have further stressed the anaerobic community by competing for substrate or introducing toxic metabolites. The fungal masses could have helped digest more complex sugars, so without a more thorough investigation of what it was, it can't be said it didn't help the \gls{ad} system.
+    \item The appearance of fungal masses towards the end of this phase could have further stressed the anaerobic community by competing for substrate or introducing toxic metabolites. The fungal masses could have helped digest more complex sugars, so without a more thorough investigation of what it was, it can't be said it didn't help the \glsauto{ad} system.
 \end{itemize}
 
-For those factors, can't be said that this phase is worse than the co-digestion phase. If the experiment was done in reverse, it's likely that we would have seen a reverse on the results, were the phase with only \gls{cgl} would have a bigger production than the co-digestion of \gls{fw} and \gls{cgl}.
+For those factors, can't be said that this phase is worse than the co-digestion phase. If the experiment was done in reverse, it's likely that we would have seen a reverse on the results, were the phase with only \glsauto{cgl} would have a bigger production than the co-digestion of \glsauto{fw} and \glsauto{cgl}.
 
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{53}{81}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
-    \caption{Cumulative volume of \ce{CH4} \unit{\nml} (Anaerobic digestion of \gls{cgl})}
+    \caption{Cumulative volume of \glsentrysymbolauto{ch4} \unit{\nml} (Anaerobic digestion of \glsentrylongauto{cgl})}
     \label{graph:gl-accumulation}
 \end{figure}
 
@@ -148,7 +148,7 @@ For those factors, can't be said that this phase is worse than the co-digestion 
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{53}{81}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
-    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day} (Anaerobic digestion of \gls{cgl})}
+    \caption{Volume flow of \glsentrysymbolauto{ch4} \unit{\nml\per\day} (Anaerobic digestion of \glsentrylongauto{cgl})}
     \label{graph:gl-flow}
 \end{figure}
 
@@ -156,20 +156,20 @@ For those factors, can't be said that this phase is worse than the co-digestion 
     \centering
     \FlowGraph[xtick distance=100, minor xtick={1,2,...,97}]
         {data/processed/experimentos-30min.csv}{1272}{1941.5}{Time (\unit{\hour})}{Flow (\unit{\nml\per\hour})}{}
-    \caption{Volume flow of \ce{CH4} \unit{\nml\per\hour} (Anaerobic digestion of \gls{cgl})}
+    \caption{Volume flow of \glsentrysymbolauto{ch4} \unit{\nml\per\hour} (Anaerobic digestion of \glsentrylongauto{cgl})}
     \label{graph:gl-flow-30}
 \end{figure}
 
 \subsection{Post-feeding Period}
 \label{subsec:post_feeding}
 
-During the final two weeks, no fresh substrate was added to the reactor, it just had some residual substrate from the \gls{cgl} only phase for a week. Nevertheless, a small residual biogas production was recorded (\Cref{graph:extra-accumulation,graph:extra-flow}). This production can be attributed to the slow degradation of accumulated organic matter and microbial decay products. The flow rate declined gradually, confirming that the reactor was no longer being actively fed and that the remaining substrate was limited.
+During the final two weeks, no fresh substrate was added to the reactor, it just had some residual substrate from the \glsauto{cgl} only phase for a week. Nevertheless, a small residual biogas production was recorded (\Cref{graph:extra-accumulation,graph:extra-flow}). This production can be attributed to the slow degradation of accumulated organic matter and microbial decay products. The flow rate declined gradually, confirming that the reactor was no longer being actively fed and that the remaining substrate was limited.
 
 \begin{figure}[H]
     \centering
     \VolumeGraphInt[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{82}{97}{Time (\unit{\day})}{Volume (\unit{\nml})}{}
-    \caption{Cumulative volume of \ce{CH4} \unit{\nml} (Post-feeding period)}
+    \caption{Cumulative volume of \glsentrysymbolauto{ch4} \unit{\nml} (Post-feeding period)}
     \label{graph:extra-accumulation}
 \end{figure}
 
@@ -177,16 +177,16 @@ During the final two weeks, no fresh substrate was added to the reactor, it just
     \centering
     \FlowGraph[xtick distance=10, minor xtick={1,2,...,97}]
         {data/processed/experimentos-day.csv}{82}{97}{Time (\unit{\day})}{Flow (\unit{\nml\per\day})}{}
-    \caption{Volume flow of \ce{CH4} \unit{\nml\per\day} (Post-feeding period)}
+    \caption{Volume flow of \glsentrysymbolauto{ch4} \unit{\nml\per\day} (Post-feeding period)}
     \label{graph:extra-flow}
 \end{figure}
 
 \subsection{Alkalinity and Volatile Fatty Acids}
 \label{subsec:alkalinity_vfa}
 
-The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the experiment to assess process stability. The results are shown in \Cref{graph:alkalinity_vfa}. Initially, both \gls{alk} and \gls{vfa} were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of \gls{khco3}, \gls{alk} increased sharply to values above \qty{7000}{\milli\gram\CaCO\per\litre} and remained relatively high until close to the end. This high \gls{alk} was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
+The total \glsauto{alk} and \glsauto{vfa} concentrations were monitored throughout the experiment to assess process stability. The results are shown in \Cref{graph:alkalinity_vfa}. Initially, both \glsauto{alk} and \glsauto{vfa} were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of \glsauto{khco3}, \glsauto{alk} increased sharply to values above \qty{7000}{\milli\gram\CaCO\per\litre} and remained relatively high until close to the end. This high \glsauto{alk} was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the feed.
 
-\Glsentrylong{vfa} concentrations also increased after the start of feeding, reaching values between \numrange{3000}{5000} \unit{\milli\gram\CHCOOH\per\litre}. Such high \gls{vfa} levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high \gls{alk} provided a strong buffering capacity, and the pH remained above \num{6.5} for most of the experiment, with the co-digestion the pH was falling and with \gls{cgl} only the pH was increasing. The \gls{vfa_alk} is a more reliable indicator of instability. In this experiment, the ratio fluctuated between \numrange{0.3}{1.2}. While using the co-digestion feed a ration around \numrange{0.8}{1.0} had the highest production.
+\Glsentrylong{vfa} concentrations also increased after the start of feeding, reaching values between \numrange{3000}{5000} \unit{\milli\gram\CHCOOH\per\litre}. Such high \glsauto{vfa} levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high \glsauto{alk} provided a strong buffering capacity, and the pH remained above \num{6.5} for most of the experiment, with the co-digestion the pH was falling and with \glsauto{cgl} only the pH was increasing. The \glsauto{vfa_alk} is a more reliable indicator of instability. In this experiment, the ratio fluctuated between \numrange{0.3}{1.2}. While using the co-digestion feed a ration around \numrange{0.8}{1.0} had the highest production.
 
 \begin{figure}[H]
     \centering
@@ -198,7 +198,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
         \begin{axis}[
             width=\textwidth, height=0.6\textwidth,
             xlabel={Time (\unit{\day})},
-            ylabel={\gls{alk} (\unit{\milli\gram\CaCO\per\litre})},
+            ylabel={\glsauto{alk} (\unit{\milli\gram\CaCO\per\litre})},
             xmin=0, ymin=0,
             axis y line*=left,        % only draw left spine + ticks
             legend pos=south east,
@@ -206,11 +206,11 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
             \addplot[
                 color=blue, thick, mark=*, mark size=1.5pt,
             ] table[x index=0, y index=2] {\datatable};
-            \addlegendentry{\gls{alk}}
+            \addlegendentry{\glsauto{alk}}
 
             % Manually add the VFA entry to the same legend:
             \addlegendimage{color=red, thick, mark=square*, mark size=1.5pt}
-            \addlegendentry{\gls{vfa}}
+            \addlegendentry{\glsauto{vfa}}
         \end{axis}
 
         % ---------- RIGHT axis: VFA ----------
@@ -219,7 +219,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
             xmin=0, ymin=0,
             axis y line*=right,       % only right spine + ticks
             axis x line=none,         % hide duplicate x-axis
-            ylabel={\gls{vfa} (\unit{\milli\gram\CHCOOH\per\litre})},
+            ylabel={\glsauto{vfa} (\unit{\milli\gram\CHCOOH\per\litre})},
             % no legend here — we put it on the left axis
         ]
             \addplot[
@@ -228,7 +228,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
         \end{axis}
     \end{tikzpicture}}
     \endgroup
-    \caption{\Glsentrylong{alk} \& \glsentrylong{vfa} comparison graph}
+    \caption{\Glsentrylongauto{alk} \& \glsentrylongauto{vfa} comparison graph}
     \label{graph:alkalinity_vfa}
 \end{figure}
 
@@ -260,7 +260,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
 
             % Manually add the ratio entry to the same legend:
             \addlegendimage{color=purple, thick, mark=square*, mark size=1.5pt}
-            \addlegendentry{\gls{vfa_alk}}
+            \addlegendentry{\glsauto{vfa_alk}}
         \end{axis}
 
         % ---------- RIGHT axis: Ratio ----------
@@ -269,7 +269,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
             xmin=0, ymin=0,
             axis y line*=right,       % only right spine + ticks
             axis x line=none,         % hide duplicate x-axis
-            ylabel={\gls{vfa_alk}},
+            ylabel={\glsauto{vfa_alk}},
             % no legend here — we put it on the left axis
             ]
             \addplot[
@@ -278,7 +278,7 @@ The total \gls{alk} and \gls{vfa} concentrations were monitored throughout the e
         \end{axis}
     \end{tikzpicture}}
     \endgroup
-    \caption{pH \& \gls{vfa_alk} comparison graph}
+    \caption{pH \& \glsentrysymbolauto{vfa_alk} comparison graph}
     \label{graph:ph_ratio}
 \end{figure}
 

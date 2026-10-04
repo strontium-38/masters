@@ -219,9 +219,12 @@ INPUT /usr/share/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texmf-dist/tex/generic/babel/luababel.def
 INPUT /etc/texmf/tex/generic/config/language.dat
 INPUT /usr/share/texmf-dist/tex/generic/babel/luababel.def
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/und/babel-und-x-nil.ini
+INPUT /usr/share/texmf-dist/tex/generic/babel/nil.ldf
 INPUT /usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 INPUT /usr/share/texmf-dist/tex/generic/babel/locale/en/babel-en.ini
-INPUT /usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/pt/babel-portuguese.tex
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/pt/babel-pt.ini
 INPUT /usr/share/texmf-dist/tex/latex/datetime/datetime.sty
 INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/share/texmf-dist/tex/latex/fmtcount/fmtcount.sty
@@ -232,7 +235,6 @@ INPUT /usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 INPUT /usr/share/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 INPUT /usr/share/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 INPUT /usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texmf-dist/tex/latex/fmtcount/fc-english.def
 INPUT /usr/share/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 INPUT /usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
 INPUT /usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -355,9 +357,12 @@ INPUT /usr/share/texmf-dist/tex/latex/xfor/xfor.sty
 INPUT /usr/share/texmf-dist/tex/latex/tracklang/tracklang.sty
 INPUT /usr/share/texmf-dist/tex/generic/tracklang/tracklang.tex
 INPUT /usr/share/texmf-dist/tex/latex/glossaries-english/glossaries-english.ldf
+INPUT /usr/share/texmf-dist/tex/latex/glossaries-portuges/glossaries-portuges.ldf
+INPUT /usr/share/texmf-dist/tex/latex/glossaries-portuges/glossaries-portuges-noenc.ldf
 INPUT /usr/share/texmf-dist/tex/latex/datatool/datatool-base.sty
 INPUT /usr/share/texmf-dist/tex/latex/datatool/datatool-lua.def
 INPUT /usr/share/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
+INPUT /usr/share/texmf-dist/tex/latex/datatool/datatool-undetermined.ldf
 INPUT /usr/share/texmf-dist/tex/latex/datatool-english/datatool-english.ldf
 INPUT /usr/share/texmf-dist/tex/latex/datatool-english/datatool-english-utf8.ldf
 INPUT /usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
@@ -371,6 +376,9 @@ INPUT /usr/share/texmf-dist/tex/latex/glossaries-extra/glossaries-extra-abbrstyl
 INPUT ./build/main.glstex
 INPUT ./build/main-1.glstex
 INPUT ./build/main-2.glstex
+INPUT ./build/main-3.glstex
+INPUT ./build/main-4.glstex
+INPUT ./build/main-5.glstex
 INPUT ./graphs.sty
 INPUT ./scripts.sty
 INPUT scripts/table.lua
@@ -389,6 +397,8 @@ INPUT ./build/main.aux
 INPUT ./build/sections/frontmatter/acknowledgements.aux
 INPUT ./build/sections/frontmatter/abstract.aux
 INPUT ./build/sections/frontmatter/resumo.aux
+INPUT /usr/share/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-pt.tex
+INPUT /usr/share/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-pt.tex
 INPUT ./build/sections/chapters/01_introduction.aux
 INPUT ./build/sections/chapters/02_literature_review.aux
 INPUT ./build/sections/chapters/03_materials_methods.aux
@@ -399,6 +409,9 @@ OUTPUT build/main.aux
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texmf-dist/tex/latex/biblatex-apa/portuguese-apa.lbx
+INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/portuguese.lbx
+INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/portuguese.lbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
@@ -408,7 +421,6 @@ OUTPUT build/main.bcf
 INPUT ./build/main.bbl
 INPUT ./build/main.bbl
 INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 INPUT ./build/main.out
 INPUT ./build/main.out
 OUTPUT build/main.pdf

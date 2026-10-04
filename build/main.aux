@@ -14,6 +14,9 @@
 \@newglossary{abbreviations}{glg-abr}{gls-abr}{glo-abr}
 \providecommand\@glsxtr@savepreloctag[2]{}
 \@newglossary{units}{units-glg}{units-gls}{units-glo}
+\@newglossary{abbreviations-pt}{abbreviations-pt-glg}{abbreviations-pt-gls}{abbreviations-pt-glo}
+\@newglossary{symbols-pt}{symbols-pt-glg}{symbols-pt-gls}{symbols-pt-glo}
+\@newglossary{units-pt}{units-pt-glg}{units-pt-gls}{units-pt-glo}
 \providecommand*{\glsxtr@fields}[1]{}
 \providecommand*{\glsxtr@resource}[2]{}
 \providecommand*{\glsxtr@pluralsuffixes}[4]{}
@@ -21,14 +24,19 @@
 \providecommand*{\glsxtr@linkprefix}[1]{}
 \glsxtr@fields{{name}{name},{sort}{sortvalue},{type}{type},{first}{first},{firstplural}{firstpl},{text}{text},{plural}{plural},{description}{desc},{descriptionplural}{descplural},{symbol}{symbol},{symbolplural}{symbolplural},{user1}{useri},{user2}{userii},{user3}{useriii},{user4}{useriv},{user5}{userv},{user6}{uservi},{long}{long},{longplural}{longpl},{short}{short},{shortplural}{shortpl},{counter}{counter},{parent}{parent},{loclist}{loclist},{location}{location},{group}{group},{see}{see},{alias}{alias},{seealso}{seealso},{category}{category}}
 \providecommand*{\glsxtr@record}[5]{}
+\glsxtr@locale{und}
 \glsxtr@locale{en}
-\glsxtr@langtag{en}
+\glsxtr@locale{pt}
+\glsxtr@langtag{pt}
 \glsxtr@pluralsuffixes{s}{s}{s}{s}
 \glsxtr@texencoding{utf8}
 \glsxtr@shortcutsval{none}
-\glsxtr@resource{ src = {glossaries/abbreviations}, type = abbreviations, selection = {recorded and deps}, }{main}
-\glsxtr@resource{ src = {glossaries/symbols}, type = symbols, selection = {recorded and deps}, }{main-1}
-\glsxtr@resource{ src = {glossaries/units}, type = units, selection = {all}, sort = {def}, }{main-2}
+\glsxtr@resource{ src = {glossaries/abbreviations}, type = abbreviations, selection = {recorded and deps}, locale = {en-GB}, field-aliases = {short-en=short, long-en=long} }{main}
+\glsxtr@resource{ src = {glossaries/symbols}, type = symbols, selection = {recorded and deps}, locale = {en-GB}, field-aliases = {name-en=name, symbol-en=symbol, description-en=description} }{main-1}
+\glsxtr@resource{ src = {glossaries/units}, type = units, selection = {all}, sort = {def}, locale = {en-GB}, field-aliases = {name-en=name, symbol-en=symbol, description-en=description} }{main-2}
+\glsxtr@resource{ src = {glossaries/abbreviations}, type = abbreviations-pt, selection = {recorded and deps}, locale = {pt-PT}, label-prefix = {pt.}, field-aliases = {short-pt=short, long-pt=long} }{main-3}
+\glsxtr@resource{ src = {glossaries/symbols}, type = symbols-pt, selection = {recorded and deps}, locale = {pt-PT}, label-prefix = {pt.}, field-aliases = {name-pt=name, symbol-pt=symbol, description-pt=description} }{main-4}
+\glsxtr@resource{ src = {glossaries/units}, type = units-pt, selection = {all}, sort = {def}, locale = {pt-PT}, label-prefix = {pt.}, field-aliases = {name-pt=name, symbol-pt=symbol, description-pt=description} }{main-5}
 \babel@aux{english}{}
 \providecommand{\@glsxtr@prefixlabellist}[1]{}
 \@glsxtr@prefixlabellist{}
@@ -43,32 +51,12 @@
 \abx@aux@refcontext{apa/apasortcite//global/global/global}
 \abx@aux@refcontext{apa/apasortcite//global/global/global}
 \abx@aux@refcontext{apa/apasortcite//global/global/global}
-\glsxtr@record{ch4}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{ad}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{ch4}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{ad}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{ampts}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{ampts}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{fw}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{cgl}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{fw}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{cgl}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{fw}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{cgl}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{cgl}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{cgl}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{cgl}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{vfa_alk}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{vfa}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{alk}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{ch4}{}{page}{glsnumberformat}{iii}
-\glsxtr@record{ch4}{}{page}{glsnumberformat}{iv}
-\glsxtr@record{ch4}{}{page}{glsnumberformat}{iv}
 \abx@aux@refcontext{apa/apasortcite//global/global/global}
 \glsxtr@record{cn_ratio}{}{page}{glsnumberformat}{v}
 \@input{sections/frontmatter/acknowledgements.aux}
 \@input{sections/frontmatter/abstract.aux}
 \@input{sections/frontmatter/resumo.aux}
+\babel@aux{portuguese}{}
 \@input{sections/chapters/01_introduction.aux}
 \abx@aux@refcontext{apa/apasortcite//global/global/global}
 \abx@aux@cite{0}{scherhaufer2018}
@@ -106,6 +94,7 @@
 \abx@aux@segm{0}{0}{gebreegziabher2025}
 \abx@aux@cite{0}{tomczak2025}
 \abx@aux@segm{0}{0}{tomczak2025}
+\babel@aux{english}{}
 \abx@aux@page{6}{1}
 \abx@aux@page{7}{1}
 \abx@aux@page{8}{1}
@@ -437,6 +426,8 @@
 \abx@aux@page{124}{39}
 \abx@aux@page{125}{39}
 \@glsxtr@mglslike{mgls,mglspl,mglsmainpl,Mgls,Mglspl,Mglsmainpl,MGls,MGlspl,MGlsmainpl,MGLS,MGLSpl,MGLSmainpl,mglsshort,mglslong,mglsfull,Mglsshort,Mglslong,Mglsfull,mglsname,Mglsname,MGlsname,mglssymbol,Mglssymbol,MGlssymbol,mglsusefield,Mglsusefield,MGlsusefield,mpgls,mpglspl,mpglsmainpl,Mpgls,Mpglspl,Mpglsmainpl,MPGls,MPGlspl,MPGlsmainpl,MPGLS,MPGLSpl,MPGLSmainpl}
+\abx@aux@lbx@loadrequest{portuguese}
+\abx@aux@lbx@loadrequest{portuguese}
 \abx@aux@read@bbl@mdfivesum{23007A3BF56655434024B2DC89BA9E05}
 \abx@aux@defaultrefcontext{0}{aguiar2026}{apa/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{albizzati2021}{apa/global//global/global/global}
