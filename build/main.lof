@@ -4,33 +4,61 @@
 \addvspace {10\p@ }
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces \@Gls@entry@field {cgl}{long} from biodisel production (Adapted from: \blx@tocontentsinit {0}\BLTXAPAifInParensTF {\nptextcite }{\textcitei }{garlapati2016})}}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Contaminations of the crude glycerol (Adapted from: \blx@tocontentsinit {0}\BLTXAPAifInParensTF {\nptextcite }{\textcitei }{attarbachi2023})}}{5}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces \ce {CH4} production from anaerobic digestion (Adapted from: \blx@tocontentsinit {0}\BLTXAPAifInParensTF {\nptextcite }{\textcitei }{li2011})}}{6}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Steps to produce \ce {CH4} from anaerobic digestion (Adapted from: \blx@tocontentsinit {0}\BLTXAPAifInParensTF {\nptextcite }{\textcitei }{gebreegziabher2025})}}{7}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \@Gls@entry@field {cgl}{long} from biodisel production (Adapted from: \blx@tocontentsinit {0}\textcite {garlapati2016})}}{6}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Contaminations of the crude glycerol (Adapted from: \blx@tocontentsinit {0}\textcite {attarbachi2023})}}{6}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \ce {CH4} production from anaerobic digestion (Adapted from: \blx@tocontentsinit {0}\textcite {li2011})}}{7}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Steps to produce \ce {CH4} from anaerobic digestion (Adapted from: \blx@tocontentsinit {0}\textcite {gebreegziabher2025})}}{9}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Schematic of the experimental setup used}}{13}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \@Gls@entry@field {ampts}{long} hardware used}}{15}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \@Gls@entry@field {ampts}{long} software used}}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Schematic of the experimental setup used}}{15}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \@Gls@entry@field {ampts}{long} hardware used}}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \@Gls@entry@field {ampts}{long} software used}}{18}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Visual changes in the reactor, within the first week.}}{18}{figure.caption.16}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Visual for the masses inside the reactor.}}{19}{figure.caption.17}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml }}}{20}{figure.caption.18}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day }}}{20}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Adaptation Phase)}}{21}{figure.caption.20}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Adaptation Phase)}}{22}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (co-digestion of food waste and crude glycerol)}}{23}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (co-digestion of food waste and crude glycerol)}}{23}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \hour } (co-digestion of food waste and crude glycerol)}}{24}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Anaerobic digestion of crude glycerol)}}{25}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Anaerobic digestion of crude glycerol)}}{25}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \hour } (Anaerobic digestion of crude glycerol)}}{26}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Post-feeding period)}}{27}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Post-feeding period)}}{27}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces \@Gls@entry@field {alk}{long} \& volatile fatty acid comparison graph}}{28}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces pH \& VFA/Alk comparison graph}}{29}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Visual changes in the reactor, within the first week.}}{20}{figure.caption.16}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Visual for the masses inside the reactor.}}{21}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml }}}{22}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day }}}{23}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Adaptation Phase)}}{24}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Adaptation Phase)}}{24}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (co-digestion of food waste and crude glycerol)}}{25}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (co-digestion of food waste and crude glycerol)}}{26}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \hour } (co-digestion of food waste and crude glycerol)}}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Anaerobic digestion of crude glycerol)}}{28}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Anaerobic digestion of crude glycerol)}}{28}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \hour } (Anaerobic digestion of crude glycerol)}}{29}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Post-feeding period)}}{30}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Post-feeding period)}}{30}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces \@Gls@entry@field {alk}{long} \& volatile fatty acid comparison graph}}{31}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces pH \& VFA/Alk comparison graph}}{32}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Cumulative specific \ce {CH4} yield}}{32}{figure.caption.32}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Daily yiled of \ce {CH4}}}{33}{figure.caption.33}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Volumetric productivity of \ce {CH4}}}{33}{figure.caption.34}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Cumulative specific \ce {CH4} yield}}{35}{figure.caption.32}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Daily yield of \ce {CH4}}}{36}{figure.caption.33}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Volumetric productivity of \ce {CH4}}}{36}{figure.caption.34}%
 \addvspace {10\p@ }
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 

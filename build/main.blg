@@ -1,22 +1,21 @@
 [0] Config.pm:329> INFO - This is Biber 2.22
 [0] Config.pm:332> INFO - Logfile is 'build/main.blg'
-[66] biber:342> INFO - === dom out  4, 2026, 19:05:16
-[81] Biber.pm:421> INFO - Reading 'build/main.bcf'
-[164] Biber.pm:1002> INFO - Found 17 citekeys in bib section 0
-[184] Biber.pm:4487> INFO - Processing section 0
-[193] Biber.pm:4680> INFO - Looking for bibtex file 'references/references.bib' for section 0
-[194] bibtex.pm:1713> INFO - LaTeX decoding ...
-[212] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
-[428] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[428] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[428] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[428] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[472] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[472] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[472] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[472] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[497] bbl.pm:676> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[517] bbl.pm:779> INFO - Output to build/main.bbl
-[517] Biber.pm:132> WARN - legacy month field 'October' in entry 'srimachai2025' is not an integer - this will probably not sort properly.
-[517] Biber.pm:132> WARN - I didn't find a database entry for crossref '10.4067/S0717-34582007000300005' in entry 'choorit2007' - ignoring (section 0)
-[517] Biber.pm:134> INFO - WARNINGS: 2
+[63] biber:342> INFO - === seg out  5, 2026, 19:10:58
+[77] Biber.pm:421> INFO - Reading 'build/main.bcf'
+[150] Biber.pm:1002> INFO - Found 18 citekeys in bib section 0
+[165] Biber.pm:4487> INFO - Processing section 0
+[173] Biber.pm:4680> INFO - Looking for bibtex file 'references/references.bib' for section 0
+[174] bibtex.pm:1713> INFO - LaTeX decoding ...
+[192] bibtex.pm:1519> INFO - Found BibTeX data source 'references/references.bib'
+[380] Biber.pm:4680> INFO - Looking for bibtex file 'references/extras.bib' for section 0
+[381] bibtex.pm:1713> INFO - LaTeX decoding ...
+[383] bibtex.pm:1519> INFO - Found BibTeX data source 'references/extras.bib'
+[425] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[425] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[425] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[425] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[447] bbl.pm:676> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[457] bbl.pm:779> INFO - Output to build/main.bbl
+[457] Biber.pm:132> WARN - legacy month field 'October' in entry 'srimachai2025' is not an integer - this will probably not sort properly.
+[457] Biber.pm:132> WARN - I didn't find a database entry for crossref '10.4067/S0717-34582007000300005' in entry 'choorit2007' - ignoring (section 0)
+[457] Biber.pm:134> INFO - WARNINGS: 2

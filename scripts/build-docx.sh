@@ -70,6 +70,16 @@ mkdir -p "$BUILD"
 echo "[build-docx] latexpand  main.tex -> $FLAT"
 latexpand main.tex > "$FLAT"
 
+# --- 1.5 One LaTeX pass, just to populate build/*.aux --------------------
+# \ref / \Cref need real numbers; preprocess.py reads them from .aux.
+# We tolerate failures (missing fonts, tikz problems, etc.) because the
+# aux files are written before the compile dies anyway.
+echo "[build-docx] latexmk (aux)       -> $BUILD/main.aux"
+mkdir -p "$BUILD/sections/frontmatter" "$BUILD/sections/chapters"
+latexmk -lualatex -interaction=nonstopmode \
+        -outdir="$BUILD" \
+        main.tex >/dev/null 2>&1 || true
+
 # --- 2. Preprocess for Pandoc -------------------------------------------
 echo "[build-docx] preprocess         -> $PANDOC_TEX"
 python3 scripts/preprocess.py . "$FLAT" "$PANDOC_TEX"
@@ -83,6 +93,11 @@ if grep -q 'TIKZ-FAILED' "$PANDOC_TEX"; then
     echo "             They will be missing from $DOCX." >&2
     grep -n 'TIKZ-FAILED' "$PANDOC_TEX" | sed 's/^/             /' >&2
 fi
+
+for pat in '\\glsauto' '\\Glsauto' '\\glsentrylongauto' '??'; do
+    n=$(grep -c "$pat" "$PANDOC_TEX" || true)
+    echo "[build-docx] occurrences of $pat: $n"
+done
 
 # --- 3. Pandoc -> DOCX ---------------------------------------------------
 # Wipe the extracted-media dir each time so stale images don't pile up.

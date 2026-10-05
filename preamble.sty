@@ -9,22 +9,29 @@
 \pgfplotsset{compat=1.18}
 \setkeys{Gin}{draft=false}
 
-% ----- Font: True Times New Roman (requires LuaLaTeX) -----
+% ----- Font: Liberation Serif + matching math font - Times New Roman compatible -----
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
+\setmainfont{Liberation Serif}
+\setsansfont{Liberation Sans}
+\setmonofont{Liberation Mono}
+
+% use a Times-compatible math font
+\usepackage{unicode-math}
+\setmathfont{STIX Two Math}[
+  BoldFont       = STIX Two Math,
+  ItalicFont     = STIX Two Math,
+  BoldItalicFont = STIX Two Math,
+]
 
 % ----- Page Layout (3 cm margins) -----
 \usepackage[a4paper,
-            top=2.5cm, bottom=2.5cm,
+            top=3cm, bottom=3cm,
             left=3cm, right=3cm,
             includeheadfoot,
             headheight=14.5pt,
-            headsep=0pt,        % body text starts ~3.01 cm from top
-            footskip=0.5cm,     % body text ends 3.0 cm from bottom
+            headsep=0.5cm,
+            footskip=0.6cm,
             ]{geometry}
-\setlength{\headheight}{14.5pt}
-\setlength{\headsep}{0.8cm}       % ~2.5 cm total header space
-\setlength{\footskip}{0.8cm}      % ~2.5 cm total footer space
 
 % ----- Line Spacing -----
 \usepackage{setspace}
@@ -52,8 +59,9 @@
 }
 
 % ----- Bibliography (APA style, uses biber) -----
-\usepackage[style=apa, backend=biber]{biblatex}
+\usepackage[style=abnt, backend=biber]{biblatex}
 \addbibresource{references/references.bib}
+\addbibresource{references/extras.bib}
 
 % reference for includegraphics
 \graphicspath{
@@ -69,7 +77,8 @@
 \standaloneconfig{mode=tex}
 
 % ----- Math & Tables -----
-\usepackage{amsmath, amssymb}
+\usepackage{amsmath}
+%\usepackage{amssymb}
 \usepackage{booktabs}
 \usepackage[labelfont=bf]{caption}
 \usepackage{subcaption}
@@ -81,8 +90,8 @@
 
 \sisetup{
   per-mode=power,
-  inter-unit-product  = \ , % mg L⁻¹
-  %inter-unit-product = \ensuremath{{}\cdot{}}, % mg·L⁻¹
+  inter-unit-product  = \space,
+  allow-quantity-breaks = true,
 }
 \newcommand{\tablesetup}{%
   \sisetup{%

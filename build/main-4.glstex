@@ -19,21 +19,21 @@
 
 \bibglsnewsymbol{pt.ch4}%
 {symbol={\ce{CH4}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{ix}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
 sort={CH4|},
 type={symbols-pt}}%
 {\ce{CH4}}%
 {Metano}
-\glsxtrfieldlistadd{pt.ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{ix}}
+\glsxtrfieldlistadd{pt.ch4}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
 
 
 \bibglsnewsymbol{pt.vfa_alk}%
 {symbol={\glsentryshort{vfa}/\glsentryshort{alk}},
-location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{ix}},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
 sort={VFA|alkalinity|},
 type={symbols-pt}}%
 {\gls{pt.vfa}/\gls{pt.alk}}%
 {Razão de ácidos gordos voláteis para alcalinidade total}
-\glsxtrfieldlistadd{pt.vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{ix}}
+\glsxtrfieldlistadd{pt.vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
 
 

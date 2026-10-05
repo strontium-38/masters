@@ -37,6 +37,8 @@ AUX_FILES = [
     'build/sections/chapters/03_materials_methods.aux',
     'build/sections/chapters/04_results.aux',
     'build/sections/chapters/06_conclusion.aux',
+    'build/sections/chapters/05_discussion.aux',
+    'build/sections/chapters/06_conclusion.aux',
 ]
 
 
@@ -50,15 +52,17 @@ def parse_bib(text):
         key, body = m.group(2), m.group(3)
         fields = {}
         for fm in re.finditer(
-                r'(\w+)\s*=\s*(\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\}|'
+                r'([\w\-]+)\s*=\s*'
+                r'(\{(?:[^{}]|\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\})*\}|'
                 r'"[^"]*"|[^,\n]+)', body, re.DOTALL):
-            fname = fm.group(1)
-            fval = fm.group(2).strip()
-            if fval[:1] == '{' and fval[-1:] == '}':
-                fval = fval[1:-1]
-            elif fval[:1] == '"' and fval[-1:] == '"':
-                fval = fval[1:-1]
-            fields[fname] = fval.strip()
+            field = fm.group(1).lower()
+            value = fm.group(2).strip()
+            # strip the outer braces / quotes of the bibtex value
+            if len(value) >= 2 and value[0] == '{' and value[-1] == '}':
+                value = value[1:-1]
+            elif len(value) >= 2 and value[0] == '"' and value[-1] == '"':
+                value = value[1:-1]
+            fields[field] = value
         entries[key] = fields
     return entries
 
@@ -83,10 +87,11 @@ def _clean(value):
     return re.sub(r'\s+', ' ', value).strip()
 
 
-def _long(entries, key, cap=False):
+def _long(entries, key, cap=False, lang='en'):
     e = entries.get(key, {})
     v = None
-    for f in ('long', 'name', 'symbol', 'short'):
+    for f in (f'long-{lang}', f'name-{lang}', f'symbol-{lang}',
+              f'short-{lang}', 'long', 'name', 'symbol', 'short'):
         if e.get(f):
             v = _clean(e[f])
             break
@@ -95,10 +100,11 @@ def _long(entries, key, cap=False):
     return v[0].upper() + v[1:] if (cap and v) else v
 
 
-def _short(entries, key, cap=False):
+def _short(entries, key, cap=False, lang='en'):
     e = entries.get(key, {})
     v = None
-    for f in ('short', 'name', 'symbol', 'long'):
+    for f in (f'short-{lang}', f'name-{lang}', f'symbol-{lang}',
+              f'long-{lang}', 'short', 'name', 'symbol', 'long'):
         if e.get(f):
             v = _clean(e[f])
             break
@@ -162,6 +168,33 @@ def load_labels(root):
 # replacement passes
 # --------------------------------------------------------------------------
 def pass_glossaries(text, entries):
+    # Strip the language-switching "auto" suffix from preamble.sty wrappers
+    # so \glsauto -> \gls, \Glsentrylongauto -> \Glsentrylong, etc.
+    # The subsequent handlers pick the resulting macros up as usual.
+    text = re.sub(
+        r'\\(Gls|gls)(entrylong|entryshort|entrysymbol|pl)?auto\b',
+        lambda m: '\\' + m.group(1) + (m.group(2) or ''),
+        text)
+
+    # Split on \begin{otherlanguage}…\end{otherlanguage} and pass the
+    # correct default language to _long / _short via the `lang` kwarg.
+    import re as _re
+    lang_pattern = _re.compile(
+        r'\\begin\{otherlanguage\}\{(\w+)\}(.*?)\\end\{otherlanguage\}',
+        _re.DOTALL)
+
+    def sub_block(m):
+        lang = {'portuguese': 'pt', 'english': 'en'}.get(m.group(1), 'en')
+        inner = m.group(2)
+        inner = _re.sub(r'\\glsentrylong\{([^}]+)\}',
+                        lambda mm: _long(entries, mm.group(1), lang=lang),
+                        inner)
+        # ... and so on for all the other \gls* variants ...
+        return inner
+
+    text = lang_pattern.sub(sub_block, text)
+    # remaining text is English:
+
     # order matters: longer macro names first
     text = re.sub(r'\\glsentrylong\{([^}]+)\}',
                   lambda m: _long(entries, m.group(1)), text)
@@ -236,14 +269,24 @@ def pass_definitions(text, root):
         text)
     return text
 
+def _humanize_label(label):
+    """'subsec:adaptation_phase' -> 'Adaptation Phase'"""
+    _, _, name = label.partition(':')
+    return (name or label).replace('_', ' ').title()
+
 def pass_refs(text, refs):
+    def sub_ref(m):
+        info = refs.get(m.group(1))
+        return info['num'] if info else _humanize_label(m.group(1))
+
     def sub_cref(m):
         cmd = m.group(1)
         out = []
         for lbl in (s.strip() for s in m.group(2).split(',')):
             info = refs.get(lbl)
             if not info:
-                out.append('??')
+                # keep the label as visible text so at least you can debug
+                out.append(PREFIX[_kind(lbl)] + ' ' + _humanize_label(lbl))
                 continue
             prefix = PREFIX[_kind(lbl)]
             if cmd == 'cref':
@@ -283,7 +326,7 @@ def pass_units(text):
         ('minute', 'min'), ('hour', 'h'), ('day', 'd'),
         ('year', 'yr'), ('yr', 'yr'),
         ('mol', 'mol'), ('mole', 'mol'),
-        ('celsius', '\u00b0C'), ('percent', '%'),
+        ('celsius', '\u00b0C'), ('percent', r'\%'),
         ('molar', 'M'), ('gforce', 'G'), ('tonne', 't'),
         ('nml', 'NmL'), ('normality', 'N'), ('dil', 'X'),
         ('VSfed', 'VS_fed'), ('VS', 'VS'),
@@ -321,6 +364,7 @@ def pass_units(text):
                         out.append('\\' + name)
                 elif name in UNIT_MAP:
                     out.append(UNIT_MAP[name])
+                    out.append(' ')
                 else:
                     out.append('\\' + name)
                 i = j
@@ -352,6 +396,9 @@ def pass_units(text):
     text = re.sub(r'\\numrange\{([^{}]*)\}\{([^{}]*)\}',
               lambda m: m.group(1) + '\u2013' + m.group(2), text)
     text = re.sub(r'\\num\{([^{}]*)\}', r'\1', text)
+
+    # \ce{...} -> plain text (Pandoc cannot render mhchem)
+    text = re.sub(r'\\ce\{((?:[^{}]|\{[^{}]*\})*)\}', r'\1', text)
     return text
 
 
@@ -376,9 +423,67 @@ def _balanced_drop(text, needle):
         i = k
     return ''.join(out)
 
+def _consume_braced_group(s, i):
+    """s[i] must be '{'. Return (content, index_after_closing_brace)."""
+    depth, j = 1, i + 1
+    while j < len(s) and depth > 0:
+        c = s[j]
+        if c == '{':
+            depth += 1
+        elif c == '}':
+            depth -= 1
+        j += 1
+    return s[i+1:j-1], j
 
 def pass_directlua(text):
     return _balanced_drop(text, r'\directlua')
+
+def pass_table_headers(text):
+    """Strip \\thead{...} / \\makecell{...} wrappers used in table headers,
+    collapsing inner `\\\\` line breaks to a space. Uses balanced-brace
+    parsing so it survives nested groups like \\text{...} or \\unit{...}."""
+    for macro in (r'\thead', r'\makecell'):
+        i = 0
+        while True:
+            j = text.find(macro, i)
+            if j < 0:
+                break
+            # Make sure the next char after the macro name is not a letter
+            # (so we don't match \theadfoo).
+            k = j + len(macro)
+            if k < len(text) and text[k].isalpha():
+                i = k
+                continue
+
+            # Skip optional [...] argument
+            while k < len(text) and text[k] in ' \t\n':
+                k += 1
+            if k < len(text) and text[k] == '[':
+                depth = 1
+                k += 1
+                while k < len(text) and depth:
+                    if text[k] == '[':
+                        depth += 1
+                    elif text[k] == ']':
+                        depth -= 1
+                    k += 1
+
+            # Skip whitespace, then require a { … } group
+            while k < len(text) and text[k] in ' \t\n':
+                k += 1
+            if k >= len(text) or text[k] != '{':
+                i = k
+                continue
+
+            content, end = _consume_braced_group(text, k)
+            # Turn LaTeX line breaks into spaces so Pandoc doesn't split
+            # the header cell into multiple rows.
+            content = content.replace('\\\\', ' ')
+            content = re.sub(r'\s+', ' ', content).strip()
+
+            text = text[:j] + content + text[end:]
+            i = j + len(content)
+    return text
 
 def pass_lua_tables(text, root):
     def sub(m):
@@ -390,8 +495,6 @@ def pass_lua_tables(text, root):
             r = (r + [''] * ncols)[:ncols]
             out.append(' & '.join('\\mbox{%s}' % c for c in r) + r' \\')
         return '\n'.join(out)
-    text = re.sub(r'\\mbox\{([^{}]*)\}', r'\1', text)
-    text = re.sub(r'\\makecell\{([^{}]*)\}', r'\1', text)
     return re.sub(
         r'\\directlua\{emit_grouped_table\("([^"]+)",\s*(\d+)\)\}',
         sub, text)
@@ -408,15 +511,50 @@ def _read_braced(text, i):
 
 
 def pass_csvreader(text, root):
-    import csv as _csv
+    import csv as _csv, re as _re
+
+    def roman_to_int(s):
+        vals = {'i':1,'v':5,'x':10,'l':50,'c':100,'d':500,'m':1000}
+        s = s.lower()
+        total, prev = 0, 0
+        for ch in reversed(s):
+            cur = vals[ch]
+            if cur < prev:
+                total -= cur
+            else:
+                total += cur
+                prev = cur
+        return total
+
+    def expand_row(body_template, row):
+        # \csvcolN -> row value
+        def repl_col(m):
+            n = roman_to_int(m.group(1))
+            return row[n-1] if 0 < n <= len(row) else ''
+        s = _re.sub(r'\\csvcol([ivxlcdm]+)\b', repl_col, body_template)
+
+        # --- NEW: unwrap \expandafter\ce\expandafter{...} and \ce{...} ---
+        # These are LaTeX-only; Pandoc would otherwise drop the whole cell.
+        s = _re.sub(r'\\expandafter\s*\\ce\s*\\expandafter\s*\{([^{}]*)\}',
+                    r'\1', s)
+        s = _re.sub(r'\\ce\s*\{([^{}]*)\}', r'\1', s)
+
+        # \numrange[opts]{a}{b} -> a–b
+        s = _re.sub(r'\\numrange(?:\[[^\]]*\])?\{([^{}]*)\}\{([^{}]*)\}',
+                    lambda m: m.group(1) + '\u2013' + m.group(2), s)
+        # \num{...} -> ...
+        s = _re.sub(r'\\num\{([^{}]*)\}', r'\1', s)
+        return s
+
     out, i = [], 0
     while True:
         j = text.find(r'\csvreader', i)
         if j < 0:
             out.append(text[i:]); break
         out.append(text[i:j])
+
         k = j + len(r'\csvreader')
-        # skip optional [...] key list
+        # optional [...] key list (may contain nested brackets)
         while k < len(text) and text[k] in ' \t\n': k += 1
         if k < len(text) and text[k] == '[':
             depth = 1; k += 1
@@ -424,19 +562,32 @@ def pass_csvreader(text, root):
                 if text[k] == '[': depth += 1
                 elif text[k] == ']': depth -= 1
                 k += 1
-        # skip three mandatory { ... } groups
+
+        # three mandatory groups: {csvfile}{header spec}{body template}
+        groups = []
         for _ in range(3):
             while k < len(text) and text[k] in ' \t\n': k += 1
             if k < len(text) and text[k] == '{':
-                _, k = _read_braced(text, k)
-        # the second group holds the CSV path
-        # (we re-read it from the original text)
-        m = re.search(r'\\csvreader\s*(?:\[[^\]]*\])?\s*\{([^}]+)\}',
-                      text[j:])
-        if m:
-            rel = m.group(1)
-            rows = list(_csv.reader(open(os.path.join(root, rel))))
-            out.append('\n'.join(' & '.join(r) + r' \\' for r in rows))
+                content, k = _read_braced(text, k)
+                groups.append(content)
+            else:
+                groups.append('')
+        csv_path, _header, body_template = groups
+
+        if not csv_path:
+            i = k
+            continue
+
+        with open(os.path.join(root, csv_path), newline='') as f:
+            rows = list(_csv.reader(f))
+        rows = rows[1:]              # drop header row
+
+        lines = []
+        for row in rows:
+            if not any(c.strip() for c in row):
+                continue
+            lines.append(expand_row(body_template, row) + r' \\')
+        out.append('\n'.join(lines))
         i = k
     return ''.join(out)
 
@@ -512,6 +663,7 @@ def pass_environments(text):
     text = re.sub(r'\\(tableofcontents|listoffigures|listoftables)\b', '', text)
     text = text.replace(r'\begin{xltabular}', r'\begin{longtable}')
     text = text.replace(r'\end{xltabular}',   r'\end{longtable}')
+    text = re.sub(r'\\multicolumn\{\d+\}\{[^}]*\}\{([^{}]*)\}', r'\1', text)
     return text
 
 def pass_cleanup(text):
@@ -576,6 +728,7 @@ def main():
 
     # LaTeX cleanup first, so patterns below see simpler input
     text = pass_lua_tables(text, root)       # 1. expand emit_grouped_table
+    text = pass_table_headers(text)
     text = pass_csvreader(text, root)        # 2. expand \csvreader
     text = pass_directlua(text)              # 3. drop leftover \directlua
     text = pass_environments(text)           # 4. unwrap landscape/xltabular
