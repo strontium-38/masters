@@ -82,3 +82,12 @@ colocar mais valores, acumulo, na conclusao, diferenca entre alimentacoes ??*
 volume acumulado / massa solidos volateis **
 
 concentracao solidos volates * caldal (m^3/d) * volume acumulado **
+
+
+-----------------------------------------
+
+CH4 L L−1 d−1 -> L CH4 Vr-1 d-1 ( litro metano volume reator dia)
+
+equacoes discussao, mover para metodologia
+
+resultados (0.0446 L Lr−1 d−1) mudar para mililitros, e outros locais

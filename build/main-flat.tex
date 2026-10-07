@@ -158,17 +158,17 @@ However, excessive \glsauto{gl} loads can lead to \glsauto{vfa} accumulation, pH
 \section{General Objectives}
 \label{sec:general_objectives}
 
-The primary objective of this dissertation project is to evaluate the efficiency of a single-stage anaerobic co-digestion system using organic \glsauto{fw} and \glsauto{cgl} as substrates. The investigation will be conducted by determining biogas production, with a focus on industrial feasibility.
+The primary objective of this study was to evaluate the efficiency of a single-stage anaerobic co-digestion system using organic \glsauto{fw} and \glsauto{cgl} as substrates. The investigation will be conducted by determining biogas production, with a focus on industrial feasibility.
 
-The central hypothesis is that the controlled addition of \glsauto{cgl}, a by-product of the biodiesel industry, helps biogas production due to its high energy content and rapid biodegradability, provided that adequate operational conditions are maintained to avoid \glsauto{vfa} overload.
+The central hypothesis is that the controlled addition of \glsauto{cgl}, a by-product of the biodiesel industry, helps biogas production due to its high energy content provided that adequate operational conditions are maintained to avoid \glsauto{vfa} overload.
 
 \section{Specific Objectives}
 \label{sec:specific_objectives}
 
 \begin{enumerate}
     \item Characterize the substrates (\glsauto{fw} and \glsauto{cgl}), evaluating physicochemical parameters relevant to anaerobic digestion.
-    \item Operate the single-stage anaerobic co-digestion system, assessing process stability.
-    \item Evaluate the techno-economic feasibility of using \glsauto{cgl} as a co-substrate, considering potential for industrial application.
+    \item Operate the single-stage anaerobic co-digestion reactor, assessing process stability.
+    \item Efficiency evaluation of the process for the utilization of different substrates and different \glsauto{olr}.
 \end{enumerate}
 
 \clearpage{}
@@ -177,7 +177,7 @@ The central hypothesis is that the controlled addition of \glsauto{cgl}, a by-pr
 
 The rapid expansion of biodiesel production has generated an oversupply of \glsauto{cgl}, a by-product of the transesterification output. \Cref{graph:gl-prod} shows the steps to produce biodiesel, and when \glsauto{gl} is produced \parencite{garlapati2016}. This waste stream, loaded with impurities such as methanol, soaps, and hydroxides. Substances that, poses environmental disposal challenges. Also, with the variation of impurities depending on the source, there is no standard method to use this source of carbon \parencite{anand2012, gebreegziabher2025}. \Cref{graph:gl-imp} shows the processes and which substances contaminate the \glsauto{gl}. \Glsentrylongauto{ad} aligns with circular economy principles by converting organic residues into biogas while recycling nutrients and making \glsauto{cgl} a promising co-substrate \parencite{gebreegziabher2025}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \resizebox{0.65\textwidth}{!}{\includestandalone[mode=tex]{assets/graphs/garlapati2016-flow-gl}
     }
@@ -185,7 +185,7 @@ The rapid expansion of biodiesel production has generated an oversupply of \glsa
     \label{graph:gl-prod}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \resizebox{\textwidth}{!}{\includestandalone[mode=tex]{assets/graphs/attarbachi2023-flow-gl}
     }
@@ -193,9 +193,9 @@ The rapid expansion of biodiesel production has generated an oversupply of \glsa
     \label{graph:gl-imp}
 \end{figure}
 
-\textcite{gebreegziabher2025} reported that co-digestion of \glsauto{cgl} can boost \glsauto{ch4} production compared to mono-digestion of the base substrate. \textcite{tomczak2025} reviewed one-stage \glsauto{ad} experiments and concluded that a \glsauto{ch4} content above \qty{60}{\percent} could be consistently obtained when the \glsauto{cgl} fraction did not exceed \qty{8}{\percent} (\glsauto{vpv}) of the feed, the flow chart by \textcite{li2011} on the \Cref{graph:ch4-prod} it shows that using \glsauto{ad} there could be up to \qty{70}{\percent} \glsauto{ch4} production. However, the same review emphasized that increasing the \glsauto{gl} loading beyond a system specific threshold may provoke inhibitory effects, likely due to the accumulation of \glspl{vfa} and the impurities present in \glsauto{cgl} \parencite{anand2012, tomczak2025}. The heterogeneous composition of \glsauto{cgl}, affected by oil feedstock, catalyst, and biodiesel processing, demands careful feedstock characterization and, if necessary, simple pretreatment to avoid process upsets \parencite{attarbachi2023}.
+\textcite{gebreegziabher2025} reported that co-digestion of \glsauto{cgl} can boost \glsauto{ch4} production compared to mono-digestion of the base substrate. \textcite{tomczak2025} reviewed one-stage \glsauto{ad} experiments and concluded that a \glsauto{ch4} content above \qty{60}{\percent} could be consistently obtained when the \glsauto{cgl} fraction did not exceed \qty{8}{\percent} (\glsauto{vpv}) of the feed, the flow chart by \textcite{li2011} on the \Cref{graph:ch4-prod} it shows that using \glsauto{ad} there could be up to \qty{70}{\percent} \glsauto{ch4} production. However, the same review emphasized that increasing the \glsauto{gl} loading beyond a system specific threshold may provoke inhibitory effects, likely due to the accumulation of \glspl{vfa} and the impurities present in \glsauto{cgl} \parencite{anand2012, tomczak2025}. The heterogeneous composition of \glsauto{cgl}, affected by oil feedstock, catalyst, and biodiesel processing, demands careful feedstock characterisation and, if necessary, simple pretreatment to avoid process upsets \parencite{attarbachi2023}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \resizebox{0.65\textwidth}{!}{\includestandalone[mode=tex]{assets/graphs/li2011-flow-ferm}
     }
@@ -207,7 +207,7 @@ Liquid \glsauto{ad}, typically conducted in a \glsauto{cstr}, operates at total 
 
 The selection of a robust microbial inoculum is decisive for rapid start-up and stable performance of a \glsauto{cstr} fed with \glsauto{gl}. Anaerobic sludge from municipal \glspl{wwtp} is the most common source of inoculum because it harbours a diverse consortium of hydrolytic, acidogenic, and methanogenic microorganisms. The flow chard from \textcite{gebreegziabher2025} on the \Cref{graph:ch4-steps} shows each step of the \glsauto{ad} until the \glsauto{ch4} production. \textcite{posmanik2020} demonstrated that granular sludge, obtained from up-flow anaerobic sludge blanket reactors treating wastewater, outperforms suspended biomass as an inoculum. Although their work focused on batch tests, the findings strongly suggest that using granular sludge from a \glsauto{wwtp} as seed for a \glsauto{cstr} could accelerate acclimation, improve process stability, and reduce the risk of acidification during load increases.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \resizebox{0.65\textwidth}{!}{\includestandalone[mode=tex]{assets/graphs/gebreegziabher2025-flow-ferm}
     }
@@ -225,7 +225,7 @@ The available literature confirms that \glsauto{cgl} is a high-energy substrate 
 \section{Collection and Preparation of the Food Waste}
 \label{sec:col_prep_FW}
 
-\Glsentrylongauto{fw} was collected from the canteen at the \glsauto{ipb}, prioritizing residues with high proportions of rice, pasta, and bread to maximize the sugar content and minimize the nitrogen content. It was collected \qty{3235.04}{\gram} of waste then it was diluted with approximately \qty{2.5}{\litre} of distilled water and homogenised using a blender to obtain a liquid paste with \qty{5525.55}{\gram} total. It was then stored in a refrigerator at \qty{4}{\celsius} to prevent spoilage and suppress microbial and fungal activity \parencite{degueurce2020}.
+\Glsentrylongauto{fw} was collected from the canteen at the \glsauto{ipb}, prioritizing residues with high proportions of rice, pasta, and bread to maximize the sugar content and minimize the nitrogen content. It was collected \qty[round-mode = places, round-precision = 0]{3235.04}{\gram} of waste then it was diluted with approximately \qty{2.5}{\litre} of distilled water and homogenised using a blender to obtain a \glsaut{fw} suspension with \qty[round-mode = places, round-precision = 0]{5525.55}{\gram} total. It was then stored in a refrigerator at \qty{4}{\celsius} to prevent spoilage and suppress microbial and fungal activity \parencite{degueurce2020}.
 
 \section{Crude Glycerol Collection}
 \label{sec:gly_col}
@@ -247,7 +247,7 @@ The \glsauto{ts}, \glsauto{vs}, \glsauto{fs}, and density were determined for th
 
 \Glsentrylongauto{ts} and \glsentrylongauto{vs} were measured using a sequential gravimetric method based on Standard Methods 2540 B and 2540 E \parencite{apha2023}. The method involves controlled drying and calcination steps to quantify \glsauto{ts} and \glsauto{vs} fractions.
 
-Initially, porcelain crucibles were placed in a muffle furnace at \qty{550}{\celsius} for \qty{1}{\hour}. For cooling, they were transferred to an oven at \qty{105}{\celsius} for \qty{15}{\minute} and then moved to a desiccator until they reached room temperature; their empty masses were recorded. For each material, a sample was placed into three crucibles and the wet mass was measured. The crucibles were then dried in an oven at \qty{105}{\celsius} for \qty{2}{\hour} (\glsauto{cgl} required \qtyrange{6}{8}{\hour} to reach constant mass). After drying, the crucibles were cooled in a desiccator to room temperature and weighed again to determine \glsauto{ts}.
+Initially, porcelain crucibles were placed in a muffle furnace at \qty{550}{\celsius} for \qty{1}{\hour}. For cooling, they were transferred to an oven at \qty{105}{\celsius} for \qty{15}{\minute} and then moved to a desiccator until they reached room temperature; their empty masses were recorded. For each material, a sample was placed into three crucibles and the wet mass was measured. The crucibles were then dried in an oven at \qty{105}{\celsius} for \qty{1}{\hour}, the process was repeated until constant mass. After drying, the crucibles were cooled in a desiccator to room temperature and weighed again to determine \glsauto{ts}.
 
 The same crucibles were subsequently placed in a muffle furnace at \qty{550}{\celsius} for \qty{50}{\minute}. Afterwards they were transferred to an oven at \qty{105}{\celsius} for \qty{15}{\minute} and then moved to a desiccator until they reached room temperature; the final masses were recorded to calculate \glsauto{vs}.
 
@@ -264,7 +264,7 @@ The same crucibles were subsequently placed in a muffle furnace at \qty{550}{\ce
     \mathrm{FS} = \frac{M_{550} - M_{\text{crucible}}}{V_{\text{sample}}} \quad \left[\unit{\gram\per\litre}\right]
     \label{eq:FS}
 \end{equation}
-Where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at \qty{105}{\celsius}, $M_{550}$ is the mass after ignition at \qty{550}{\celsius}, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in \unit{\litre} and the mass is in \unit{\gram}. The results are in \Cref{tab:solids}.
+where $M_{\text{wet}}$ is the mass of crucible plus wet sample, $M_{105}$ is the mass after drying at \qty{105}{\celsius}, $M_{550}$ is the mass after ignition at \qty{550}{\celsius}, $M_{\text{crucible}}$ is the mass of the empty crucible and $V_{\text{sample}}$ is the volume of the sample. The volume is in \unit{\litre} and the mass is in \unit{\gram} (\Cref{tab:solids}).
 
 \begingroup
 \tablesetup
@@ -326,7 +326,7 @@ Density was determined by a gravimetric volumetric method using graduated cylind
     \rho = \frac{M_{\text{total}} - M_{\text{cylinder}}}{V_{\text{sample}}} \quad \left[\unit{\gram\per\litre}\right]
     \label{eq:density}
 \end{equation}
-Where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume, the masses were measured in \unit{\gram} and the volume in \unit{\litre}. The results are in \Cref{tab:density}.
+where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder}}$ is the empty cylinder mass, and $V_{\text{sample}}$ is the measured volume, the masses were measured in \unit{\gram} and the volume in \unit{\litre} (\Cref{tab:density}).
 
 \begingroup
 \tablesetup
@@ -334,7 +334,7 @@ Where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \setlength{\tabcolsep}{3pt}
 \begin{ThreePartTable}
     \begin{xltabular}{\linewidth}{@{} C C C C C C c @{}}
-        \caption{Density values}
+        \caption{Results of desnsity for substrates and inoculum}
         \label{tab:density} \\
 
         \toprule
@@ -367,10 +367,10 @@ Where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \end{ThreePartTable}
 \endgroup
 
-\subsection{TOC and TN Determination}
+\subsection{Determination of TOC and TN}
 \label{subsec:toc_tn_determination}
 
-\Glsentrylongauto{toc}, \glsauto{tc} and \glsauto{tn} were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the \glsauto{fw} was diluted \qty{400}{\dil} and the \glsauto{cgl} was diluted \qty{800}{\dil} to bring the concentrations within the linear range of the instrument. The results are on the \Cref{tab:toc}.
+\Glsauto{toc}, \glsauto{tc} and \glsauto{tn} were measured using a Shimadzu TOC-5000A analyser. Prior to analysis, the \glsauto{fw} was diluted \qty{400}{\dil} and the \glsauto{cgl} was diluted \qty{800}{\dil} to bring the concentrations within the linear range of the instrument. The results are on the \Cref{tab:toc}.
 
 \begingroup
 \tablesetup
@@ -379,7 +379,7 @@ Where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \begin{ThreePartTable}
     \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
 
-        \caption{\Glsentrylongauto{tc} and \Glsentrylongauto{tn} values}
+        \caption{\Glsentrylongauto{tc} and \Glsentrylongauto{tn} for substrates}
         \label{tab:toc} \\
 
         \toprule
@@ -411,7 +411,7 @@ Where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \end{ThreePartTable}
 \endgroup
 
-\section{Experiment Configuration}
+\section{Experiment Setup}
 \label{sec:experiment_configuration}
 
 The reactor had a working volume of \qty{1}{\litre} and was operated in continuous mode, under anaerobic conditions. Mixing was provided by a magnetic stir bar, and the overflow outlet was kept closed with a valve to maintain an anaerobic environment. This experimental setup is shown in \Cref{graph:reactor}:
@@ -424,9 +424,9 @@ The reactor had a working volume of \qty{1}{\litre} and was operated in continuo
     \label{graph:reactor}
 \end{figure}
 
-The reactor was kept at \qty{35}{\celsius}, close to the optimal temperature for mesophilic microorganisms \parencite{choorit2007}. The \glsauto{olr} was set with a max of \qty{4}{\kilo\gram\VS\per\cubic\metre\per\day}, with a \glsauto{hrt} of \num{30} days, conditions for stable co-digestion of \glsauto{fw} and \glsauto{gl} \parencite{tomczak2025}. The pH was maintained around \num{7} by incorporating \glsauto{khco3} into the feed solution at a concentration of \qty{10}{\gram\per\litre}, and adding \glsauto{khco3} to the reactor whenever the pH dropped lower than \num[round-mode = places, round-precision = 1]{6}.
+The reactor was kept at \qty{35}{\celsius}, close to the optimal temperature for mesophilic microorganisms \parencite{choorit2007}. The \glsauto{olr} was set with a max of \qty{4}{\kilo\gram\VS\per\cubic\metre\per\day}, with a \glsauto{hrt} of \num{30} days, conditions for stable co-digestion of \glsauto{fw} and \glsauto{gl} \parencite{tomczak2025}. The pH was maintained around \num{7} by adding \glsauto{khco3} into the feed solution at a concentration of \qty{10}{\gram\per\litre}, and to the reactor whenever the pH dropped lower than \num[round-mode = places, round-precision = 1]{6}.
 
-The \glsauto{olr} and \glsauto{hrt}:
+In the \Cref{eq:HRT,eq:OLR}, about \glsauto{hrt} and \glsauto{olr}, respectively:
 
 \begin{equation}
     \mathrm{HRT} = \frac{V}{Q} \quad \left[\unit{\day}\right]
@@ -445,7 +445,7 @@ The feed was designed to achieve a \glsauto{cn_ratio} ratio of 25:1, which is op
 
 The feed was made with a restriction of needing to have less than \qty{15}{\percent} of TS\unit{\percent}. The amount of \glsauto{olr} and if \glsauto{khco3} was added, was decided by the pH and how was the \glsauto{ch4} production of the reactor. If it was too acidic, it was used a lower \glsauto{olr} with \glsauto{khco3}, if it was at the right amount it was keep the same amount, and if it was too basic it was added a higher \glsauto{olr} without \glsauto{khco3}. The feed storage always had some remainig feed, and the new one was added on top, diluting or concentrating the feed going to the reactor.
 
-The feed was also supplemented with nutrients to improve the growth of microorganisms. \Cref{tab:nutri} shows the nutrients used and their ratios.
+The feed was also supplemented with nutrients to improve the growth of microorganisms. \Cref{tab:nutri} shows the nutrients added to the substrate and their respective concentrations.
 
 \begingroup
 \tablesetup
@@ -454,19 +454,19 @@ The feed was also supplemented with nutrients to improve the growth of microorga
 \begin{ThreePartTable}
     \begin{xltabular}{\linewidth}{@{} C C @{}}
 
-        \caption{Nutrients used and there ratios, for a 25:1 \glsauto{cn_ratio}. (Adapted from: \textcite{safaa2025})}
+        \caption{Nutrients added to the substrate and there dosages. (Adapted from: \textcite{safaa2025})}
         \label{tab:nutri} \\
 
         \toprule
         \thead{Nutrients} &
-        \thead{Mass (\unit{\milli\gram\per\litre})} \\
+        \thead{Concentration (\unit{\milli\gram\per\litre})} \\
         \midrule
         \endfirsthead
 
         \multicolumn{2}{l}{\textit{\Cref{tab:nutri} continued}} \\
         \toprule
         \thead{Nutrients} &
-        \thead{Mass (\unit{\milli\gram\per\litre})} \\
+        \thead{Concentration (\unit{\milli\gram\per\litre})} \\
         \midrule
         \endhead
 
@@ -482,8 +482,8 @@ The feed was also supplemented with nutrients to improve the growth of microorga
 \end{ThreePartTable}
 \endgroup
 
-\subsection{Biogas Quantification}
-\label{subsec:biogas_quatification}
+\subsection{Biogas Production}
+\label{subsec:biogas_production}
 
 The \glsauto{ampts} system (hardware~\Cref{fig:ampts-hard}, software~\Cref{fig:ampts-soft}), was provided to measure the gas flow produced by the reactor, with a \glsauto{co2} fixing unit using a solution of \qty{3}{\molar\NaOH}.
 
@@ -501,14 +501,14 @@ The \glsauto{ampts} system (hardware~\Cref{fig:ampts-hard}, software~\Cref{fig:a
         \caption{\Glsentrylongauto{ampts} \glsentrysymbolauto{co2} trap}
         \label{fig:ampts-co2}
     \end{subfigure}
-    \caption{\Glsentrylongauto{ampts} hardware used}
+    \caption{\Glsentrylongauto{ampts} hardware}
     \label{fig:ampts-hard}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{ampts_sys-print.png}
-    \caption{\Glsentrylongauto{ampts} software used}
+    \caption{\Glsentrylongauto{ampts} software}
     \label{fig:ampts-soft}
 \end{figure}
 
@@ -516,6 +516,8 @@ The \glsauto{ampts} system (hardware~\Cref{fig:ampts-hard}, software~\Cref{fig:a
 \label{subsec:analysis_methods}
 
 The method of DiLallo \& Albertson \apud{dilallo1961}{ribas2007}, to measure the \glsauto{alk} and \glsauto{vfa}. The sample collected was first centrifuged, at \qty{2604}{\gforce} for \num{30} minutes, to filter the particulates before doing the measurements.
+
+The volumes were measured in \unit{\milli\litre}, the sample volume was always \qty{50}{\milli\litre}, the normality (\unit{\normality}) of the acid and base, at first was \num{0.1}, but then it was changed to \num[round-mode = places, round-precision = 1]{1}. The \Cref{eq:TA} is expressed in \unit{\milli\gram\CaCO\per\litre}, and the \Cref{eq:VFA} is expressed in \unit{\milli\gram\CHCOOH\per\litre}.
 
 \begin{equation}
     \mathrm{TA} = \frac{N_\text{acid} * V_\text{acid} * 50000}{V_\text{sample}} \quad \left[\unit{\milli\gram\CaCO\per\litre}\right]
@@ -526,10 +528,8 @@ The method of DiLallo \& Albertson \apud{dilallo1961}{ribas2007}, to measure the
     \label{eq:VFA}
 \end{equation}
 
-The volumes were measured in \unit{\milli\litre}, the sample volume was always \qty{50}{\milli\litre}, the normality (\unit{\normality}) of the acid and base, at first was \num{0.1}, but then it was changed to \num[round-mode = places, round-precision = 1]{1}. The \Cref{eq:TA} is expressed in \unit{\milli\gram\CaCO\per\litre}, and the \Cref{eq:VFA} is expressed in \unit{\milli\gram\CHCOOH\per\litre}.
-
-\subsection{Subestrate used as feed}
-\label{subsec:sub_feed}
+\subsection{Feeding of the reactor}
+\label{subsec:feed_reac}
 
 \Cref{tab:feeds} shows all substrates used to feed the reactor and when they were made.
 
@@ -540,7 +540,7 @@ The volumes were measured in \unit{\milli\litre}, the sample volume was always \
 \begin{ThreePartTable}
     \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
 
-    \caption{Description of the feed used throughout the experimental period}
+    \caption{Feed used throughout the experimental period}
     \label{tab:feeds} \\
 
     \toprule
@@ -962,7 +962,7 @@ The \glsauto{ch4} yield data obtained throughout the experimental period is summ
         \thead{Phase} &
         \thead{Days} &
         \thead{\glsauto{olr} range\\(\unit{\gram\VS\per\litre\per\day})} &
-        \thead{\glsauto{vs} fed\\(\unit{\gram})} &
+        \thead{\glsauto{vs}\\(\unit{\gram})} &
         \thead{\glsauto{ch4}\\(\unit{\nml})} &
         \thead{Yield\\(\unit{\nml\per\gram\VSfed})} &
         \thead{Rate\\(\unit{\litre\per\reactorlitre\per\day})} \\
@@ -974,7 +974,7 @@ The \glsauto{ch4} yield data obtained throughout the experimental period is summ
         \thead{Phase} &
         \thead{Days} &
         \thead{\glsauto{olr} range\\(\unit{\gram\VS\per\litre\per\day})} &
-        \thead{\glsauto{vs} fed\\(\unit{\gram})} &
+        \thead{\glsauto{vs}\\(\unit{\gram})} &
         \thead{\glsauto{ch4}\\(\unit{\nml})} &
         \thead{Yield\\(\unit{\nml\per\gram\VSfed})} &
         \thead{Rate\\(\unit{\litre\per\reactorlitre\per\day})} \\
