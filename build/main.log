@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  7 OCT 2026 17:30
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  12 OCT 2026 19:50
  system commands enabled.
 **main.tex
 (./main.tex
@@ -2418,11 +2418,11 @@ File: glossaries-extra-abbrstyles.def 2025/11/03 v1.9 (NLCT)
 )
 
 Package glossaries-extra Warning: Glossary type `abbreviations' already exists 
-on input line 183.
+on input line 186.
 
 
 Package glossaries-extra Warning: Glossary type `symbols' already exists on inp
-ut line 184.
+ut line 187.
 
 (./build/main.glstex) (./build/main-1.glstex) (./build/main-2.glstex)
 (./build/main-3.glstex) (./build/main-4.glstex) (./build/main-5.glstex))
@@ -2937,12 +2937,12 @@ d there dosages. (Adapted from: [][]Alqudah[][]
 ]
 \openout2 = sections/frontmatter/abstract.aux
 
-(./sections/frontmatter/abstract.tex) [8
+(./sections/frontmatter/abstract.tex [8
 
 
 
 
-] [9]
+]) [9]
 \openout2 = sections/frontmatter/resumo.aux
 
 (./sections/frontmatter/resumo.tex [10
@@ -2990,7 +2990,7 @@ File: assets/graphs/gebreegziabher2025-flow-ferm.tex Graphic file (type tex)
 (./sections/chapters/03_materials_methods.tex
 \bbl@ensure@english {Chapter} 4.
 ! Undefined control sequence.
-l.7 ...genised using a blender to obtain a \glsaut
+l.7 ...genized using a blender to obtain a \glsaut
                                                   {fw} suspension with \qty[...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3004,23 +3004,23 @@ and I'll forget about whatever was undefined.
 
 
 ] [12]
-Overfull \hbox (1.33997pt too wide) in alignment at lines 95--95
+Overfull \hbox (1.33997pt too wide) in alignment at lines 91--91
  [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (1.33997pt too wide) in alignment at lines 95--95
+Overfull \hbox (1.33997pt too wide) in alignment at lines 91--91
  [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (1.33997pt too wide) in alignment at lines 95--95
+Overfull \hbox (1.33997pt too wide) in alignment at lines 91--91
  [][][][][][][][][][][][] 
  []
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 4.1 on input line 95.
+(longtable)                in table 4.1 on input line 91.
 
 [13
 
@@ -3048,23 +3048,23 @@ Missing character: There is no ; (U+003B) in font nullfont!
 ignored: Infinite glue shrinkage found in box being split [16]
 warning  (file assets/photos/ampts/ampts.jpg) (readjpg): Exif resolution 72dpi x
  72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/ampts/ampts.jpg, id=836, 2312.64pt x 2500.34125pt>
+<assets/photos/ampts/ampts.jpg, id=834, 2312.64pt x 2500.34125pt>
 File: assets/photos/ampts/ampts.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts.jpg>
-Package luatex.def Info: assets/photos/ampts/ampts.jpg  used on input line 274.
+Package luatex.def Info: assets/photos/ampts/ampts.jpg  used on input line 270.
 
 (luatex.def)             Requested size: 192.0548pt x 207.62366pt.
-<assets/photos/ampts/ampts_co2.jpg, id=837, 2312.64pt x 4111.36pt>
+<assets/photos/ampts/ampts_co2.jpg, id=835, 2312.64pt x 4111.36pt>
 File: assets/photos/ampts/ampts_co2.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts_co2.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts_co2.jpg  used on input line 
-281.
+277.
 (luatex.def)             Requested size: 123.71973pt x 219.94618pt.
-<assets/photos/ampts/ampts_sys-print.png, id=838, 651.18282pt x 627.09282pt>
+<assets/photos/ampts/ampts_sys-print.png, id=836, 651.18282pt x 627.09282pt>
 File: assets/photos/ampts/ampts_sys-print.png Graphic file (type png)
 <use assets/photos/ampts/ampts_sys-print.png>
 Package luatex.def Info: assets/photos/ampts/ampts_sys-print.png  used on input
- line 291.
+ line 287.
 (luatex.def)             Requested size: 341.43437pt x 328.80765pt.
 [17<./assets/photos/ampts/ampts.jpg
 warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolut
@@ -3077,7 +3077,7 @@ t.png>]) [19]
 
 warning  (file assets/photos/reactor/reator-19-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-19-5.jpg, id=973, 1689.31125pt x 2664.95625pt>
+<assets/photos/reactor/reator-19-5.jpg, id=972, 1689.31125pt x 2664.95625pt>
 File: assets/photos/reactor/reator-19-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-19-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-19-5.jpg  used on input l
@@ -3086,7 +3086,7 @@ ine 13.
 
 warning  (file assets/photos/reactor/reator-22-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-22-5.jpg, id=974, 1870.99pt x 3112.62875pt>
+<assets/photos/reactor/reator-22-5.jpg, id=973, 1870.99pt x 3112.62875pt>
 File: assets/photos/reactor/reator-22-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-22-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-22-5.jpg  used on input l
@@ -3106,14 +3106,14 @@ ion 96dpi x 96dpi
 >]
 warning  (file assets/photos/reactor/reator-limp-seco-24-8.jpg) (readjpg): Exif 
 resolution 72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=983, 2312.64pt x 3490.0387
+<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=982, 2312.64pt x 3490.0387
 6pt>
 File: assets/photos/reactor/reator-limp-seco-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-seco-24-8.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-limp-seco-24-8.jpg  used 
 on input line 34.
 (luatex.def)             Requested size: 106.69783pt x 160.98573pt.
-<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=984, 2312.64pt x 4111.36pt
+<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=983, 2312.64pt x 4111.36pt
 >
 File: assets/photos/reactor/reator-limp-agua-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-agua-24-8.jpg>
@@ -3338,16 +3338,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 83323 strings out of 476076
- 477081,7087374 words of node,token memory allocated
+ 83324 strings out of 476076
+ 477085,7087374 words of node,token memory allocated
  1343 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 3 glyph, 160 attribute, 88 glue_spec, 81 attribute_list, 2 write, 28 pdf_act
+rn, 3 glyph, 158 attribute, 88 glue_spec, 80 attribute_list, 2 write, 29 pdf_act
 ion nodes
-   avail lists: 1:18,2:78524,3:49162,4:312,5:345,6:371,7:8067,8:86,9:3765,10:113
+   avail lists: 1:19,2:78521,3:49162,4:307,5:344,6:370,7:8097,8:86,9:3765,10:113
 ,11:775,12:1
- 103519 multiletter control sequences out of 65536+600000
- 143 fonts using 81093595 bytes
+ 103521 multiletter control sequences out of 65536+600000
+ 143 fonts using 81093007 bytes
  110i,25n,152p,5815b,6201s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:pt.ch4'
@@ -3384,10 +3384,10 @@ x2-otf/STIXTwoMath-Regular.otf></usr/share/texmf-dist/fonts/opentype/public/stix
 -otf/STIXTwoMath-Regular.otf></usr/share/fonts/liberation/LiberationSerif-Regula
 r.ttf></usr/share/fonts/liberation/LiberationSerif-Italic.ttf></usr/share/fonts/
 liberation/LiberationSerif-Bold.ttf>
-Output written on main.pdf (56 pages, 11331038 bytes).
+Output written on main.pdf (56 pages, 11330732 bytes).
 
 PDF statistics: 1406 PDF objects out of 1440 (max. 8388607)
  1156 compressed objects within 12 object streams
- 203 named destinations out of 1000 (max. 1048576)
+ 202 named destinations out of 1000 (max. 1048576)
  248 words of extra memory for PDF output out of 10000 (max. 100000000)
 

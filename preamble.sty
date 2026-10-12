@@ -138,6 +138,9 @@
 \crefname{table}{Table}{Tables}
 \Crefname{table}{Table}{Tables}
 
+\crefname{equation}{Eq.}{Eq.}
+\Crefname{equation}{Eq.}{Eq.}
+
 % positioning
 \usepackage{float}
 
@@ -267,4 +270,16 @@
 }
 \newcommand{\glsentrysymbolauto}[1]{%
   \iflanguage{portuguese}{\glsentrysymbol{pt.#1}}{\glsentrysymbol{#1}}%
+}
+\newcommand{\glsentryfirstauto}[1]{%
+  \iflanguage{portuguese}{\glsentryfirst{pt.#1}}{\glsentryfirst{#1}}%
+}
+\newcommand{\glsentryfirstpluralauto}[1]{%
+  \iflanguage{portuguese}{\glsentryfirstplural{pt.#1}}{\glsentryfirstplural{#1}}%
+}
+\newcommand{\Glsentryfirstauto}[1]{%
+  \iflanguage{portuguese}{\Glsentryfirst{pt.#1}}{\Glsentryfirst{#1}}%
+}
+\newcommand{\Glsentryfirstpluralauto}[1]{%
+  \iflanguage{portuguese}{\Glsentryfirstplural{pt.#1}}{\Glsentryfirstplural{#1}}%
 }
