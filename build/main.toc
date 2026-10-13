@@ -19,18 +19,19 @@
 \contentsline {subsection}{\numberline {4.5.2}Biogas Production}{17}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Analysis Methods}{18}{subsection.4.5.3}%
 \contentsline {subsection}{\numberline {4.5.4}Feeding of the reactor}{19}{subsection.4.5.4}%
-\contentsline {chapter}{\numberline {5}Results}{20}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Reactor Condition and Visual Observations}{20}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Biogas Production}{21}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Overall Production}{21}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Adaptation Phase}{23}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Co-digestion of Food Waste and Crude Glycerol}{25}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Digestion of Crude Glycerol}{27}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Post-feeding Period}{29}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Alkalinity and Volatile Fatty Acids}{31}{subsection.5.2.6}%
-\contentsline {chapter}{\numberline {6}Discussion}{33}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{40}{chapter.7}%
-\contentsline {chapter}{References}{42}{chapter*.35}%
+\contentsline {subsection}{\numberline {4.5.5}Performance Calculations}{20}{subsection.4.5.5}%
+\contentsline {chapter}{\numberline {5}Results}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Reactor Condition and Visual Observations}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Biogas Production}{23}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Overall Production}{23}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Adaptation Phase}{25}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Co-digestion of Food Waste and Crude Glycerol}{27}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Digestion of Crude Glycerol}{29}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Post-feeding Period}{31}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Alkalinity and Volatile Fatty Acids}{33}{subsection.5.2.6}%
+\contentsline {chapter}{\numberline {6}Discussion}{35}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion}{41}{chapter.7}%
+\contentsline {chapter}{References}{43}{chapter*.35}%
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 

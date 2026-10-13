@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  12 OCT 2026 19:50
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  13 OCT 2026 10:09
  system commands enabled.
 **main.tex
 (./main.tex
@@ -2867,7 +2867,7 @@ Package hyperref Info: Link coloring ON on input line 21.
 
 (/usr/share/texmf-dist/tex/latex/elements/elements_names_english.def)
 (./cover.tex
-<assets/logos/IPB_logo.png, id=123, 513.92pt x 157.58875pt>
+<assets/logos/IPB_logo.png, id=131, 513.92pt x 157.58875pt>
 File: assets/logos/IPB_logo.png Graphic file (type png)
 <use assets/logos/IPB_logo.png>
 Package luatex.def Info: assets/logos/IPB_logo.png  used on input line 10.
@@ -2881,7 +2881,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `STIXTwoMath' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<assets/logos/UTFPR_logo.png, id=124, 2341.74875pt x 877.2775pt>
+<assets/logos/UTFPR_logo.png, id=132, 2341.74875pt x 877.2775pt>
 File: assets/logos/UTFPR_logo.png Graphic file (type png)
 <use assets/logos/UTFPR_logo.png>
 Package luatex.def Info: assets/logos/UTFPR_logo.png  used on input line 15.
@@ -2989,40 +2989,12 @@ File: assets/graphs/gebreegziabher2025-flow-ferm.tex Graphic file (type tex)
 
 (./sections/chapters/03_materials_methods.tex
 \bbl@ensure@english {Chapter} 4.
-! Undefined control sequence.
-l.7 ...genized using a blender to obtain a \glsaut
-                                                  {fw} suspension with \qty[...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [11
 
 
 
 
-] [12]
-Overfull \hbox (1.33997pt too wide) in alignment at lines 91--91
- [][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (1.33997pt too wide) in alignment at lines 91--91
- [][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (1.33997pt too wide) in alignment at lines 91--91
- [][][][][][][][][][][][] 
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.1 on input line 91.
-
-[13
+] [12] [13
 
 ]
 ignored: Infinite glue shrinkage found in box being split [14
@@ -3048,19 +3020,19 @@ Missing character: There is no ; (U+003B) in font nullfont!
 ignored: Infinite glue shrinkage found in box being split [16]
 warning  (file assets/photos/ampts/ampts.jpg) (readjpg): Exif resolution 72dpi x
  72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/ampts/ampts.jpg, id=834, 2312.64pt x 2500.34125pt>
+<assets/photos/ampts/ampts.jpg, id=853, 2312.64pt x 2500.34125pt>
 File: assets/photos/ampts/ampts.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts.jpg  used on input line 270.
 
 (luatex.def)             Requested size: 192.0548pt x 207.62366pt.
-<assets/photos/ampts/ampts_co2.jpg, id=835, 2312.64pt x 4111.36pt>
+<assets/photos/ampts/ampts_co2.jpg, id=854, 2312.64pt x 4111.36pt>
 File: assets/photos/ampts/ampts_co2.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts_co2.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts_co2.jpg  used on input line 
 277.
 (luatex.def)             Requested size: 123.71973pt x 219.94618pt.
-<assets/photos/ampts/ampts_sys-print.png, id=836, 651.18282pt x 627.09282pt>
+<assets/photos/ampts/ampts_sys-print.png, id=855, 651.18282pt x 627.09282pt>
 File: assets/photos/ampts/ampts_sys-print.png Graphic file (type png)
 <use assets/photos/ampts/ampts_sys-print.png>
 Package luatex.def Info: assets/photos/ampts/ampts_sys-print.png  used on input
@@ -3070,14 +3042,14 @@ Package luatex.def Info: assets/photos/ampts/ampts_sys-print.png  used on input
 warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolut
 ion 96dpi x 96dpi
 ><./assets/photos/ampts/ampts_co2.jpg>] [18<./assets/photos/ampts/ampts_sys-prin
-t.png>]) [19]
+t.png>] [19] [20]) [21]
 \openout2 = sections/chapters/04_results.aux
  (./sections/chapters/04_results.tex
 \bbl@ensure@english {Chapter} 5.
 
 warning  (file assets/photos/reactor/reator-19-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-19-5.jpg, id=972, 1689.31125pt x 2664.95625pt>
+<assets/photos/reactor/reator-19-5.jpg, id=1016, 1689.31125pt x 2664.95625pt>
 File: assets/photos/reactor/reator-19-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-19-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-19-5.jpg  used on input l
@@ -3086,13 +3058,13 @@ ine 13.
 
 warning  (file assets/photos/reactor/reator-22-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-22-5.jpg, id=973, 1870.99pt x 3112.62875pt>
+<assets/photos/reactor/reator-22-5.jpg, id=1017, 1870.99pt x 3112.62875pt>
 File: assets/photos/reactor/reator-22-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-22-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-22-5.jpg  used on input l
 ine 20.
 (luatex.def)             Requested size: 106.69783pt x 177.48817pt.
-[20
+[22
 
 
 
@@ -3106,21 +3078,21 @@ ion 96dpi x 96dpi
 >]
 warning  (file assets/photos/reactor/reator-limp-seco-24-8.jpg) (readjpg): Exif 
 resolution 72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=982, 2312.64pt x 3490.0387
-6pt>
+<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=1026, 2312.64pt x 3490.038
+76pt>
 File: assets/photos/reactor/reator-limp-seco-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-seco-24-8.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-limp-seco-24-8.jpg  used 
 on input line 34.
 (luatex.def)             Requested size: 106.69783pt x 160.98573pt.
-<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=983, 2312.64pt x 4111.36pt
->
+<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=1027, 2312.64pt x 4111.36p
+t>
 File: assets/photos/reactor/reator-limp-agua-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-agua-24-8.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-limp-agua-24-8.jpg  used 
 on input line 41.
 (luatex.def)             Requested size: 85.35858pt x 151.69135pt.
-[21<./assets/photos/reactor/reator-limp-seco-24-8.jpg
+[23<./assets/photos/reactor/reator-limp-seco-24-8.jpg
 warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolut
 ion 96dpi x 96dpi
 ><./assets/photos/reactor/reator-limp-agua-24-8.jpg>]
@@ -3140,15 +3112,15 @@ Overfull \hbox (2.68207pt too wide) in paragraph at lines 70--71
  [][] 
  []
 
-[22]
+[24]
 PGFPlots: reading {data/processed/experimentos-day.csv}
 Package pgfplots info on input line 85: Using 'lua backend=false' for plot 0 (t
 ype 'pgfplothandlerybar'): LUA does not support x filter (yet).
- [23]
+ [25]
 PGFPlots: reading {data/processed/experimentos-day.csv}
 Package pgfplots info on input line 93: Using 'lua backend=false' for plot 0 (t
 ype 'pgfplothandlerlineto'): LUA does not support x filter (yet).
- [24]
+ [26]
 PGFPlots: reading {data/processed/experimentos-day.csv}
 Package pgfplots info on input line 106: Using 'lua backend=false' for plot 0 (
 type 'pgfplothandlerybar'): LUA does not support x filter (yet).
@@ -3160,15 +3132,15 @@ Overfull \hbox (9.17644pt too wide) in paragraph at lines 106--107
 PGFPlots: reading {data/processed/experimentos-day.csv}
 Package pgfplots info on input line 114: Using 'lua backend=false' for plot 0 (
 type 'pgfplothandlerlineto'): LUA does not support x filter (yet).
-[25]
+[27]
 PGFPlots: reading {data/processed/experimentos-30min.csv}
 Package pgfplots info on input line 122: Using 'lua backend=false' for plot 0 (
 type 'pgfplothandlerlineto'): LUA does not support x filter (yet).
- [26]
+ [28]
 PGFPlots: reading {data/processed/experimentos-day.csv}
 Package pgfplots info on input line 142: Using 'lua backend=false' for plot 0 (
 type 'pgfplothandlerybar'): LUA does not support x filter (yet).
- [27]
+ [29]
 PGFPlots: reading {data/processed/experimentos-day.csv}
 Package pgfplots info on input line 150: Using 'lua backend=false' for plot 0 (
 type 'pgfplothandlerlineto'): LUA does not support x filter (yet).
@@ -3180,22 +3152,22 @@ Overfull \hbox (2.6958pt too wide) in paragraph at lines 150--151
 PGFPlots: reading {data/processed/experimentos-30min.csv}
 Package pgfplots info on input line 158: Using 'lua backend=false' for plot 0 (
 type 'pgfplothandlerlineto'): LUA does not support x filter (yet).
-[28]
+[30]
 PGFPlots: reading {data/processed/experimentos-day.csv}
 Package pgfplots info on input line 171: Using 'lua backend=false' for plot 0 (
 type 'pgfplothandlerybar'): LUA does not support x filter (yet).
- [29]
+ [31]
 PGFPlots: reading {data/processed/experimentos-day.csv}
 Package pgfplots info on input line 179: Using 'lua backend=false' for plot 0 (
 type 'pgfplothandlerlineto'): LUA does not support x filter (yet).
- [30]
+ [32]
 PGFPlots: reading {data/processed/analysis.csv}
 PGFPlots: reading {data/processed/analysis.csv}
- [31]) [32]
+ [33]) [34]
 \openout2 = sections/chapters/05_discussion.aux
  (./sections/chapters/05_discussion.tex
 \bbl@ensure@english {Chapter} 6.
-[33
+[35
 
 
 
@@ -3208,7 +3180,14 @@ ic yield of $\TU/STIXTwoMath(1)/b/n/12 37.37$$[] [] \TU/LiberationSerif(0)/m/n/
 12 g[] []$
  []
 
-[34]
+[36]
+Overfull \hbox (1.24849pt too wide) in paragraph at lines 65--66
+\TU/LiberationSerif(0)/m/n/12 yield of $\TU/STIXTwoMath(1)/b/n/12 40.60$$[] [] 
+\TU/LiberationSerif(0)/m/n/12 g[] []$ and a vol-u-met-ric pro-duc-tiv-ity of $\
+TU/STIXTwoMath(1)/b/n/12 0.024[]5$$\TU/LiberationSerif(0)/m/n/12 L [] [][] d[]$
+.
+ []
+
 PGFPlots: reading {data/processed/yield.csv}
 \pgf@layerbox@axis background=\box107
 \pgf@layerboxsaved@axis background=\box108
@@ -3266,7 +3245,7 @@ Overfull \hbox (54.37396pt too wide) in paragraph at lines 223--224
  [][] 
  []
 
-[35]
+[37]
 Package pgfplots info on input line 247: Setting layers 'axis background,pre ma
 in,main,axis grid,axis ticks,axis lines,axis tick labels,axis descriptions,axis
  foreground'...
@@ -3274,33 +3253,30 @@ Package pgfplots info on input line 295: Setting layers 'axis background,pre ma
 in,main,axis grid,axis ticks,axis lines,axis tick labels,axis descriptions,axis
  foreground'...
 
-Overfull \hbox (65.62756pt too wide) in paragraph at lines 299--300
+Overfull \hbox (66.40497pt too wide) in paragraph at lines 299--300
  [][] 
  []
 
-[36] [37]) [38] [39]
+[38]) [39] [40]
 \openout2 = sections/chapters/06_conclusion.aux
  (./sections/chapters/06_conclusion.tex
 \bbl@ensure@english {Chapter} 7.
-[40
+[41
 
 
 
 
-]) [41]
+]) [42]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LiberationMono' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [42
+ [43
 
 
 
-] [43] [44]
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(./build/main.aux (./build/sections/frontmatter/acknowledgements.aux)
+] [44] [45] (./build/main.aux
+(./build/sections/frontmatter/acknowledgements.aux)
 (./build/sections/frontmatter/abstract.aux)
 (./build/sections/frontmatter/resumo.aux)
 (./build/sections/chapters/01_introduction.aux)
@@ -3313,40 +3289,23 @@ Package longtable Warning: Table widths have changed. Rerun LaTeX.
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 3D11B8A3F284C7E7D6A293FD1B55F3DE;4889
-(rerunfilecheck)             After:  4682443C4232FB54409D6922B98AB218;4985.
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 46C502491E34789393F6B77CC9977970;5170.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 83324 strings out of 476076
- 477085,7087374 words of node,token memory allocated
- 1343 words of node memory still in use:
+ 83420 strings out of 476076
+ 477068,7087374 words of node,token memory allocated
+ 1446 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 3 glyph, 158 attribute, 88 glue_spec, 80 attribute_list, 2 write, 29 pdf_act
+rn, 4 glyph, 174 attribute, 88 glue_spec, 88 attribute_list, 2 write, 37 pdf_act
 ion nodes
-   avail lists: 1:19,2:78521,3:49162,4:307,5:344,6:370,7:8097,8:86,9:3765,10:113
+   avail lists: 1:17,2:78605,3:49162,4:307,5:309,6:370,7:8007,8:86,9:3765,10:181
 ,11:775,12:1
- 103521 multiletter control sequences out of 65536+600000
+ 103615 multiletter control sequences out of 65536+600000
  143 fonts using 81093007 bytes
  110i,25n,152p,5815b,6201s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -3384,10 +3343,10 @@ x2-otf/STIXTwoMath-Regular.otf></usr/share/texmf-dist/fonts/opentype/public/stix
 -otf/STIXTwoMath-Regular.otf></usr/share/fonts/liberation/LiberationSerif-Regula
 r.ttf></usr/share/fonts/liberation/LiberationSerif-Italic.ttf></usr/share/fonts/
 liberation/LiberationSerif-Bold.ttf>
-Output written on main.pdf (56 pages, 11330732 bytes).
+Output written on main.pdf (57 pages, 11332483 bytes).
 
-PDF statistics: 1406 PDF objects out of 1440 (max. 8388607)
- 1156 compressed objects within 12 object streams
- 202 named destinations out of 1000 (max. 1048576)
- 248 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1431 PDF objects out of 1440 (max. 8388607)
+ 1180 compressed objects within 12 object streams
+ 204 named destinations out of 1000 (max. 1048576)
+ 264 words of extra memory for PDF output out of 10000 (max. 100000000)
 

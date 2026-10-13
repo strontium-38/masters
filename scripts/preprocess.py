@@ -318,6 +318,45 @@ def pass_graphics(text, root):
         return r'\includegraphics%s{%s}' % (opts, full)
     return re.sub(r'\\includegraphics(\[[^\]]*\])?\{([^}]+)\}', sub, text)
 
+def pass_math_symbols(text):
+    # Bare math-mode relation/operator commands -> Unicode.
+    # Works in both text and math mode, and Pandoc handles Unicode without
+    # trying to invoke the TeX math parser (which is what breaks \ensuremath).
+    subs = {
+        'approx':        '\u2248',   # ≈
+        'sim':           '\u223c',   # ∼
+        'simeq':         '\u2243',   # ≃
+        'cong':          '\u2245',   # ≅
+        'equiv':         '\u2261',   # ≡
+        'ne':            '\u2260',   # ≠
+        'neq':           '\u2260',
+        'le':            '\u2264',   # ≤
+        'leq':           '\u2264',
+        'ge':            '\u2265',   # ≥
+        'geq':           '\u2265',
+        'pm':            '\u00b1',   # ±
+        'mp':            '\u2213',   # ∓
+        'times':         '\u00d7',   # ×
+        'div':           '\u00f7',   # ÷
+        'cdot':          '\u00b7',   # ·
+        'ast':           '\u2217',   # ∗
+        'circ':          '\u2218',   # ∘
+        'propto':        '\u221d',   # ∝
+        'to':            '\u2192',   # →
+        'rightarrow':    '\u2192',
+        'leftarrow':     '\u2190',   # ←
+        'leftrightarrow':'\u2194',   # ↔
+        'Rightarrow':    '\u21d2',   # ⇒
+        'Leftarrow':     '\u21d0',   # ⇐
+        'Leftrightarrow':'\u21d4',   # ⇔
+    }
+    # Longest keys first so `\rightarrow` is not partially matched by `\to`.
+    keys = sorted(subs, key=len, reverse=True)
+    pat = re.compile(
+        r'(?<!\\)\\(' + '|'.join(re.escape(k) for k in keys) + r')\b'
+    )
+    return pat.sub(lambda m: subs[m.group(1)], text)
+
 def pass_units(text):
     UNIT_SUBS = [
         ('mega', 'M'), ('kilo', 'k'), ('milli', 'm'),
@@ -384,7 +423,8 @@ def pass_units(text):
         lambda m: expand_macro_string(m.group(1)),
         text)
     text = re.sub(
-        r'\\qty\{([^{}]*)\}\{((?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*)\}',
+        r'\\qty(?:\[[^\]]*\])?\{([^{}]*)\}'
+        r'\{((?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*)\}',
         lambda m: m.group(1) + ' ' + expand_macro_string(m.group(2)),
         text)
     text = re.sub(
@@ -393,8 +433,11 @@ def pass_units(text):
         lambda m: (m.group(1) + '\u2013' + m.group(2) + ' '
                    + expand_macro_string(m.group(3))),
         text)
-    text = re.sub(r'\\numrange\{([^{}]*)\}\{([^{}]*)\}',
-              lambda m: m.group(1) + '\u2013' + m.group(2), text)
+    text = re.sub(
+        r'\\numrange(?:\[[^\]]*\])?\{([^{}]*)\}'
+        r'\{((?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*)\}',
+        lambda m: m.group(1) + ' ' + expand_macro_string(m.group(2)),
+        text)
     text = re.sub(r'\\num\{([^{}]*)\}', r'\1', text)
 
     # \ce{...} -> plain text (Pandoc cannot render mhchem)
@@ -737,7 +780,8 @@ def main():
     text = pass_definitions(text, root)      # 7. \Keywords, \palavraschaves
     text = pass_refs(text, refs)             # 8. \Cref, \ref
     text = pass_graphics(text, root)         # 9. absolute image paths
-    text = pass_units(text)                  # 10. \qty, \unit, \num
+    text = pass_math_symbols(text)   # 9.5 wrap bare math relations
+    text = pass_units(text)          # 10. \qty, \unit, \num
     text = pass_standalone(text, root)       # 11. build TikZ PDFs
     text = pass_cleanup(text)
     text = pass_equation_to_display(text)

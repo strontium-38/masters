@@ -13,26 +13,26 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces \@Gls@entry@field {ampts}{long} hardware}}{17}{figure.caption.14}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces \@Gls@entry@field {ampts}{long} software}}{18}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Visual changes in the reactor, within the first week.}}{20}{figure.caption.16}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Visual for the masses inside the reactor.}}{21}{figure.caption.17}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml }}}{22}{figure.caption.18}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day }}}{23}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Adaptation Phase)}}{24}{figure.caption.20}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Adaptation Phase)}}{24}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (co-digestion of food waste and crude glycerol)}}{25}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (co-digestion of food waste and crude glycerol)}}{26}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \hour } (co-digestion of food waste and crude glycerol)}}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Anaerobic digestion of crude glycerol)}}{28}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Anaerobic digestion of crude glycerol)}}{28}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \hour } (Anaerobic digestion of crude glycerol)}}{29}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Post-feeding period)}}{30}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Post-feeding period)}}{30}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces \@Gls@entry@field {alk}{long} \& volatile fatty acid comparison graph}}{31}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces pH \& VFA/Alk comparison graph}}{32}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Visual changes in the reactor, within the first week.}}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Visual for the masses inside the reactor.}}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml }}}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day }}}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Adaptation Phase)}}{26}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Adaptation Phase)}}{26}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (co-digestion of food waste and crude glycerol)}}{27}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (co-digestion of food waste and crude glycerol)}}{28}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \hour } (co-digestion of food waste and crude glycerol)}}{28}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Anaerobic digestion of crude glycerol)}}{30}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Anaerobic digestion of crude glycerol)}}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \hour } (Anaerobic digestion of crude glycerol)}}{31}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Cumulative volume of \ce {CH4} \unit {\nml } (Post-feeding period)}}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Volume flow of \ce {CH4} \unit {\nml \per \day } (Post-feeding period)}}{32}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces \@Gls@entry@field {alk}{long} \& volatile fatty acid comparison graph}}{33}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces pH \& VFA/Alk comparison graph}}{34}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Cumulative specific \ce {CH4} yield}}{35}{figure.caption.32}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Daily yield of \ce {CH4}}}{36}{figure.caption.33}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Volumetric productivity of \ce {CH4}}}{36}{figure.caption.34}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Cumulative specific \ce {CH4} yield}}{37}{figure.caption.32}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Daily yield of \ce {CH4}}}{38}{figure.caption.33}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Volumetric productivity of \ce {CH4}}}{38}{figure.caption.34}%
 \addvspace {10\p@ }
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 

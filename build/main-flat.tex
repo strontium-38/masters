@@ -225,7 +225,7 @@ The available literature confirms that \glsauto{cgl} is a high-energy substrate 
 \section{Collection and Preparation of the Food Waste}
 \label{sec:col_prep_FW}
 
-\Glsentrylongauto{fw} was collected from the canteen at \glsauto{ipb}, prioritizing residues with high proportions of rice, pasta, and bread to maximize sugar content and minimize nitrogen content. It was collected \qty[round-mode = places, round-precision = 0]{3235.04}{\gram} of waste, which was then diluted with approximately \qty{2.5}{\litre} of distilled water and homogenized using a blender to obtain a \glsaut{fw} suspension with \qty[round-mode = places, round-precision = 0]{5525.55}{\gram} total. It was then stored in a refrigerator at \qty{4}{\celsius} to prevent spoilage and suppress microbial and fungal activity \parencite{degueurce2020}.
+\Glsentrylongauto{fw} was collected from the canteen at \glsauto{ipb}, prioritizing residues with high proportions of rice, pasta, and bread to maximize sugar content and minimize nitrogen content. It was collected \qty[round-mode = places, round-precision = 0]{3235.04}{\gram} of waste, which was then diluted with approximately \qty{2.5}{\litre} of distilled water and homogenized using a blender to obtain a \glsauto{fw} suspension with \qty[round-mode = places, round-precision = 0]{5525.55}{\gram} total. It was then stored in a refrigerator at \qty{4}{\celsius} to prevent spoilage and suppress microbial and fungal activity \parencite{degueurce2020}.
 
 \section{Crude Glycerol Collection}
 \label{sec:gly_col}
@@ -672,6 +672,81 @@ The volumes were measured in \unit{\milli\litre}, the sample volume was always \
     \end{tablenotes}
 \end{ThreePartTable}
 \endgroup
+
+\subsection{Performance Calculations}
+\label{subsec:performance_calculations}
+
+The following equations were used to calculate the performance indicators reported in the \Cref{ch:discussion}.
+
+\begin{equation}
+    Q = \frac{V_r}{\mathrm{HRT}} \quad \left[\unit{\cubic\metre\per\day}\right]
+    \label{eq:Q}
+\end{equation}
+
+\begin{equation}
+    m_{\mathrm{VS,day}} = \mathrm{OLR} \cdot V_r \quad \left[\unit{\gram\per\day}\right]
+    \label{eq:mVS_day}
+\end{equation}
+
+\begin{equation}
+    M_{\mathrm{VS}}(n) = \sum_{i=0}^{n} m_{\mathrm{VS,day}}(i) \quad \left[\unit{\gram}\right]
+    \label{eq:cumVS}
+\end{equation}
+
+\begin{equation}
+    Y(n) = \frac{V_{\mathrm{CH_4}}(n)}{M_{\mathrm{VS}}(n)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
+    \label{eq:cumYield}
+\end{equation}
+
+\begin{equation}
+    r_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{m_{\mathrm{VS,day}}(n)} \quad \left[\unit{\milli\litre\CH\per\gram\VSfed\per\day}\right]
+    \label{eq:dailyRate}
+\end{equation}
+
+\begin{equation}
+    \dot{n}_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{V_m \cdot V_r} \quad \left[\unit{\mol\CH\per\cubic\metre\per\day}\right]
+    \label{eq:molRate}
+\end{equation}
+
+\begin{equation}
+    \dot{V}_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{1000 \cdot V_r} \quad \left[\unit{\litre\CH\per\reactorlitre\per\day}\right]
+    \label{eq:volRate}
+\end{equation}
+
+\begin{equation}
+    \Delta V_{\mathrm{CH_4}}(a,b) = V_{\mathrm{CH_4}}(b) - V_{\mathrm{CH_4}}(a-1) \quad \left[\unit{\nml}\right]
+    \label{eq:deltaVCH4}
+\end{equation}
+
+\begin{equation}
+    \Delta M_{\mathrm{VS}}(a,b) = M_{\mathrm{VS}}(b) - M_{\mathrm{VS}}(a-1) \quad \left[\unit{\gram}\right]
+    \label{eq:deltaMVS}
+\end{equation}
+
+\begin{equation}
+    Y(a,b) = \frac{\Delta V_{\mathrm{CH_4}}(a,b)}{\Delta M_{\mathrm{VS}}(a,b)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
+    \label{eq:phaseYield}
+\end{equation}
+
+\begin{equation}
+    \overline{\dot{n}_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} \dot{n}_{\mathrm{CH_4}}(n) \quad \left[\unit{\mol\CH\per\cubic\metre\per\day}\right]
+    \label{eq:avgMolRate}
+\end{equation}
+
+\begin{equation}
+    \overline{\dot{V}_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} \dot{V}_{\mathrm{CH_4}}(n) \quad \left[\unit{\litre\CH\per\reactorlitre\per\day}\right]
+    \label{eq:avgVolRate}
+\end{equation}
+
+\begin{equation}
+    \overline{r_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} r_{\mathrm{CH_4}}(n) \quad \left[\unit{\milli\litre\CH\per\gram\VSfed\per\day}\right]
+    \label{eq:avgDailyRate}
+\end{equation}
+
+\begin{equation}
+    Y_{\text{overall}} = \frac{V_{\mathrm{CH_4}}(N_f)}{M_{\mathrm{VS}}(N_f)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
+    \label{eq:overallYield}
+\end{equation}
 \clearpage{}
 \clearpage{}\chapter{Results}
 \label{ch:results}
@@ -995,15 +1070,15 @@ The \glsauto{ch4} yield data obtained throughout the experimental period are sum
 \end{ThreePartTable}
 \endgroup
 
-The overall cumulative \glsauto{ch4} production was \qty[round-mode = places, round-precision = 0]{3276.1}{\nml}, corresponding to an overall yield of approximately \qty[round-mode = places, round-precision = 0]{28.96}{\nml\CH\per\gram\VSfed} (calculated using \Cref{eq:overallYield}). This value is considerably lower than those reported in the literature for similar substrates. \textcite{gebreegziabher2025} reviewed the \glsauto{ad} of biodiesel byproducts and reported \glsauto{ch4} yield enhancements ranging from \qtyrange{14}{226}{\percent} when \glsauto{cgl} is co-digested with various substrates. \textcite{tomczak2025} analysed data from multiple studies and concluded that \glsauto{ch4} content in biogas exceeds \qty{60}{\percent} when the \glsauto{cgl} fraction in the feedstock is kept below \qty{8}{\percent} (\glsauto{vpv}). In the present study, the \glsauto{cgl} fraction varied across phases, but the overall \glsauto{ch4} yield remained below the values typically reported for \glsauto{cgl} co-digestion. This discrepancy may be attributed to the single-stage configuration, specific characteristics of the \glsauto{fw} and \glsauto{gl} used, and process instability observed at the end of the co-digestion phase and the start of the \glsauto{gl}-only phase.
+The overall cumulative \glsauto{ch4} production was \qty[round-mode = places, round-precision = 0]{3276.1}{\nml\CH}, corresponding to an overall yield of approximately \qty[round-mode = places, round-precision = 0]{28.96}{\nml\CH\per\gram\VSfed} (calculated using \Cref{eq:overallYield}). This value is considerably lower than those reported in the literature for similar substrates. \textcite{gebreegziabher2025} reviewed the \glsauto{ad} of biodiesel byproducts and reported \glsauto{ch4} yield enhancements ranging from \qtyrange{14}{226}{\percent} when \glsauto{cgl} is co-digested with various substrates. \textcite{tomczak2025} analysed data from multiple studies and concluded that \glsauto{ch4} content in biogas exceeds \qty{60}{\percent} when the \glsauto{cgl} fraction in the feedstock is kept below \qty{8}{\percent} (\glsauto{vpv}). In the present study, the \glsauto{cgl} fraction varied across phases, but the overall \glsauto{ch4} yield remained below the values typically reported for \glsauto{cgl} co-digestion. This discrepancy may be attributed to the single-stage configuration, specific characteristics of the \glsauto{fw} and \glsauto{gl} used, and process instability observed at the end of the co-digestion phase and the start of the \glsauto{gl}-only phase.
 
-During the adaptation phase (days \numrange[parse-numbers=false]{0}{24}), the specific \glsauto{ch4} yield reached \qty{45.64}{\nml\CH\per\gram\VSfed}, the highest among all phases. However, this value must be interpreted with caution, as the cumulative \glsauto{vs} fed during this period was only \qty{16.628}{\gram}, and \glsauto{ch4} production was still in the early stages of development. The volumetric productivity was \qty{30.4}{\milli\litre\per\reactorlitre\per\day}. The daily yield profile in \Cref{graph:daily-yiled-ch4} shows a gradual increase in \glsauto{ch4} production during this phase, with a notable spike around day \num[parse-numbers=false]{8}, corresponding to the first addition of \glsauto{cgl} to the feed. This observation is consistent with \textcite{gebreegziabher2025}, who noted that \glsauto{cgl} is readily biodegradable and can stimulate methanogenic activity when introduced to an acclimated microbial community.
+During the adaptation phase (days \numrange[parse-numbers=false]{0}{24}), the specific \glsauto{ch4} yield reached \qty{45.64}{\nml\CH\per\gram\VSfed}, the highest among all phases. However, this value must be interpreted with caution, as the cumulative \glsauto{vs} fed during this period was only \qty{16.628}{\gram}, and \glsauto{ch4} production was still in the early stages of development. The volumetric productivity was \qty{30.4}{\milli\litre\CH\per\reactorlitre\per\day}. The daily yield profile in \Cref{graph:daily-yiled-ch4} shows a gradual increase in \glsauto{ch4} production during this phase, with a notable spike around day \num[parse-numbers=false]{8}, corresponding to the first addition of \glsauto{cgl} to the feed. This observation is consistent with \textcite{gebreegziabher2025}, who noted that \glsauto{cgl} is readily biodegradable and can stimulate methanogenic activity when introduced to an acclimated microbial community.
 
 In the co-digestion phase (days \numrange[parse-numbers=false]{25}{52}), the \glsauto{olr} was increased from \qtyrange{1.4}{3.16}{\gram\VS\per\litre\per\day}, and the cumulative \glsauto{ch4} production reached \qty{1249.9}{\nml}. The specific yield decreased to \qty{19.71}{\nml\CH\per\gram\VSfed}, while the volumetric productivity increased to \qty{0.0446}{\litre\per\reactorlitre\per\day}, the highest of all phases. This inverse relationship between specific yield and volumetric productivity reflects the higher organic loading rate applied, which promoted greater \glsauto{ch4} production per reactor volume but reduced the efficiency of substrate conversion to \glsauto{ch4}. The daily yield profile in \Cref{graph:daily-yiled-ch4} exhibits fluctuations during this phase, which is typical of readily degradable substrates and has been reported by \textcite{tomczak2025} and \textcite{srimachai2025}. \textcite{srimachai2025} investigated the co-digestion of canned seafood wastewater with \glsauto{gl} waste and reported \glsauto{ch4} yields of \qty{345}{\mL\CH\per\gram\COD} at a mixing ratio of \qty{96.4}{\percent} (\glsauto{vpv}). Although the substrate characteristics differ, the general trend of enhanced \glsauto{ch4} production during co-digestion is consistent with the present findings.
 
-The \glsauto{cgl} only phase (days \numrange[parse-numbers=false]{53}{81}) exhibited a specific yield of \qty{37.37}{\nml\CH\per\gram\VSfed} and a volumetric productivity of \qty{0.0303}{\litre\per\reactorlitre\per\day}, with a cumulative \glsauto{ch4} production of \qty{877.9}{\nml}. The \glsauto{olr} ranged from \qtyrange{0.42}{1.37}{\gram\VS\per\litre\per\day}. Despite the absence of \glsauto{fw} in the feed, \glsauto{ch4} production continued, indicating that the microbial community had adapted to \glsauto{gl} as a sole carbon source. However, the specific yield was lower than that during the adaptation phase, suggesting that \glsauto{gl} alone may not provide an optimal nutrient balance for methanogenesis. \textcite{tomczak2025} emphasised that \glsauto{cgl} is an ideal co-substrate but can cause inhibition when used alone or at high concentrations due to the accumulation of \glsplauto{vfa} and the presence of impurities such as methanol, soaps, and heavy metals. The daily yield profile in \Cref{graph:daily-yiled-ch4} shows a declining trend during this phase, with a notable outlier peak at day \num[parse-numbers=false]{53}, corresponding to the transition from co-digestion to \glsauto{gl}-only feeding. This anomaly, also visible in \Cref{graph:volumetric-productivity-ch4}, was caused by problems during the change.
+The \glsauto{cgl} only phase (days \numrange[parse-numbers=false]{53}{81}) exhibited a specific yield of \qty{37.37}{\nml\CH\per\gram\VSfed} and a volumetric productivity of \qty{0.0303}{\litre\CH\per\reactorlitre\per\day}, with a cumulative \glsauto{ch4} production of \qty{877.9}{\nml\CH}. The \glsauto{olr} ranged from \qtyrange{0.42}{1.37}{\gram\VS\per\litre\per\day}. Despite the absence of \glsauto{fw} in the feed, \glsauto{ch4} production continued, indicating that the microbial community had adapted to \glsauto{gl} as a sole carbon source. However, the specific yield was lower than that during the adaptation phase, suggesting that \glsauto{gl} alone may not provide an optimal nutrient balance for methanogenesis. \textcite{tomczak2025} emphasised that \glsauto{cgl} is an ideal co-substrate but can cause inhibition when used alone or at high concentrations due to the accumulation of \glsplauto{vfa} and the presence of impurities such as methanol, soaps, and heavy metals. The daily yield profile in \Cref{graph:daily-yiled-ch4} shows a declining trend during this phase, with a notable outlier peak at day \num[parse-numbers=false]{53}, corresponding to the transition from co-digestion to \glsauto{gl}-only feeding. This anomaly, also visible in \Cref{graph:volumetric-productivity-ch4}, was caused by problems during the change.
 
-The post-feeding phase (days \numrange[parse-numbers=false]{82}{97}) produced \qty{389.4}{\nml} of \glsauto{ch4}, with a specific yield of \qty{40.60}{\nml\CH\per\gram\VSfed} and a volumetric productivity of \qty{0.0245}{\litre\per\reactorlitre\per\day}. The \glsauto{olr} reached zero during this period, and the \glsauto{ch4} produced can be attributed to the slow degradation of residual organic matter and microbial decay products. The daily yield profile in \Cref{graph:daily-yiled-ch4} shows a gradual decline, confirming that the reactor was no longer being actively fed and that the remaining substrate was limited.
+The post-feeding phase (days \numrange[parse-numbers=false]{82}{97}) produced \qty{389.4}{\nml} of \glsauto{ch4}, with a specific yield of \qty{40.60}{\nml\CH\per\gram\VSfed} and a volumetric productivity of \qty{0.0245}{\litre\CH\per\reactorlitre\per\day}. The \glsauto{olr} reached zero during this period, and the \glsauto{ch4} produced can be attributed to the slow degradation of residual organic matter and microbial decay products. The daily yield profile in \Cref{graph:daily-yiled-ch4} shows a gradual decline, confirming that the reactor was no longer being actively fed and that the remaining substrate was limited.
 
 \begingroup
 
@@ -1020,7 +1095,7 @@ The post-feeding phase (days \numrange[parse-numbers=false]{82}{97}) produced \q
 \begin{axis}[
             width=\textwidth, height=0.6\textwidth,
             xlabel={Time (\unit{\day})},
-            ylabel={\unit{\CH\milli\litre\per\gram\VSfed}},
+            ylabel={\unit{\milli\litre\CH\per\gram\VSfed}},
             axis y line*=left,
             enlarge x limits=false,
             xmin=0, xmax=97,
@@ -1088,7 +1163,7 @@ The post-feeding phase (days \numrange[parse-numbers=false]{82}{97}) produced \q
         \begin{axis}[
             width=\textwidth, height=0.6\textwidth,
             xlabel={Time (\unit{\day})},
-            ylabel={\unit{\CH\milli\litre\per\gram\VSfed\per\day}},
+            ylabel={\unit{\milli\litre\CH\per\gram\VSfed\per\day}},
             axis y line*=left,
             enlarge x limits=false,
             xmin=0, xmax=97,
@@ -1157,7 +1232,7 @@ The post-feeding phase (days \numrange[parse-numbers=false]{82}{97}) produced \q
         \begin{axis}[
             width=\textwidth, height=0.6\textwidth,
             xlabel={Time (\unit{\day})},
-            ylabel={\unit{\CH\litre\per\litre\per\day}},
+            ylabel={\unit{\litre\CH\per\reactorlitre\per\day}},
             axis y line*=left,
             enlarge x limits=false,
             xmin=0, xmax=97,
@@ -1221,76 +1296,6 @@ The post-feeding phase (days \numrange[parse-numbers=false]{82}{97}) produced \q
 \end{figure}
 
 \endgroup
-
-\begin{equation}
-    Q = \frac{V_r}{\mathrm{HRT}} \quad \left[\unit{\cubic\metre\per\day}\right]
-    \label{eq:Q}
-\end{equation}
-
-\begin{equation}
-    m_{\mathrm{VS,day}} = \mathrm{OLR} \cdot V_r \quad \left[\unit{\gram\per\day}\right]
-    \label{eq:mVS_day}
-\end{equation}
-
-\begin{equation}
-    M_{\mathrm{VS}}(n) = \sum_{i=0}^{n} m_{\mathrm{VS,day}}(i) \quad \left[\unit{\gram}\right]
-    \label{eq:cumVS}
-\end{equation}
-
-\begin{equation}
-    Y(n) = \frac{V_{\mathrm{CH_4}}(n)}{M_{\mathrm{VS}}(n)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
-    \label{eq:cumYield}
-\end{equation}
-
-\begin{equation}
-    r_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{m_{\mathrm{VS,day}}(n)} \quad \left[\unit{\milli\litre\CH\per\gram\VSfed\per\day}\right]
-    \label{eq:dailyRate}
-\end{equation}
-
-\begin{equation}
-    \dot{n}_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{V_m \cdot V_r} \quad \left[\unit{\mol\CH\per\cubic\metre\per\day}\right]
-    \label{eq:molRate}
-\end{equation}
-
-\begin{equation}
-    \dot{V}_{\mathrm{CH_4}}(n) = \frac{F_{\mathrm{CH_4}}(n)}{1000 \cdot V_r} \quad \left[\unit{\litre\CH\per\reactorlitre\per\day}\right]
-    \label{eq:volRate}
-\end{equation}
-
-\begin{equation}
-    \Delta V_{\mathrm{CH_4}}(a,b) = V_{\mathrm{CH_4}}(b) - V_{\mathrm{CH_4}}(a-1) \quad \left[\unit{\nml}\right]
-    \label{eq:deltaVCH4}
-\end{equation}
-
-\begin{equation}
-    \Delta M_{\mathrm{VS}}(a,b) = M_{\mathrm{VS}}(b) - M_{\mathrm{VS}}(a-1) \quad \left[\unit{\gram}\right]
-    \label{eq:deltaMVS}
-\end{equation}
-
-\begin{equation}
-    Y(a,b) = \frac{\Delta V_{\mathrm{CH_4}}(a,b)}{\Delta M_{\mathrm{VS}}(a,b)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
-    \label{eq:phaseYield}
-\end{equation}
-
-\begin{equation}
-    \overline{\dot{n}_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} \dot{n}_{\mathrm{CH_4}}(n) \quad \left[\unit{\mol\CH\per\cubic\metre\per\day}\right]
-    \label{eq:avgMolRate}
-\end{equation}
-
-\begin{equation}
-    \overline{\dot{V}_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} \dot{V}_{\mathrm{CH_4}}(n) \quad \left[\unit{\litre\CH\per\reactorlitre\per\day}\right]
-    \label{eq:avgVolRate}
-\end{equation}
-
-\begin{equation}
-    \overline{r_{\mathrm{CH_4}}}(a,b) = \frac{1}{b - a + 1} \sum_{n=a}^{b} r_{\mathrm{CH_4}}(n) \quad \left[\unit{\milli\litre\CH\per\gram\VSfed\per\day}\right]
-    \label{eq:avgDailyRate}
-\end{equation}
-
-\begin{equation}
-    Y_{\text{overall}} = \frac{V_{\mathrm{CH_4}}(N_f)}{M_{\mathrm{VS}}(N_f)} \quad \left[\unit{\nml\CH\per\gram\VSfed}\right]
-    \label{eq:overallYield}
-\end{equation}
 
 Comparisons with the literature revealed that the \glsauto{ch4} yields obtained in this study were lower than those reported for similar co-digestion systems. \textcite{aguiar2026} investigated the co-digestion of sugarcane vinasse and cattle manure in a semi-continuous stirred-tank reactor and reported volumetric \glsauto{ch4} productivities of \qtyrange{3981}{5269}{\nml\CH\per\litre\per\day} for mixing ratios of 5:1 and 1:1 (v/m), respectively, at \glsplauto{olr} of \qtyrange{1.7}{4.1}{\kg\VS\per\cubic\metre\per\day}. These values are two orders of magnitude higher than the maximum volumetric productivity of \qty{44.6}{\nml\CH\per\litre\per\day} obtained in the present study. The large difference is primarily due to the much higher \glsauto{olr} applied by \textcite{aguiar2026} and the different substrate characteristics of the two studies. \textcite{aguiar2026} also reported that the addition of \glsauto{gl} as a supplementary organic substrate compromised system stability, which is consistent with the \glsauto{vfa} accumulation and pH fluctuations observed in the present study during the co-digestion phase.
 
