@@ -520,6 +520,9 @@ INPUT ./assets/photos/ampts/ampts_co2.jpg
 INPUT ./assets/photos/ampts/ampts_co2.jpg
 INPUT ./assets/photos/ampts/ampts_sys-print.png
 INPUT ./assets/photos/ampts/ampts_sys-print.png
+INPUT ./data/processed/substrates-used.csv
+INPUT ./data/processed/substrates-used.csv
+INPUT ./data/processed/substrates-used.csv
 OUTPUT build/sections/chapters/04_results.aux
 INPUT ./sections/chapters/04_results.tex
 INPUT ./assets/photos/reactor/reator-19-5.jpg

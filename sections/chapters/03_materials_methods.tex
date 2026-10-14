@@ -189,7 +189,7 @@ where $M_{\text{total}}$ is the mass of cylinder plus sample, $M_{\text{cylinder
 \section{Experiment Setup}
 \label{sec:experiment_configuration}
 
-The reactor had a working volume of \qty{1}{\litre} and was operated in continuous mode, under anaerobic conditions. Mixing was provided by a magnetic stir bar, and the overflow outlet was kept closed with a valve to maintain an anaerobic environment. The experimental setup is shown in \Cref{graph:reactor}:
+The reactor had a working volume of \qty{1}{\litre} and was operated in semi-continuous mode, with feeding performed once daily, under anaerobic conditions. Mixing was provided by a magnetic stir bar, and the overflow outlet was kept closed with a valve to maintain an anaerobic environment. The experimental setup is shown in \Cref{graph:reactor}:
 
 \begin{figure}[H]
     \centering
@@ -261,7 +261,7 @@ The feed was also supplemented with nutrients to improve the growth of microorga
 \subsection{Biogas Production}
 \label{subsec:biogas_production}
 
-The \glsauto{ampts} system (hardware~\Cref{fig:ampts-hard}, software~\Cref{fig:ampts-soft}) was used to measure the gas flow produced by the reactor using a \glsauto{co2}-fixing unit with a solution of \qty{3}{\molar\NaOH}.
+The \glsauto{ampts} system (hardware~\Cref{fig:ampts-hard}, software~\Cref{fig:ampts-soft}) was used to measure the gas flow produced by the reactor. A \glsauto{co2}-fixing unit with a solution of \qty{3}{\molar\NaOH} was placed before the flow meter, so the recorded values corresponds essentially to the volume and flow of \glsauto{ch4}.
 
 \begin{figure}[H]
     \centering
@@ -311,136 +311,56 @@ The volumes were measured in \unit{\milli\litre}, the sample volume was always \
 \Cref{tab:feeds} shows all the substrates used to feed the reactor and when they were made.
 
 \begingroup
-\sisetup{}
+\sisetup{
+}
 \footnotesize
 \setlength{\tabcolsep}{3pt}
 \begin{ThreePartTable}
-    \begin{xltabular}{\linewidth}{@{} C C C C C C C @{}}
+    \begin{xltabular}{\linewidth}{@{} c C C C C c C c c c c @{}}
 
     \caption{Feed used throughout the experimental period}
     \label{tab:feeds} \\
 
     \toprule
     \thead{Day} &
-    \thead{Substrate 1} &
-    \thead{Subestrate 2} &
-    \thead{Substrate 3} &
-    \thead{Extra\\ Addition} &
-    \thead{\GLS{olr}\\ \& \GLS{ts}\%} &
-    \thead{Volume\\ Made} \\
+    \thead{Substrate\\1} &
+    \thead{Substrate\\2} &
+    \thead{Substrate\\3} &
+    \thead{Extra\\Addition} &
+    \thead{Volume\\Made} &
+    \thead{\GLS{olr}\\\&\GLS{ts}\%} &
+    \thead{\GLS{cgl}\%} &
+    \thead{\GLS{pgl}\%} &
+    \thead{\GLS{gl}\%} &
+    \thead{\GLS{fw}\%} \\
     \midrule
     \endfirsthead
 
-    \multicolumn{6}{l}{\textit{\Cref{tab:feeds} continued}} \\
+    \multicolumn{11}{l}{\textit{\Cref{tab:feeds} continued}} \\
     \toprule
     \thead{Day} &
-    \thead{Substrate 1} &
-    \thead{Subestrate 2} &
-    \thead{Substrate 3} &
-    \thead{Extra\\ Addition} &
-    \thead{\GLS{olr}\\ \& \GLS{ts}\%} &
-    \thead{Volume\\ Made} \\
+    \thead{Substrate\\1} &
+    \thead{Substrate\\2} &
+    \thead{Substrate\\3} &
+    \thead{Extra\\Addition} &
+    \thead{Volume\\Made} &
+    \thead{\GLS{olr}\\\&\GLS{ts}\%} &
+    \thead{\GLS{cgl}\%} &
+    \thead{\GLS{pgl}\%} &
+    \thead{\GLS{gl}\%} &
+    \thead{\GLS{fw}\%} \\
     \midrule
     \endhead
 
     \bottomrule
     \endlastfoot
 
-    \num{0}\tnote{a} &
-    \glsauto{fw}, \qty{156}{\gram} &
-    \glsauto{glucose}, \qty{1.9}{\gram} &
-    &
-    \glsauto{ca_hco3}, \qty{5}{\gram} &
-    \num{1.5} \& \num{15} &
-    \qty{500}{\milli\litre} \\
-    \addlinespace
-    \num{4} &
-    \glsauto{cgl}, \qty{23.2}{\milli\litre} &
-    \glsauto{pgl}\tnote{b}, \qty{31.5}{\milli\litre} &
-    &
-    \glsauto{khco3}, \qty{1.9}{\gram} &
-    \num{0.8} \& \num{10} &
-    \qty{250}{\milli\litre} \\
-    \addlinespace
-    \num{11} &
-    \glsauto{fw}, \qty{12.54}{\gram} &
-    \glsauto{cgl}, \qty{9.02}{\milli\litre} &
-    \glsauto{pgl}, \qty{2.6}{\milli\litre} &
-    \glsauto{khco3}, \qty{1.57}{\gram} &
-    \numrange{0.13}{0.4} \& \numrange{5}{10}\tnote{c} &
-    \qty{250}{\milli\litre} \\
-    \addlinespace
-    \num{18} &
-    \glsauto{fw}, \qty{10.88}{\gram} &
-    \glsauto{cgl}, \qty{2.89}{\milli\litre} &
-    \glsauto{pgl}, \qty{1.44}{\milli\litre} &
-    &
-    \num{0.0256} \& \num{2} &
-    \qty{250}{\milli\litre} \\
-    \addlinespace
-    \num{25} &
-    \glsauto{fw}, \qty{31.12}{\gram} &
-    \glsauto{cgl}, \qty{44}{\milli\litre} &
-    \glsauto{pgl}, \qty{29}{\milli\litre} &
-    &
-    \num{1.4} \& \num{10} &
-    \qty{250}{\milli\litre} \\
-    \addlinespace
-    \num{32} &
-    \glsauto{fw}, \qty{31.01}{\gram} &
-    \glsauto{cgl}, \qty{44}{\milli\litre} &
-    \glsauto{pgl}, \qty{28.9}{\milli\litre} &
-    &
-    \num{1.4} \& \num{10} &
-    \qty{250}{\milli\litre} \\
-    \addlinespace
-    \num{39} &
-    \glsauto{fw}, \qty{46.52}{\gram} &
-    \glsauto{cgl}, \qty{66}{\milli\litre} &
-    \glsauto{pgl}, \qty{43}{\milli\litre} &
-    \glsauto{khco3}, \qty{2.6}{\gram} &
-    \num{3.1} \& \num{15} &
-    \qty{250}{\milli\litre} \\
-    \addlinespace
-    \num{46} &
-    \glsauto{fw}, \qty{50.07}{\gram} &
-    \glsauto{cgl}, \qty{66}{\milli\litre} &
-    \glsauto{pgl}, \qty{43}{\milli\litre} &
-    \glsauto{khco3}, \qty{2.67}{\gram} &
-    \num{3.16} \& \num{15} &
-    \qty{250}{\milli\litre} \\
-    \addlinespace
-    \num{53}\tnote{d} &
-    \glsauto{cgl}, \qty{55}{\milli\litre} &
-    \glsauto{pgl}, \qty{11.5}{\milli\litre} &
-    &
-    \glsauto{khco3}, \qty{5.38}{\gram} &
-    \num{0.42} \& \num{10} &
-    \qty{500}{\milli\litre} \\
-    \addlinespace
-    \num{60} &
-    \glsauto{cgl}, \qty{55}{\milli\litre} &
-    \glsauto{pgl}, \qty{12}{\milli\litre} &
-    &
-    \glsauto{khco3}, \qty{5.18}{\gram} &
-    \num{0.42} \& \num{10} &
-    \qty{500}{\milli\litre}\tnote{e} \\
-    \addlinespace
-    \num{67} &
-    \glsauto{cgl}, \qty{41}{\milli\litre} &
-    \glsauto{pgl}, \qty{9}{\milli\litre} &
-    &
-    \glsauto{khco3}, \qty{2.56}{\gram} &
-    \num{0.95} \& \num{15} &
-    \qty{250}{\milli\litre} \\
-    \addlinespace
-    \num{74} &
-    \glsauto{cgl}, \qty{60}{\milli\litre} &
-    \glsauto{pgl}, \qty{12.5}{\milli\litre} &
-    &
-    \glsauto{khco3}, \qty{2.57}{\gram} &
-    \num{1.37} \& \num{15} &
-    \qty{250}{\milli\litre} \\
+    \csvreader[
+        separator=semicolon,
+        head=true,
+        late after line=\\\addlinespace
+    ]{data/processed/substrates-used.csv}{}
+    {\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvi & \csvcolvii & \csvcolviii & \csvcolix & \csvcolx & \csvcolxi}
 
     \end{xltabular}
 

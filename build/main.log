@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  13 OCT 2026 10:09
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  14 OCT 2026 13:54
  system commands enabled.
 **main.tex
 (./main.tex
@@ -3020,19 +3020,19 @@ Missing character: There is no ; (U+003B) in font nullfont!
 ignored: Infinite glue shrinkage found in box being split [16]
 warning  (file assets/photos/ampts/ampts.jpg) (readjpg): Exif resolution 72dpi x
  72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/ampts/ampts.jpg, id=853, 2312.64pt x 2500.34125pt>
+<assets/photos/ampts/ampts.jpg, id=857, 2312.64pt x 2500.34125pt>
 File: assets/photos/ampts/ampts.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts.jpg  used on input line 270.
 
 (luatex.def)             Requested size: 192.0548pt x 207.62366pt.
-<assets/photos/ampts/ampts_co2.jpg, id=854, 2312.64pt x 4111.36pt>
+<assets/photos/ampts/ampts_co2.jpg, id=858, 2312.64pt x 4111.36pt>
 File: assets/photos/ampts/ampts_co2.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts_co2.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts_co2.jpg  used on input line 
 277.
 (luatex.def)             Requested size: 123.71973pt x 219.94618pt.
-<assets/photos/ampts/ampts_sys-print.png, id=855, 651.18282pt x 627.09282pt>
+<assets/photos/ampts/ampts_sys-print.png, id=859, 651.18282pt x 627.09282pt>
 File: assets/photos/ampts/ampts_sys-print.png Graphic file (type png)
 <use assets/photos/ampts/ampts_sys-print.png>
 Package luatex.def Info: assets/photos/ampts/ampts_sys-print.png  used on input
@@ -3041,15 +3041,20 @@ Package luatex.def Info: assets/photos/ampts/ampts_sys-print.png  used on input
 [17<./assets/photos/ampts/ampts.jpg
 warning  (readjpg): Exif resolution 72dpi x 72dpi differs from the input resolut
 ion 96dpi x 96dpi
-><./assets/photos/ampts/ampts_co2.jpg>] [18<./assets/photos/ampts/ampts_sys-prin
-t.png>] [19] [20]) [21]
+><./assets/photos/ampts/ampts_co2.jpg>]
+Overfull \hbox (6.73274pt too wide) in paragraph at lines 365--365
+ []|[]$[][][][][][][][][]$\TU/LiberationSerif(0)/m/n/10 , 
+ []
+
+[18<./assets/photos/ampts/ampts_sys-print.png>] [19] [20]) [21]
 \openout2 = sections/chapters/04_results.aux
- (./sections/chapters/04_results.tex
+
+(./sections/chapters/04_results.tex
 \bbl@ensure@english {Chapter} 5.
 
 warning  (file assets/photos/reactor/reator-19-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-19-5.jpg, id=1016, 1689.31125pt x 2664.95625pt>
+<assets/photos/reactor/reator-19-5.jpg, id=1044, 1689.31125pt x 2664.95625pt>
 File: assets/photos/reactor/reator-19-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-19-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-19-5.jpg  used on input l
@@ -3058,7 +3063,7 @@ ine 13.
 
 warning  (file assets/photos/reactor/reator-22-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-22-5.jpg, id=1017, 1870.99pt x 3112.62875pt>
+<assets/photos/reactor/reator-22-5.jpg, id=1045, 1870.99pt x 3112.62875pt>
 File: assets/photos/reactor/reator-22-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-22-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-22-5.jpg  used on input l
@@ -3078,14 +3083,14 @@ ion 96dpi x 96dpi
 >]
 warning  (file assets/photos/reactor/reator-limp-seco-24-8.jpg) (readjpg): Exif 
 resolution 72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=1026, 2312.64pt x 3490.038
+<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=1054, 2312.64pt x 3490.038
 76pt>
 File: assets/photos/reactor/reator-limp-seco-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-seco-24-8.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-limp-seco-24-8.jpg  used 
 on input line 34.
 (luatex.def)             Requested size: 106.69783pt x 160.98573pt.
-<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=1027, 2312.64pt x 4111.36p
+<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=1055, 2312.64pt x 4111.36p
 t>
 File: assets/photos/reactor/reator-limp-agua-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-agua-24-8.jpg>
@@ -3173,11 +3178,11 @@ PGFPlots: reading {data/processed/analysis.csv}
 
 
 ]
-Overfull \hbox (16.99643pt too wide) in paragraph at lines 63--64
-[]\TU/LiberationSerif(0)/m/n/12 The [][][]C-GL[][] only phase (days $\TU/STIXTw
-oMath(1)/b/n/12 53$ [] $81$\TU/LiberationSerif(0)/m/n/12 ) ex-hib-ited a spe-cif
-ic yield of $\TU/STIXTwoMath(1)/b/n/12 37.37$$[] [] \TU/LiberationSerif(0)/m/n/
-12 g[] []$
+Overfull \hbox (22.86494pt too wide) in paragraph at lines 63--64
+[]\TU/LiberationSerif(0)/m/n/12 The [][][]C-GL[][] based phase (days $\TU/STIXT
+woMath(1)/b/n/12 53$ [] $81$\TU/LiberationSerif(0)/m/n/12 ) ex-hib-ited a spe-ci
+fic yield of $\TU/STIXTwoMath(1)/b/n/12 37.37$$[] [] \TU/LiberationSerif(0)/m/n
+/12 g[] []$
  []
 
 [36]
@@ -3297,19 +3302,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 83420 strings out of 476076
- 477068,7087374 words of node,token memory allocated
- 1446 words of node memory still in use:
+ 83451 strings out of 476076
+ 477069,7087374 words of node,token memory allocated
+ 1482 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
-rn, 4 glyph, 174 attribute, 88 glue_spec, 88 attribute_list, 2 write, 37 pdf_act
+rn, 4 glyph, 180 attribute, 88 glue_spec, 91 attribute_list, 2 write, 40 pdf_act
 ion nodes
-   avail lists: 1:17,2:78605,3:49162,4:307,5:309,6:370,7:8007,8:86,9:3765,10:181
-,11:775,12:1
- 103615 multiletter control sequences out of 65536+600000
- 143 fonts using 81093007 bytes
+   avail lists: 1:22,2:78605,3:49164,4:427,5:299,6:339,7:8007,8:86,9:3765,10:181
+,11:771,12:1
+ 103637 multiletter control sequences out of 65536+600000
+ 143 fonts using 81093399 bytes
  110i,25n,152p,5815b,6201s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-warning  (pdf backend): unreferenced destination with name 'glo:pt.ch4'
 
 warning  (pdf backend): unreferenced destination with name 'glo:pt.tn'
 
@@ -3327,6 +3330,8 @@ warning  (pdf backend): unreferenced destination with name 'glo:pt.alk'
 
 warning  (pdf backend): unreferenced destination with name 'glo:pt.ampts'
 
+warning  (pdf backend): unreferenced destination with name 'glo:pt.ch4'
+
 warning  (pdf backend): unreferenced destination with name 'glo:pt.wwtp'
 
 warning  (pdf backend): unreferenced destination with name 'glo:pt.hrt'
@@ -3343,10 +3348,10 @@ x2-otf/STIXTwoMath-Regular.otf></usr/share/texmf-dist/fonts/opentype/public/stix
 -otf/STIXTwoMath-Regular.otf></usr/share/fonts/liberation/LiberationSerif-Regula
 r.ttf></usr/share/fonts/liberation/LiberationSerif-Italic.ttf></usr/share/fonts/
 liberation/LiberationSerif-Bold.ttf>
-Output written on main.pdf (57 pages, 11332483 bytes).
+Output written on main.pdf (57 pages, 11333846 bytes).
 
-PDF statistics: 1431 PDF objects out of 1440 (max. 8388607)
- 1180 compressed objects within 12 object streams
+PDF statistics: 1457 PDF objects out of 1728 (max. 8388607)
+ 1186 compressed objects within 12 object streams
  204 named destinations out of 1000 (max. 1048576)
  264 words of extra memory for PDF output out of 10000 (max. 100000000)
 
