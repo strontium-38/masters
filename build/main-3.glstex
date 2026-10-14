@@ -19,111 +19,110 @@
 }
 
 \bibglsnewabbreviation{pt.vfa}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={AGV|},
 type={abbreviations-pt}}%
 {AGV}%
 {ácido gordo volátil}
-\glsxtrfieldlistadd{pt.vfa}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.vfa}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.alk}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={Alc|},
 type={abbreviations-pt}}%
 {Alc}%
 {alcalinidade}
-\glsxtrfieldlistadd{pt.alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.ampts}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={AMPTS|II|},
 type={abbreviations-pt}}%
 {AMPTS II}%
 {\textit{Automatic Methane Potential Test System}}
-\glsxtrfieldlistadd{pt.ampts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.ampts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.cstr}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={CSTR|},
 type={abbreviations-pt}}%
 {CSTR}%
 {reator de tanque agitado contínuo}
-\glsxtrfieldlistadd{pt.cstr}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.cstr}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.tc}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={CT|},
 type={abbreviations-pt}}%
 {CT}%
 {carbono total}
-\glsxtrfieldlistadd{pt.tc}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.tc}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.wwtp}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={ETAR|},
 type={abbreviations-pt}}%
 {ETAR}%
 {estação de tratamento de águas residuais}
-\glsxtrfieldlistadd{pt.wwtp}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.wwtp}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.cgl}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{xi}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={GL-B|},
 type={abbreviations-pt}}%
 {GL-B}%
 {glicerol bruto}
-\glsxtrfieldlistadd{pt.cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
-\glsxtrfieldlistadd{pt.cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{xi}}
+\glsxtrfieldlistadd{pt.cgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.tn}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={NT|},
 type={abbreviations-pt}}%
 {NT}%
 {nitrogénio total}
-\glsxtrfieldlistadd{pt.tn}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.tn}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.fw}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={RA|},
 type={abbreviations-pt}}%
 {RA}%
 {resíduos alimentares}
-\glsxtrfieldlistadd{pt.fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.fw}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.ts}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={ST|},
 type={abbreviations-pt}}%
 {ST}%
 {sólidos totais}
-\glsxtrfieldlistadd{pt.ts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.ts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.vs}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={SV|},
 type={abbreviations-pt}}%
 {SV}%
 {sólidos voláteis}
-\glsxtrfieldlistadd{pt.vs}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.vs}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
 \bibglsnewabbreviation{pt.hrt}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}},
 sort={TRH|},
 type={abbreviations-pt}}%
 {TRH}%
 {tempo de retenção hidráulica}
-\glsxtrfieldlistadd{pt.hrt}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{x}}
+\glsxtrfieldlistadd{pt.hrt}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{vii}}
 
 
