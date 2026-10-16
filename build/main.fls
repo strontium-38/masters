@@ -463,8 +463,8 @@ OUTPUT build/main.pdf
 OUTPUT build/main.out
 INPUT /usr/share/texmf-dist/tex/latex/elements/elements_names_english.def
 INPUT ./cover.tex
-INPUT ./assets/logos/IPB_logo.png
-INPUT ./assets/logos/IPB_logo.png
+INPUT ./assets/logos/logo_esa.png
+INPUT ./assets/logos/logo_esa.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib7.tfm

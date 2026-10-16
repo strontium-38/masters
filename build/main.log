@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  14 OCT 2026 16:49
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  16 OCT 2026 17:40
  system commands enabled.
 **main.tex
 (./main.tex
@@ -2867,13 +2867,13 @@ Package hyperref Info: Link coloring ON on input line 21.
 
 (/usr/share/texmf-dist/tex/latex/elements/elements_names_english.def)
 (./cover.tex
-<assets/logos/IPB_logo.png, id=127, 513.92pt x 157.58875pt>
-File: assets/logos/IPB_logo.png Graphic file (type png)
-<use assets/logos/IPB_logo.png>
-Package luatex.def Info: assets/logos/IPB_logo.png  used on input line 10.
-(luatex.def)             Requested size: 195.66803pt x 60.0pt.
+<assets/logos/logo_esa.png, id=127, 619.71526pt x 153.2124pt>
+File: assets/logos/logo_esa.png Graphic file (type png)
+<use assets/logos/logo_esa.png>
+Package luatex.def Info: assets/logos/logo_esa.png  used on input line 10.
+(luatex.def)             Requested size: 242.6903pt x 60.0pt.
 
-Overfull \hbox (3.61324pt too wide) in paragraph at lines 10--11
+Overfull \hbox (50.63551pt too wide) in paragraph at lines 10--11
 [][]  
  []
 
@@ -2889,7 +2889,7 @@ Package luatex.def Info: assets/logos/UTFPR_logo.png  used on input line 15.
 [1
 Non-PDF special ignored!
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./assets/logos/IPB_logo.png>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./assets/logos/logo_esa.png>
 <./assets/logos/UTFPR_logo.png>]) (./build/main.toc
 warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
 [1
@@ -4505,7 +4505,7 @@ x2-otf/STIXTwoMath-Regular.otf></usr/share/texmf-dist/fonts/opentype/public/stix
 -otf/STIXTwoMath-Regular.otf></usr/share/fonts/liberation/LiberationSerif-Regula
 r.ttf></usr/share/fonts/liberation/LiberationSerif-Italic.ttf></usr/share/fonts/
 liberation/LiberationSerif-Bold.ttf>
-Output written on main.pdf (57 pages, 11333366 bytes).
+Output written on main.pdf (57 pages, 11402183 bytes).
 
 PDF statistics: 1433 PDF objects out of 1440 (max. 8388607)
  1177 compressed objects within 12 object streams
