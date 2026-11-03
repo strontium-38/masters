@@ -4791,15 +4791,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  83355 strings out of 476076
- 477073,7087374 words of node,token memory allocated
+ 477075,7087374 words of node,token memory allocated
  1386 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 4 glyph, 164 attribute, 88 glue_spec, 83 attribute_list, 2 write, 32 pdf_act
 ion nodes
-   avail lists: 1:16,2:78605,3:49164,4:419,5:344,6:531,7:8214,8:86,9:4137,10:113
+   avail lists: 1:18,2:78605,3:49164,4:419,5:346,6:531,7:8214,8:86,9:4137,10:113
 ,11:771,12:1
  103541 multiletter control sequences out of 65536+600000
- 143 fonts using 81093203 bytes
+ 143 fonts using 81093399 bytes
  110i,25n,152p,5815b,6201s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:pt.tn'
@@ -4842,7 +4842,7 @@ fonts-2.1.5/share/fonts/truetype/LiberationSerif-Regular.ttf></nix/store/6wkcdiy
 nh2rgqwlljcg4h9iljf5q9zi1-liberation-fonts-2.1.5/share/fonts/truetype/Liberation
 Serif-Italic.ttf></nix/store/6wkcdiynh2rgqwlljcg4h9iljf5q9zi1-liberation-fonts-2
 .1.5/share/fonts/truetype/LiberationSerif-Bold.ttf>
-Output written on main.pdf (57 pages, 11397856 bytes).
+Output written on main.pdf (57 pages, 11398123 bytes).
 
 PDF statistics: 1433 PDF objects out of 1440 (max. 8388607)
  1177 compressed objects within 12 object streams
