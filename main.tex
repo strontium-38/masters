@@ -27,25 +27,6 @@
 \input{cover}
 \cleardoublepage
 
-% Table of contents
-\tableofcontents
-\cleardoublepage
-
-% List of figures
-\listoffigures
-\cleardoublepage
-
-% List of tables
-\listoftables
-\cleardoublepage
-
-% Abbreviations, Symbols, Units
-\glstocfalse
-\printunsrtglossary[type=abbreviations, title={List of Abbreviations}]
-% \printunsrtglossary[type=symbols,       title={List of Symbols}]
-% \printunsrtglossary[type=units,         title={List of Units}]
-\glstoctrue
-
 \glsresetall
 
 % Abstract, acknowledgements (optional)
@@ -65,9 +46,29 @@
 \endgroup
 \end{otherlanguage}
 
+% Table of contents
+\tableofcontents
+\cleardoublepage
+
+% List of figures
+\listoffigures
+\cleardoublepage
+
+% List of tables
+\listoftables
+\cleardoublepage
+
+% Abbreviations, Symbols, Units
+\glstocfalse
+\printunsrtglossary[type=abbreviations, title={List of Abbreviations}]
+\printunsrtglossary[type=symbols,       title={List of Symbols}]
+\printunsrtglossary[type=units,         title={List of Units}]
+\glstoctrue
+
 % Main matter
+\cleardoublepage
 \pagenumbering{arabic}
-\setcounter{page}{1}
+%\setcounter{page}{1}
 
 \glsresetall
 

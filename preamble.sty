@@ -45,6 +45,25 @@
 \usepackage{datetime}
 \usepackage{csquotes}
 
+% indices
+\usepackage{tocloft}
+\renewcommand{\cftchapdotsep}{\cftdotsep} % use the same dot spacing as sections
+\renewcommand{\cftchapleader}{\cftdotfill{\cftchapdotsep}} % add dots to chapter entries
+\setlength{\cftchapnumwidth}{3em} % FIX: Make room for Roman numerals (III, IV) so text doesn't overlap
+
+% chapters
+\newcounter{prechapter}
+\renewcommand{\theprechapter}{\Roman{prechapter}} % Use Roman numerals for front matter
+
+\newcommand{\prechapter}[1]{%
+  \refstepcounter{prechapter}%
+  \chapter*{#1}%
+  \phantomsection% FIX: Required for hyperref to link properly with \chapter*
+  \addcontentsline{toc}{chapter}{%
+    \protect\numberline{\theprechapter}#1}%
+  \markboth{#1}{#1}%
+}
+
 % ----- Headers & Footers -----
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -244,42 +263,42 @@
 ]
 
 % Automatic language-switching glossary commands
-\newcommand{\glsauto}[1]{%
+\DeclareRobustCommand{\glsauto}[1]{%
   \iflanguage{portuguese}{\gls{pt.#1}}{\gls{#1}}%
 }
-\newcommand{\glsplauto}[1]{%
+\DeclareRobustCommand{\glsplauto}[1]{%
   \iflanguage{portuguese}{\glspl{pt.#1}}{\glspl{#1}}%
 }
-\newcommand{\Glsauto}[1]{%
+\DeclareRobustCommand{\Glsauto}[1]{%
   \iflanguage{portuguese}{\Gls{pt.#1}}{\Gls{#1}}%
 }
-\newcommand{\Glsplauto}[1]{%
+\DeclareRobustCommand{\Glsplauto}[1]{%
   \iflanguage{portuguese}{\Glspl{pt.#1}}{\Glspl{#1}}%
 }
-\newcommand{\glsentrylongauto}[1]{%
+\DeclareRobustCommand{\glsentrylongauto}[1]{%
   \iflanguage{portuguese}{\glsentrylong{pt.#1}}{\glsentrylong{#1}}%
 }
-\newcommand{\glsentryshortauto}[1]{%
+\DeclareRobustCommand{\glsentryshortauto}[1]{%
   \iflanguage{portuguese}{\glsentryshort{pt.#1}}{\glsentryshort{#1}}%
 }
-\newcommand{\Glsentrylongauto}[1]{%
+\DeclareRobustCommand{\Glsentrylongauto}[1]{%
   \iflanguage{portuguese}{\Glsentrylong{pt.#1}}{\Glsentrylong{#1}}%
 }
-\newcommand{\Glsentryshortauto}[1]{%
+\DeclareRobustCommand{\Glsentryshortauto}[1]{%
   \iflanguage{portuguese}{\Glsentryshort{pt.#1}}{\Glsentryshort{#1}}%
 }
-\newcommand{\glsentrysymbolauto}[1]{%
+\DeclareRobustCommand{\glsentrysymbolauto}[1]{%
   \iflanguage{portuguese}{\glsentrysymbol{pt.#1}}{\glsentrysymbol{#1}}%
 }
-\newcommand{\glsentryfirstauto}[1]{%
+\DeclareRobustCommand{\glsentryfirstauto}[1]{%
   \iflanguage{portuguese}{\glsentryfirst{pt.#1}}{\glsentryfirst{#1}}%
 }
-\newcommand{\glsentryfirstpluralauto}[1]{%
+\DeclareRobustCommand{\glsentryfirstpluralauto}[1]{%
   \iflanguage{portuguese}{\glsentryfirstplural{pt.#1}}{\glsentryfirstplural{#1}}%
 }
-\newcommand{\Glsentryfirstauto}[1]{%
+\DeclareRobustCommand{\Glsentryfirstauto}[1]{%
   \iflanguage{portuguese}{\Glsentryfirst{pt.#1}}{\Glsentryfirst{#1}}%
 }
-\newcommand{\Glsentryfirstpluralauto}[1]{%
+\DeclareRobustCommand{\Glsentryfirstpluralauto}[1]{%
   \iflanguage{portuguese}{\Glsentryfirstplural{pt.#1}}{\Glsentryfirstplural{#1}}%
 }

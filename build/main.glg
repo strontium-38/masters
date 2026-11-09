@@ -1,7 +1,7 @@
 bib2gls 4.7 (2025-11-13)
 Default encoding: UTF-8
 Ignoring 'TEXMFOUTPUT' variable, not such directory: build
-Current working directory: /run/media/chery/b0e37cd3-952b-4f04-84f7-10825c3838e5/@home/chery/Documents/thesis
+Current working directory: /home/chery/Documents/thesis
 Reading build/main.log
 Encoding: not set
 Detected package fontspec

@@ -130,10 +130,10 @@ type={units-pt}}%
 
 
 \bibglsnewsymbol{pt.nml}%
-{symbol={\unit{\normalized\milli\litre}},
+{symbol={\unit{\nml}},
 sort={15|},
 type={units-pt}}%
-{\unit{\normalized\milli\litre}}%
+{\unit{\nml}}%
 {mililitro normalizado (em condições padrão)}
 
 
@@ -142,7 +142,7 @@ type={units-pt}}%
 sort={16|},
 type={units-pt}}%
 {v}%
-{Volume}
+{volume}
 
 
 \bibglsnewsymbol{pt.molarity}%

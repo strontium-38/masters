@@ -130,19 +130,25 @@ type={units}}%
 
 
 \bibglsnewsymbol{nml}%
-{symbol={\unit{\normalized\milli\litre}},
+{symbol={\unit{\nml}},
 sort={15|},
 type={units}}%
-{\unit{\normalized\milli\litre}}%
+{\unit{\nml}}%
 {normalised millilitre (at standard conditions)}
 
 
 \bibglsnewsymbol{volume}%
 {symbol={v},
+location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{xii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{2}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{6}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{36}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{40}},
 sort={16|},
 type={units}}%
 {v}%
-{Volume}
+{volume}
+\glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{xii}}
+\glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}}
+\glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{6}}
+\glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{36}}
+\glsxtrfieldlistadd{volume}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{40}}
 
 
 \bibglsnewsymbol{molarity}%
