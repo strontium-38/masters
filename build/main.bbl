@@ -138,6 +138,9 @@
            giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
       }
+      \list{institution}{1}{%
+        {Universidade Politécnica de Bragança}%
+      }
       \strng{namehash}{08ccec57583e22868a97a915378d74e8}
       \strng{fullhash}{08ccec57583e22868a97a915378d74e8}
       \strng{fullhashraw}{08ccec57583e22868a97a915378d74e8}

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  10 NOV 2026 18:36
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  10 NOV 2026 19:06
  system commands enabled.
 **main.tex
 (./main.tex
@@ -2261,7 +2261,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip152
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 148.
+Package hyperref Info: Option `colorlinks' set `true' on input line 149.
 
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
@@ -2460,11 +2460,11 @@ File: glossaries-extra-abbrstyles.def 2025/11/03 v1.9 (NLCT)
 )
 
 Package glossaries-extra Warning: Glossary type `abbreviations' already exists 
-on input line 205.
+on input line 206.
 
 
 Package glossaries-extra Warning: Glossary type `symbols' already exists on inp
-ut line 206.
+ut line 207.
 
 (./build/main.glstex) (./build/main-1.glstex) (./build/main-2.glstex)
 (./build/main-3.glstex) (./build/main-4.glstex) (./build/main-5.glstex))
@@ -3232,13 +3232,6 @@ fic yield of $\TU/STIXTwoMath(1)/b/n/12 37.37$$[] [] \TU/LiberationSerif(0)/m/n
  []
 
 [36]
-Overfull \hbox (1.24849pt too wide) in paragraph at lines 65--66
-\TU/LiberationSerif(0)/m/n/12 yield of $\TU/STIXTwoMath(1)/b/n/12 40.60$$[] [] 
-\TU/LiberationSerif(0)/m/n/12 g[] []$ and a vol-u-met-ric pro-duc-tiv-ity of $\
-TU/STIXTwoMath(1)/b/n/12 0.024[]5$$\TU/LiberationSerif(0)/m/n/12 L [] [][] d[]$
-.
- []
-
 PGFPlots: reading {data/processed/yield.csv}
 \pgf@layerbox@axis background=\box107
 \pgf@layerboxsaved@axis background=\box108
@@ -3349,7 +3342,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  83861 strings out of 476076
- 477065,8504848 words of node,token memory allocated
+ 477066,8504848 words of node,token memory allocated
  1652 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 4 glyph, 180 attribute, 122 glue_spec, 91 attribute_list, 2 write, 40 pdf_ac
@@ -3357,7 +3350,7 @@ tion nodes
    avail lists: 1:18,2:78605,3:49164,4:405,5:279,6:458,7:8005,8:86,9:3720,10:181
 ,11:762,12:1
  104004 multiletter control sequences out of 65536+600000
- 143 fonts using 81093203 bytes
+ 143 fonts using 81093399 bytes
  110i,25n,152p,5815b,6201s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'glo:pt.tn'
@@ -3394,7 +3387,7 @@ x2-otf/STIXTwoMath-Regular.otf></usr/share/texmf-dist/fonts/opentype/public/stix
 -otf/STIXTwoMath-Regular.otf></usr/share/fonts/liberation/LiberationSerif-Regula
 r.ttf></usr/share/fonts/liberation/LiberationSerif-Italic.ttf></usr/share/fonts/
 liberation/LiberationSerif-Bold.ttf>
-Output written on main.pdf (59 pages, 11406495 bytes).
+Output written on main.pdf (59 pages, 11406525 bytes).
 
 PDF statistics: 1509 PDF objects out of 1728 (max. 8388607)
  1245 compressed objects within 13 object streams
