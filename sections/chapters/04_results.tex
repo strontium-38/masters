@@ -184,9 +184,9 @@ During the final two weeks, no fresh substrate was added to the reactor; it only
 \subsection{Alkalinity and Volatile Fatty Acids}
 \label{subsec:alkalinity_vfa}
 
-Total \glsauto{alk} and \glsauto{vfa} concentrations were monitored throughout the experiment to assess process stability. The results are shown in \Cref{graph:alkalinity_vfa}. Initially, both \glsauto{alk} and \glsauto{vfa} were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of \glsauto{khco3}, \glsauto{alk} increased sharply to values above \qty{7000}{\milli\gram\CaCO\per\litre} and remained relatively high until close to the end. This high \glsauto{alk} was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the substrate.
+\Glsauto{ta} and \glsauto{vfa} concentrations were monitored throughout the experiment to assess process stability. The results are shown in \Cref{graph:alkalinity_vfa}. Initially, both \glsauto{ta} and \glsauto{vfa} were low, reflecting the early adaptation phase before buffer addition. After the manual introduction of \glsauto{khco3}, \glsauto{ta} increased sharply to values above \qty{7000}{\milli\gram\CaCO\per\litre} and remained relatively high until close to the end. This high \glsauto{ta} was maintained by the addition of bicarbonate to the feed, which helped to counteract the acidity produced during the degradation of the substrate.
 
-\Glsentrylong{vfa} concentrations also increased after the start of feeding, reaching values between \qtyrange{3000}{5000}{\milli\gram\CHCOOH\per\litre}. Such high \glsauto{vfa} levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high \glsauto{alk} provided a strong buffering capacity, and the pH remained above \num{6.5} for most of the experiment. With co-digestion, the pH fell progressively, and with \glsauto{cgl} based feed, the pH increased progressively. The \glsauto{vfa_alk} is a more reliable indicator of instability than pH. In this experiment, the ratio fluctuated between \numrange{0.3}{1.2}. While using the co-digestion feed, a ratio around \numrange{0.8}{1.0} had the highest production.
+\Glsentrylong{vfa} concentrations also increased after the start of feeding, reaching values between \qtyrange{3000}{5000}{\milli\gram\CHCOOH\per\litre}. Such high \glsauto{vfa} levels are often associated with process imbalance, as they can inhibit methanogenesis. However, the high \glsauto{ta} provided a strong buffering capacity, and the pH remained above \num{6.5} for most of the experiment. With co-digestion, the pH fell progressively, and with \glsauto{cgl} based feed, the pH increased progressively. The \glsauto{vfa_alk} is a more reliable indicator of instability than pH (\Cref{graph:ph_ratio}). In this experiment, the ratio fluctuated between \numrange{0.3}{1.2}. While using the co-digestion feed, a ratio around \numrange{0.8}{1.0} had the highest production.
 
 \begin{figure}[H]
     \centering
@@ -198,7 +198,7 @@ Total \glsauto{alk} and \glsauto{vfa} concentrations were monitored throughout t
         \begin{axis}[
             width=\textwidth, height=0.6\textwidth,
             xlabel={Time (\unit{\day})},
-            ylabel={\glsauto{alk} (\unit{\milli\gram\CaCO\per\litre})},
+            ylabel={\glsauto{ta} (\unit{\milli\gram\CaCO\per\litre})},
             xmin=0, ymin=0,
             axis y line*=left,        % only draw left spine + ticks
             legend pos=south east,
@@ -206,7 +206,7 @@ Total \glsauto{alk} and \glsauto{vfa} concentrations were monitored throughout t
             \addplot[
                 color=blue, thick, mark=*, mark size=1.5pt,
             ] table[x index=0, y index=2] {\datatable};
-            \addlegendentry{\glsauto{alk}}
+            \addlegendentry{\glsauto{ta}}
 
             % Manually add the VFA entry to the same legend:
             \addlegendimage{color=red, thick, mark=square*, mark size=1.5pt}

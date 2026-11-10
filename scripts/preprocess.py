@@ -530,16 +530,31 @@ def pass_table_headers(text):
 
 def pass_lua_tables(text, root):
     def sub(m):
-        csv_rel, ncols = m.group(1), int(m.group(2))
+        csv_rel = m.group(1)
+        ncols = int(m.group(2))
+        raw_cols_str = m.group(3) # This may be None
+
+        # Parse the raw columns
+        raw_cols = set()
+        if raw_cols_str:
+            raw_cols = {int(c.strip()) for c in raw_cols_str.split(',') if c.strip().isdigit()}
+
         rows = list(csv.reader(open(os.path.join(root, csv_rel))))
         rows = [r for r in rows if any(c.strip() for c in r)]
         out = []
         for r in rows:
             r = (r + [''] * ncols)[:ncols]
-            out.append(' & '.join('\\mbox{%s}' % c for c in r) + r' \\')
+            formatted = []
+            for i, c in enumerate(r):
+                if (i + 1) in raw_cols:
+                    formatted.append(c)
+                else:
+                    formatted.append('\\mbox{%s}' % c)
+            out.append(' & '.join(formatted) + r' \\')
         return '\n'.join(out)
+
     return re.sub(
-        r'\\directlua\{emit_grouped_table\("([^"]+)",\s*(\d+)\)\}',
+        r'\\directlua\{emit_grouped_table\("([^"]+)",\s*(\d+)(?:\s*,\s*"([^"]*)")?\)\}',
         sub, text)
 
 def _read_braced(text, i):

@@ -28,11 +28,11 @@ type={symbols-pt}}%
 
 
 \bibglsnewsymbol{pt.vfa_alk}%
-{symbol={\glsentryshort{vfa}/\glsentryshort{alk}},
+{symbol={\glsentryshort{vfa}/\glsentryshort{ta}},
 location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}},
-sort={VFA|alkalinity|},
+sort={VFA|TA|},
 type={symbols-pt}}%
-{\gls{pt.vfa}/\gls{pt.alk}}%
+{\gls{pt.vfa}/\gls{pt.ta}}%
 {Razão de ácidos gordos voláteis para alcalinidade total}
 \glsxtrfieldlistadd{pt.vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}}
 

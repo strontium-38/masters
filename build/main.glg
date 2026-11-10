@@ -49,6 +49,7 @@ Default encoding: not set
 Assuming encoding: UTF-8
 Reading glossaries/abbreviations.bib
 Encoding: UTF-8
+Error: abbreviations.bib:139: Repeated entry 'ta'
 Parsing bib files for resource main-1.glstex.
 Default encoding: not set
 Assuming encoding: UTF-8
@@ -64,6 +65,7 @@ Default encoding: not set
 Assuming encoding: UTF-8
 Reading glossaries/abbreviations.bib
 Encoding: UTF-8
+Error: abbreviations.bib:139: Repeated entry 'pt.ta'
 Parsing bib files for resource main-4.glstex.
 Default encoding: not set
 Assuming encoding: UTF-8
@@ -76,13 +78,16 @@ Reading glossaries/units.bib
 Encoding: UTF-8
 Cross-resource references allowed.
 Processing resource main.glstex.
+Warning: Entry 'ta' has potentially nested link text in field: long
+Consider using \glsps{alk} or \glspt{alk} instead of \gls{alk}
+Added dependent: alk
 Processing resource main-1.glstex.
 Warning: Entry 'vfa_alk' has potentially nested link text in field: name
 Consider using \glsps{vfa} or \glspt{vfa} instead of \gls{vfa}
 Warning: Entry 'vfa_alk' has potentially nested link text in field: name
-Consider using \glsps{alk} or \glspt{alk} instead of \gls{alk}
+Consider using \glsps{ta} or \glspt{ta} instead of \gls{ta}
 Added dependent: vfa
-Added dependent: alk
+Added dependent: ta
 Warning: Entry 'vpv' has potentially nested link text in field: name
 Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
 Warning: Entry 'vpv' has potentially nested link text in field: name
@@ -90,19 +95,23 @@ Consider using \glsps{volume} or \glspt{volume} instead of \gls{volume}
 Added dependent: volume
 Processing resource main-2.glstex.
 Processing resource main-3.glstex.
+Warning: Entry 'pt.ta' has potentially nested link text in field: long
+Consider using \glsps{pt.alk} or \glspt{pt.alk} instead of \gls{pt.alk}
+Added dependent: pt.alk
 Processing resource main-4.glstex.
 Warning: Entry 'pt.vfa_alk' has potentially nested link text in field: name
 Consider using \glsps{pt.vfa} or \glspt{pt.vfa} instead of \gls{pt.vfa}
 Warning: Entry 'pt.vfa_alk' has potentially nested link text in field: name
-Consider using \glsps{pt.alk} or \glspt{pt.alk} instead of \gls{pt.alk}
+Consider using \glsps{pt.ta} or \glspt{pt.ta} instead of \gls{pt.ta}
 Added dependent: pt.vfa
-Added dependent: pt.alk
+Added dependent: pt.ta
 Warning: Entry 'pt.vpv' has potentially nested link text in field: name
 Consider using \glsps{pt.volume} or \glspt{pt.volume} instead of \gls{pt.volume}
 Warning: Entry 'pt.vpv' has potentially nested link text in field: name
 Consider using \glsps{pt.volume} or \glspt{pt.volume} instead of \gls{pt.volume}
 Processing resource main-5.glstex.
 Selecting entries for resource main.glstex.
+Added dependent: alk
 Writing build/./main.glstex
 Encoding: UTF-8
 ad
@@ -114,21 +123,22 @@ fs
 fw
 gl
 hrt
-ipb
 mong
 olr
 pgl
+ta
 tc
 tn
 toc
 ts
+upb
 vfa
 vs
 wwtp
-20 entries written to build/./main.glstex.
+21 entries written to build/./main.glstex.
 Selecting entries for resource main-1.glstex.
 Added dependent: vfa
-Added dependent: alk
+Added dependent: ta
 Added dependent: volume
 Writing build/./main-1.glstex
 Encoding: UTF-8
@@ -166,11 +176,13 @@ molarity
 gforce
 18 entries written to build/./main-2.glstex.
 Selecting entries for resource main-3.glstex.
+Added dependent: pt.alk
 Writing build/./main-3.glstex
 Encoding: UTF-8
 pt.vfa
 pt.alk
 pt.ampts
+pt.ta
 pt.cstr
 pt.tc
 pt.wwtp
@@ -180,10 +192,10 @@ pt.fw
 pt.ts
 pt.vs
 pt.hrt
-12 entries written to build/./main-3.glstex.
+13 entries written to build/./main-3.glstex.
 Selecting entries for resource main-4.glstex.
 Added dependent: pt.vfa
-Added dependent: pt.alk
+Added dependent: pt.ta
 Writing build/./main-4.glstex
 Encoding: UTF-8
 pt.ch4
@@ -211,4 +223,4 @@ pt.volume
 pt.molarity
 pt.gforce
 18 entries written to build/./main-5.glstex.
-80 entries written in total.
+82 entries written in total.

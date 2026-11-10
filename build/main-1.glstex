@@ -127,11 +127,11 @@ type={symbols}}%
 
 
 \bibglsnewsymbol{vfa_alk}%
-{symbol={\glsentryshort{vfa}/\glsentryshort{alk}},
+{symbol={\glsentryshort{vfa}/\glsentryshort{ta}},
 location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{ii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{9}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{34}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{39}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{41}},
-sort={VFA|alkalinity|},
+sort={VFA|TA|},
 type={symbols}}%
-{\gls{vfa}/\gls{alk}}%
+{\gls{vfa}/\gls{ta}}%
 {Ratio of volatile fatty acids to total alkalinity}
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{ii}}
 \glsxtrfieldlistadd{vfa_alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{9}}

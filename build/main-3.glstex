@@ -45,6 +45,15 @@ type={abbreviations-pt}}%
 \glsxtrfieldlistadd{pt.ampts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}}
 
 
+\bibglsnewabbreviation{pt.ta}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}},
+sort={AT|},
+type={abbreviations-pt}}%
+{AT}%
+{\gls{pt.alk} total}
+\glsxtrfieldlistadd{pt.ta}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}}
+
+
 \bibglsnewabbreviation{pt.cstr}%
 {location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{iv}},
 sort={CSTR|},

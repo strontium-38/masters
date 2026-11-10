@@ -1,10 +1,15 @@
--- scripts.lua
+-- scripts/table.lua
 local M = {}
 
-local function format_cell(v, wrap)
+local function format_cell(v, wrap, c, raw_cols)
   if v == nil then return "" end
   v = v:gsub("^%s+", ""):gsub("%s+$", "")     -- trim
   if v == "" then return "" end
+
+  -- If column is explicitly marked as raw, return as-is
+  if raw_cols and raw_cols[c] then
+    return v
+  end
 
   -- numbers get \num (in an \mbox so they never break across lines)
   if v:match("^%-?%d+%.?%d*$") or v:match("^%-?%.%d+$") then
@@ -29,7 +34,16 @@ local function row_is_empty(row)
   return true
 end
 
-function M.emit_grouped_table(filename, ncols)
+function M.emit_grouped_table(filename, ncols, raw_cols_str)
+  -- Parse the raw columns string (e.g., "2,3")
+  local raw_cols = {}
+  if raw_cols_str then
+    for col in string.gmatch(raw_cols_str, '([^,]+)') do
+      local c = tonumber(col)
+      if c then raw_cols[c] = true end
+    end
+  end
+
   local function split(line)
     local parts = {}
     for p in line:gmatch("([^,]*),?") do
@@ -87,12 +101,12 @@ function M.emit_grouped_table(filename, ncols)
         if merge[c] then
           if m == i then
             cells[#cells+1] =
-              "\\multirow{"..n.."}{*}{\\makecell{"..format_cell(v, true).."}}"
+              "\\multirow{"..n.."}{*}{\\makecell{"..format_cell(v, true, c, raw_cols).."}}"
           else
             cells[#cells+1] = ""
           end
         else
-          cells[#cells+1] = format_cell(v, false)
+          cells[#cells+1] = format_cell(v, false, c, raw_cols)
         end
       end
       out[#out+1] = table.concat(cells, " & ") .. " \\\\"

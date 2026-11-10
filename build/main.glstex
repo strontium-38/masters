@@ -70,20 +70,18 @@ type={abbreviations}}%
 
 
 \bibglsnewabbreviation{alk}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{ii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{xii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{9}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{18}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{34}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{39}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{41}},
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{ii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{xi}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{9}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{10}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{18}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{39}},
 sort={Alk|},
 type={abbreviations}}%
 {Alk}%
 {alkalinity}
 \glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{ii}}
-\glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{xii}}
+\glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{xi}}
 \glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{9}}
 \glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{10}}
 \glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{18}}
 \glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
-\glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{34}}
 \glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{39}}
-\glsxtrfieldlistadd{alk}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{41}}
 
 
 \bibglsnewabbreviation{ampts}%
@@ -212,15 +210,6 @@ type={abbreviations}}%
 \glsxtrfieldlistadd{hrt}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
 
 
-\bibglsnewabbreviation{ipb}%
-{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{11}},
-sort={IPB|},
-type={abbreviations}}%
-{IPB}%
-{Instituto Politécnico de Bragança}
-\glsxtrfieldlistadd{ipb}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{11}}
-
-
 \bibglsnewabbreviation{mong}%
 {location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{2}},
 sort={MONG|},
@@ -258,6 +247,21 @@ type={abbreviations}}%
 \glsxtrfieldlistadd{pgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{16}}
 \glsxtrfieldlistadd{pgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
 \glsxtrfieldlistadd{pgl}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{41}}
+
+
+\bibglsnewabbreviation{ta}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{ii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{xii}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{9}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{33}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{34}\bibglsdelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{39}\bibglslastDelimN \glsnoidxdisplayloc{}{page}{glsnumberformat}{41}},
+sort={TA|},
+type={abbreviations}}%
+{TA}%
+{total \gls{alk}}
+\glsxtrfieldlistadd{ta}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{ii}}
+\glsxtrfieldlistadd{ta}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{xii}}
+\glsxtrfieldlistadd{ta}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{9}}
+\glsxtrfieldlistadd{ta}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{33}}
+\glsxtrfieldlistadd{ta}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{34}}
+\glsxtrfieldlistadd{ta}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{39}}
+\glsxtrfieldlistadd{ta}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{41}}
 
 
 \bibglsnewabbreviation{tc}%
@@ -303,6 +307,15 @@ type={abbreviations}}%
 \glsxtrfieldlistadd{ts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{12}}
 \glsxtrfieldlistadd{ts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{13}}
 \glsxtrfieldlistadd{ts}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{19}}
+
+
+\bibglsnewabbreviation{upb}%
+{location={\glsnoidxdisplayloc{}{page}{glsnumberformat}{11}},
+sort={UPB|},
+type={abbreviations}}%
+{UPB}%
+{Universidade Politécnica de Bragança}
+\glsxtrfieldlistadd{upb}{loclist}{\glsnoidxdisplayloc{}{page}{glsnumberformat}{11}}
 
 
 \bibglsnewabbreviation{vfa}%

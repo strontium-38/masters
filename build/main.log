@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  9 NOV 2026 20:16
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.10.4)  10 NOV 2026 18:36
  system commands enabled.
 **main.tex
 (./main.tex
@@ -3066,19 +3066,19 @@ Missing character: There is no ; (U+003B) in font nullfont!
 ignored: Infinite glue shrinkage found in box being split [16]
 warning  (file assets/photos/ampts/ampts.jpg) (readjpg): Exif resolution 72dpi x
  72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/ampts/ampts.jpg, id=915, 2312.64pt x 2500.34125pt>
+<assets/photos/ampts/ampts.jpg, id=918, 2312.64pt x 2500.34125pt>
 File: assets/photos/ampts/ampts.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts.jpg  used on input line 270.
 
 (luatex.def)             Requested size: 192.0548pt x 207.62366pt.
-<assets/photos/ampts/ampts_co2.jpg, id=916, 2312.64pt x 4111.36pt>
+<assets/photos/ampts/ampts_co2.jpg, id=919, 2312.64pt x 4111.36pt>
 File: assets/photos/ampts/ampts_co2.jpg Graphic file (type jpg)
 <use assets/photos/ampts/ampts_co2.jpg>
 Package luatex.def Info: assets/photos/ampts/ampts_co2.jpg  used on input line 
 277.
 (luatex.def)             Requested size: 123.71973pt x 219.94618pt.
-<assets/photos/ampts/ampts_sys-print.png, id=917, 651.18282pt x 627.09282pt>
+<assets/photos/ampts/ampts_sys-print.png, id=920, 651.18282pt x 627.09282pt>
 File: assets/photos/ampts/ampts_sys-print.png Graphic file (type png)
 <use assets/photos/ampts/ampts_sys-print.png>
 Package luatex.def Info: assets/photos/ampts/ampts_sys-print.png  used on input
@@ -3100,7 +3100,7 @@ Overfull \hbox (5.79388pt too wide) in paragraph at lines 361--361
 
 warning  (file assets/photos/reactor/reator-19-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-19-5.jpg, id=1090, 1689.31125pt x 2664.95625pt>
+<assets/photos/reactor/reator-19-5.jpg, id=1093, 1689.31125pt x 2664.95625pt>
 File: assets/photos/reactor/reator-19-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-19-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-19-5.jpg  used on input l
@@ -3109,7 +3109,7 @@ ine 13.
 
 warning  (file assets/photos/reactor/reator-22-5.jpg) (readjpg): Exif resolution
  72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-22-5.jpg, id=1091, 1870.99pt x 3112.62875pt>
+<assets/photos/reactor/reator-22-5.jpg, id=1094, 1870.99pt x 3112.62875pt>
 File: assets/photos/reactor/reator-22-5.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-22-5.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-22-5.jpg  used on input l
@@ -3129,14 +3129,14 @@ ion 96dpi x 96dpi
 >]
 warning  (file assets/photos/reactor/reator-limp-seco-24-8.jpg) (readjpg): Exif 
 resolution 72dpi x 72dpi differs from the input resolution 96dpi x 96dpi
-<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=1100, 2312.64pt x 3490.038
+<assets/photos/reactor/reator-limp-seco-24-8.jpg, id=1103, 2312.64pt x 3490.038
 76pt>
 File: assets/photos/reactor/reator-limp-seco-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-seco-24-8.jpg>
 Package luatex.def Info: assets/photos/reactor/reator-limp-seco-24-8.jpg  used 
 on input line 34.
 (luatex.def)             Requested size: 106.69783pt x 160.98573pt.
-<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=1101, 2312.64pt x 4111.36p
+<assets/photos/reactor/reator-limp-agua-24-8.jpg, id=1104, 2312.64pt x 4111.36p
 t>
 File: assets/photos/reactor/reator-limp-agua-24-8.jpg Graphic file (type jpg)
 <use assets/photos/reactor/reator-limp-agua-24-8.jpg>
@@ -3341,22 +3341,22 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9E02A2FA3F93B7BEB0F4E48779F47D57;5455.
+(rerunfilecheck)             Checksum: 072FBBA5BE38A830E8B582AB8E31A3C3;5465.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 83782 strings out of 476076
- 477068,8504848 words of node,token memory allocated
+ 83861 strings out of 476076
+ 477065,8504848 words of node,token memory allocated
  1652 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 4 glyph, 180 attribute, 122 glue_spec, 91 attribute_list, 2 write, 40 pdf_ac
 tion nodes
-   avail lists: 1:19,2:78605,3:49164,4:405,5:279,6:458,7:8007,8:86,9:3747,10:181
-,11:774,12:1
- 103926 multiletter control sequences out of 65536+600000
+   avail lists: 1:18,2:78605,3:49164,4:405,5:279,6:458,7:8005,8:86,9:3720,10:181
+,11:762,12:1
+ 104004 multiletter control sequences out of 65536+600000
  143 fonts using 81093203 bytes
  110i,25n,152p,5815b,6201s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -3372,7 +3372,7 @@ warning  (pdf backend): unreferenced destination with name 'glo:pt.vfa_alk'
 
 warning  (pdf backend): unreferenced destination with name 'glo:pt.vfa'
 
-warning  (pdf backend): unreferenced destination with name 'glo:pt.alk'
+warning  (pdf backend): unreferenced destination with name 'glo:pt.ta'
 
 warning  (pdf backend): unreferenced destination with name 'glo:pt.ampts'
 
@@ -3394,10 +3394,10 @@ x2-otf/STIXTwoMath-Regular.otf></usr/share/texmf-dist/fonts/opentype/public/stix
 -otf/STIXTwoMath-Regular.otf></usr/share/fonts/liberation/LiberationSerif-Regula
 r.ttf></usr/share/fonts/liberation/LiberationSerif-Italic.ttf></usr/share/fonts/
 liberation/LiberationSerif-Bold.ttf>
-Output written on main.pdf (59 pages, 11406136 bytes).
+Output written on main.pdf (59 pages, 11406495 bytes).
 
-PDF statistics: 1505 PDF objects out of 1728 (max. 8388607)
- 1241 compressed objects within 13 object streams
- 241 named destinations out of 1000 (max. 1048576)
+PDF statistics: 1509 PDF objects out of 1728 (max. 8388607)
+ 1245 compressed objects within 13 object streams
+ 242 named destinations out of 1000 (max. 1048576)
  288 words of extra memory for PDF output out of 10000 (max. 100000000)
 
